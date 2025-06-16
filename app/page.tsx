@@ -66,17 +66,61 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-black text-white overflow-hidden">
-      {/* Brand Logo */}
-      <div className="w-full bg-black py-4 sm:py-6 px-4 sm:px-6 flex justify-center">
-        <h1
-          className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl text-center tracking-wide font-black italic transform -skew-x-12 drop-shadow-[0_0_20px_rgba(255,0,255,0.6)] hover:drop-shadow-[0_0_30px_rgba(0,255,255,0.8)] transition-all duration-300"
-          style={{ fontFamily: "Staatliches, sans-serif" }}
-        >
-          <span className="text-[#00ffff] text-shadow-[0_0_25px_rgba(0,255,255,1)]">RAGE</span>
-          <span className="text-white text-shadow-[0_0_20px_rgba(255,255,255,0.8)]"> ROOM </span>
-          <span className="text-[#dc2626] text-shadow-[0_0_25px_rgba(220,38,38,1)]">PORTLAND</span>
-        </h1>
-      </div>
+      {/* Hero Section with Video Background */}
+      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+        {/* Video placeholder with dark overlay */}
+        <div className="absolute inset-0 bg-black">
+          <div className="absolute inset-0 bg-gradient-to-r from-[#ff00ff]/20 to-[#00ffff]/20 mix-blend-overlay"></div>
+          <div className="absolute inset-0 bg-black/40"></div>
+
+          {/* Vimeo video background */}
+          <iframe
+            src="https://player.vimeo.com/video/1093727278?autoplay=1&muted=1&loop=1&background=1"
+            frameBorder="0"
+            allow="autoplay; fullscreen"
+            allowFullScreen
+            className="absolute inset-0 w-full h-full object-cover pointer-events-none"
+          ></iframe>
+        </div>
+
+        {/* Hero content */}
+        <div className="relative z-10 text-center px-4 sm:px-6 max-w-6xl mx-auto flex flex-col items-center justify-center min-h-screen">
+          <h1
+            className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl text-center tracking-wide font-black italic transform -skew-x-12 drop-shadow-[0_0_20px_rgba(255,0,255,0.6)] hover:drop-shadow-[0_0_30px_rgba(0,255,255,0.8)] transition-all duration-300"
+            style={{ fontFamily: "Staatliches, sans-serif" }}
+          >
+            <span className="text-[#00ffff] text-shadow-[0_0_25px_rgba(0,255,255,1)]">RAGE</span>
+            <span className="text-white text-shadow-[0_0_20px_rgba(255,255,255,0.8)]"> ROOM </span>
+            <span className="text-[#dc2626] text-shadow-[0_0_25px_rgba(220,38,38,1)]">PORTLAND</span>
+          </h1>
+
+          <h2 className="font-flame text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl mb-4 sm:mb-6 md:mb-8 leading-tight">
+            <span className="block text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.8)] mb-1 sm:mb-0 sm:inline">
+              Rage Room
+            </span>
+            <span className="block text-[#ff00ff] drop-shadow-[0_0_15px_rgba(255,0,255,0.8)] mb-1 sm:mb-0 sm:inline sm:mx-2 md:mx-4">
+              Axe Throwing
+            </span>
+            <span className="block text-[#00ffff] drop-shadow-[0_0_15px_rgba(0,255,255,0.8)] sm:inline">Brewpub</span>
+          </h2>
+
+          <p className="text-lg sm:text-xl md:text-2xl mb-6 sm:mb-8 max-w-2xl mx-auto text-white/90 px-4">
+            Smash stuff. Throw axes. Drink beer. Repeat.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center px-4">
+            <Link href="/book">
+              <Button className="bg-[#ff00ff] hover:bg-[#ff00ff]/80 text-black font-bold text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 w-full sm:w-auto">
+                BOOK NOW
+              </Button>
+            </Link>
+          </div>
+
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <ChevronDown className="h-6 w-6 sm:h-8 sm:w-8 text-white/70" />
+          </div>
+        </div>
+      </section>
 
       {/* Sticky Navigation */}
       <nav
@@ -158,54 +202,6 @@ export default function Home() {
           </div>
         </div>
       </nav>
-
-      {/* Hero Section with Video Background */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        {/* Video placeholder with dark overlay */}
-        <div className="absolute inset-0 bg-black">
-          <div className="absolute inset-0 bg-gradient-to-r from-[#ff00ff]/20 to-[#00ffff]/20 mix-blend-overlay"></div>
-          <div className="absolute inset-0 bg-black/40"></div>
-
-          {/* Vimeo video background */}
-          <iframe
-            src="https://player.vimeo.com/video/1093727278?autoplay=1&muted=1&loop=1&background=1"
-            frameBorder="0"
-            allow="autoplay; fullscreen"
-            allowFullScreen
-            className="absolute inset-0 w-full h-full pointer-events-none"
-            style={{ width: "100%", height: "100%", objectFit: "cover" }}
-          ></iframe>
-        </div>
-
-        {/* Hero content */}
-        <div className="relative z-10 text-center px-4 sm:px-6 max-w-6xl mx-auto flex flex-col items-center justify-center h-full">
-          <h2 className="font-flame text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl mb-4 sm:mb-6 md:mb-8 leading-tight">
-            <span className="block text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.8)] mb-1 sm:mb-0 sm:inline">
-              Rage Room
-            </span>
-            <span className="block text-[#ff00ff] drop-shadow-[0_0_15px_rgba(255,0,255,0.8)] mb-1 sm:mb-0 sm:inline sm:mx-2 md:mx-4">
-              Axe Throwing
-            </span>
-            <span className="block text-[#00ffff] drop-shadow-[0_0_15px_rgba(0,255,255,0.8)] sm:inline">Brewpub</span>
-          </h2>
-
-          <p className="text-lg sm:text-xl md:text-2xl mb-6 sm:mb-8 max-w-2xl mx-auto text-white/90 px-4">
-            Smash stuff. Throw axes. Drink beer. Repeat.
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center px-4">
-            <Link href="/book">
-              <Button className="bg-[#ff00ff] hover:bg-[#ff00ff]/80 text-black font-bold text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 w-full sm:w-auto">
-                BOOK NOW
-              </Button>
-            </Link>
-          </div>
-
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <ChevronDown className="h-6 w-6 sm:h-8 sm:w-8 text-white/70" />
-          </div>
-        </div>
-      </section>
 
       {/* Divider */}
       <div className="relative h-16 bg-black">
