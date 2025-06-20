@@ -68,13 +68,25 @@ export default function Home() {
     <main className="min-h-screen bg-black text-white overflow-hidden m-0 p-0">
       {/* Brand Logo */}
       <div className="w-full bg-black py-4 sm:py-6 px-4 sm:px-6 flex justify-center">
-        <h1
-          className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl text-center tracking-wide font-black italic transform -skew-x-12 drop-shadow-[0_0_20px_rgba(255,0,255,0.6)] hover:drop-shadow-[0_0_30px_rgba(0,255,255,0.8)] transition-all duration-300"
-          style={{ fontFamily: "Staatliches, sans-serif" }}
-        >
-          <span className="text-[#00ffff] text-shadow-[0_0_25px_rgba(0,255,255,1)]">RAGE</span>
-          <span className="text-white text-shadow-[0_0_20px_rgba(255,255,255,0.8)]"> ROOM </span>
-          <span className="text-[#dc2626] text-shadow-[0_0_25px_rgba(220,38,38,1)]">PORTLAND</span>
+        <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl text-center tracking-wider font-black leading-none">
+          <span
+            className="block text-[#00ffff] font-serif uppercase tracking-wider mb-2"
+            style={{
+              textShadow: "0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 40px #00ffff, 0 0 80px #00ffff",
+              fontFamily: "serif",
+            }}
+          >
+            RAGE ROOM
+          </span>
+          <span
+            className="block text-[#ff00ff] font-serif uppercase tracking-wider"
+            style={{
+              textShadow: "0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #ff00ff, 0 0 80px #ff00ff",
+              fontFamily: "serif",
+            }}
+          >
+            PORTLAND
+          </span>
         </h1>
       </div>
 
@@ -167,11 +179,11 @@ export default function Home() {
           <div className="absolute inset-0 bg-black/40"></div>
 
           {/* Vimeo video background */}
-          <iframe
-            src="https://player.vimeo.com/video/1093727278?autoplay=1&muted=1&loop=1&background=1"
-            frameBorder="0"
-            allow="autoplay; fullscreen"
-            allowFullScreen
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
             className="absolute inset-0 w-full h-full object-cover pointer-events-none"
             style={{
               width: "100vw",
@@ -179,7 +191,9 @@ export default function Home() {
               objectFit: "cover",
               transform: "scale(1.02)",
             }}
-          ></iframe>
+          >
+            <source src="/videos/smaller.hero.vid.mp4" type="video/mp4" />
+          </video>
         </div>
 
         {/* Hero content */}
