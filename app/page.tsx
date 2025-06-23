@@ -197,29 +197,9 @@ export default function Home() {
           <div
             className="md:hidden absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: `url('/placeholder.svg?height=800&width=400')`,
+              backgroundImage: `url('/placeholder.svg?height=800&width=400&text=RAGE+ROOM+PORTLAND+HERO')`,
             }}
           ></div>
-
-          {/* Mobile video attempt (will fallback to image if autoplay fails) */}
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="md:hidden absolute inset-0 w-full h-full object-cover pointer-events-none"
-            style={{
-              width: "100vw",
-              height: "100vh",
-              objectFit: "cover",
-            }}
-            onError={(e) => {
-              // Hide video if it fails to load and show fallback image
-              e.currentTarget.style.display = "none"
-            }}
-          >
-            <source src="https://www.youtube.com/embed/A505h-KRL_g" type="video/mp4" />
-          </video>
         </div>
 
         {/* Hero content */}
