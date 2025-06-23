@@ -171,33 +171,46 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* Hero Section with YouTube Background */}
+      {/* Hero Section with Video Background */}
       <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
-        {/* YouTube video background for desktop */}
+        {/* Video background for all devices */}
         <div className="absolute inset-0 w-full h-full">
           <div className="absolute inset-0 bg-gradient-to-r from-[#ff00ff]/20 to-[#00ffff]/20 mix-blend-overlay z-10"></div>
-          <div className="absolute inset-0 bg-black/40 z-10"></div>
+          <div className="absolute inset-0 bg-black/30 z-10"></div>
 
-          {/* Desktop YouTube iframe */}
-          <iframe
-            src="https://www.youtube.com/embed/A505h-KRL_g?autoplay=1&mute=1&loop=1&playlist=A505h-KRL_g&controls=0&showinfo=0&rel=0&modestbranding=1&iv_load_policy=3&fs=0&disablekb=1&playsinline=1"
-            frameBorder="0"
-            allow="autoplay; fullscreen"
-            allowFullScreen
-            className="hidden md:block absolute inset-0 w-full h-full pointer-events-none"
+          {/* Video element optimized for desktop and mobile */}
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover pointer-events-none"
             style={{
               width: "100vw",
               height: "100vh",
               objectFit: "cover",
-              transform: "scale(1.1)",
             }}
-          ></iframe>
+          >
+            <source
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Untitled%20design%20%285%29-o9Q0fU35G0qpGO2y5s1Z8XZTKXrXbV.mp4"
+              type="video/mp4"
+            />
+          </video>
 
-          {/* Mobile fallback image */}
+          {/* Fallback image for browsers that don't support video */}
           <div
-            className="md:hidden absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
+            className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
             style={{
               backgroundImage: `url('/placeholder.svg?height=800&width=400&text=RAGE+ROOM+PORTLAND+HERO')`,
+              display: "none",
+            }}
+            onError={() => {
+              // Show fallback if video fails
+              const video = document.querySelector("video")
+              if (video) {
+                video.style.display = "none"
+                document.querySelector('[style*="display: none"]').style.display = "block"
+              }
             }}
           ></div>
         </div>
