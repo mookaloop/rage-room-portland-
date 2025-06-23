@@ -171,30 +171,22 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* Hero Section with Video Background */}
+      {/* Hero Section with YouTube Background */}
       <section className="relative h-screen w-full flex items-center justify-center overflow-hidden -mt-px">
-        {/* Video placeholder with dark overlay */}
-        <div className="absolute inset-0 bg-black w-full h-full">
-          <div className="absolute inset-0 bg-gradient-to-r from-[#ff00ff]/20 to-[#00ffff]/20 mix-blend-overlay"></div>
-          <div className="absolute inset-0 bg-black/40"></div>
-
-          {/* Vimeo video background */}
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="absolute inset-0 w-full h-full object-cover pointer-events-none"
-            style={{
-              width: "100vw",
-              height: "100vh",
-              objectFit: "cover",
-              transform: "scale(1.02)",
-            }}
-          >
-            <source src="/videos/smaller.hero.vid.mp4" type="video/mp4" />
-          </video>
-        </div>
+        {/* YouTube video background */}
+        <iframe
+          src="https://www.youtube.com/embed/A505h-KRL_g?autoplay=1&mute=1&loop=1&playlist=A505h-KRL_g&controls=0&showinfo=0&rel=0&modestbranding=1&iv_load_policy=3&fs=0&disablekb=1"
+          frameBorder="0"
+          allow="autoplay; fullscreen"
+          allowFullScreen
+          className="absolute inset-0 w-full h-full object-cover pointer-events-none"
+          style={{
+            width: "100vw",
+            height: "100vh",
+            objectFit: "cover",
+            transform: "scale(1.02)",
+          }}
+        ></iframe>
 
         {/* Hero content */}
         <div className="relative z-10 text-center px-4 sm:px-6 max-w-6xl mx-auto flex flex-col items-center justify-center h-full w-full">
@@ -244,7 +236,7 @@ export default function Home() {
         <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-white mb-6 text-shadow-[0_0_20px_rgba(255,255,255,0.8)] tracking-wide relative z-10">
           CHOOSE YOUR <span className="block text-[#dc2626] text-shadow-[0_0_25px_rgba(220,38,38,1)]">ADVENTURE</span>
         </h2>
-        <div className="w-32 h-1 bg-gradient-to-r from-[#00ffff] via-[#dc2626] to-[#00ffff] mx-auto mb-8"></div>
+        <div className="w-32 h-1 bg-gradient-to-r from-[#dc2626] via-[#00ffff] to-[#dc2626] mx-auto mb-8"></div>
         <div className="max-w-4xl mx-auto">
           <p className="text-white/85 text-base sm:text-lg leading-relaxed mb-6 font-medium">
             Sure, you can find axe throwing in Portland at other venues, but can you smash TVs afterward? Our unique
@@ -312,12 +304,23 @@ export default function Home() {
                   <Hammer className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
                 </div>
               </div>
-              <h3 className="font-serif text-lg sm:text-xl font-black mb-3 text-white text-shadow-[0_0_10px_rgba(255,255,255,0.8)] uppercase tracking-wider">
+              <h3 className="font-serif text-xl sm:text-2xl lg:text-3xl font-black text-white mb-4 text-shadow-[0_0_15px_rgba(255,255,255,0.8)] uppercase tracking-wider relative z-10">
                 COMBO EXPERIENCE
               </h3>
-              <p className="text-white/80 text-sm sm:text-base font-medium">
+              <p className="text-white/85 text-base sm:text-lg mb-6 font-medium relative z-10">
                 The ultimate Portland adventure! Axe throwing + rage room in one epic session.
               </p>
+              <button
+                className="bg-gradient-to-r from-[#dc2626] via-[#00ffff] to-[#dc2626] hover:from-[#dc2626]/90 hover:via-[#00ffff]/90 hover:to-[#dc2626]/90 text-black font-black text-base sm:text-lg px-8 sm:px-12 py-4 sm:py-6 rounded-none border-2 border-white transform transition-all hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.6)] uppercase tracking-widest relative z-10"
+                onClick={() =>
+                  window.open(
+                    "https://Bookcelticaxe.as.me/?location=8409%20N%20Lombard%20St%2C%20Portland%2C%20OR%2097203",
+                    "_blank",
+                  )
+                }
+              >
+                💀 BOOK YOUR PORTLAND ADVENTURE NOW 💀
+              </button>
             </button>
           </div>
 
@@ -494,17 +497,17 @@ export default function Home() {
             d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
             fill="#ff00ff"
             opacity=".25"
-          ></path>
+          />
           <path
             d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
             fill="#00ffff"
             opacity=".5"
-          ></path>
+          />
           <path
             d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
             fill="#ff00ff"
             opacity=".25"
-          ></path>
+          />
         </svg>
       </div>
 
@@ -634,7 +637,7 @@ export default function Home() {
                       fillRule="evenodd"
                       d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
                       clipRule="evenodd"
-                    ></path>
+                    />
                   </svg>
                 </a>
                 <a href="#" className="text-white hover:text-[#ff00ff] transition-colors">
@@ -647,7 +650,7 @@ export default function Home() {
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                    ></path>
+                    />
                   </svg>
                 </a>
               </div>
