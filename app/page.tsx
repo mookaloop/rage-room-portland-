@@ -172,24 +172,58 @@ export default function Home() {
       </nav>
 
       {/* Hero Section with YouTube Background */}
-      <section className="relative h-screen w-full flex items-center justify-center overflow-hidden -mt-px">
-        {/* YouTube video background */}
-        <iframe
-          src="https://www.youtube.com/embed/A505h-KRL_g?autoplay=1&mute=1&loop=1&playlist=A505h-KRL_g&controls=0&showinfo=0&rel=0&modestbranding=1&iv_load_policy=3&fs=0&disablekb=1"
-          frameBorder="0"
-          allow="autoplay; fullscreen"
-          allowFullScreen
-          className="absolute inset-0 w-full h-full object-cover pointer-events-none"
-          style={{
-            width: "100vw",
-            height: "100vh",
-            objectFit: "cover",
-            transform: "scale(1.02)",
-          }}
-        ></iframe>
+      <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
+        {/* YouTube video background for desktop */}
+        <div className="absolute inset-0 w-full h-full">
+          <div className="absolute inset-0 bg-gradient-to-r from-[#ff00ff]/20 to-[#00ffff]/20 mix-blend-overlay z-10"></div>
+          <div className="absolute inset-0 bg-black/40 z-10"></div>
+
+          {/* Desktop YouTube iframe */}
+          <iframe
+            src="https://www.youtube.com/embed/A505h-KRL_g?autoplay=1&mute=1&loop=1&playlist=A505h-KRL_g&controls=0&showinfo=0&rel=0&modestbranding=1&iv_load_policy=3&fs=0&disablekb=1&playsinline=1"
+            frameBorder="0"
+            allow="autoplay; fullscreen"
+            allowFullScreen
+            className="hidden md:block absolute inset-0 w-full h-full pointer-events-none"
+            style={{
+              width: "100vw",
+              height: "100vh",
+              objectFit: "cover",
+              transform: "scale(1.1)",
+            }}
+          ></iframe>
+
+          {/* Mobile fallback image */}
+          <div
+            className="md:hidden absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: `url('/placeholder.svg?height=800&width=400')`,
+            }}
+          ></div>
+
+          {/* Mobile video attempt (will fallback to image if autoplay fails) */}
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="md:hidden absolute inset-0 w-full h-full object-cover pointer-events-none"
+            style={{
+              width: "100vw",
+              height: "100vh",
+              objectFit: "cover",
+            }}
+            onError={(e) => {
+              // Hide video if it fails to load and show fallback image
+              e.currentTarget.style.display = "none"
+            }}
+          >
+            <source src="https://www.youtube.com/embed/A505h-KRL_g" type="video/mp4" />
+          </video>
+        </div>
 
         {/* Hero content */}
-        <div className="relative z-10 text-center px-4 sm:px-6 max-w-6xl mx-auto flex flex-col items-center justify-center h-full w-full">
+        <div className="relative z-20 text-center px-4 sm:px-6 max-w-6xl mx-auto flex flex-col items-center justify-center h-full w-full">
           <h2 className="font-flame text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl mb-4 sm:mb-6 md:mb-8 leading-tight">
             <span className="block text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.8)] mb-1 sm:mb-0 sm:inline">
               Rage Room
@@ -499,7 +533,7 @@ export default function Home() {
             opacity=".25"
           />
           <path
-            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39 116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
             fill="#00ffff"
             opacity=".5"
           />
