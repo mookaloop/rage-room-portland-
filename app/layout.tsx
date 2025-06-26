@@ -7,14 +7,14 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Rage Room Portland | Smash Stress with Axe Throwing & Beer",
+  title: "Portland Rage Room | Axe Throwing & Stress Relief | Book Now",
   description:
-    "Book your Portland rage room experience today! Smash stuff, throw axes, and grab a beer at Portland's wildest team-building activity.",
+    "Portland's #1 rage room & axe throwing experience! Smash stress away in soundproof rooms. Perfect for team building, date nights & parties. Book today!",
   keywords:
     "rage room Portland, axe throwing Portland, things to do Portland, team building Portland, smash room Portland",
   openGraph: {
-    title: "Rage Room Portland",
-    description: "Smash stuff. Throw axes. Drink beer. Repeat.",
+    title: "Portland Rage Room | Axe Throwing & Stress Relief",
+    description: "Smash stuff. Throw axes. Drink beer. Portland's ultimate stress relief experience!",
     url: "https://rageroomportland.co",
     siteName: "Rage Room Portland",
     images: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rage Room Portland",
+    title: "Portland Rage Room | Axe Throwing & Stress Relief",
     description: "Smash. Throw. Drink. Portland's best rage room experience.",
     images: ["/your-og-image.jpg"],
   },
