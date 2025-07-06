@@ -7,7 +7,10 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Portland Rage Room | Axe Throwing & Stress Relief | Book Now",
+  title: {
+    default: "Portland Rage Room | Axe Throwing & Stress Relief",
+    template: "%s | Portland Rage Room",
+  },
   description:
     "Portland's #1 rage room & axe throwing experience! Smash stress away in soundproof rooms. Perfect for team building, date nights & parties. Book today!",
   keywords:
@@ -16,7 +19,7 @@ export const metadata: Metadata = {
     title: "Portland Rage Room | Axe Throwing & Stress Relief",
     description: "Smash stuff. Throw axes. Drink beer. Portland's ultimate stress relief experience!",
     url: "https://rageroomportland.co",
-    siteName: "Rage Room Portland",
+    siteName: "Portland Rage Room",
     images: [
       {
         url: "/your-og-image.jpg", // replace with actual image path
