@@ -2,9 +2,9 @@ import type { Metadata } from "next"
 import PartiesEventsClient from "./PartiesEventsClient"
 
 export const metadata: Metadata = {
-  title: "Portland Team Building | Corporate Events | Rage Room Parties",
+  title: "Rage Room Portland Team Building | Corporate Events & Parties",
   description:
-    "Portland's best team building activities! Rage room & axe throwing corporate events. Perfect for parties, team building & group events. Book now!",
+    "Rage Room Portland team building events! Corporate parties, birthday celebrations & group events. Portland's most unique team building experience. Book now!",
 }
 
 export default function PartiesEvents() {

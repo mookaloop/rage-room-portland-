@@ -8,18 +8,19 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: {
-    default: "Portland Rage Room | Axe Throwing & Stress Relief",
-    template: "%s | Portland Rage Room",
+    default: "Rage Room Portland | #1 Axe Throwing & Stress Relief Experience",
+    template: "%s | Rage Room Portland",
   },
   description:
-    "Portland's #1 rage room & axe throwing experience! Smash stress away in soundproof rooms. Perfect for team building, date nights & parties. Book today!",
+    "Rage Room Portland - #1 stress relief destination! Smash stuff in soundproof rooms, throw axes like a Viking. Perfect for team building & parties. Book today!",
   keywords:
-    "rage room Portland, axe throwing Portland, things to do Portland, team building Portland, smash room Portland",
+    "rage room Portland, Portland rage room, axe throwing Portland, things to do Portland, team building Portland, smash room Portland",
   openGraph: {
-    title: "Portland Rage Room | Axe Throwing & Stress Relief",
-    description: "Smash stuff. Throw axes. Drink beer. Portland's ultimate stress relief experience!",
+    title: "Rage Room Portland | #1 Axe Throwing & Stress Relief Experience",
+    description:
+      "Rage Room Portland - Smash stuff. Throw axes. Drink beer. Portland's ultimate stress relief experience!",
     url: "https://rageroomportland.co",
-    siteName: "Portland Rage Room",
+    siteName: "Rage Room Portland",
     images: [
       {
         url: "/your-og-image.jpg", // replace with actual image path
@@ -32,8 +33,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Portland Rage Room | Axe Throwing & Stress Relief",
-    description: "Smash. Throw. Drink. Portland's best rage room experience.",
+    title: "Rage Room Portland | #1 Axe Throwing & Stress Relief Experience",
+    description: "Rage Room Portland - Smash. Throw. Drink. Portland's best rage room experience.",
     images: ["/your-og-image.jpg"],
   },
     generator: 'v0.dev'

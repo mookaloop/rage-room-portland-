@@ -2,9 +2,9 @@ import type { Metadata } from "next"
 import BookPageClient from "./BookPageClient"
 
 export const metadata: Metadata = {
-  title: "Book Rage Room Portland | Axe Throwing Sessions | Instant Booking",
+  title: "Book Rage Room Portland | Instant Online Booking | Axe Throwing",
   description:
-    "Book your Portland rage room & axe throwing session now! Choose from rage room, axe throwing, or combo packages. Instant online booking available.",
+    "Book Rage Room Portland now! Choose rage room sessions, axe throwing, or combo packages. Instant online booking available. Portland's #1 stress relief experience!",
 }
 
 export default function BookPage() {

@@ -1,12 +1,12 @@
 import type { Metadata } from "next"
-import HomePageClient from "./HomePageClient"
+import ClientPage from "./ClientPage"
 
 export const metadata: Metadata = {
-  title: "Portland Rage Room | #1 Axe Throwing & Stress Relief Experience",
+  title: "Rage Room Portland | #1 Stress Relief & Axe Throwing Experience",
   description:
-    "Portland's top-rated rage room & axe throwing! Smash stress in soundproof rooms, throw axes like a Viking. Perfect for dates, teams & parties. Book now!",
+    "Rage Room Portland - #1 rated stress relief destination! Smash TVs & electronics in soundproof rooms, throw axes, drink craft beer. Book your rage session now!",
 }
 
 export default function Home() {
-  return <HomePageClient />
+  return <ClientPage />
 }
