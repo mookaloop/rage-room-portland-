@@ -658,7 +658,12 @@ export default function ClientPage() {
             <div className="text-center sm:text-left sm:col-span-2 lg:col-span-1">
               <h3 className="font-flame text-lg sm:text-xl mb-3 sm:mb-4 text-white">FOLLOW US</h3>
               <div className="flex justify-center sm:justify-start space-x-4">
-                <a href="#" className="text-white hover:text-[#ff00ff] transition-colors">
+                <a
+                  href="https://www.facebook.com/rageroomportland/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:text-[#ff00ff] transition-colors"
+                >
                   <svg className="h-5 w-5 sm:h-6 sm:w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path
                       fillRule="evenodd"
@@ -667,7 +672,12 @@ export default function ClientPage() {
                     />
                   </svg>
                 </a>
-                <a href="#" className="text-white hover:text-[#ff00ff] transition-colors">
+                <a
+                  href="https://www.instagram.com/rageroompdx/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:text-[#ff00ff] transition-colors"
+                >
                   <svg className="h-5 w-5 sm:h-6 sm:w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path
                       fillRule="evenodd"
