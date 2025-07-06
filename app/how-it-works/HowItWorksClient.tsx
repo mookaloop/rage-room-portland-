@@ -17,21 +17,22 @@ export default function HowItWorksClient() {
             <ArrowLeft className="h-6 w-6" />
             <span className="font-bold">Back to Home</span>
           </Link>
-          <h1 className="text-4xl md:text-6xl font-black italic transform -skew-x-12 drop-shadow-[0_0_20px_rgba(255,0,255,0.6)]">
+          <div className="text-4xl md:text-6xl font-black italic transform -skew-x-12 drop-shadow-[0_0_20px_rgba(255,0,255,0.6)]">
             <span className="text-[#00ffff]">HOW IT</span>
             <span className="text-[#ff00ff]"> WORKS</span>
-          </h1>
+          </div>
         </div>
       </div>
 
       {/* Hero Section */}
       <section className="py-16 bg-gradient-to-b from-black to-[#ff00ff]/10">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="font-flame text-3xl md:text-5xl mb-8 text-white">
-            BOOKING YOUR <span className="text-[#ff00ff]">RAGE</span> IS EASY!
-          </h2>
+          <h1 className="font-flame text-3xl md:text-5xl mb-8 text-white">
+            HOW RAGE ROOM PORTLAND WORKS: <span className="text-[#ff00ff]">EASY 3-STEP PROCESS</span>
+          </h1>
           <p className="text-xl max-w-3xl mx-auto text-white/80 mb-12">
-            Follow these simple steps to book your ultimate stress-relief experience. It's fast, fun, and flexible!
+            Follow these simple steps to book your ultimate stress-relief experience at Portland's premier rage room.
+            It's fast, fun, and flexible!
           </p>
         </div>
       </section>
@@ -67,9 +68,12 @@ export default function HowItWorksClient() {
                 <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-r from-[#ff00ff] to-[#ff00ff]/70 mb-6">
                   <Zap className="h-10 w-10 text-black" />
                 </div>
-                <h3 className="font-flame text-4xl mb-4 text-[#ff00ff]">STEP 1: CHOOSE YOUR EXPERIENCE</h3>
+                <h2 className="font-flame text-4xl mb-4 text-[#ff00ff]">
+                  STEP 1: CHOOSE YOUR RAGE ROOM PORTLAND EXPERIENCE
+                </h2>
                 <p className="text-xl text-white/80 max-w-2xl mx-auto">
-                  Pick your poison! Whether you want to smash, throw, or do both - we've got you covered.
+                  Pick your poison! Whether you want to smash, throw, or do both - Portland's best rage room has you
+                  covered.
                 </p>
               </div>
 
@@ -79,9 +83,10 @@ export default function HowItWorksClient() {
                   <div className="w-16 h-16 rounded-full bg-[#ff00ff] flex items-center justify-center mx-auto mb-6">
                     <Hammer className="h-8 w-8 text-black" />
                   </div>
-                  <h4 className="font-flame text-2xl mb-4 text-[#ff00ff]">RAGE ROOM</h4>
+                  <h3 className="font-flame text-2xl mb-4 text-[#ff00ff]">RAGE ROOM PORTLAND</h3>
                   <p className="text-white/80 mb-6">
-                    Smash bottles, electronics, and furniture in our soundproof rooms. Perfect for stress relief!
+                    Smash bottles, electronics, and furniture in our soundproof rooms. Perfect for Portland stress
+                    relief!
                   </p>
                   <div className="text-2xl font-bold text-white">Starting at $35</div>
                 </div>
@@ -91,9 +96,9 @@ export default function HowItWorksClient() {
                   <div className="w-16 h-16 rounded-full bg-[#00ffff] flex items-center justify-center mx-auto mb-6">
                     <Axe className="h-8 w-8 text-black" />
                   </div>
-                  <h4 className="font-flame text-2xl mb-4 text-[#00ffff]">AXE THROWING</h4>
+                  <h3 className="font-flame text-2xl mb-4 text-[#00ffff]">AXE THROWING PORTLAND</h3>
                   <p className="text-white/80 mb-6">
-                    Test your aim and channel your inner lumberjack with professional axe throwing lanes.
+                    Test your aim and channel your inner lumberjack with professional Portland axe throwing lanes.
                   </p>
                   <div className="text-2xl font-bold text-white">Starting at $25</div>
                 </div>
@@ -106,9 +111,9 @@ export default function HowItWorksClient() {
                       <Axe className="h-6 w-6 text-black" />
                     </div>
                   </div>
-                  <h4 className="font-flame text-2xl mb-4 text-white">COMBO DEAL</h4>
+                  <h3 className="font-flame text-2xl mb-4 text-white">PORTLAND COMBO DEAL</h3>
                   <p className="text-white/80 mb-6">
-                    Why choose? Get the full experience with both rage room and axe throwing!
+                    Why choose? Get the full Portland experience with both rage room and axe throwing!
                   </p>
                   <div className="text-2xl font-bold text-white">Starting at $50</div>
                 </div>
@@ -123,9 +128,10 @@ export default function HowItWorksClient() {
                 <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-r from-[#00ffff] to-[#00ffff]/70 mb-6">
                   <Star className="h-10 w-10 text-black" />
                 </div>
-                <h3 className="font-flame text-4xl mb-4 text-[#00ffff]">STEP 2: ADD COOL EXTRAS</h3>
+                <h2 className="font-flame text-4xl mb-4 text-[#00ffff]">STEP 2: ADD PREMIUM RAGE ROOM EXTRAS</h2>
                 <p className="text-xl text-white/80 max-w-2xl mx-auto">
-                  Level up your experience with premium add-ons that'll make your session unforgettable!
+                  Level up your Portland rage room experience with premium add-ons that'll make your session
+                  unforgettable!
                 </p>
               </div>
 
@@ -135,7 +141,7 @@ export default function HowItWorksClient() {
                   <div className="w-12 h-12 rounded-full bg-[#ff00ff]/20 flex items-center justify-center mx-auto mb-4">
                     <Tv className="h-6 w-6 text-[#ff00ff]" />
                   </div>
-                  <h4 className="font-bold text-white mb-2">TV SMASHING</h4>
+                  <h3 className="font-bold text-white mb-2">TV SMASHING</h3>
                   <p className="text-white/70 text-sm mb-3">Old TVs and monitors for maximum satisfaction</p>
                   <div className="text-[#ff00ff] font-bold">+$20</div>
                 </div>
@@ -145,7 +151,7 @@ export default function HowItWorksClient() {
                   <div className="w-12 h-12 rounded-full bg-[#00ffff]/20 flex items-center justify-center mx-auto mb-4">
                     <Star className="h-6 w-6 text-[#00ffff]" />
                   </div>
-                  <h4 className="font-bold text-white mb-2">THROWING STARS & SHOVELS</h4>
+                  <h3 className="font-bold text-white mb-2">THROWING STARS & SHOVELS</h3>
                   <p className="text-white/70 text-sm mb-3">
                     Ninja stars for precision throwing and heavy-duty shovels for maximum smashing power
                   </p>
@@ -157,7 +163,7 @@ export default function HowItWorksClient() {
                   <div className="w-12 h-12 rounded-full bg-[#ff00ff]/20 flex items-center justify-center mx-auto mb-4">
                     <Zap className="h-6 w-6 text-[#ff00ff]" />
                   </div>
-                  <h4 className="font-bold text-white mb-2">ELECTRONICS PACK</h4>
+                  <h3 className="font-bold text-white mb-2">ELECTRONICS PACK</h3>
                   <p className="text-white/70 text-sm mb-3">Keyboards, phones, and small electronics</p>
                   <div className="text-[#ff00ff] font-bold">+$15</div>
                 </div>
@@ -165,7 +171,7 @@ export default function HowItWorksClient() {
 
               <div className="text-center mt-12">
                 <p className="text-lg text-white/80 mb-6">
-                  Mix and match add-ons to create your perfect rage experience!
+                  Mix and match add-ons to create your perfect Portland rage room experience!
                 </p>
                 <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-[#ff00ff]/20 to-[#00ffff]/20 px-6 py-3 rounded-lg border border-white/30">
                   <Zap className="h-5 w-5 text-[#ff00ff]" />
@@ -182,16 +188,17 @@ export default function HowItWorksClient() {
                 <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-r from-white to-white/70 mb-6">
                   <Calendar className="h-10 w-10 text-black" />
                 </div>
-                <h3 className="font-flame text-4xl mb-4 text-white">STEP 3: BOOK YOUR SPOT</h3>
+                <h2 className="font-flame text-4xl mb-4 text-white">STEP 3: BOOK YOUR RAGE ROOM PORTLAND SPOT</h2>
                 <p className="text-xl text-white/80 max-w-2xl mx-auto">
-                  Pick your perfect time from our live calendar and secure your spot with just a small deposit!
+                  Pick your perfect time from our live calendar and secure your Portland rage room spot with just a
+                  small deposit!
                 </p>
               </div>
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 {/* Calendar Preview */}
                 <div className="bg-gradient-to-b from-white/10 to-black border border-white/30 p-8 rounded-lg">
-                  <h4 className="font-flame text-2xl mb-6 text-center text-white">LIVE AVAILABILITY</h4>
+                  <h3 className="font-flame text-2xl mb-6 text-center text-white">LIVE AVAILABILITY</h3>
                   <div className="bg-black/50 p-6 rounded-lg">
                     <div className="grid grid-cols-7 gap-2 mb-4">
                       {["S", "M", "T", "W", "T", "F", "S"].map((day) => (
@@ -236,7 +243,7 @@ export default function HowItWorksClient() {
                   <div className="bg-gradient-to-r from-[#ff00ff]/20 to-[#00ffff]/20 p-8 rounded-lg border border-white/30">
                     <div className="flex items-center space-x-4 mb-6">
                       <CreditCard className="h-8 w-8 text-[#ff00ff]" />
-                      <h4 className="font-flame text-2xl text-white">FLEXIBLE PAYMENT</h4>
+                      <h3 className="font-flame text-2xl text-white">FLEXIBLE PAYMENT</h3>
                     </div>
                     <div className="space-y-4">
                       <div className="flex justify-between items-center py-3 border-b border-white/20">
@@ -255,7 +262,7 @@ export default function HowItWorksClient() {
                   </div>
 
                   <div className="bg-black border border-[#00ffff]/50 p-6 rounded-lg">
-                    <h5 className="font-bold text-[#00ffff] mb-4">Why Book This Way?</h5>
+                    <h4 className="font-bold text-[#00ffff] mb-4">Why Book Rage Room Portland This Way?</h4>
                     <ul className="space-y-2 text-white/80">
                       <li className="flex items-start space-x-2">
                         <span className="text-[#ff00ff] mt-1">•</span>
@@ -288,7 +295,7 @@ export default function HowItWorksClient() {
                     )
                   }
                 >
-                  BOOK YOUR RAGE SESSION NOW
+                  BOOK YOUR RAGE ROOM PORTLAND SESSION NOW
                 </Button>
               </div>
             </div>
@@ -306,10 +313,10 @@ export default function HowItWorksClient() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="font-flame text-4xl md:text-5xl mb-6 text-white">
-              SEE IT IN <span className="text-[#ff00ff]">ACTION</span>
+              SEE RAGE ROOM PORTLAND IN <span className="text-[#ff00ff]">ACTION</span>
             </h2>
             <p className="text-xl text-white/80 max-w-2xl mx-auto">
-              Watch real customers unleash their rage and have the time of their lives!
+              Watch real customers unleash their rage at Portland's premier rage room and have the time of their lives!
             </p>
           </div>
 
@@ -322,22 +329,22 @@ export default function HowItWorksClient() {
                       <path d="M8 5v14l11-7z" />
                     </svg>
                   </div>
-                  <p className="text-white/70 text-lg">Click to watch our rage room experience</p>
+                  <p className="text-white/70 text-lg">Click to watch our Portland rage room experience</p>
                 </div>
               </div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
               <div className="bg-black/50 p-6 rounded-lg border border-white/20 text-center">
-                <h4 className="font-bold text-[#ff00ff] mb-2">RAGE ROOM HIGHLIGHTS</h4>
+                <h3 className="font-bold text-[#ff00ff] mb-2">RAGE ROOM HIGHLIGHTS</h3>
                 <p className="text-white/70 text-sm">See customers smashing TVs, bottles, and electronics</p>
               </div>
               <div className="bg-black/50 p-6 rounded-lg border border-white/20 text-center">
-                <h4 className="font-bold text-[#00ffff] mb-2">AXE THROWING ACTION</h4>
+                <h3 className="font-bold text-[#00ffff] mb-2">AXE THROWING ACTION</h3>
                 <p className="text-white/70 text-sm">Watch precision throws and bullseye celebrations</p>
               </div>
               <div className="bg-black/50 p-6 rounded-lg border border-white/20 text-center">
-                <h4 className="font-bold text-white mb-2">SAFETY FIRST</h4>
+                <h3 className="font-bold text-white mb-2">SAFETY FIRST</h3>
                 <p className="text-white/70 text-sm">Our professional staff ensures everyone stays safe</p>
               </div>
             </div>
@@ -349,11 +356,11 @@ export default function HowItWorksClient() {
       <section className="py-16 bg-black border-t border-[#ff00ff]/30">
         <div className="container mx-auto px-4 text-center">
           <h2 className="font-flame text-3xl md:text-4xl mb-6 text-white">
-            READY TO <span className="text-[#ff00ff]">RAGE</span>?
+            READY TO EXPERIENCE <span className="text-[#ff00ff]">RAGE ROOM PORTLAND</span>?
           </h2>
           <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-            Don't wait - book your stress-busting experience today and join the thousands who've found their perfect
-            outlet!
+            Don't wait - book your Portland stress-busting experience today and join the thousands who've found their
+            perfect outlet at our rage room!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
@@ -370,7 +377,7 @@ export default function HowItWorksClient() {
             <Link href="/">
               <Button
                 variant="outline"
-                className="border-[#00ffff] text-[#00ffff] hover:bg-[#00ffff]/10 font-bold text-lg px-8 py-6"
+                className="border-[#00ffff] text-[#00ffff] hover:bg-[#00ffff]/10 font-bold text-lg px-8 py-6 bg-transparent"
               >
                 BACK TO HOME
               </Button>

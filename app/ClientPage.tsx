@@ -66,9 +66,9 @@ export default function ClientPage() {
 
   return (
     <main className="min-h-screen bg-black text-white overflow-hidden m-0 p-0">
-      {/* Brand Logo */}
+      {/* Brand Logo - Changed from H1 to div since we have a proper H1 below */}
       <div className="w-full bg-black py-4 sm:py-6 px-4 sm:px-6 flex justify-center">
-        <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl text-center tracking-wider font-black leading-none">
+        <div className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl text-center tracking-wider font-black leading-none">
           <span
             className="block text-[#00ffff] font-serif uppercase tracking-wider mb-2"
             style={{
@@ -87,7 +87,7 @@ export default function ClientPage() {
           >
             PORTLAND
           </span>
-        </h1>
+        </div>
       </div>
 
       {/* Sticky Navigation */}
@@ -250,8 +250,8 @@ export default function ClientPage() {
         <div className="absolute inset-0 skew-y-1 bg-gradient-to-r from-[#ff00ff] to-[#00ffff]"></div>
       </div>
 
-      {/* Axe Throwing Section */}
-      <div className="mt-12 sm:mt-16 text-center relative">
+      {/* Services Section */}
+      <section className="mt-12 sm:mt-16 text-center relative">
         <div className="absolute inset-0 opacity-5">
           <svg viewBox="0 0 800 400" className="w-full h-full text-[#00ffff]">
             <path
@@ -291,7 +291,7 @@ export default function ClientPage() {
                 <Axe className="h-6 w-6 sm:h-8 sm:w-8 text-black" />
               </div>
               <h3 className="font-serif text-lg sm:text-xl font-black mb-3 text-[#00ffff] text-shadow-[0_0_10px_rgba(0,255,255,0.8)] uppercase tracking-wider">
-                AXE THROWING
+                AXE THROWING PORTLAND
               </h3>
               <p className="text-white/80 text-sm sm:text-base font-medium">
                 Professional lanes with expert instruction. Perfect for Portland date nights!
@@ -310,7 +310,7 @@ export default function ClientPage() {
                 <Hammer className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
               </div>
               <h3 className="font-serif text-lg sm:text-xl font-black mb-3 text-[#dc2626] text-shadow-[0_0_10px_rgba(220,38,38,0.8)] uppercase tracking-wider">
-                RAGE ROOM
+                RAGE ROOM PORTLAND
               </h3>
               <p className="text-white/80 text-sm sm:text-base font-medium">
                 Smash stress away in soundproof rooms. Portland's #1 stress relief activity!
@@ -381,7 +381,7 @@ export default function ClientPage() {
             </button>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* SEO-Optimized Features Section - Gothic Punk Style */}
       <section id="choose-adventure" className="py-12 sm:py-16 bg-[#0a0a0a] relative overflow-hidden">
@@ -424,15 +424,15 @@ export default function ClientPage() {
               </svg>
             </div>
             <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-4 text-white relative z-10 tracking-wide leading-tight">
-              <span className="block sm:inline text-shadow-[0_0_20px_rgba(0,255,255,0.8)]">SMASH STRESS AT</span>
+              <span className="block sm:inline text-shadow-[0_0_20px_rgba(0,255,255,0.8)]">RAGE ROOM PORTLAND:</span>
               <br className="sm:hidden" />
               <span className="block sm:inline text-[#00ffff] text-shadow-[0_0_25px_rgba(0,255,255,1)]">
                 {" "}
-                PORTLAND'S{" "}
+                #1 STRESS RELIEF{" "}
               </span>
               <br />
               <span className="block text-[#dc2626] text-shadow-[0_0_25px_rgba(220,38,38,1)] font-black">
-                TOP RAGE ROOM
+                & AXE THROWING
               </span>
               <br className="sm:hidden" />
               <span className="block sm:inline text-white text-shadow-[0_0_20px_rgba(255,255,255,0.8)]">
@@ -456,9 +456,9 @@ export default function ClientPage() {
                 </svg>
               </div>
               <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-black text-[#00ffff] mb-4 text-shadow-[0_0_15px_rgba(0,255,255,0.8)] tracking-wide">
-                UNIQUE TEAM BUILDING
+                PORTLAND TEAM BUILDING
                 <br />
-                <span className="text-white">IN PORTLAND</span>
+                <span className="text-white">ACTIVITIES</span>
               </h2>
               <p className="text-white/85 text-base sm:text-lg leading-relaxed mb-4 font-medium">
                 Skip the boring conference rooms! Our Portland team building activities combine rage room sessions with
@@ -547,7 +547,7 @@ export default function ClientPage() {
               <Hammer className="h-8 w-8 sm:h-12 sm:w-12 text-[#ff00ff]" />
             </div>
             <h2 className="font-flame text-3xl sm:text-4xl md:text-5xl text-white">
-              RAGE ROOM <span className="text-[#ff00ff]">FAQS</span> ANSWERED
+              RAGE ROOM PORTLAND <span className="text-[#ff00ff]">FAQ</span>
             </h2>
           </div>
 
@@ -561,7 +561,7 @@ export default function ClientPage() {
                     className="w-full flex justify-between items-start text-left gap-3"
                     onClick={() => toggleFaq(index)}
                   >
-                    <span className="font-bold text-white text-base sm:text-lg leading-tight">{faq.question}</span>
+                    <h3 className="font-bold text-white text-base sm:text-lg leading-tight">{faq.question}</h3>
                     <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-[#ff00ff] flex items-center justify-center flex-shrink-0">
                       <span className="text-black font-bold text-lg sm:text-xl">{openFaq === index ? "−" : "+"}</span>
                     </div>
@@ -583,7 +583,7 @@ export default function ClientPage() {
                       className="w-full flex justify-between items-start text-left gap-3"
                       onClick={() => toggleFaq(actualIndex)}
                     >
-                      <span className="font-bold text-white text-base sm:text-lg leading-tight">{faq.question}</span>
+                      <h3 className="font-bold text-white text-base sm:text-lg leading-tight">{faq.question}</h3>
                       <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-[#ff00ff] flex items-center justify-center flex-shrink-0">
                         <span className="text-black font-bold text-lg sm:text-xl">
                           {openFaq === actualIndex ? "−" : "+"}

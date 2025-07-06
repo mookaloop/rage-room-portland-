@@ -25,14 +25,14 @@ export default function BookPageClient() {
             <span className="font-bold text-lg">Back to Home</span>
           </Link>
           <div className="text-center">
-            <h1
+            <div
               className="text-2xl md:text-4xl font-black italic transform -skew-x-12 drop-shadow-[0_0_20px_rgba(255,0,255,0.8)]"
               style={{ fontFamily: "Staatliches, sans-serif" }}
             >
               <span className="text-[#ff00ff] text-shadow-[0_0_25px_rgba(255,0,255,1)]">BOOK</span>
               <span className="text-white text-shadow-[0_0_20px_rgba(255,255,255,0.8)]"> YOUR </span>
               <span className="text-[#00ffff] text-shadow-[0_0_25px_rgba(0,255,255,1)]">RAGE</span>
-            </h1>
+            </div>
           </div>
           <div className="w-24"></div> {/* Spacer for centering */}
         </div>
@@ -43,15 +43,16 @@ export default function BookPageClient() {
         <div className="container mx-auto px-4 sm:px-6">
           {/* Page Title */}
           <div className="text-center mb-8 md:mb-16">
-            <h2 className="font-black text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-white mb-4 tracking-tight leading-none">
-              <span className="block text-shadow-[0_0_30px_rgba(255,255,255,0.8)]">CHOOSE YOUR</span>
+            <h1 className="font-black text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-white mb-4 tracking-tight leading-none">
+              <span className="block text-shadow-[0_0_30px_rgba(255,255,255,0.8)]">BOOK RAGE ROOM PORTLAND:</span>
               <span className="block text-[#ff00ff] text-shadow-[0_0_40px_rgba(255,0,255,1)] transform -skew-x-6">
-                DESTRUCTION
+                CHOOSE YOUR DESTRUCTION
               </span>
-            </h2>
+            </h1>
             <div className="w-24 h-1 bg-gradient-to-r from-[#ff00ff] via-white to-[#00ffff] mx-auto mb-6 shadow-[0_0_20px_rgba(255,0,255,0.5)]"></div>
             <p className="text-white/90 text-lg md:text-xl font-medium max-w-2xl mx-auto leading-relaxed">
-              Ready to unleash the beast? Pick your weapon of choice and let the chaos begin!
+              Ready to unleash the beast? Pick your weapon of choice and let the chaos begin at Portland's premier rage
+              room!
             </p>
           </div>
 
@@ -72,12 +73,12 @@ export default function BookPageClient() {
 
                 {/* Content */}
                 <div className="text-center">
-                  <h3 className="font-black text-2xl md:text-3xl mb-4 text-[#ff00ff] text-shadow-[0_0_20px_rgba(255,0,255,0.8)] uppercase tracking-wider">
-                    RAGE ROOM
-                  </h3>
+                  <h2 className="font-black text-2xl md:text-3xl mb-4 text-[#ff00ff] text-shadow-[0_0_20px_rgba(255,0,255,0.8)] uppercase tracking-wider">
+                    RAGE ROOM PORTLAND
+                  </h2>
                   <p className="text-white/80 text-base md:text-lg mb-6 leading-relaxed">
                     Smash bottles, electronics, and furniture in our soundproof destruction chambers. Pure therapeutic
-                    chaos!
+                    chaos in Portland's #1 rage room!
                   </p>
 
                   {/* Pricing */}
@@ -116,11 +117,12 @@ export default function BookPageClient() {
 
                 {/* Content */}
                 <div className="text-center">
-                  <h3 className="font-black text-2xl md:text-3xl mb-4 text-[#00ffff] text-shadow-[0_0_20px_rgba(0,255,255,0.8)] uppercase tracking-wider">
-                    AXE THROWING
-                  </h3>
+                  <h2 className="font-black text-2xl md:text-3xl mb-4 text-[#00ffff] text-shadow-[0_0_20px_rgba(0,255,255,0.8)] uppercase tracking-wider">
+                    AXE THROWING PORTLAND
+                  </h2>
                   <p className="text-white/80 text-base md:text-lg mb-6 leading-relaxed">
-                    Channel your inner Viking! Professional lanes with expert instruction. Bullseyes never felt so good.
+                    Channel your inner Viking! Professional lanes with expert instruction. Portland's best axe throwing
+                    experience.
                   </p>
 
                   {/* Pricing */}
@@ -173,11 +175,11 @@ export default function BookPageClient() {
 
                 {/* Content */}
                 <div className="text-center">
-                  <h3 className="font-black text-2xl md:text-3xl mb-4 text-white text-shadow-[0_0_20px_rgba(255,255,255,0.8)] uppercase tracking-wider">
-                    ULTIMATE COMBO
-                  </h3>
+                  <h2 className="font-black text-2xl md:text-3xl mb-4 text-white text-shadow-[0_0_20px_rgba(255,255,255,0.8)] uppercase tracking-wider">
+                    RAGE ROOM + AXE THROWING COMBO
+                  </h2>
                   <p className="text-white/80 text-base md:text-lg mb-6 leading-relaxed">
-                    Why choose? Get the full apocalypse experience! Rage room destruction + axe throwing mastery in one
+                    Why choose? Get the full Portland experience! Rage room destruction + axe throwing mastery in one
                     epic session.
                   </p>
 
@@ -218,22 +220,23 @@ export default function BookPageClient() {
 
               <div className="relative bg-black/60 backdrop-blur-sm border border-white/20 rounded-3xl p-6 md:p-10">
                 <h3 className="font-black text-2xl md:text-4xl text-white mb-4 text-shadow-[0_0_20px_rgba(255,255,255,0.8)]">
-                  NEED HELP CHOOSING YOUR <span className="text-[#ff00ff]">DESTRUCTION</span>?
+                  NEED HELP CHOOSING YOUR <span className="text-[#ff00ff]">PORTLAND RAGE EXPERIENCE</span>?
                 </h3>
                 <p className="text-white/80 text-lg md:text-xl mb-8 max-w-2xl mx-auto leading-relaxed">
-                  Our chaos coordinators are standing by to help you pick the perfect way to unleash your rage!
+                  Our Portland rage room experts are standing by to help you pick the perfect way to unleash your
+                  stress!
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button
                     variant="outline"
-                    className="border-2 border-[#00ffff] text-[#00ffff] hover:bg-[#00ffff]/10 hover:border-[#00ffff] font-bold text-lg px-8 py-4 rounded-xl transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,255,255,0.4)]"
+                    className="border-2 border-[#00ffff] text-[#00ffff] hover:bg-[#00ffff]/10 hover:border-[#00ffff] font-bold text-lg px-8 py-4 rounded-xl transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,255,255,0.4)] bg-transparent"
                   >
                     📞 CALL (503) 212-9031
                   </Button>
                   <Link href="/">
                     <Button
                       variant="outline"
-                      className="border-2 border-white text-white hover:bg-white/10 hover:border-white font-bold text-lg px-8 py-4 rounded-xl transition-all duration-300 hover:shadow-[0_0_20px_rgba(255,255,255,0.4)]"
+                      className="border-2 border-white text-white hover:bg-white/10 hover:border-white font-bold text-lg px-8 py-4 rounded-xl transition-all duration-300 hover:shadow-[0_0_20px_rgba(255,255,255,0.4)] bg-transparent"
                     >
                       🏠 BACK TO HOME
                     </Button>

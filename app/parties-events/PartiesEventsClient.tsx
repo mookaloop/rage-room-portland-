@@ -54,10 +54,10 @@ export default function PartiesEventsClient() {
             <ArrowLeft className="h-6 w-6" />
             <span className="font-bold">Back to Home</span>
           </Link>
-          <h1 className="text-3xl md:text-5xl font-black italic transform -skew-x-12 drop-shadow-[0_0_20px_rgba(255,0,255,0.6)]">
+          <div className="text-3xl md:text-5xl font-black italic transform -skew-x-12 drop-shadow-[0_0_20px_rgba(255,0,255,0.6)]">
             <span className="text-[#00ffff]">PARTIES &</span>
             <span className="text-[#ff00ff]"> EVENTS</span>
-          </h1>
+          </div>
         </div>
       </div>
 
@@ -65,9 +65,9 @@ export default function PartiesEventsClient() {
       <section className="py-16 bg-gradient-to-b from-black to-[#ff00ff]/10">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-flame text-4xl md:text-6xl mb-6 text-white leading-tight">
-              PORTLAND TEAM BUILDING & <span className="text-[#ff00ff]">CORPORATE EVENTS</span>
-            </h2>
+            <h1 className="font-flame text-4xl md:text-6xl mb-6 text-white leading-tight">
+              RAGE ROOM PORTLAND: <span className="text-[#ff00ff]">TEAM BUILDING & CORPORATE EVENTS</span>
+            </h1>
             <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto">
               Looking for unique things to do in Portland? Our rage room Portland and axe throwing Portland experiences
               offer the ultimate team building activities that your group will never forget!
@@ -86,7 +86,7 @@ export default function PartiesEventsClient() {
               </Button>
               <Button
                 variant="outline"
-                className="border-[#00ffff] text-[#00ffff] hover:bg-[#00ffff]/10 font-bold text-lg px-8 py-6"
+                className="border-[#00ffff] text-[#00ffff] hover:bg-[#00ffff]/10 font-bold text-lg px-8 py-6 bg-transparent"
               >
                 GET CUSTOM QUOTE
               </Button>
@@ -110,7 +110,7 @@ export default function PartiesEventsClient() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="font-flame text-4xl md:text-5xl mb-6 text-white">
-              WHY CHOOSE <span className="text-[#ff00ff]">PORTLAND RAGE ROOM</span> FOR TEAM BUILDING?
+              WHY CHOOSE <span className="text-[#ff00ff]">RAGE ROOM PORTLAND</span> FOR TEAM BUILDING?
             </h2>
             <p className="text-xl text-white/80 max-w-3xl mx-auto">
               When searching for things to do Portland for corporate events, nothing beats the unique combination of
@@ -301,7 +301,7 @@ export default function PartiesEventsClient() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="font-flame text-4xl md:text-5xl mb-6 text-white">
-              PORTLAND TEAM BUILDING <span className="text-[#ff00ff]">PACKAGES</span>
+              RAGE ROOM PORTLAND <span className="text-[#ff00ff]">TEAM BUILDING PACKAGES</span>
             </h2>
             <p className="text-xl text-white/80 max-w-3xl mx-auto">
               Choose from our specially designed packages for Portland corporate events and team building activities.
@@ -432,7 +432,7 @@ export default function PartiesEventsClient() {
             </p>
             <Button
               variant="outline"
-              className="border-[#ff00ff] text-[#ff00ff] hover:bg-[#ff00ff]/10 font-bold text-lg px-8 py-4"
+              className="border-[#ff00ff] text-[#ff00ff] hover:bg-[#ff00ff]/10 font-bold text-lg px-8 py-4 bg-transparent"
             >
               REQUEST CUSTOM QUOTE
             </Button>
@@ -445,7 +445,7 @@ export default function PartiesEventsClient() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="font-flame text-4xl md:text-5xl mb-6 text-white">
-              PORTLAND TEAM BUILDING <span className="text-[#ff00ff]">FAQ</span>
+              RAGE ROOM PORTLAND TEAM BUILDING <span className="text-[#ff00ff]">FAQ</span>
             </h2>
             <p className="text-xl text-white/80 max-w-3xl mx-auto">
               Common questions about our Portland rage room and axe throwing team building experiences.
@@ -472,11 +472,11 @@ export default function PartiesEventsClient() {
       <section className="py-16 bg-black border-t border-[#ff00ff]/30">
         <div className="container mx-auto px-4 text-center">
           <h2 className="font-flame text-4xl md:text-5xl mb-6 text-white">
-            READY TO PLAN YOUR <span className="text-[#ff00ff]">PORTLAND EVENT</span>?
+            READY TO PLAN YOUR <span className="text-[#ff00ff]">RAGE ROOM PORTLAND EVENT</span>?
           </h2>
           <p className="text-xl text-white/80 mb-8 max-w-3xl mx-auto">
             Don't settle for boring Portland team building activities. Book the most exciting corporate event experience
-            in the city and watch your team bond like never before!
+            in the city and watch your team bond like never before at our rage room!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Button
@@ -492,7 +492,7 @@ export default function PartiesEventsClient() {
             </Button>
             <Button
               variant="outline"
-              className="border-[#00ffff] text-[#00ffff] hover:bg-[#00ffff]/10 font-bold text-xl px-10 py-6"
+              className="border-[#00ffff] text-[#00ffff] hover:bg-[#00ffff]/10 font-bold text-xl px-10 py-6 bg-transparent"
             >
               CALL (503) 555-RAGE
             </Button>
