@@ -78,7 +78,7 @@ export default function PartiesEventsClient() {
                 className="bg-[#ff00ff] hover:bg-[#ff00ff]/80 text-black font-bold text-lg px-8 py-6"
                 onClick={() =>
                   window.open(
-                    "https://Bookcelticaxe.as.me/?location=8409%20N%20Lombard%20St%2C%20Portland%2C%20OR%2097203",
+                    "https://docs.google.com/forms/d/e/1FAIpQLSey2owIHFQMOlXLbaYRHyT6Jp87x_BCTtZLzrqJCuEIxcAWVA/viewform",
                     "_blank",
                   )
                 }
@@ -88,6 +88,12 @@ export default function PartiesEventsClient() {
               <Button
                 variant="outline"
                 className="border-[#00ffff] text-[#00ffff] hover:bg-[#00ffff]/10 font-bold text-lg px-8 py-6 bg-transparent"
+                onClick={() =>
+                  window.open(
+                    "https://docs.google.com/forms/d/e/1FAIpQLSey2owIHFQMOlXLbaYRHyT6Jp87x_BCTtZLzrqJCuEIxcAWVA/viewform",
+                    "_blank",
+                  )
+                }
               >
                 GET CUSTOM QUOTE
               </Button>
@@ -97,10 +103,14 @@ export default function PartiesEventsClient() {
                 <MapPin className="h-5 w-5 text-[#ff00ff]" />
                 <span>Portland, Oregon</span>
               </div>
-              <div className="flex items-center space-x-2">
+              <a
+                href="sms:5032129031"
+                className="flex items-center space-x-2 hover:text-[#ff00ff] transition-colors cursor-pointer"
+              >
                 <Phone className="h-5 w-5 text-[#00ffff]" />
-                <span>Text Us</span>
-              </div>
+                <span className="hidden sm:inline">(503) 212-9031</span>
+                <span className="sm:hidden">Text Us</span>
+              </a>
             </div>
           </div>
         </div>
