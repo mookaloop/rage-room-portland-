@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowLeft, Axe, Hammer, Zap } from "lucide-react"
+import Footer from "@/components/Footer"
 
 export default function BookPageClient() {
   return (
@@ -247,6 +248,7 @@ export default function BookPageClient() {
           </div>
         </div>
       </section>
+      <Footer />
     </main>
   )
 }

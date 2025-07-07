@@ -4,6 +4,7 @@ import { useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowLeft, Users, Calendar, Trophy, Hammer, Axe, Star, Clock, MapPin, Phone } from "lucide-react"
+import Footer from "@/components/Footer"
 
 export default function PartiesEventsClient() {
   const [openFaq, setOpenFaq] = useState<number | null>(0)
@@ -469,40 +470,7 @@ export default function PartiesEventsClient() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-black border-t border-[#ff00ff]/30">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="font-flame text-4xl md:text-5xl mb-6 text-white">
-            READY TO PLAN YOUR <span className="text-[#ff00ff]">RAGE ROOM PORTLAND EVENT</span>?
-          </h2>
-          <p className="text-xl text-white/80 mb-8 max-w-3xl mx-auto">
-            Don't settle for boring Portland team building activities. Book the most exciting corporate event experience
-            in the city and watch your team bond like never before at our rage room!
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <Button
-              className="bg-[#ff00ff] hover:bg-[#ff00ff]/80 text-black font-bold text-xl px-10 py-6"
-              onClick={() =>
-                window.open(
-                  "https://Bookcelticaxe.as.me/?location=8409%20N%20Lombard%20St%2C%20Portland%2C%20OR%2097203",
-                  "_blank",
-                )
-              }
-            >
-              BOOK YOUR TEAM BUILDING EVENT
-            </Button>
-            <Button
-              variant="outline"
-              className="border-[#00ffff] text-[#00ffff] hover:bg-[#00ffff]/10 font-bold text-xl px-10 py-6 bg-transparent"
-            >
-              CALL (503) 555-RAGE
-            </Button>
-          </div>
-          <div className="text-white/70">
-            <p className="mb-2">Portland Rage Room - The Ultimate Team Building Experience</p>
-            <p>Serving Portland, Beaverton, Lake Oswego, Tigard, and surrounding areas</p>
-          </div>
-        </div>
-      </section>
+      <Footer />
     </main>
   )
 }

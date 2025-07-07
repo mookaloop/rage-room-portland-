@@ -4,6 +4,7 @@ import { useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowLeft, Hammer, Axe, Calendar, CreditCard, Tv, Star, Zap } from "lucide-react"
+import Footer from "@/components/Footer"
 
 export default function HowItWorksClient() {
   const [activeStep, setActiveStep] = useState(1)
@@ -385,6 +386,7 @@ export default function HowItWorksClient() {
           </div>
         </div>
       </section>
+      <Footer />
     </main>
   )
 }

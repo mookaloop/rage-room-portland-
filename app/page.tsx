@@ -1,5 +1,7 @@
 import type { Metadata } from "next"
 import ClientPage from "./ClientPage"
+import FAQSchema from "@/components/schema/FAQSchema"
+import ServiceSchema from "@/components/schema/ServiceSchema"
 
 export const metadata: Metadata = {
   title: "Rage Room Portland | #1 Stress Relief & Axe Throwing Experience",
@@ -8,5 +10,11 @@ export const metadata: Metadata = {
 }
 
 export default function Home() {
-  return <ClientPage />
+  return (
+    <>
+      <FAQSchema />
+      <ServiceSchema />
+      <ClientPage />
+    </>
+  )
 }

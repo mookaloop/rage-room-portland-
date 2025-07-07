@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import PartiesEventsClient from "./PartiesEventsClient"
+import EventSchema from "@/components/schema/EventSchema"
 
 export const metadata: Metadata = {
   title: "Rage Room Portland Team Building | Corporate Events & Parties",
@@ -8,5 +9,10 @@ export const metadata: Metadata = {
 }
 
 export default function PartiesEvents() {
-  return <PartiesEventsClient />
+  return (
+    <>
+      <EventSchema />
+      <PartiesEventsClient />
+    </>
+  )
 }
