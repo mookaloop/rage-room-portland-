@@ -229,7 +229,7 @@ export default function ClientPage() {
           </h2>
 
           <p className="text-lg sm:text-xl md:text-2xl mb-6 sm:mb-8 max-w-2xl mx-auto text-white/90 px-4">
-            Smash stuff. Throw axes. Drink beer. Repeat.
+            Inside StormBreaker Brewpub St. Johns PDX
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center px-4">
@@ -251,7 +251,7 @@ export default function ClientPage() {
         <div className="absolute inset-0 skew-y-1 bg-gradient-to-r from-[#ff00ff] to-[#00ffff]"></div>
       </div>
 
-      {/* Services Section */}
+      {/* Services Section - Updated to match booking page */}
       <section className="mt-12 sm:mt-16 text-center relative">
         <div className="absolute inset-0 opacity-5">
           <svg viewBox="0 0 800 400" className="w-full h-full text-[#00ffff]">
@@ -276,80 +276,162 @@ export default function ClientPage() {
             different. Professional instruction included, no experience necessary!
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 mb-8">
-            {/* Axe Throwing Card */}
-            <button
-              className="bg-black/60 border-2 border-[#00ffff]/40 p-4 sm:p-6 rounded-lg transform transition-all hover:scale-105 hover:shadow-[0_0_25px_rgba(0,255,255,0.4)] hover:border-[#00ffff] cursor-pointer w-full relative overflow-hidden group"
-              onClick={() =>
-                window.open(
-                  "https://Bookcelticaxe.as.me/?appointmentType=category:Stormbreaker%20Axe%20Throwing",
-                  "_blank",
-                )
-              }
-            >
-              <div className="absolute inset-0 bg-gradient-to-br from-[#00ffff]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              <div className="h-12 w-12 sm:h-16 sm:w-16 rounded-full bg-[#00ffff] flex items-center justify-center mb-4 mx-auto relative z-10">
-                <Axe className="h-6 w-6 sm:h-8 sm:w-8 text-black" />
-              </div>
-              <h3 className="font-serif text-lg sm:text-xl font-black mb-3 text-[#00ffff] text-shadow-[0_0_10px_rgba(0,255,255,0.8)] uppercase tracking-wider">
-                AXE THROWING PORTLAND
-              </h3>
-              <p className="text-white/80 text-sm sm:text-base font-medium">
-                Professional lanes with expert instruction. Perfect for Portland date nights!
-              </p>
-            </button>
-
+          {/* Booking Cards - Same as booking page */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-7xl mx-auto mb-8">
             {/* Rage Room Card */}
-            <button
-              className="bg-black/60 border-2 border-[#dc2626]/40 p-4 sm:p-6 rounded-lg transform transition-all hover:scale-105 hover:shadow-[0_0_25px_rgba(220,38,38,0.4)] hover:border-[#dc2626] cursor-pointer w-full relative overflow-hidden group"
-              onClick={() =>
-                window.open("https://Bookcelticaxe.as.me/?appointmentType=category:Rage%20Room%20", "_blank")
-              }
-            >
-              <div className="absolute inset-0 bg-gradient-to-br from-[#dc2626]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              <div className="h-12 w-12 sm:h-16 sm:w-16 rounded-full bg-[#dc2626] flex items-center justify-center mb-4 mx-auto relative z-10">
-                <Hammer className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
-              </div>
-              <h3 className="font-serif text-lg sm:text-xl font-black mb-3 text-[#dc2626] text-shadow-[0_0_10px_rgba(220,38,38,0.8)] uppercase tracking-wider">
-                RAGE ROOM PORTLAND
-              </h3>
-              <p className="text-white/80 text-sm sm:text-base font-medium">
-                Smash stress away in soundproof rooms. Portland's #1 stress relief activity!
-              </p>
-            </button>
+            <div className="group relative">
+              {/* Glow effect */}
+              <div className="absolute -inset-1 bg-gradient-to-r from-[#ff00ff] to-[#ff0080] rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
 
-            {/* Combo Card */}
-            <button
-              className="bg-black/60 border-2 border-white/40 p-4 sm:p-6 rounded-lg transform transition-all hover:scale-105 hover:shadow-[0_0_25px_rgba(255,255,255,0.3)] hover:border-white cursor-pointer w-full relative overflow-hidden group"
-              onClick={() =>
-                window.open("https://Bookcelticaxe.as.me/?appointmentType=category:Rage%20%2F%20Axe%20Combo", "_blank")
-              }
-            >
-              <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              <div className="h-12 w-12 sm:h-16 sm:w-16 rounded-full bg-gradient-to-r from-[#00ffff] to-[#dc2626] flex items-center justify-center mb-4 mx-auto relative z-10">
-                <div className="flex items-center space-x-1">
-                  <Axe className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
-                  <Hammer className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
+              <div className="relative bg-black border-2 border-[#ff00ff]/50 rounded-2xl p-6 md:p-8 transform transition-all duration-300 hover:scale-105 hover:border-[#ff00ff] hover:shadow-[0_0_50px_rgba(255,0,255,0.4)]">
+                {/* Icon */}
+                <div className="flex justify-center mb-6">
+                  <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-gradient-to-br from-[#ff00ff] to-[#ff0080] flex items-center justify-center shadow-[0_0_30px_rgba(255,0,255,0.6)] group-hover:shadow-[0_0_50px_rgba(255,0,255,0.8)] transition-all duration-300">
+                    <Hammer className="h-10 w-10 md:h-12 md:w-12 text-white" />
+                  </div>
+                </div>
+
+                {/* Content */}
+                <div className="text-center">
+                  <h3 className="font-black text-2xl md:text-3xl mb-4 text-[#ff00ff] text-shadow-[0_0_20px_rgba(255,0,255,0.8)] uppercase tracking-wider">
+                    RAGE ROOM PORTLAND
+                  </h3>
+                  <p className="text-white/80 text-base md:text-lg mb-6 leading-relaxed">
+                    Smash bottles, electronics, and furniture in our soundproof destruction chambers. Pure therapeutic
+                    chaos in Portland's #1 rage room!
+                  </p>
+
+                  {/* Pricing */}
+                  <div className="mb-6">
+                    <div className="text-3xl md:text-4xl font-black text-white mb-2">
+                      FROM <span className="text-[#ff00ff]">$35</span>
+                    </div>
+                    <div className="text-white/60 text-sm uppercase tracking-wide">45 min Sessions</div>
+                  </div>
+
+                  {/* Button */}
+                  <Button
+                    className="w-full bg-gradient-to-r from-[#ff00ff] to-[#ff0080] hover:from-[#ff0080] hover:to-[#ff00ff] text-white font-black text-lg py-4 rounded-xl border-2 border-[#ff00ff] transform transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(255,0,255,0.6)] uppercase tracking-wider"
+                    onClick={() =>
+                      window.open("https://Bookcelticaxe.as.me/?appointmentType=category:Rage%20Room%20", "_blank")
+                    }
+                  >
+                    🔥 BOOK RAGE ROOM 🔥
+                  </Button>
                 </div>
               </div>
-              <h3 className="font-serif text-xl sm:text-2xl lg:text-3xl font-black text-white mb-4 text-shadow-[0_0_15px_rgba(255,255,255,0.8)] uppercase tracking-wider relative z-10">
-                COMBO EXPERIENCE
-              </h3>
-              <p className="text-white/85 text-base sm:text-lg mb-6 font-medium relative z-10">
-                The ultimate Portland adventure! Axe throwing + rage room in one epic session.
-              </p>
-              <button
-                className="bg-gradient-to-r from-[#dc2626] via-[#00ffff] to-[#dc2626] hover:from-[#dc2626]/90 hover:via-[#00ffff]/90 hover:to-[#dc2626]/90 text-black font-black text-base sm:text-lg px-8 sm:px-12 py-4 sm:py-6 rounded-none border-2 border-white transform transition-all hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.6)] uppercase tracking-widest relative z-10"
-                onClick={() =>
-                  window.open(
-                    "https://Bookcelticaxe.as.me/?location=8409%20N%20Lombard%20St%2C%20Portland%2C%20OR%2097203",
-                    "_blank",
-                  )
-                }
-              >
-                💀 BOOK YOUR PORTLAND ADVENTURE NOW 💀
-              </button>
-            </button>
+            </div>
+
+            {/* Axe Throwing Card */}
+            <div className="group relative">
+              {/* Glow effect */}
+              <div className="absolute -inset-1 bg-gradient-to-r from-[#00ffff] to-[#0080ff] rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+
+              <div className="relative bg-black border-2 border-[#00ffff]/50 rounded-2xl p-6 md:p-8 transform transition-all duration-300 hover:scale-105 hover:border-[#00ffff] hover:shadow-[0_0_50px_rgba(0,255,255,0.4)]">
+                {/* Icon */}
+                <div className="flex justify-center mb-6">
+                  <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-gradient-to-br from-[#00ffff] to-[#0080ff] flex items-center justify-center shadow-[0_0_30px_rgba(0,255,255,0.6)] group-hover:shadow-[0_0_50px_rgba(0,255,255,0.8)] transition-all duration-300">
+                    <Axe className="h-10 w-10 md:h-12 md:w-12 text-black" />
+                  </div>
+                </div>
+
+                {/* Content */}
+                <div className="text-center">
+                  <h3 className="font-black text-2xl md:text-3xl mb-4 text-[#00ffff] text-shadow-[0_0_20px_rgba(0,255,255,0.8)] uppercase tracking-wider">
+                    AXE THROWING PORTLAND
+                  </h3>
+                  <p className="text-white/80 text-base md:text-lg mb-6 leading-relaxed">
+                    Channel your inner Viking! Professional lanes with expert instruction. Portland's best axe throwing
+                    experience.
+                  </p>
+
+                  {/* Pricing */}
+                  <div className="mb-6">
+                    <div className="text-3xl md:text-4xl font-black text-white mb-2">
+                      FROM <span className="text-[#00ffff]">$19.99</span>
+                    </div>
+                    <div className="text-white/60 text-sm uppercase tracking-wide">1 hour sessions</div>
+                  </div>
+
+                  {/* Button */}
+                  <Button
+                    className="w-full bg-gradient-to-r from-[#00ffff] to-[#0080ff] hover:from-[#0080ff] hover:to-[#00ffff] text-black font-black text-lg py-4 rounded-xl border-2 border-[#00ffff] transform transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(0,255,255,0.6)] uppercase tracking-tighter"
+                    onClick={() =>
+                      window.open(
+                        "https://Bookcelticaxe.as.me/?appointmentType=category:Stormbreaker%20Axe%20Throwing",
+                        "_blank",
+                      )
+                    }
+                  >
+                    ⚡ BOOK AXE THROWING ⚡
+                  </Button>
+                </div>
+              </div>
+            </div>
+
+            {/* Combo Card */}
+            <div className="group relative md:col-span-1">
+              {/* Special glow effect for combo */}
+              <div className="absolute -inset-1 bg-gradient-to-r from-[#ff00ff] via-white to-[#00ffff] rounded-2xl blur opacity-30 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+
+              <div className="relative bg-black border-2 border-white/50 rounded-2xl p-6 md:p-8 transform transition-all duration-300 hover:scale-105 hover:border-white hover:shadow-[0_0_50px_rgba(255,255,255,0.4)]">
+                {/* Best Value Badge */}
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                  <div className="bg-gradient-to-r from-[#ff00ff] to-[#00ffff] text-black font-black px-4 py-2 rounded-full text-sm uppercase tracking-wider shadow-[0_0_20px_rgba(255,255,255,0.5)]">
+                    🔥 BEST VALUE 🔥
+                  </div>
+                </div>
+
+                {/* Icon */}
+                <div className="flex justify-center mb-6 mt-4">
+                  <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-gradient-to-br from-[#ff00ff] via-white to-[#00ffff] flex items-center justify-center shadow-[0_0_30px_rgba(255,255,255,0.6)] group-hover:shadow-[0_0_50px_rgba(255,255,255,0.8)] transition-all duration-300">
+                    <div className="flex items-center space-x-1">
+                      <Hammer className="h-6 w-6 md:h-8 md:w-8 text-black" />
+                      <div className="h-4 w-4 md:h-6 md:w-6 text-black flex items-center justify-center">
+                        <span className="text-xs md:text-sm font-black">+</span>
+                      </div>
+                      <Axe className="h-6 w-6 md:h-8 md:w-8 text-black" />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Content */}
+                <div className="text-center">
+                  <h3 className="font-black text-2xl md:text-3xl mb-4 text-white text-shadow-[0_0_20px_rgba(255,255,255,0.8)] uppercase tracking-wider">
+                    RAGE ROOM + AXE THROWING COMBO
+                  </h3>
+                  <p className="text-white/80 text-base md:text-lg mb-6 leading-relaxed">
+                    Why choose? Get the full Portland experience! Rage room destruction + axe throwing mastery in one
+                    epic session.
+                  </p>
+
+                  {/* Pricing */}
+                  <div className="mb-6">
+                    <div className="text-3xl md:text-4xl font-black text-white mb-2">
+                      FROM{" "}
+                      <span className="bg-gradient-to-r from-[#ff00ff] to-[#00ffff] bg-clip-text text-transparent">
+                        $50
+                      </span>
+                    </div>
+                    <div className="text-white/60 text-sm uppercase tracking-wide">1.5 hour experience</div>
+                    <div className="text-[#00ffff] text-sm font-bold mt-1 animate-pulse">SAVE $10!</div>
+                  </div>
+
+                  {/* Button */}
+                  <Button
+                    className="w-full bg-gradient-to-r from-[#ff00ff] via-white to-[#00ffff] hover:from-[#00ffff] hover:via-white hover:to-[#ff00ff] text-black font-black text-lg py-4 rounded-xl border-2 border-white transform transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(255,255,255,0.8)] uppercase tracking-tighter"
+                    onClick={() =>
+                      window.open(
+                        "https://Bookcelticaxe.as.me/?appointmentType=category:Rage%20%2F%20Axe%20Combo",
+                        "_blank",
+                      )
+                    }
+                  >
+                    💀 BOOK ULTIMATE COMBO 💀
+                  </Button>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className="bg-gradient-to-r from-[#dc2626]/20 via-black/60 to-[#00ffff]/20 p-6 sm:p-8 rounded-lg border-2 border-gradient-to-r border-[#dc2626]/30 relative overflow-hidden">
@@ -369,17 +451,11 @@ export default function ClientPage() {
               Book now and discover why we're Portland's top-rated destination for stress relief, team building, and
               unforgettable fun. Easy online booking, walk-ins welcome!
             </p>
-            <button
-              className="bg-gradient-to-r from-[#dc2626] via-[#00ffff] to-[#dc2626] hover:from-[#dc2626]/90 hover:via-[#00ffff]/90 hover:to-[#dc2626]/90 text-black font-black text-base sm:text-lg px-8 sm:px-12 py-4 sm:py-6 rounded-none border-2 border-white transform transition-all hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.6)] uppercase tracking-widest relative z-10"
-              onClick={() =>
-                window.open(
-                  "https://Bookcelticaxe.as.me/?location=8409%20N%20Lombard%20St%2C%20Portland%2C%20OR%2097203",
-                  "_blank",
-                )
-              }
-            >
-              💀 BOOK YOUR PORTLAND ADVENTURE NOW 💀
-            </button>
+            <Link href="/book">
+              <Button className="bg-gradient-to-r from-[#dc2626] via-[#00ffff] to-[#dc2626] hover:from-[#dc2626]/90 hover:via-[#00ffff]/90 hover:to-[#dc2626]/90 text-black font-black text-base sm:text-lg px-8 sm:px-12 py-4 sm:py-6 rounded-none border-2 border-white transform transition-all hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.6)] uppercase tracking-widest relative z-10">
+                💀 BOOK YOUR PORTLAND ADVENTURE NOW 💀
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
