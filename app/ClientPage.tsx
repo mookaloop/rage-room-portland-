@@ -67,7 +67,7 @@ export default function ClientPage() {
 
   return (
     <main className="min-h-screen bg-black text-white overflow-hidden m-0 p-0">
-      {/* Brand Logo - Changed from H1 to div since we have a proper H1 below */}
+      {/* Brand Logo - Changed from H1 to div since we have a proper H1 in hero */}
       <div className="w-full bg-black py-4 sm:py-6 px-4 sm:px-6 flex justify-center">
         <div className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl text-center tracking-wider font-black leading-none">
           <span
@@ -218,15 +218,15 @@ export default function ClientPage() {
 
         {/* Hero content */}
         <div className="relative z-20 text-center px-4 sm:px-6 max-w-6xl mx-auto flex flex-col items-center justify-center h-full w-full">
-          <h2 className="font-flame text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl mb-4 sm:mb-6 md:mb-8 leading-tight">
+          <h1 className="font-flame text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl mb-4 sm:mb-6 md:mb-8 leading-tight">
             <span className="block text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.8)] mb-1 sm:mb-0 sm:inline">
-              Rage Room
+              Rage Room Portland
             </span>
             <span className="block text-[#ff00ff] drop-shadow-[0_0_15px_rgba(255,0,255,0.8)] mb-1 sm:mb-0 sm:inline sm:mx-2 md:mx-4">
               Axe Throwing
             </span>
             <span className="block text-[#00ffff] drop-shadow-[0_0_15px_rgba(0,255,255,0.8)] sm:inline">Brewpub</span>
-          </h2>
+          </h1>
 
           <p className="text-lg sm:text-xl md:text-2xl mb-6 sm:mb-8 max-w-2xl mx-auto text-white/90 px-4">
             Inside StormBreaker Brewpub St. Johns PDX
@@ -500,7 +500,7 @@ export default function ClientPage() {
                 />
               </svg>
             </div>
-            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-4 text-white relative z-10 tracking-wide leading-tight">
+            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-4 text-white relative z-10 tracking-wide leading-tight">
               <span className="block sm:inline text-shadow-[0_0_20px_rgba(0,255,255,0.8)]">RAGE ROOM PORTLAND:</span>
               <br className="sm:hidden" />
               <span className="block sm:inline text-[#00ffff] text-shadow-[0_0_25px_rgba(0,255,255,1)]">
@@ -516,7 +516,7 @@ export default function ClientPage() {
                 {" "}
                 EXPERIENCE
               </span>
-            </h1>
+            </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-[#dc2626] via-[#00ffff] to-[#dc2626] mx-auto mb-6"></div>
             <p className="text-lg sm:text-xl text-white/90 max-w-3xl mx-auto mb-6 font-medium">
               Located in the heart of Portland, Oregon, we're your premier destination for stress relief, team building,

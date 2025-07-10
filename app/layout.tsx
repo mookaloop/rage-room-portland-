@@ -8,18 +8,15 @@ import LocalBusinessSchema from "@/components/schema/LocalBusinessSchema"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: {
-    default: "Rage Room Portland | #1 Axe Throwing & Stress Relief Experience",
-    template: "%s | Rage Room Portland",
-  },
+  title: "Rage Room Portland | Axe Throwing & Brewpub",
   description:
-    "Rage Room Portland - #1 stress relief destination! Smash stuff in soundproof rooms, throw axes like a Viking. Perfect for team building & parties. Book today!",
+    "Book Portland's top Rage Room & Axe Throwing combo—smash, throw, and chill with craft beer at StormBreaker Brewing.",
   keywords:
     "rage room Portland, Portland rage room, axe throwing Portland, things to do Portland, team building Portland, smash room Portland",
   openGraph: {
-    title: "Rage Room Portland | #1 Axe Throwing & Stress Relief Experience",
+    title: "Rage Room Portland | Axe Throwing & Brewpub",
     description:
-      "Rage Room Portland - Smash stuff. Throw axes. Drink beer. Portland's ultimate stress relief experience!",
+      "Book Portland's top Rage Room & Axe Throwing combo—smash, throw, and chill with craft beer at StormBreaker Brewing.",
     url: "https://rageroomportland.co",
     siteName: "Rage Room Portland",
     images: [
@@ -34,8 +31,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rage Room Portland | #1 Axe Throwing & Stress Relief Experience",
-    description: "Rage Room Portland - Smash. Throw. Drink. Portland's best rage room experience.",
+    title: "Rage Room Portland | Axe Throwing & Brewpub",
+    description:
+      "Book Portland's top Rage Room & Axe Throwing combo—smash, throw, and chill with craft beer at StormBreaker Brewing.",
     images: ["/your-og-image.jpg"],
   },
     generator: 'v0.dev'

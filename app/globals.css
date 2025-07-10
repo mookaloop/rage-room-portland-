@@ -36,16 +36,9 @@
   }
 }
 
-@font-face {
-  font-family: "Flame";
-  src: url("/fonts/flame.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 .font-flame {
-  font-family: "Flame", sans-serif;
+  font-family: "Impact", "Arial Black", sans-serif;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  font-weight: 900;
 }
