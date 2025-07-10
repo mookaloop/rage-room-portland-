@@ -58,10 +58,17 @@ export default function ClientPage() {
   ]
 
   useEffect(() => {
+    let ticking = false
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50)
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          setIsScrolled(window.scrollY > 50)
+          ticking = false
+        })
+        ticking = true
+      }
     }
-    window.addEventListener("scroll", handleScroll)
+    window.addEventListener("scroll", handleScroll, { passive: true })
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
@@ -101,7 +108,11 @@ export default function ClientPage() {
           <div className="flex items-center justify-between">
             {/* Mobile menu button */}
             <div className="md:hidden">
-              <Button variant="ghost" className="text-white hover:text-[#ff00ff] p-2">
+              <Button
+                variant="ghost"
+                className="text-white hover:text-[#ff00ff] p-2"
+                aria-label="Open mobile navigation menu"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -112,6 +123,7 @@ export default function ClientPage() {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
+                  aria-hidden="true"
                 >
                   <line x1="3" y1="12" x2="21" y2="12"></line>
                   <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -179,23 +191,33 @@ export default function ClientPage() {
           <div className="absolute inset-0 bg-gradient-to-r from-[#ff00ff]/20 to-[#00ffff]/20 mix-blend-overlay z-10"></div>
           <div className="absolute inset-0 bg-black/30 z-10"></div>
 
-          {/* Video element optimized for desktop and mobile */}
+          {/* Video element optimized for performance and accessibility */}
           <video
             autoPlay
             muted
             loop
             playsInline
+            preload="metadata"
             className="absolute inset-0 w-full h-full object-cover pointer-events-none"
             style={{
               width: "100vw",
               height: "100vh",
               objectFit: "cover",
             }}
+            aria-label="Rage Room Portland promotional video showing customers in action"
           >
             <source
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Untitled%20design%20%285%29-o9Q0fU35G0qpGO2y5s1Z8XZTKXrXbV.mp4"
               type="video/mp4"
             />
+            <track
+              kind="captions"
+              src="/captions/hero-video-captions.vtt"
+              srcLang="en"
+              label="English captions"
+              default
+            />
+            Your browser does not support the video tag.
           </video>
 
           {/* Fallback image for browsers that don't support video */}
@@ -205,12 +227,14 @@ export default function ClientPage() {
               backgroundImage: `url('/placeholder.svg?height=800&width=400&text=RAGE+ROOM+PORTLAND+HERO')`,
               display: "none",
             }}
+            loading="lazy"
             onError={() => {
               // Show fallback if video fails
               const video = document.querySelector("video")
               if (video) {
                 video.style.display = "none"
-                document.querySelector('[style*="display: none"]').style.display = "block"
+                const fallback = document.querySelector('[style*="display: none"]') as HTMLElement
+                if (fallback) fallback.style.display = "block"
               }
             }}
           ></div>
@@ -240,8 +264,12 @@ export default function ClientPage() {
             </Link>
           </div>
 
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <ChevronDown className="h-6 w-6 sm:h-8 sm:w-8 text-white/70" />
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+            <ChevronDown
+              className="h-6 w-6 sm:h-8 sm:w-8 text-white/70 animate-bounce"
+              style={{ animationDuration: "2s" }}
+              aria-hidden="true"
+            />
           </div>
         </div>
       </section>
