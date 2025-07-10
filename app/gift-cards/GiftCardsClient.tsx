@@ -7,21 +7,33 @@ import Footer from "@/components/Footer"
 
 export default function GiftCardsClient() {
   const giftCardSchema = {
-    "@context": "https://schema.org",
+    "@context": "https://schema.org/",
     "@type": "Product",
-    name: "Rage Room Portland Gift Card",
-    description: "Digital gift card redeemable at Rage Room Portland for any available experience.",
+    name: "Digital Gift Card – Rage Room Portland",
     image: "https://rageroomportland.co/images/gift-card.jpg",
-    brand: {
-      "@type": "Brand",
-      name: "Rage Room Portland",
-    },
+    description:
+      "Buy a digital gift card for Rage Room Portland. Instantly delivered via email. Valid for rage room, axe throwing, or combo experiences.",
     offers: {
       "@type": "Offer",
-      url: "https://squareup.com/gift/RE69XCSJNRQA5/order",
+      price: "50.00",
       priceCurrency: "USD",
-      price: "50",
       availability: "https://schema.org/InStock",
+      url: "https://rageroomportland.co/gift-cards",
+      hasMerchantReturnPolicy: {
+        "@type": "MerchantReturnPolicy",
+        returnPolicyCategory: "https://schema.org/MerchantReturnFiniteReturnWindow",
+        merchantReturnDays: 7,
+        returnMethod: "https://schema.org/DigitalReturn",
+        returnFees: "https://schema.org/FreeReturn",
+      },
+      shippingDetails: {
+        "@type": "OfferShippingDetails",
+        shippingDestination: {
+          "@type": "DefinedRegion",
+          addressCountry: "US",
+        },
+        doesNotShip: true,
+      },
     },
   }
 
