@@ -13,6 +13,15 @@ export const metadata: Metadata = {
     "Book Portland's top Rage Room & Axe Throwing combo—smash, throw, and chill with craft beer at StormBreaker Brewing.",
   keywords:
     "rage room Portland, Portland rage room, axe throwing Portland, things to do Portland, team building Portland, smash room Portland",
+  icons: {
+    icon: [
+      { url: "/favicon.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon.png", sizes: "16x16", type: "image/png" },
+    ],
+    apple: [{ url: "/favicon.png", sizes: "180x180", type: "image/png" }],
+    shortcut: "/favicon.png",
+  },
+  manifest: "/site.webmanifest",
   openGraph: {
     title: "Rage Room Portland | Axe Throwing & Brewpub",
     description:
@@ -21,10 +30,10 @@ export const metadata: Metadata = {
     siteName: "Rage Room Portland",
     images: [
       {
-        url: "/your-og-image.jpg", // replace with actual image path
-        width: 1200,
-        height: 630,
-        alt: "Rage Room Portland Hero Image",
+        url: "/favicon.png", // Using the logo as OG image too
+        width: 250,
+        height: 250,
+        alt: "Rage Room Portland Logo",
       },
     ],
     type: "website",
@@ -34,7 +43,7 @@ export const metadata: Metadata = {
     title: "Rage Room Portland | Axe Throwing & Brewpub",
     description:
       "Book Portland's top Rage Room & Axe Throwing combo—smash, throw, and chill with craft beer at StormBreaker Brewing.",
-    images: ["/your-og-image.jpg"],
+    images: ["/favicon.png"],
   },
     generator: 'v0.dev'
 }
