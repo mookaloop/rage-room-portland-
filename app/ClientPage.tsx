@@ -9,6 +9,7 @@ import Footer from "@/components/Footer"
 export default function ClientPage() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [openFaq, setOpenFaq] = useState<number | null>(0) // Start with first item open
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   const toggleFaq = (index: number) => {
     setOpenFaq(openFaq === index ? null : index)
@@ -72,6 +73,32 @@ export default function ClientPage() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = "unset"
+    }
+
+    // Cleanup on unmount
+    return () => {
+      document.body.style.overflow = "unset"
+    }
+  }, [isMobileMenuOpen])
+
+  // Close mobile menu on window resize to desktop
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768 && isMobileMenuOpen) {
+        setIsMobileMenuOpen(false)
+      }
+    }
+
+    window.addEventListener("resize", handleResize)
+    return () => window.removeEventListener("resize", handleResize)
+  }, [isMobileMenuOpen])
+
   return (
     <main className="min-h-screen bg-black text-white overflow-hidden m-0 p-0">
       {/* Brand Logo - Changed from H1 to div since we have a proper H1 in hero */}
@@ -111,7 +138,8 @@ export default function ClientPage() {
               <Button
                 variant="ghost"
                 className="text-white hover:text-[#ff00ff] p-2"
-                aria-label="Open mobile navigation menu"
+                aria-label="Toggle mobile navigation menu"
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -125,9 +153,18 @@ export default function ClientPage() {
                   strokeLinejoin="round"
                   aria-hidden="true"
                 >
-                  <line x1="3" y1="12" x2="21" y2="12"></line>
-                  <line x1="3" y1="6" x2="21" y2="6"></line>
-                  <line x1="3" y1="18" x2="21" y2="18"></line>
+                  {isMobileMenuOpen ? (
+                    <>
+                      <line x1="18" y1="6" x2="6" y2="18"></line>
+                      <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </>
+                  ) : (
+                    <>
+                      <line x1="3" y1="12" x2="21" y2="12"></line>
+                      <line x1="3" y1="6" x2="21" y2="6"></line>
+                      <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </>
+                  )}
                 </svg>
               </Button>
             </div>
@@ -183,6 +220,99 @@ export default function ClientPage() {
           </div>
         </div>
       </nav>
+
+      {/* Mobile Menu Overlay */}
+      {isMobileMenuOpen && (
+        <div className="md:hidden fixed inset-0 z-50 bg-black/95 backdrop-blur-sm">
+          <div className="flex flex-col h-full">
+            {/* Mobile Menu Header */}
+            <div className="flex items-center justify-between p-4 border-b border-[#ff00ff]/30">
+              <div className="text-2xl font-black text-[#ff00ff]">RAGE ROOM PORTLAND</div>
+              <Button
+                variant="ghost"
+                className="text-white hover:text-[#ff00ff] p-2"
+                onClick={() => setIsMobileMenuOpen(false)}
+                aria-label="Close mobile menu"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+              </Button>
+            </div>
+
+            {/* Mobile Menu Links */}
+            <div className="flex-1 flex flex-col justify-center space-y-8 px-8">
+              <Link
+                href="/book"
+                className="text-center py-4 px-6 bg-gradient-to-r from-[#ff00ff] to-[#ff0080] text-black font-black text-xl rounded-lg transform transition-all hover:scale-105"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                📅 BOOK NOW
+              </Link>
+
+              <Link
+                href="/parties-events"
+                className="text-center text-white hover:text-[#ff00ff] font-bold text-lg py-3 border-b border-white/20 transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                🎉 Team Building & Parties
+              </Link>
+
+              <Link
+                href="/how-it-works"
+                className="text-center text-white hover:text-[#ff00ff] font-bold text-lg py-3 border-b border-white/20 transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                ❓ How It Works
+              </Link>
+
+              <Link
+                href="/contact"
+                className="text-center text-white hover:text-[#ff00ff] font-bold text-lg py-3 border-b border-white/20 transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                📞 Contact Us
+              </Link>
+
+              <Link
+                href="#faq"
+                className="text-center text-white hover:text-[#ff00ff] font-bold text-lg py-3 border-b border-white/20 transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                💬 FAQ
+              </Link>
+
+              <Link
+                href="/gift-cards"
+                className="text-center text-white hover:text-[#ff00ff] font-bold text-lg py-3 border-b border-white/20 transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                🎁 Gift Cards
+              </Link>
+
+              {/* Contact Info */}
+              <div className="text-center mt-8 pt-8 border-t border-white/20">
+                <p className="text-white/80 mb-2">📍 Inside StormBreaker Brewing</p>
+                <p className="text-white/80 mb-4">8409 N Lombard St, Portland, OR</p>
+                <a href="tel:5032129031" className="text-[#00ffff] hover:text-[#00ffff]/80 font-bold text-lg">
+                  📱 (503) 212-9031
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Hero Section with Video Background */}
       <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
