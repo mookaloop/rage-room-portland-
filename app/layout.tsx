@@ -4,6 +4,7 @@ import { Inter } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import LocalBusinessSchema from "@/components/schema/LocalBusinessSchema"
+import Script from "next/script"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
     siteName: "Rage Room Portland",
     images: [
       {
-        url: "/favicon.png", // Using the logo as OG image too
+        url: "/favicon.png",
         width: 250,
         height: 250,
         alt: "Rage Room Portland Logo",
@@ -55,6 +56,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* Google Analytics */}
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-EDZXB6G79N" strategy="afterInteractive" />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-EDZXB6G79N');
+          `}
+        </Script>
+      </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           <LocalBusinessSchema />
