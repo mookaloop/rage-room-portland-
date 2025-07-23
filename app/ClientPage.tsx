@@ -464,7 +464,7 @@ export default function ClientPage() {
                     <div className="text-3xl md:text-4xl font-black text-white mb-2">
                       FROM <span className="text-[#ff00ff]">$35</span>
                     </div>
-                    <div className="text-white/60 text-sm uppercase tracking-wide">45 min Sessions</div>
+                    <div className="text-white/60 text-sm uppercase tracking-wide">1 hour sessions</div>
                   </div>
 
                   {/* Button */}
