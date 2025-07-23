@@ -87,7 +87,7 @@ export default function BookPageClient() {
                     <div className="text-3xl md:text-4xl font-black text-white mb-2">
                       FROM <span className="text-[#ff00ff]">$35</span>
                     </div>
-                    <div className="text-white/60 text-sm uppercase tracking-wide">15-30 min sessions</div>
+                    <div className="text-white/60 text-sm uppercase tracking-wide">1 Hour Sessions</div>
                   </div>
 
                   {/* Button */}
@@ -189,7 +189,7 @@ export default function BookPageClient() {
                     <div className="text-3xl md:text-4xl font-black text-white mb-2">
                       FROM{" "}
                       <span className="bg-gradient-to-r from-[#ff00ff] to-[#00ffff] bg-clip-text text-transparent">
-                        $50
+                        $45
                       </span>
                     </div>
                     <div className="text-white/60 text-sm uppercase tracking-wide">1.5 hour experience</div>
