@@ -24,7 +24,7 @@ export default function ClientPage() {
     {
       question: "How much does a rage room session cost?",
       answer:
-        "Our rage room sessions start at $35 for a 15-minute session. We offer packages for groups, extended sessions, and combo deals with axe throwing. Check our booking page for current pricing and special offers.",
+        "Our rage room sessions start at $35 for 1 hour sessions. We offer packages for groups, extended sessions, and combo deals with axe throwing.",
     },
     {
       question: "What safety equipment is provided?",
@@ -54,7 +54,7 @@ export default function ClientPage() {
     {
       question: "Are there food and drinks available?",
       answer:
-        "Yes! Our brewpub offers a full menu of craft beers, cocktails, and food. You can enjoy drinks and food before or after your rage session. Please note that alcohol consumption is not permitted before rage room activities for safety reasons.",
+        "Yes! Our brewpub offers a full menu of craft beers, cocktails, and food. You can enjoy drinks and food before or after your rage session.",
     },
   ]
 
@@ -337,15 +337,8 @@ export default function ClientPage() {
             aria-label="Rage Room Portland promotional video showing customers in action"
           >
             <source
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Untitled%20design%20%285%29-o9Q0fU35G0qpGO2y5s1Z8XZTKXrXbV.mp4"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/smaller.hero-D7ZLHDKee0F9rpOxEoAx7ZgVQyuov3.mp4"
               type="video/mp4"
-            />
-            <track
-              kind="captions"
-              src="/captions/hero-video-captions.vtt"
-              srcLang="en"
-              label="English captions"
-              default
             />
             Your browser does not support the video tag.
           </video>
