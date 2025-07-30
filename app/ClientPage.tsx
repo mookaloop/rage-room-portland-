@@ -842,6 +842,30 @@ export default function ClientPage() {
                               </span>
                             ))}
                           </div>
+                        ) : actualIndex === 7 ? (
+                          <div>
+                            {faq.answer.split("craft beers, cocktails, and food").map((part, i) => (
+                              <span key={i}>
+                                {part}
+                                {i === 0 && (
+                                  <>
+                                    <span
+                                      className="text-[#00ffff] cursor-pointer hover:text-[#00ffff]/80 underline"
+                                      onClick={(e) => {
+                                        e.stopPropagation()
+                                        window.open(
+                                          "https://order.toasttab.com/online/stormbreaker-brewing-st-johns",
+                                          "_blank",
+                                        )
+                                      }}
+                                    >
+                                      craft beers, cocktails, and food
+                                    </span>
+                                  </>
+                                )}
+                              </span>
+                            ))}
+                          </div>
                         ) : (
                           faq.answer
                         )}

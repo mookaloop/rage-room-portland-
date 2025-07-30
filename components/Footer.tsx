@@ -1,4 +1,7 @@
+"use client"
+
 import Link from "next/link"
+import { Button } from "@/components/ui/button"
 
 export default function Footer() {
   return (
@@ -142,6 +145,16 @@ export default function Footer() {
 
         {/* Bottom Section */}
         <div className="border-t border-white/20 pt-6 text-center">
+          {/* Add Waiver Button */}
+          <div className="mb-6">
+            <Button
+              className="bg-gradient-to-r from-[#ff00ff] to-[#00ffff] hover:from-[#ff00ff]/80 hover:to-[#00ffff]/80 text-black font-bold text-sm px-6 py-3 rounded-lg transition-all duration-300 hover:scale-105"
+              onClick={() => window.open("https://waiver.smartwaiver.com/w/tkfmatvzjuc5pg5n471dgf/web/", "_blank")}
+            >
+              📝 SIGN WAIVER ONLINE
+            </Button>
+          </div>
+
           <div className="text-white/70 text-sm mb-4">
             <p className="mb-2">Portland Rage Room - The Ultimate Stress Relief Experience</p>
             <p>Serving Portland, Beaverton, Lake Oswego, Tigard, and surrounding areas</p>
