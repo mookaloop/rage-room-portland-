@@ -101,7 +101,7 @@ export default function HowItWorksClient() {
                   <p className="text-white/80 mb-6">
                     Test your aim and channel your inner lumberjack with professional Portland axe throwing lanes.
                   </p>
-                  <div className="text-2xl font-bold text-white">Starting at $25</div>
+                  <div className="text-2xl font-bold text-white">Starting at $19.99</div>
                 </div>
 
                 {/* Combo */}
@@ -116,7 +116,7 @@ export default function HowItWorksClient() {
                   <p className="text-white/80 mb-6">
                     Why choose? Get the full Portland experience with both rage room and axe throwing!
                   </p>
-                  <div className="text-2xl font-bold text-white">Starting at $50</div>
+                  <div className="text-2xl font-bold text-white">Starting at $45</div>
                 </div>
               </div>
             </div>
@@ -323,14 +323,36 @@ export default function HowItWorksClient() {
 
           <div className="max-w-4xl mx-auto">
             <div className="relative bg-black rounded-lg overflow-hidden border-2 border-[#ff00ff]/50">
-              <div className="aspect-video flex items-center justify-center bg-gradient-to-br from-[#ff00ff]/20 to-[#00ffff]/20">
-                <div className="text-center">
-                  <div className="w-20 h-20 rounded-full bg-white/20 flex items-center justify-center mx-auto mb-4 cursor-pointer hover:bg-white/30 transition-colors">
-                    <svg className="h-8 w-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M8 5v14l11-7z" />
-                    </svg>
-                  </div>
-                  <p className="text-white/70 text-lg">Click to watch our Portland rage room experience</p>
+              <div className="aspect-video relative">
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  preload="metadata"
+                  className="absolute inset-0 w-full h-full object-cover"
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                  }}
+                  aria-label="Rage Room Portland promotional video showing customers in action"
+                >
+                  <source
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/smaller.hero-D7ZLHDKee0F9rpOxEoAx7ZgVQyuov3.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+
+                {/* Overlay gradient for better text visibility */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30"></div>
+
+                {/* Video caption overlay */}
+                <div className="absolute bottom-4 left-4 right-4 text-center">
+                  <p className="text-white/90 text-sm font-medium bg-black/50 px-3 py-2 rounded-lg backdrop-blur-sm">
+                    Watch real customers unleash their rage at Portland's premier rage room!
+                  </p>
                 </div>
               </div>
             </div>
