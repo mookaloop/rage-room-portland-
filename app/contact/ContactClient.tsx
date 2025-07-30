@@ -86,10 +86,10 @@ export default function ContactClient() {
                   </div>
                   <div className="text-center lg:text-left">
                     <a
-                      href="mailto:rageroompdx@gmail.com"
+                      href="mailto:dave@celticaxethrowers.com"
                       className="inline-block bg-[#00ffff] hover:bg-[#00ffff]/80 text-black font-black text-lg px-8 py-4 rounded-lg transition-all duration-300 hover:scale-105"
                     >
-                      <span className="font-black">rageroompdx@gmail.com</span>
+                      <span className="font-black">dave@celticaxethrowers.com</span>
                     </a>
                   </div>
                 </div>
@@ -116,6 +116,22 @@ export default function ContactClient() {
                   >
                     🎯 Large Party / Corporate Event
                   </Button>
+                </div>
+
+                {/* Other Locations */}
+                <div className="bg-gradient-to-r from-[#ff00ff]/10 to-[#00ffff]/10 border-2 border-white/30 p-6 md:p-8 rounded-lg hover:border-white/50 transition-colors">
+                  <div className="text-center">
+                    <h4 className="font-bold text-xl text-white mb-4">🏹 MORE AXE THROWING LOCATIONS</h4>
+                    <p className="text-white/80 mb-6">
+                      Love axe throwing? Check out our other locations across the region for more Viking-style fun!
+                    </p>
+                    <Button
+                      className="w-full bg-gradient-to-r from-[#ff00ff] to-[#00ffff] hover:from-[#ff00ff]/80 hover:to-[#00ffff]/80 text-black font-black text-lg py-4 rounded-lg transition-all duration-300 hover:scale-105 uppercase tracking-wider"
+                      onClick={() => window.open("https://celticaxethrowers.com/", "_blank")}
+                    >
+                      🎯 VISIT CELTIC AXE THROWERS
+                    </Button>
+                  </div>
                 </div>
               </div>
 
@@ -153,20 +169,24 @@ export default function ContactClient() {
                   </div>
                   <div className="text-white/90 text-lg leading-relaxed space-y-2">
                     <div className="flex justify-between">
-                      <span>Monday - Thursday:</span>
-                      <span className="font-bold">4pm - 11pm</span>
+                      <span>Monday - Wednesday:</span>
+                      <span className="font-bold">Closed</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>Thursday:</span>
+                      <span className="font-bold">4pm - 10pm</span>
                     </div>
                     <div className="flex justify-between">
                       <span>Friday:</span>
-                      <span className="font-bold">2pm - 1am</span>
+                      <span className="font-bold">4pm - 10pm</span>
                     </div>
                     <div className="flex justify-between">
                       <span>Saturday:</span>
-                      <span className="font-bold">12pm - 1am</span>
+                      <span className="font-bold">12pm - 10pm</span>
                     </div>
                     <div className="flex justify-between">
                       <span>Sunday:</span>
-                      <span className="font-bold">12pm - 10pm</span>
+                      <span className="font-bold">12pm - 9pm</span>
                     </div>
                   </div>
                 </div>

@@ -701,7 +701,7 @@ export default function ClientPage() {
                 className="bg-[#00ffff] hover:bg-[#00ffff]/90 text-black font-black text-base sm:text-lg px-8 sm:px-10 py-4 sm:py-5 rounded-none border-2 border-[#00ffff] transform transition-all hover:scale-105 hover:shadow-[0_0_25px_rgba(0,255,255,0.6)] w-full sm:w-auto uppercase tracking-wider"
                 onClick={() =>
                   window.open(
-                    "https://Bookcelticaxe.as.me/?appointmentType=category:Rage%20%2F%20Axe%20Combo",
+                    "https://docs.google.com/forms/d/e/1FAIpQLSey2owIHFQMOlXLbaYRHyT6Jp87x_BCTtZLzrqJCuEIxcAWVA/viewform",
                     "_blank",
                   )
                 }

@@ -56,13 +56,15 @@ export default function Footer() {
           <div className="text-center lg:text-left">
             <h3 className="font-flame text-lg sm:text-xl mb-3 sm:mb-4 text-[#00ffff]">HOURS</h3>
             <p className="text-white/70 text-sm sm:text-base leading-relaxed">
-              Monday - Thursday: 4pm - 11pm
+              Monday - Wednesday: Closed
               <br />
-              Friday: 2pm - 1am
+              Thursday: 4pm - 10pm
               <br />
-              Saturday: 12pm - 1am
+              Friday: 4pm - 10pm
               <br />
-              Sunday: 12pm - 10pm
+              Saturday: 12pm - 10pm
+              <br />
+              Sunday: 12pm - 9pm
             </p>
           </div>
 
