@@ -24,20 +24,12 @@ export default function ClientPage() {
     {
       question: "How much does a rage room session cost?",
       answer:
-<<<<<<< HEAD
         "Our rage room sessions start at $35 for 1 hour sessions. We offer packages for groups, extended sessions, and combo deals with axe throwing.",
-=======
-        "Our rage room Portland sessions start at $35 for a 15-minute session. We offer packages for groups, extended sessions, and combo deals with axe throwing. Check our booking page for current pricing and special offers.",
->>>>>>> update-content-main
     },
     {
       question: "What safety equipment is provided?",
       answer:
-<<<<<<< HEAD
         "We provide all necessary safety equipment including safety glasses, closed-toe shoes (if needed), coveralls, and gloves. Our staff will ensure you're properly equipped before entering any rage room.",
-=======
-        "We provide all necessary safety equipment including safety glasses, closed-toe shoes (if needed), coveralls, and gloves. Our staff will ensure you're properly equipped before entering any rage room in Portland Oregon.",
->>>>>>> update-content-main
     },
     {
       question: "Is it safe for beginners?",
@@ -47,38 +39,22 @@ export default function ClientPage() {
     {
       question: "Do I need to make a reservation?",
       answer:
-<<<<<<< HEAD
         "A reservation is the best way to ensure you get the time you desire. It's very easy to book online, even for same-day reservations. If you have any questions, you can talk online. Walk-ins are also welcome, but they are first come, first served, so we cannot guarantee a space.",
-=======
-        "A reservation for the nearest rage room is the best way to ensure you get the time you desire. It's very easy to book online, even for same-day reservations. If you have any questions, you can talk online. Walk-ins are also welcome, but they are first come, first served, so we cannot guarantee a space.",
->>>>>>> update-content-main
     },
     {
       question: "Can I cancel or reschedule?",
       answer:
-<<<<<<< HEAD
         "Yes, you can cancel or reschedule your booking up to 24 hours before your session for a full refund. Same-day cancellations may be subject to a cancellation fee. Please contact us as soon as possible if you need to make changes.",
-=======
-        "Yes, you can cancel or reschedule your booking up to 24 hours before your  rage room Portland session for a full refund. Same-day cancellations may be subject to a cancellation fee. Please contact us as soon as possible if you need to make changes.",
->>>>>>> update-content-main
     },
     {
       question: "What is the minimum age? Any other requirements?",
       answer:
-<<<<<<< HEAD
         "Participants must be at least 13 years old. Minors (13-17) must have a parent or guardian present to sign a waiver. All participants must wear closed-toe shoes and sign our liability waiver before participating.",
-=======
-        "Rage room age limit for participants should be at least 13 years old. Minors (13-17) must have a parent or guardian present to sign a waiver. All participants must wear closed-toe shoes and sign our liability waiver before participating.",
->>>>>>> update-content-main
     },
     {
       question: "Are there food and drinks available?",
       answer:
-<<<<<<< HEAD
         "Yes! Our brewpub offers a full menu of craft beers, cocktails, and food. You can enjoy drinks and food before or after your rage session.",
-=======
-        "Yes! Our brewpub offers a full menu of craft beers, cocktails, and food. You can enjoy drinks and food before or after your rage session. Please note that alcohol consumption is not permitted before rage room activities in Portland for safety reasons.",
->>>>>>> update-content-main
     },
   ]
 
@@ -472,13 +448,8 @@ export default function ClientPage() {
                     RAGE ROOM PORTLAND
                   </h3>
                   <p className="text-white/80 text-base md:text-lg mb-6 leading-relaxed">
-<<<<<<< HEAD
                     Smash bottles, electronics, and furniture in our soundproof destruction chambers. Pure therapeutic
                     chaos in Portland's #1 rage room!
-=======
-                    Smash bottles, electronics, and furniture in our soundproof destruction chambers. Pure therapeutic chaos in #1 Portland rage room!
-
->>>>>>> update-content-main
                   </p>
 
                   {/* Pricing */}
@@ -521,13 +492,8 @@ export default function ClientPage() {
                     AXE THROWING PORTLAND
                   </h3>
                   <p className="text-white/80 text-base md:text-lg mb-6 leading-relaxed">
-<<<<<<< HEAD
                     Channel your inner Viking! Professional lanes with expert instruction. Portland's best axe throwing
                     experience.
-=======
-                 Channel your inner Viking! Professional lanes with expert instruction. Join the best axe throwing Portland experience.
-
->>>>>>> update-content-main
                   </p>
 
                   {/* Pricing */}
@@ -586,12 +552,8 @@ export default function ClientPage() {
                     RAGE ROOM + AXE THROWING COMBO
                   </h3>
                   <p className="text-white/80 text-base md:text-lg mb-6 leading-relaxed">
-<<<<<<< HEAD
                     Why choose? Get the full Portland experience! Rage room destruction + axe throwing mastery in one
                     epic session.
-=======
-                   Why choose? Get the full experience! Rage room destruction + axe throwing session in Portland Oregon.
->>>>>>> update-content-main
                   </p>
 
                   {/* Pricing */}
@@ -637,13 +599,8 @@ export default function ClientPage() {
               <span className="text-[#dc2626] text-shadow-[0_0_15px_rgba(220,38,38,0.8)]">UNIQUE EXPERIENCE</span>?
             </h3>
             <p className="text-white/85 text-base sm:text-lg mb-6 font-medium relative z-10">
-<<<<<<< HEAD
               Book now and discover why we're Portland's top-rated destination for stress relief, team building, and
               unforgettable fun. Easy online booking, walk-ins welcome!
-=======
-              Book now and discover why we're Portland's top-rated destination for stress relief, team building, and unforgettable fun. Easy online nearest rage room booking, walk-ins welcome!
-
->>>>>>> update-content-main
             </p>
             <Link href="/book">
               <Button className="bg-gradient-to-r from-[#dc2626] via-[#00ffff] to-[#dc2626] hover:from-[#dc2626]/90 hover:via-[#00ffff]/90 hover:to-[#dc2626]/90 text-black font-black text-base sm:text-lg px-8 sm:px-12 py-4 sm:py-6 rounded-none border-2 border-white transform transition-all hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.6)] uppercase tracking-widest relative z-10">
@@ -732,7 +689,6 @@ export default function ClientPage() {
                 <span className="text-white">ACTIVITIES</span>
               </h2>
               <p className="text-white/85 text-base sm:text-lg leading-relaxed mb-4 font-medium">
-<<<<<<< HEAD
                 Skip the boring conference rooms! Our Portland team building activities combine rage room sessions with
                 axe throwing for the most memorable corporate events in the city.
               </p>
@@ -740,12 +696,6 @@ export default function ClientPage() {
                 Perfect for Portland businesses looking to boost morale, improve communication, and create lasting
                 bonds. We're conveniently located near downtown Portland, making us accessible for all your team
                 building needs.
-=======
-Skip the boring conference rooms! Our Portland team building activities combine rage room sessions with axe throwing for the most memorable corporate events in the city.
-              </p>
-              <p className="text-white/85 text-base sm:text-lg leading-relaxed mb-6 font-medium">Perfect for Portland businesses looking to boost morale, improve communication, and create lasting bonds. We're conveniently located near downtown Portland, making us accessible for all your team building needs.
-
->>>>>>> update-content-main
               </p>
               <button
                 className="bg-[#00ffff] hover:bg-[#00ffff]/90 text-black font-black text-base sm:text-lg px-8 sm:px-10 py-4 sm:py-5 rounded-none border-2 border-[#00ffff] transform transition-all hover:scale-105 hover:shadow-[0_0_25px_rgba(0,255,255,0.6)] w-full sm:w-auto uppercase tracking-wider"
@@ -774,7 +724,6 @@ Skip the boring conference rooms! Our Portland team building activities combine 
                 <span className="text-white">IN PORTLAND, OREGON</span>
               </h2>
               <p className="text-white/85 text-base sm:text-lg leading-relaxed mb-4 font-medium">
-<<<<<<< HEAD
                 When visitors ask "What are the best things to do in Portland?", locals point them our way. We're not
                 your typical Portland attraction – we're an adrenaline-pumping experience that's perfect for date
                 nights, bachelor parties, and friend groups.
@@ -782,13 +731,6 @@ Skip the boring conference rooms! Our Portland team building activities combine 
               <p className="text-white/85 text-base sm:text-lg leading-relaxed mb-6 font-medium">
                 Located inside Stormbreaker Brewing on N Lombard, we combine Portland's craft beer culture with
                 high-energy entertainment. It's uniquely Portland – and uniquely unforgettable.
-=======
-                When visitors ask "What are the best things to do in Portland?", locals point them our way. We're not your typical Portland attraction – we're an adrenaline-pumping experience that's perfect for date nights, bachelor parties, and friend groups.
-              </p>
-              <p className="text-white/85 text-base sm:text-lg leading-relaxed mb-6 font-medium">
-                Located inside Stormbreaker Brewing on N Lombard, we combine Portland's craft beer culture with high-energy entertainment. It's uniquely rage room Portland fun – and uniquely unforgettable.
-
->>>>>>> update-content-main
               </p>
               <button
                 className="bg-[#dc2626] hover:bg-[#dc2626]/90 text-white font-black text-base sm:text-lg px-8 sm:px-10 py-4 sm:py-5 rounded-none border-2 border-[#dc2626] transform transition-all hover:scale-105 hover:shadow-[0_0_25px_rgba(220,38,38,0.6)] w-full sm:w-auto uppercase tracking-wider"
