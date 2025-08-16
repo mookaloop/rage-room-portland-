@@ -24,7 +24,7 @@ export default function ClientPage() {
     {
       question: "How much does a rage room session cost?",
       answer:
-        "Our rage room Portland sessions start at $35 for a 15-minute session. We offer packages for groups, extended sessions, and combo deals with axe throwing. Check our booking page for current pricing and special offers.",
+        "Our rage room Portland sessions start at $35 for a 1 hour session. We offer packages for groups, extended sessions, and combo deals with axe throwing. You can also add on fun things like large electronics or flat screen TVs for an extra charge!",
     },
     {
       question: "What safety equipment is provided?",
@@ -39,22 +39,22 @@ export default function ClientPage() {
     {
       question: "Do I need to make a reservation?",
       answer:
-        "A reservation for the nearest rage room is the best way to ensure you get the time you desire. It's very easy to book online, even for same-day reservations. If you have any questions, you can talk online. Walk-ins are also welcome, but they are first come, first served, so we cannot guarantee a space.",
+        "It's best to book ahead of time as it saves your space. Walk-ins are first come first serve. Please text us to check availability or book your spot ASAP to ensure you have a spot (503) 212-9031. You can also book online for guaranteed reservations.",
     },
     {
       question: "Can I cancel or reschedule?",
       answer:
-        "Yes, you can cancel or reschedule your booking up to 24 hours before your  rage room Portland session for a full refund. Same-day cancellations may be subject to a cancellation fee. Please contact us as soon as possible if you need to make changes.",
+        "Yes, you can cancel or reschedule your booking up to 24 hours before your rage room Portland session for a full refund. Same-day cancellations may be subject to a cancellation fee. Please contact us as soon as possible if you need to make changes.",
     },
     {
       question: "What is the minimum age? Any other requirements?",
       answer:
-        "Rage room age limit for participants should be at least 13 years old. Minors (13-17) must have a parent or guardian present to sign a waiver. All participants must wear closed-toe shoes and sign our liability waiver before participating.",
+        "All ages can attend and watch! Participants must be at least 10 years old to throw axes or use the rage room. Parent or guardian must be present and sign waiver for all minors. All participants must wear closed-toe shoes and sign our liability waiver before participating.",
     },
     {
       question: "Are there food and drinks available?",
       answer:
-        "Yes! Our brewpub offers a full menu of craft beers, cocktails, and food. You can enjoy drinks and food before or after your rage session. Please note that alcohol consumption is not permitted before rage room activities in Portland for safety reasons.",
+        "Yes! Our brewpub offers a full menu of craft beers, cocktails, and food. You can enjoy drinks and food before or after your rage session.",
     },
   ]
 
@@ -127,8 +127,9 @@ export default function ClientPage() {
 
       {/* Sticky Navigation */}
       <nav
-        className={`sticky top-0 z-50 w-full transition-all duration-300 ${isScrolled ? "bg-black/90 backdrop-blur-sm border-b border-[#ff00ff]/30" : "bg-black"
-          }`}
+        className={`sticky top-0 z-50 w-full transition-all duration-300 ${
+          isScrolled ? "bg-black/90 backdrop-blur-sm border-b border-[#ff00ff]/30" : "bg-black"
+        }`}
       >
         <div className="container mx-auto px-4 py-3">
           <div className="flex items-center justify-between">
@@ -447,8 +448,8 @@ export default function ClientPage() {
                     RAGE ROOM PORTLAND
                   </h3>
                   <p className="text-white/80 text-base md:text-lg mb-6 leading-relaxed">
-                    Smash bottles, electronics, and furniture in our soundproof destruction chambers. Pure therapeutic chaos in #1 Portland rage room!
-
+                    Smash bottles, electronics, and furniture in our soundproof destruction chambers. Pure therapeutic
+                    chaos in #1 Portland rage room!
                   </p>
 
                   {/* Pricing */}
@@ -491,8 +492,8 @@ export default function ClientPage() {
                     AXE THROWING PORTLAND
                   </h3>
                   <p className="text-white/80 text-base md:text-lg mb-6 leading-relaxed">
-                    Channel your inner Viking! Professional lanes with expert instruction. Join the best axe throwing Portland experience.
-
+                    Channel your inner Viking! Professional lanes with expert instruction. Join the best axe throwing
+                    Portland experience.
                   </p>
 
                   {/* Pricing */}
@@ -551,7 +552,8 @@ export default function ClientPage() {
                     RAGE ROOM + AXE THROWING COMBO
                   </h3>
                   <p className="text-white/80 text-base md:text-lg mb-6 leading-relaxed">
-                    Why choose? Get the full experience! Rage room destruction + axe throwing session in Portland Oregon.
+                    Why choose? Get the full experience! Rage room destruction + axe throwing session in Portland
+                    Oregon.
                   </p>
 
                   {/* Pricing */}
@@ -597,143 +599,14 @@ export default function ClientPage() {
               <span className="text-[#dc2626] text-shadow-[0_0_15px_rgba(220,38,38,0.8)]">UNIQUE EXPERIENCE</span>?
             </h3>
             <p className="text-white/85 text-base sm:text-lg mb-6 font-medium relative z-10">
-              Book now and discover why we're Portland's top-rated destination for stress relief, team building, and unforgettable fun. Easy online nearest rage room booking, walk-ins welcome!
-
+              Book now and discover why we're Portland's top-rated destination for stress relief, team building, and
+              unforgettable fun. Easy online nearest rage room booking, walk-ins welcome!
             </p>
             <Link href="/book">
               <Button className="bg-gradient-to-r from-[#dc2626] via-[#00ffff] to-[#dc2626] hover:from-[#dc2626]/90 hover:via-[#00ffff]/90 hover:to-[#dc2626]/90 text-black font-black text-base sm:text-lg px-8 sm:px-12 py-4 sm:py-6 rounded-none border-2 border-white transform transition-all hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.6)] uppercase tracking-widest relative z-10">
                 💀 BOOK YOUR PORTLAND ADVENTURE NOW 💀
               </Button>
             </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* SEO-Optimized Features Section - Gothic Punk Style */}
-      <section id="choose-adventure" className="py-12 sm:py-16 bg-[#0a0a0a] relative overflow-hidden">
-        {/* Subtle Rose Background Decorations */}
-        <div className="absolute inset-0 opacity-10 pointer-events-none">
-          <div className="absolute top-10 left-10 w-32 h-32 opacity-15">
-            <svg viewBox="0 0 100 100" className="w-full h-full text-[#dc2626]">
-              <path d="M50 20c-8 0-15 6-15 15 0 12 15 25 15 25s15-13 15-25c0-9-7-15-15-15z" fill="currentColor" />
-              <path d="M35 45c-2-1-4-1-6 0-3 2-3 6 0 8l6 6 6-6c3-2 3-6 0-8-2-1-4-1-6 0z" fill="currentColor" />
-            </svg>
-          </div>
-          <div className="absolute top-32 right-16 w-24 h-24 opacity-12">
-            <svg viewBox="0 0 100 100" className="w-full h-full text-[#00ffff]">
-              <path d="M20 50l10-5 10 5-10 5z M30 40l5-10 5 10-5 10z M40 30l10-5 10 5-10 5z" fill="currentColor" />
-            </svg>
-          </div>
-          <div className="absolute bottom-20 left-20 w-28 h-28 opacity-15">
-            <svg viewBox="0 0 100 100" className="w-full h-full text-[#dc2626]">
-              <circle cx="50" cy="30" r="8" fill="currentColor" />
-              <path d="M42 35c0 8 8 15 8 15s8-7 8-15" fill="currentColor" />
-              <path d="M35 42c8 0 15-8 15-8s-7-8-15-8" fill="currentColor" />
-            </svg>
-          </div>
-          <div className="absolute bottom-32 right-12 w-20 h-20 opacity-10">
-            <svg viewBox="0 0 100 100" className="w-full h-full text-[#00ffff]">
-              <path d="M30 20l20 10-20 10 20 10-20 10 20 10" stroke="currentColor" strokeWidth="2" fill="none" />
-            </svg>
-          </div>
-        </div>
-
-        <div className="container mx-auto px-4 sm:px-6 relative z-10">
-          {/* Main SEO H1 - Gothic Block Style */}
-          <div className="text-center mb-8 sm:mb-12 relative">
-            <div className="absolute inset-0 opacity-5">
-              <svg viewBox="0 0 400 200" className="w-full h-full text-[#dc2626]">
-                <path
-                  d="M50 100c0-20 20-40 40-40s40 20 40 40-20 40-40 40-40-20-40-40z M150 60c10-10 30-10 40 0l20 20-20 20c-10 10-30 10-40 0l-20-20 20-20z M250 100c0-20 20-40 40-40s40 20 40 40-20 40-40 40-40-20-40-40z"
-                  fill="currentColor"
-                />
-              </svg>
-            </div>
-            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-4 text-white relative z-10 tracking-wide leading-tight">
-              <span className="block sm:inline text-shadow-[0_0_20px_rgba(0,255,255,0.8)]">RAGE ROOM PORTLAND:</span>
-              <br className="sm:hidden" />
-              <span className="block sm:inline text-[#00ffff] text-shadow-[0_0_25px_rgba(0,255,255,1)]">
-                {" "}
-                #1 STRESS RELIEF{" "}
-              </span>
-              <br />
-              <span className="block text-[#dc2626] text-shadow-[0_0_25px_rgba(220,38,38,1)] font-black">
-                & AXE THROWING
-              </span>
-              <br className="sm:hidden" />
-              <span className="block sm:inline text-white text-shadow-[0_0_20px_rgba(255,255,255,0.8)]">
-                {" "}
-                EXPERIENCE
-              </span>
-            </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-[#dc2626] via-[#00ffff] to-[#dc2626] mx-auto mb-6"></div>
-            <p className="text-lg sm:text-xl text-white/90 max-w-3xl mx-auto mb-6 font-medium">
-              Located in the heart of Portland, Oregon, we're your premier destination for stress relief, team building,
-              and unforgettable experiences. Just minutes from downtown Portland!
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 max-w-7xl mx-auto">
-            {/* Team Building Section */}
-            <div className="space-y-6 bg-black/40 p-6 sm:p-8 rounded-lg border border-[#00ffff]/20 relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-16 h-16 opacity-15">
-                <svg viewBox="0 0 100 100" className="w-full h-full text-[#00ffff]">
-                  <path d="M20 20l60 30-60 30z" fill="currentColor" />
-                </svg>
-              </div>
-              <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-black text-[#00ffff] mb-4 text-shadow-[0_0_15px_rgba(0,255,255,0.8)] tracking-wide">
-                PORTLAND TEAM BUILDING
-                <br />
-                <span className="text-white">ACTIVITIES</span>
-              </h2>
-              <p className="text-white/85 text-base sm:text-lg leading-relaxed mb-4 font-medium">
-                Skip the boring conference rooms! Our Portland team building activities combine rage room sessions with axe throwing for the most memorable corporate events in the city.
-              </p>
-              <p className="text-white/85 text-base sm:text-lg leading-relaxed mb-6 font-medium">Perfect for Portland businesses looking to boost morale, improve communication, and create lasting bonds. We're conveniently located near downtown Portland, making us accessible for all your team building needs.
-
-              </p>
-              <button
-                className="bg-[#00ffff] hover:bg-[#00ffff]/90 text-black font-black text-base sm:text-lg px-8 sm:px-10 py-4 sm:py-5 rounded-none border-2 border-[#00ffff] transform transition-all hover:scale-105 hover:shadow-[0_0_25px_rgba(0,255,255,0.6)] w-full sm:w-auto uppercase tracking-wider"
-                onClick={() =>
-                  window.open(
-                    "https://docs.google.com/forms/d/e/1FAIpQLSey2owIHFQMOlXLbaYRHyT6Jp87x_BCTtZLzrqJCuEIxcAWVA/viewform",
-                    "_blank",
-                  )
-                }
-              >
-                ⚡ BOOK TEAM BUILDING NOW ⚡
-              </button>
-            </div>
-
-            {/* Things to Do Section */}
-            <div className="space-y-6 bg-black/40 p-6 sm:p-8 rounded-lg border border-[#dc2626]/20 relative overflow-hidden">
-              <div className="absolute top-0 left-0 w-16 h-16 opacity-15">
-                <svg viewBox="0 0 100 100" className="w-full h-full text-[#dc2626]">
-                  <circle cx="50" cy="50" r="30" fill="currentColor" />
-                  <circle cx="50" cy="50" r="15" fill="black" />
-                </svg>
-              </div>
-              <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-black text-[#dc2626] mb-4 text-shadow-[0_0_15px_rgba(220,38,38,0.8)] tracking-wide">
-                TOP THINGS TO DO
-                <br />
-                <span className="text-white">IN PORTLAND, OREGON</span>
-              </h2>
-              <p className="text-white/85 text-base sm:text-lg leading-relaxed mb-4 font-medium">
-                When visitors ask "What are the best things to do in Portland?", locals point them our way. We're not your typical Portland attraction – we're an adrenaline-pumping experience that's perfect for date nights, bachelor parties, and friend groups.
-              </p>
-              <p className="text-white/85 text-base sm:text-lg leading-relaxed mb-6 font-medium">
-                Located inside Stormbreaker Brewing on N Lombard, we combine Portland's craft beer culture with high-energy entertainment. It's uniquely rage room Portland fun – and uniquely unforgettable.
-
-              </p>
-              <button
-                className="bg-[#dc2626] hover:bg-[#dc2626]/90 text-white font-black text-base sm:text-lg px-8 sm:px-10 py-4 sm:py-5 rounded-none border-2 border-[#dc2626] transform transition-all hover:scale-105 hover:shadow-[0_0_25px_rgba(220,38,38,0.6)] w-full sm:w-auto uppercase tracking-wider"
-                onClick={() =>
-                  window.open("https://Bookcelticaxe.as.me/?appointmentType=category:Rage%20Room%20", "_blank")
-                }
-              >
-                🔥 EXPERIENCE PORTLAND'S BEST 🔥
-              </button>
-            </div>
           </div>
         </div>
       </section>
@@ -824,7 +697,7 @@ export default function ClientPage() {
                                     onClick={(e) => {
                                       e.stopPropagation()
                                       window.open(
-                                        "https://Bookcelticaxe.as.me/?location=8409%20N%20Lombard%20St%2C%20Portland%2C%20OR%2097203",
+                                        "https://v0-portland-rage-room-design-git-update-content-main-rage-room.vercel.app/book",
                                         "_blank",
                                       )
                                     }}
