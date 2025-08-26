@@ -28,9 +28,11 @@ export default function HowItWorksClient() {
       {/* Hero Section */}
       <section className="py-16 bg-gradient-to-b from-black to-[#ff00ff]/10">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="font-flame text-3xl md:text-5xl mb-8 text-white">
-            HOW RAGE ROOM PORTLAND WORKS: <span className="text-[#ff00ff]">EASY 3-STEP PROCESS</span>
-          </h1>
+          <Link href="https://rageroomportland.co/book" className="hover:text-[#ff00ff] transition-colors">
+            <h1 className="font-flame text-3xl md:text-5xl mb-8 text-white cursor-pointer">
+              HOW RAGE ROOM PORTLAND WORKS: <span className="text-[#ff00ff]">EASY 3-STEP PROCESS</span>
+            </h1>
+          </Link>
           <p className="text-xl max-w-3xl mx-auto text-white/80 mb-12">
             Follow these simple steps to book your ultimate stress-relief experience at Portland's premier rage room.
             It's fast, fun, and flexible!
@@ -144,7 +146,7 @@ export default function HowItWorksClient() {
                   </div>
                   <h3 className="font-bold text-white mb-2">TV SMASHING</h3>
                   <p className="text-white/70 text-sm mb-3">Old TVs and monitors for maximum satisfaction</p>
-                  <div className="text-[#ff00ff] font-bold">+$20</div>
+                  <div className="text-[#ff00ff] font-bold">starting at $18</div>
                 </div>
 
                 {/* Throwing Stars */}
@@ -156,7 +158,7 @@ export default function HowItWorksClient() {
                   <p className="text-white/70 text-sm mb-3">
                     Ninja stars for precision throwing and heavy-duty shovels for maximum smashing power
                   </p>
-                  <div className="text-[#00ffff] font-bold">+$10</div>
+                  <div className="text-[#00ffff] font-bold">+$15</div>
                 </div>
 
                 {/* Electronics Package */}
@@ -164,8 +166,8 @@ export default function HowItWorksClient() {
                   <div className="w-12 h-12 rounded-full bg-[#ff00ff]/20 flex items-center justify-center mx-auto mb-4">
                     <Zap className="h-6 w-6 text-[#ff00ff]" />
                   </div>
-                  <h3 className="font-bold text-white mb-2">ELECTRONICS PACK</h3>
-                  <p className="text-white/70 text-sm mb-3">Keyboards, phones, and small electronics</p>
+                  <h3 className="font-bold text-white mb-2">BONUS CRATE</h3>
+                  <p className="text-white/70 text-sm mb-3">of glass smashables</p>
                   <div className="text-[#ff00ff] font-bold">+$15</div>
                 </div>
               </div>
@@ -176,7 +178,7 @@ export default function HowItWorksClient() {
                 </p>
                 <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-[#ff00ff]/20 to-[#00ffff]/20 px-6 py-3 rounded-lg border border-white/30">
                   <Zap className="h-5 w-5 text-[#ff00ff]" />
-                  <span className="text-white font-bold">Pro Tip: Combo packages get 15% off add-ons!</span>
+                  <span className="text-white font-bold">Pro Tip: Combo packages are our best deal so try both!</span>
                 </div>
               </div>
             </div>
@@ -189,10 +191,14 @@ export default function HowItWorksClient() {
                 <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-r from-white to-white/70 mb-6">
                   <Calendar className="h-10 w-10 text-black" />
                 </div>
-                <h2 className="font-flame text-4xl mb-4 text-white">STEP 3: BOOK YOUR RAGE ROOM PORTLAND SPOT</h2>
+                <Link href="https://rageroomportland.co/book" className="block">
+                  <h3 className="font-flame text-2xl mb-6 text-center text-white hover:text-[#ff00ff] transition-colors cursor-pointer">
+                    LIVE AVAILABILITY
+                  </h3>
+                </Link>
                 <p className="text-xl text-white/80 max-w-2xl mx-auto">
-                  Pick your perfect time from our live calendar and secure your Portland rage room spot with just a
-                  small deposit!
+                  Pick your perfect time from our live calendar during the booking process and secure your Portland rage
+                  room spot with just a small deposit!
                 </p>
               </div>
 
@@ -249,7 +255,7 @@ export default function HowItWorksClient() {
                     <div className="space-y-4">
                       <div className="flex justify-between items-center py-3 border-b border-white/20">
                         <span className="text-white/80">Deposit to Book</span>
-                        <span className="text-[#ff00ff] font-bold text-xl">$20</span>
+                        <span className="text-[#ff00ff] font-bold text-xl">starting at $19.99</span>
                       </div>
                       <div className="flex justify-between items-center py-3 border-b border-white/20">
                         <span className="text-white/80">Pay Balance</span>
@@ -289,12 +295,7 @@ export default function HowItWorksClient() {
               <div className="text-center mt-12">
                 <Button
                   className="bg-gradient-to-r from-[#ff00ff] to-[#00ffff] hover:from-[#ff00ff]/80 hover:to-[#00ffff]/80 text-black font-bold text-xl px-12 py-6"
-                  onClick={() =>
-                    window.open(
-                      "https://Bookcelticaxe.as.me/?location=8409%20N%20Lombard%20St%2C%20Portland%2C%20OR%2097203",
-                      "_blank",
-                    )
-                  }
+                  onClick={() => window.open("https://rageroomportland.co/book", "_blank")}
                 >
                   BOOK YOUR RAGE ROOM PORTLAND SESSION NOW
                 </Button>
@@ -388,12 +389,7 @@ export default function HowItWorksClient() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               className="bg-[#ff00ff] hover:bg-[#ff00ff]/80 text-black font-bold text-lg px-8 py-6"
-              onClick={() =>
-                window.open(
-                  "https://Bookcelticaxe.as.me/?location=8409%20N%20Lombard%20St%2C%20Portland%2C%20OR%2097203",
-                  "_blank",
-                )
-              }
+              onClick={() => window.open("https://rageroomportland.co/book", "_blank")}
             >
               BOOK NOW
             </Button>

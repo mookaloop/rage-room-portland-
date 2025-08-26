@@ -185,7 +185,7 @@ export default function PartiesEventsClient() {
       {/* Event Types Section */}
       <section className="py-16 bg-gradient-to-b from-[#ff00ff]/10 to-black">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h2 className="font-flame text-4xl md:text-5xl mb-6 text-white">
               PERFECT FOR ALL <span className="text-[#ff00ff]">PORTLAND EVENTS</span>
             </h2>
@@ -225,7 +225,7 @@ export default function PartiesEventsClient() {
                 unique birthday celebration in the city!
               </p>
               <ul className="text-white/70 space-y-2">
-                <li>• Ages 13+ welcome</li>
+                <li>• Ages 10+ welcome</li>
                 <li>• Party packages available</li>
                 <li>• Decorations included</li>
                 <li>• Group photos provided</li>
@@ -324,12 +324,12 @@ export default function PartiesEventsClient() {
             <div className="bg-gradient-to-b from-[#ff00ff]/20 to-black border-2 border-[#ff00ff] p-8 rounded-lg text-center">
               <h3 className="font-flame text-2xl mb-4 text-[#ff00ff]">STARTER TEAM BUILDING</h3>
               <div className="text-4xl font-bold text-white mb-6">
-                $45<span className="text-lg text-white/70">/person</span>
+                $30<span className="text-lg text-white/70">/person</span>
               </div>
               <ul className="text-left text-white/80 space-y-3 mb-8">
                 <li className="flex items-start space-x-2">
                   <span className="text-[#ff00ff] mt-1">•</span>
-                  <span>30-minute rage room Portland session</span>
+                  <span>1.5-hour rage room Portland session</span>
                 </li>
                 <li className="flex items-start space-x-2">
                   <span className="text-[#ff00ff] mt-1">•</span>
@@ -337,18 +337,14 @@ export default function PartiesEventsClient() {
                 </li>
                 <li className="flex items-start space-x-2">
                   <span className="text-[#ff00ff] mt-1">•</span>
-                  <span>Variety of items to smash</span>
+                  <span>15-20 items per person to smash</span>
                 </li>
                 <li className="flex items-start space-x-2">
                   <span className="text-[#ff00ff] mt-1">•</span>
                   <span>Professional supervision</span>
                 </li>
-                <li className="flex items-start space-x-2">
-                  <span className="text-[#ff00ff] mt-1">•</span>
-                  <span>Group photos</span>
-                </li>
               </ul>
-              <p className="text-white/60 text-sm mb-6">Perfect for 6-15 people</p>
+              <p className="text-white/60 text-sm mb-6">Perfect for 15-40 people</p>
               <Button className="w-full bg-[#ff00ff] hover:bg-[#ff00ff]/80 text-black font-bold">
                 BOOK STARTER PACKAGE
               </Button>
@@ -361,20 +357,20 @@ export default function PartiesEventsClient() {
               </div>
               <h3 className="font-flame text-2xl mb-4 text-[#00ffff]">PREMIUM COMBO</h3>
               <div className="text-4xl font-bold text-white mb-6">
-                $75<span className="text-lg text-white/70">/person</span>
+                $45<span className="text-lg text-white/70">/person</span>
               </div>
               <ul className="text-left text-white/80 space-y-3 mb-8">
                 <li className="flex items-start space-x-2">
                   <span className="text-[#00ffff] mt-1">•</span>
-                  <span>45-minute rage room Portland session</span>
+                  <span>2-hour rage room Portland session</span>
                 </li>
                 <li className="flex items-start space-x-2">
                   <span className="text-[#00ffff] mt-1">•</span>
-                  <span>30-minute axe throwing Portland</span>
+                  <span>Axe throwing coaching session and games</span>
                 </li>
                 <li className="flex items-start space-x-2">
                   <span className="text-[#00ffff] mt-1">•</span>
-                  <span>Premium items (TVs, electronics)</span>
+                  <span>15-20 breakables per person</span>
                 </li>
                 <li className="flex items-start space-x-2">
                   <span className="text-[#00ffff] mt-1">•</span>
@@ -384,12 +380,8 @@ export default function PartiesEventsClient() {
                   <span className="text-[#00ffff] mt-1">•</span>
                   <span>Team building facilitation</span>
                 </li>
-                <li className="flex items-start space-x-2">
-                  <span className="text-[#00ffff] mt-1">•</span>
-                  <span>Professional photos & video</span>
-                </li>
               </ul>
-              <p className="text-white/60 text-sm mb-6">Perfect for 8-25 people</p>
+              <p className="text-white/60 text-sm mb-6">Perfect for 15-40 people</p>
               <Button className="w-full bg-[#00ffff] hover:bg-[#00ffff]/80 text-black font-bold">
                 BOOK PREMIUM PACKAGE
               </Button>
@@ -399,16 +391,16 @@ export default function PartiesEventsClient() {
             <div className="bg-gradient-to-b from-white/20 to-black border-2 border-white p-8 rounded-lg text-center">
               <h3 className="font-flame text-2xl mb-4 text-white">CORPORATE ELITE</h3>
               <div className="text-4xl font-bold text-white mb-6">
-                $95<span className="text-lg text-white/70">/person</span>
+                $65<span className="text-lg text-white/70">/person</span>
               </div>
               <ul className="text-left text-white/80 space-y-3 mb-8">
                 <li className="flex items-start space-x-2">
                   <span className="text-white mt-1">•</span>
-                  <span>60-minute rage room Portland session</span>
+                  <span>2-3 hour rage room Portland session (depending on group size)</span>
                 </li>
                 <li className="flex items-start space-x-2">
                   <span className="text-white mt-1">•</span>
-                  <span>45-minute axe throwing Portland</span>
+                  <span>Axe throwing lessons, games and tournament set up for your team</span>
                 </li>
                 <li className="flex items-start space-x-2">
                   <span className="text-white mt-1">•</span>
