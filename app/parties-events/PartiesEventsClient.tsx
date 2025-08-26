@@ -6,11 +6,44 @@ import { Button } from "@/components/ui/button"
 import { ArrowLeft, Users, Calendar, Trophy, Hammer, Axe, Star, Clock, MapPin, Phone } from "lucide-react"
 import Footer from "@/components/Footer"
 
+// GTM event tracking function
+const trackGTMEvent = (eventName: string, eventData: any = {}) => {
+  if (typeof window !== "undefined" && (window as any).dataLayer) {
+    ;(window as any).dataLayer.push({
+      event: eventName,
+      ...eventData,
+    })
+  }
+}
+
 export default function PartiesEventsClient() {
   const [openFaq, setOpenFaq] = useState<number | null>(0)
 
   const toggleFaq = (index: number) => {
     setOpenFaq(openFaq === index ? null : index)
+  }
+
+  const handleBookingClick = (packageType: string, price: number) => {
+    trackGTMEvent("booking_click", {
+      package_type: packageType,
+      package_price: price,
+      event_category: "Team Building",
+      event_label: `${packageType} Package`,
+      value: price,
+    })
+
+    window.open(
+      "https://docs.google.com/forms/d/e/1FAIpQLSey2owIHFQMOlXLbaYRHyT6Jp87x_BCTtZLzrqJCuEIxcAWVA/viewform",
+      "_blank",
+    )
+  }
+
+  const handlePhoneClick = () => {
+    trackGTMEvent("phone_click", {
+      event_category: "Contact",
+      event_label: "Phone Number Click",
+      phone_number: "5032129031",
+    })
   }
 
   const faqData = [
@@ -76,24 +109,34 @@ export default function PartiesEventsClient() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <Button
                 className="bg-[#ff00ff] hover:bg-[#ff00ff]/80 text-black font-bold text-lg px-8 py-6"
-                onClick={() =>
+                onClick={() => {
+                  trackGTMEvent("hero_booking_click", {
+                    event_category: "Team Building",
+                    event_label: "Hero CTA - Book Team Building Event",
+                    button_location: "hero_section",
+                  })
                   window.open(
                     "https://docs.google.com/forms/d/e/1FAIpQLSey2owIHFQMOlXLbaYRHyT6Jp87x_BCTtZLzrqJCuEIxcAWVA/viewform",
                     "_blank",
                   )
-                }
+                }}
               >
                 BOOK TEAM BUILDING EVENT
               </Button>
               <Button
                 variant="outline"
                 className="border-[#00ffff] text-[#00ffff] hover:bg-[#00ffff]/10 font-bold text-lg px-8 py-6 bg-transparent"
-                onClick={() =>
+                onClick={() => {
+                  trackGTMEvent("hero_quote_click", {
+                    event_category: "Lead Generation",
+                    event_label: "Hero CTA - Get Custom Quote",
+                    button_location: "hero_section",
+                  })
                   window.open(
                     "https://docs.google.com/forms/d/e/1FAIpQLSey2owIHFQMOlXLbaYRHyT6Jp87x_BCTtZLzrqJCuEIxcAWVA/viewform",
                     "_blank",
                   )
-                }
+                }}
               >
                 GET CUSTOM QUOTE
               </Button>
@@ -106,6 +149,7 @@ export default function PartiesEventsClient() {
               <a
                 href="sms:5032129031"
                 className="flex items-center space-x-2 hover:text-[#ff00ff] transition-colors cursor-pointer"
+                onClick={handlePhoneClick}
               >
                 <Phone className="h-5 w-5 text-[#00ffff]" />
                 <span className="hidden sm:inline">(503) 212-9031</span>
@@ -345,7 +389,10 @@ export default function PartiesEventsClient() {
                 </li>
               </ul>
               <p className="text-white/60 text-sm mb-6">Perfect for 15-40 people</p>
-              <Button className="w-full bg-[#ff00ff] hover:bg-[#ff00ff]/80 text-black font-bold">
+              <Button
+                className="w-full bg-[#ff00ff] hover:bg-[#ff00ff]/80 text-black font-bold"
+                onClick={() => handleBookingClick("Starter", 30)}
+              >
                 BOOK STARTER PACKAGE
               </Button>
             </div>
@@ -382,7 +429,10 @@ export default function PartiesEventsClient() {
                 </li>
               </ul>
               <p className="text-white/60 text-sm mb-6">Perfect for 15-40 people</p>
-              <Button className="w-full bg-[#00ffff] hover:bg-[#00ffff]/80 text-black font-bold">
+              <Button
+                className="w-full bg-[#00ffff] hover:bg-[#00ffff]/80 text-black font-bold"
+                onClick={() => handleBookingClick("Premium", 45)}
+              >
                 BOOK PREMIUM PACKAGE
               </Button>
             </div>
@@ -424,7 +474,12 @@ export default function PartiesEventsClient() {
                 </li>
               </ul>
               <p className="text-white/60 text-sm mb-6">Perfect for 15-50+ people</p>
-              <Button className="w-full bg-white hover:bg-white/80 text-black font-bold">BOOK CORPORATE PACKAGE</Button>
+              <Button
+                className="w-full bg-white hover:bg-white/80 text-black font-bold"
+                onClick={() => handleBookingClick("Corporate Elite", 65)}
+              >
+                BOOK CORPORATE PACKAGE
+              </Button>
             </div>
           </div>
 
@@ -436,6 +491,17 @@ export default function PartiesEventsClient() {
             <Button
               variant="outline"
               className="border-[#ff00ff] text-[#ff00ff] hover:bg-[#ff00ff]/10 font-bold text-lg px-8 py-4 bg-transparent"
+              onClick={() => {
+                trackGTMEvent("custom_quote_click", {
+                  event_category: "Lead Generation",
+                  event_label: "Request Custom Quote",
+                  button_location: "packages_section",
+                })
+                window.open(
+                  "https://docs.google.com/forms/d/e/1FAIpQLSey2owIHFQMOlXLbaYRHyT6Jp87x_BCTtZLzrqJCuEIxcAWVA/viewform",
+                  "_blank",
+                )
+              }}
             >
               REQUEST CUSTOM QUOTE
             </Button>
@@ -458,7 +524,17 @@ export default function PartiesEventsClient() {
           <div className="max-w-4xl mx-auto space-y-4">
             {faqData.map((faq, index) => (
               <div key={index} className="border-2 border-[#ff00ff] bg-black p-6 rounded-lg">
-                <button className="w-full flex justify-between items-center text-left" onClick={() => toggleFaq(index)}>
+                <button
+                  className="w-full flex justify-between items-center text-left"
+                  onClick={() => {
+                    toggleFaq(index)
+                    trackGTMEvent("faq_click", {
+                      event_category: "Engagement",
+                      event_label: `FAQ: ${faq.question}`,
+                      faq_index: index,
+                    })
+                  }}
+                >
                   <span className="font-bold text-white text-lg pr-4">{faq.question}</span>
                   <div className="w-8 h-8 rounded-full bg-[#ff00ff] flex items-center justify-center flex-shrink-0">
                     <span className="text-black font-bold text-xl">{openFaq === index ? "−" : "+"}</span>
