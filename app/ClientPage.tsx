@@ -24,7 +24,7 @@ export default function ClientPage() {
     {
       question: "How much does a rage room session cost?",
       answer:
-        "Our rage room Portland sessions start at $35 for a 1 hour session. We offer packages for groups, extended sessions, and combo deals with axe throwing. You can also add on fun things like large electronics or flat screen TVs for an extra charge!",
+        "Our rage room Portland sessions start at $35. We offer packages for groups, extended sessions, and combo deals with axe throwing. You can also add on fun things like large electronics or flat screen TVs for an extra charge!",
     },
     {
       question: "What safety equipment is provided?",
@@ -499,7 +499,7 @@ export default function ClientPage() {
                   {/* Pricing */}
                   <div className="mb-6">
                     <div className="text-3xl md:text-4xl font-black text-white mb-2">
-                      FROM <span className="text-[#00ffff]">$19.99</span>
+                      FROM <span className="text-[#00ffff]">$25</span>
                     </div>
                     <div className="text-white/60 text-sm uppercase tracking-wide">1 hour sessions</div>
                   </div>
