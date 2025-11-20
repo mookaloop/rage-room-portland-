@@ -336,10 +336,7 @@ export default function ClientPage() {
             }}
             aria-label="Rage Room Portland promotional video showing customers in action"
           >
-            <source
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/smaller.hero-D7ZLHDKee0F9rpOxEoAx7ZgVQyuov3.mp4"
-              type="video/mp4"
-            />
+            <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/smaller.hero-D7ZLHDKee0F9rpOxEoAx7ZgVQyuov3.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
 
@@ -565,7 +562,7 @@ export default function ClientPage() {
                       </span>
                     </div>
                     <div className="text-white/60 text-sm uppercase tracking-wide">1.5 hour experience</div>
-                    <div className="text-[#00ffff] text-sm font-bold mt-1 animate-pulse">SAVE $10!</div>
+                    <div className="text-[#00ffff] text-sm font-bold mt-1 animate-pulse">SAVE $15!</div>
                   </div>
 
                   {/* Button */}
