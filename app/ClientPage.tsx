@@ -24,7 +24,7 @@ export default function ClientPage() {
     {
       question: "How much does a rage room session cost?",
       answer:
-        "Our rage room Portland sessions start at $35. We offer packages for groups, extended sessions, and combo deals with axe throwing. You can also add on fun things like large electronics or flat screen TVs for an extra charge!",
+        "Our rage room Portland sessions start at $35 for a 1 hour session. We offer packages for groups, extended sessions, and combo deals with axe throwing. You can also add on fun things like large electronics or flat screen TVs for an extra charge!",
     },
     {
       question: "What safety equipment is provided?",
@@ -336,7 +336,10 @@ export default function ClientPage() {
             }}
             aria-label="Rage Room Portland promotional video showing customers in action"
           >
-            <source src="/images/smaller.mp4" type="video/mp4" />
+            <source
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/smaller.hero-D7ZLHDKee0F9rpOxEoAx7ZgVQyuov3.mp4"
+              type="video/mp4"
+            />
             Your browser does not support the video tag.
           </video>
 
@@ -562,7 +565,7 @@ export default function ClientPage() {
                       </span>
                     </div>
                     <div className="text-white/60 text-sm uppercase tracking-wide">1.5 hour experience</div>
-                    <div className="text-[#00ffff] text-sm font-bold mt-1 animate-pulse">SAVE $15!</div>
+                    <div className="text-[#00ffff] text-sm font-bold mt-1 animate-pulse">SAVE $10!</div>
                   </div>
 
                   {/* Button */}
