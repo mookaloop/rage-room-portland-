@@ -103,7 +103,7 @@ export default function HowItWorksClient() {
                   <p className="text-white/80 mb-6">
                     Test your aim and channel your inner lumberjack with professional Portland axe throwing lanes.
                   </p>
-                  <div className="text-2xl font-bold text-white">Starting at $19.99</div>
+                  <div className="text-2xl font-bold text-white">Starting at $25</div>
                 </div>
 
                 {/* Combo */}
@@ -339,10 +339,7 @@ export default function HowItWorksClient() {
                   }}
                   aria-label="Rage Room Portland promotional video showing customers in action"
                 >
-                  <source
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/smaller.hero-D7ZLHDKee0F9rpOxEoAx7ZgVQyuov3.mp4"
-                    type="video/mp4"
-                  />
+                  <source src="/images/smaller.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
 

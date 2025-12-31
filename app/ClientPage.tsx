@@ -336,7 +336,7 @@ export default function ClientPage() {
             }}
             aria-label="Rage Room Portland promotional video showing customers in action"
           >
-            <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/smaller.hero-D7ZLHDKee0F9rpOxEoAx7ZgVQyuov3.mp4" type="video/mp4" />
+            <source src="/images/smaller.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
 
