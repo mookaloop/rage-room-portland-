@@ -23,20 +23,20 @@ export default function GlassHoundClient() {
       </div>
 
       {/* Hero Section with Prominent Logo */}
-      <section className="py-2 md:py-4 bg-gradient-to-b from-black to-[#ff00ff]/10">
+      <section className="py-4 md:py-6 bg-gradient-to-b from-black to-[#ff00ff]/10">
         <div className="container mx-auto px-4 text-center">
-          <div className="flex justify-center mb-2">
+          <div className="flex justify-center mb-4">
             <img 
               src="/images/glass-hound-logo.png" 
               alt="Glass Hound - Recycle Glass. Rescue Dogs." 
-              className="w-full max-w-4xl md:max-w-5xl lg:max-w-6xl h-auto"
+              className="w-full max-w-2xl md:max-w-3xl lg:max-w-4xl h-auto"
             />
           </div>
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLScf_AUgo1urUwTtbUGQmhlmx1w17OcqDNqLGHCFPEgy04-AZw/viewform?usp=publish-editor"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block mb-4"
+            className="inline-block mb-6"
           >
             <Button className="bg-[#ff00ff] hover:bg-[#ff00ff]/80 text-white font-black text-2xl md:text-4xl px-10 py-8 rounded-xl shadow-lg shadow-[#ff00ff]/50 hover:shadow-[#ff00ff]/70 transition-all hover:scale-105">
               SIGN UP YOUR BAR
@@ -47,9 +47,6 @@ export default function GlassHoundClient() {
             program recycles glass from local Portland and Vancouver bars and donates a portion of proceeds to our rescue partners.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <div className="bg-[#ff00ff]/20 border border-[#ff00ff] px-6 py-3 rounded-full">
-              <span className="text-[#ff00ff] font-bold">Oregon Dog Rescue</span>
-            </div>
             <div className="bg-[#00ffff]/20 border border-[#00ffff] px-6 py-3 rounded-full">
               <span className="text-[#00ffff] font-bold">Puplandia</span>
             </div>
