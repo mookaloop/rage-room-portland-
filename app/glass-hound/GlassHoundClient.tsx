@@ -151,15 +151,24 @@ export default function GlassHoundClient() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {/* Oregon Dog Rescue */}
-            <div className="bg-gradient-to-b from-[#ff00ff]/20 to-black border-2 border-[#ff00ff] p-8 rounded-lg text-center">
-              <div className="w-20 h-20 rounded-full bg-[#ff00ff]/30 flex items-center justify-center mx-auto mb-6">
-                <Heart className="h-10 w-10 text-[#ff00ff]" />
+            <a 
+              href="https://www.oregondogrescue.org/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-gradient-to-b from-[#ff00ff]/20 to-black border-2 border-[#ff00ff] p-8 rounded-lg text-center block hover:border-[#ff00ff] hover:shadow-lg hover:shadow-[#ff00ff]/30 transition-all group"
+            >
+              <div className="w-32 h-32 rounded-full bg-white flex items-center justify-center mx-auto mb-6 overflow-hidden group-hover:scale-105 transition-transform">
+                <img 
+                  src="/images/oregon-dog-rescue-logo.jpg" 
+                  alt="Oregon Dog Rescue Logo" 
+                  className="w-28 h-28 object-contain"
+                />
               </div>
               <h3 className="font-bold text-2xl mb-4 text-[#ff00ff]">Oregon Dog Rescue</h3>
               <p className="text-white/80 mb-4">
                 A dedicated rescue organization saving dogs throughout Oregon and finding them loving forever homes.
               </p>
-            </div>
+            </a>
 
             {/* Puplandia */}
             <div className="bg-gradient-to-b from-[#00ffff]/20 to-black border-2 border-[#00ffff] p-8 rounded-lg text-center">
