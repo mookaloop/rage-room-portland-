@@ -140,8 +140,12 @@ export default function GlassHoundClient() {
                 1
               </div>
               <div className="bg-gradient-to-b from-[#ff00ff]/20 to-black border-2 border-[#ff00ff]/50 p-8 rounded-lg text-center h-full pt-12">
-                <div className="w-16 h-16 rounded-full bg-[#ff00ff]/30 flex items-center justify-center mx-auto mb-6">
-                  <Building2 className="h-8 w-8 text-[#ff00ff]" />
+                <div className="flex justify-center mb-6">
+                  <img 
+                    src="/images/portland-bars-sign.png" 
+                    alt="Portland Oregon Bars" 
+                    className="w-48 h-auto"
+                  />
                 </div>
                 <h3 className="font-flame text-xl mb-4 text-[#ff00ff]">BARS SIGN UP</h3>
                 <p className="text-white/80">
@@ -178,8 +182,12 @@ export default function GlassHoundClient() {
                 3
               </div>
               <div className="bg-gradient-to-b from-white/20 to-black border-2 border-white/50 p-8 rounded-lg text-center h-full pt-12">
-                <div className="w-16 h-16 rounded-full bg-white/30 flex items-center justify-center mx-auto mb-6">
-                  <Truck className="h-8 w-8 text-white" />
+                <div className="flex justify-center mb-6">
+                  <img 
+                    src="/images/glass-hound-truck.png" 
+                    alt="Glass Hound Pickup Truck" 
+                    className="w-48 h-auto"
+                  />
                 </div>
                 <h3 className="font-flame text-xl mb-4 text-white">WEEKLY PICKUP</h3>
                 <p className="text-white/80">
