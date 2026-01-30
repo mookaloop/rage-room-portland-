@@ -29,7 +29,7 @@ export default function GlassHoundClient() {
             <img 
               src="/images/glass-hound-logo.png" 
               alt="Glass Hound - Recycle Glass. Rescue Dogs." 
-              className="w-full max-w-2xl md:max-w-3xl lg:max-w-4xl h-auto"
+              className="w-full max-w-2xl md:max-w-3xl lg:max-w-4xl h-auto leading-4"
             />
           </div>
           <a
