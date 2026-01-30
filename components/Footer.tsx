@@ -86,6 +86,9 @@ export default function Footer() {
               <Link href="/#faq" className="block text-white/70 hover:text-[#ff00ff] transition-colors">
                 FAQ
               </Link>
+              <Link href="/glass-hound" className="block text-white/70 hover:text-[#ff00ff] transition-colors">
+                Glass Hound
+              </Link>
             </div>
           </div>
 
