@@ -207,40 +207,6 @@ export default function GlassHoundClient() {
         </div>
       </section>
 
-      {/* Tote Image Section */}
-      <section className="py-16 bg-black">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="font-bold text-3xl md:text-4xl mb-4 text-white">
-              THE <span className="text-[#00ffff]">GLASS HOUND TOTE</span>
-            </h2>
-            <p className="text-lg text-white/70 max-w-2xl mx-auto">
-              Our durable collection totes make recycling easy for bars and restaurants.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {/* Tote Image Placeholder 1 */}
-            <div className="aspect-square bg-gradient-to-br from-[#ff00ff]/30 to-[#00ffff]/30 rounded-lg border-2 border-white/30 flex items-center justify-center">
-              <div className="text-center p-8">
-                <Package className="h-16 w-16 text-white/50 mx-auto mb-4" />
-                <p className="text-white/50 text-lg">Glass Hound Tote Image</p>
-                <p className="text-white/30 text-sm mt-2">Coming Soon</p>
-              </div>
-            </div>
-
-            {/* Tote Image Placeholder 2 */}
-            <div className="aspect-square bg-gradient-to-br from-[#00ffff]/30 to-[#ff00ff]/30 rounded-lg border-2 border-white/30 flex items-center justify-center">
-              <div className="text-center p-8">
-                <Package className="h-16 w-16 text-white/50 mx-auto mb-4" />
-                <p className="text-white/50 text-lg">Tote In Action</p>
-                <p className="text-white/30 text-sm mt-2">Coming Soon</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Dogs Section */}
       <section className="py-16 bg-gradient-to-b from-black to-[#ff00ff]/10">
         <div className="container mx-auto px-4">
