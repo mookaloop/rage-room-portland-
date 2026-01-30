@@ -50,76 +50,6 @@ export default function GlassHoundClient() {
         </div>
       </section>
 
-      {/* Partnership Section */}
-      <section className="py-16 bg-black">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="font-flame text-3xl md:text-4xl mb-4 text-white">
-              OUR <span className="text-[#00ffff]">RESCUE PARTNERS</span>
-            </h2>
-            <p className="text-lg text-white/70 max-w-2xl mx-auto">
-              We're proud to partner with Oregon Dog Rescue and Puplandia to support rescue dogs in need.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {/* Oregon Dog Rescue */}
-            <div className="bg-gradient-to-b from-[#ff00ff]/20 to-black border-2 border-[#ff00ff] p-8 rounded-lg text-center">
-              <div className="w-20 h-20 rounded-full bg-[#ff00ff]/30 flex items-center justify-center mx-auto mb-6">
-                <Heart className="h-10 w-10 text-[#ff00ff]" />
-              </div>
-              <h3 className="font-flame text-2xl mb-4 text-[#ff00ff]">Oregon Dog Rescue</h3>
-              <p className="text-white/80 mb-4">
-                A dedicated rescue organization saving dogs throughout Oregon and finding them loving forever homes.
-              </p>
-            </div>
-
-            {/* Puplandia */}
-            <div className="bg-gradient-to-b from-[#00ffff]/20 to-black border-2 border-[#00ffff] p-8 rounded-lg text-center">
-              <div className="w-20 h-20 rounded-full bg-[#00ffff]/30 flex items-center justify-center mx-auto mb-6">
-                <Dog className="h-10 w-10 text-[#00ffff]" />
-              </div>
-              <h3 className="font-flame text-2xl mb-4 text-[#00ffff]">Puplandia</h3>
-              <p className="text-white/80 mb-4">
-                A Portland-based rescue helping dogs in need with shelter, care, and adoption services.
-              </p>
-            </div>
-          </div>
-
-          <div className="text-center mt-12">
-            <div className="bg-gradient-to-r from-[#ff00ff]/20 to-[#00ffff]/20 border border-white/30 p-8 rounded-lg max-w-3xl mx-auto">
-              <h3 className="font-bold text-xl text-white mb-4">What Your Smashing Supports</h3>
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-white/80">
-                <div className="flex flex-col items-center">
-                  <span className="text-2xl mb-2">🛏️</span>
-                  <span>Blankets</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <span className="text-2xl mb-2">🧺</span>
-                  <span>Towels</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <span className="text-2xl mb-2">🍖</span>
-                  <span>Food</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <span className="text-2xl mb-2">🏠</span>
-                  <span>Shelter</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <span className="text-2xl mb-2">🎾</span>
-                  <span>Toys</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <span className="text-2xl mb-2">💊</span>
-                  <span>Medical Care</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* How It Works Section */}
       <section className="py-16 bg-gradient-to-b from-black to-[#00ffff]/10">
         <div className="container mx-auto px-4">
@@ -202,6 +132,76 @@ export default function GlassHoundClient() {
             <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-[#ff00ff]/20 to-[#00ffff]/20 px-6 py-3 rounded-lg border border-white/30">
               <Recycle className="h-5 w-5 text-[#00ffff]" />
               <span className="text-white font-bold">100% of collected glass is recycled through our rage rooms!</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Partnership Section */}
+      <section className="py-16 bg-black">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="font-flame text-3xl md:text-4xl mb-4 text-white">
+              OUR <span className="text-[#00ffff]">RESCUE PARTNERS</span>
+            </h2>
+            <p className="text-lg text-white/70 max-w-2xl mx-auto">
+              We're proud to partner with Oregon Dog Rescue and Puplandia to support rescue dogs in need.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* Oregon Dog Rescue */}
+            <div className="bg-gradient-to-b from-[#ff00ff]/20 to-black border-2 border-[#ff00ff] p-8 rounded-lg text-center">
+              <div className="w-20 h-20 rounded-full bg-[#ff00ff]/30 flex items-center justify-center mx-auto mb-6">
+                <Heart className="h-10 w-10 text-[#ff00ff]" />
+              </div>
+              <h3 className="font-flame text-2xl mb-4 text-[#ff00ff]">Oregon Dog Rescue</h3>
+              <p className="text-white/80 mb-4">
+                A dedicated rescue organization saving dogs throughout Oregon and finding them loving forever homes.
+              </p>
+            </div>
+
+            {/* Puplandia */}
+            <div className="bg-gradient-to-b from-[#00ffff]/20 to-black border-2 border-[#00ffff] p-8 rounded-lg text-center">
+              <div className="w-20 h-20 rounded-full bg-[#00ffff]/30 flex items-center justify-center mx-auto mb-6">
+                <Dog className="h-10 w-10 text-[#00ffff]" />
+              </div>
+              <h3 className="font-flame text-2xl mb-4 text-[#00ffff]">Puplandia</h3>
+              <p className="text-white/80 mb-4">
+                A Portland-based rescue helping dogs in need with shelter, care, and adoption services.
+              </p>
+            </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <div className="bg-gradient-to-r from-[#ff00ff]/20 to-[#00ffff]/20 border border-white/30 p-8 rounded-lg max-w-3xl mx-auto">
+              <h3 className="font-bold text-xl text-white mb-4">What Your Smashing Supports</h3>
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-white/80">
+                <div className="flex flex-col items-center">
+                  <span className="text-2xl mb-2">🛏️</span>
+                  <span>Blankets</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <span className="text-2xl mb-2">🧺</span>
+                  <span>Towels</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <span className="text-2xl mb-2">🍖</span>
+                  <span>Food</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <span className="text-2xl mb-2">🏠</span>
+                  <span>Shelter</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <span className="text-2xl mb-2">🎾</span>
+                  <span>Toys</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <span className="text-2xl mb-2">💊</span>
+                  <span>Medical Care</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
