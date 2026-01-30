@@ -292,7 +292,7 @@ export default function GlassHoundClient() {
                 JOIN <span className="text-[#00ffff]">GLASS HOUND</span>
               </h2>
               <p className="text-lg text-white/70">
-                Are you a Portland bar or restaurant? Sign up for Glass Hound and help rescue dogs while we handle your
+                Are you a Portland or Vancouver bar or restaurant? Sign up for Glass Hound and help rescue dogs while we handle your
                 glass recycling!
               </p>
             </div>
