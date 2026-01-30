@@ -22,17 +22,17 @@ export default function GlassHoundClient() {
         </div>
       </div>
 
-      {/* Hero Section */}
-      <section className="py-16 bg-gradient-to-b from-black to-[#ff00ff]/10">
+      {/* Hero Section with Prominent Logo */}
+      <section className="py-8 md:py-12 bg-gradient-to-b from-black to-[#ff00ff]/10">
         <div className="container mx-auto px-4 text-center">
-          <div className="flex justify-center mb-8">
+          <div className="flex justify-center mb-6">
             <img 
               src="/images/glass-hound-logo.png" 
               alt="Glass Hound - Recycle Glass. Rescue Dogs." 
-              className="w-full max-w-md h-auto"
+              className="w-full max-w-2xl md:max-w-3xl lg:max-w-4xl h-auto"
             />
           </div>
-          <h1 className="font-flame text-3xl md:text-5xl mb-8 text-white">
+          <h1 className="font-flame text-2xl md:text-4xl mb-8 text-white">
             <span className="text-[#ff00ff]">SMASH FOR A CAUSE</span>
           </h1>
           <p className="text-xl max-w-3xl mx-auto text-white/80 mb-8">
