@@ -157,8 +157,12 @@ export default function GlassHoundClient() {
                 2
               </div>
               <div className="bg-gradient-to-b from-[#00ffff]/20 to-black border-2 border-[#00ffff]/50 p-8 rounded-lg text-center h-full pt-12">
-                <div className="w-16 h-16 rounded-full bg-[#00ffff]/30 flex items-center justify-center mx-auto mb-6">
-                  <Package className="h-8 w-8 text-[#00ffff]" />
+                <div className="flex justify-center mb-6">
+                  <img 
+                    src="/images/glass-hound-tote.png" 
+                    alt="Glass Hound Collection Tote" 
+                    className="w-48 h-auto"
+                  />
                 </div>
                 <h3 className="font-flame text-xl mb-4 text-[#00ffff]">WE DROP OFF TOTE</h3>
                 <p className="text-white/80">
