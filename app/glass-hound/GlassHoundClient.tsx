@@ -298,8 +298,12 @@ export default function GlassHoundClient() {
             </div>
 
             <div className="bg-gradient-to-b from-[#00ffff]/20 to-black border-2 border-[#00ffff] p-8 rounded-lg text-center">
-              <div className="w-20 h-20 rounded-full bg-[#00ffff]/30 flex items-center justify-center mx-auto mb-6">
-                <Building2 className="h-10 w-10 text-[#00ffff]" />
+              <div className="flex justify-center mb-6">
+                <img 
+                  src="/images/portland-bars-sign.png" 
+                  alt="Portland and Vancouver Bars" 
+                  className="w-48 h-auto"
+                />
               </div>
               <h3 className="font-bold text-2xl mb-4 text-[#00ffff]">BAR SIGN UP FORM</h3>
               <p className="text-white/80 mb-8">
