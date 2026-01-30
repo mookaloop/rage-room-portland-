@@ -37,7 +37,7 @@ export default function GlassHoundClient() {
           </h1>
           <p className="text-xl max-w-3xl mx-auto text-white/80 mb-8">
             When you smash at Rage Room Portland, you're helping rescue dogs find their forever homes. Our Glass Hound
-            program recycles glass from local Portland bars and donates a portion of proceeds to our rescue partners.
+            program recycles glass from local Portland and Vancouver bars and donates a portion of proceeds to our rescue partners.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <div className="bg-[#ff00ff]/20 border border-[#ff00ff] px-6 py-3 rounded-full">
