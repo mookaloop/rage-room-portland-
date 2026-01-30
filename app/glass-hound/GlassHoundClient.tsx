@@ -54,7 +54,7 @@ export default function GlassHoundClient() {
       <section className="py-16 bg-gradient-to-b from-black to-[#00ffff]/10">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="font-flame text-3xl md:text-4xl mb-4 text-white">
+            <h2 className="font-bold text-3xl md:text-4xl mb-4 text-white tracking-wide">
               HOW <span className="text-[#ff00ff]">GLASS HOUND</span> WORKS
             </h2>
             <p className="text-lg text-white/70 max-w-2xl mx-auto">
