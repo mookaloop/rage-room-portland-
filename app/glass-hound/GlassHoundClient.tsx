@@ -25,11 +25,11 @@ export default function GlassHoundClient() {
       {/* Hero Section with Prominent Logo */}
       <section className="py-4 md:py-6 bg-gradient-to-b from-black to-[#00ffff]/10">
         <div className="container mx-auto px-4 text-center">
-          <div className="flex justify-center mb-4">
+          <div className="flex justify-center mb-1">
             <img 
               src="/images/glass-hound-logo.png" 
               alt="Glass Hound - Recycle Glass. Rescue Dogs." 
-              className="w-full max-w-2xl md:max-w-3xl lg:max-w-4xl h-auto leading-4"
+              className="w-full max-w-2xl md:max-w-3xl lg:max-w-4xl h-auto"
             />
           </div>
           <a
