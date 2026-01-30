@@ -26,12 +26,14 @@ export default function GlassHoundClient() {
       <section className="py-16 bg-gradient-to-b from-black to-[#ff00ff]/10">
         <div className="container mx-auto px-4 text-center">
           <div className="flex justify-center mb-8">
-            <div className="w-24 h-24 rounded-full bg-gradient-to-r from-[#ff00ff] to-[#00ffff] flex items-center justify-center">
-              <Dog className="h-12 w-12 text-white" />
-            </div>
+            <img 
+              src="/images/glass-hound-logo.png" 
+              alt="Glass Hound - Recycle Glass. Rescue Dogs." 
+              className="w-full max-w-md h-auto"
+            />
           </div>
           <h1 className="font-flame text-3xl md:text-5xl mb-8 text-white">
-            GLASS HOUND: <span className="text-[#ff00ff]">SMASH FOR A CAUSE</span>
+            <span className="text-[#ff00ff]">SMASH FOR A CAUSE</span>
           </h1>
           <p className="text-xl max-w-3xl mx-auto text-white/80 mb-8">
             When you smash at Rage Room Portland, you're helping rescue dogs find their forever homes. Our Glass Hound
