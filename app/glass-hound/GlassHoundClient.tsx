@@ -33,7 +33,7 @@ export default function GlassHoundClient() {
             />
           </div>
           <a
-            href="https://docs.google.com/forms"
+            href="https://docs.google.com/forms/d/e/1FAIpQLScf_AUgo1urUwTtbUGQmhlmx1w17OcqDNqLGHCFPEgy04-AZw/viewform?usp=publish-editor"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block mb-6"
@@ -315,7 +315,7 @@ export default function GlassHoundClient() {
                 delivery!
               </p>
               <a
-                href="https://docs.google.com/forms"
+                href="https://docs.google.com/forms/d/e/1FAIpQLScf_AUgo1urUwTtbUGQmhlmx1w17OcqDNqLGHCFPEgy04-AZw/viewform?usp=publish-editor"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block"
