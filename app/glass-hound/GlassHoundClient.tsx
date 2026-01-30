@@ -171,15 +171,20 @@ export default function GlassHoundClient() {
             </a>
 
             {/* Puplandia */}
-            <div className="bg-gradient-to-b from-[#00ffff]/20 to-black border-2 border-[#00ffff] p-8 rounded-lg text-center">
-              <div className="w-20 h-20 rounded-full bg-[#00ffff]/30 flex items-center justify-center mx-auto mb-6">
-                <Dog className="h-10 w-10 text-[#00ffff]" />
+            <a 
+              href="https://www.puplandiadogrescue.org/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-gradient-to-b from-[#00ffff]/20 to-black border-2 border-[#00ffff] p-8 rounded-lg text-center block hover:border-[#00ffff] hover:shadow-lg hover:shadow-[#00ffff]/30 transition-all group"
+            >
+              <div className="w-32 h-32 rounded-full bg-[#00ffff]/30 flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform">
+                <Dog className="h-16 w-16 text-[#00ffff]" />
               </div>
               <h3 className="font-bold text-2xl mb-4 text-[#00ffff]">Puplandia</h3>
               <p className="text-white/80 mb-4">
                 A Portland-based rescue helping dogs in need with shelter, care, and adoption services.
               </p>
-            </div>
+            </a>
           </div>
 
           <div className="text-center mt-12">
