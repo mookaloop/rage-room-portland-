@@ -141,7 +141,7 @@ export default function GlassHoundClient() {
       <section className="py-16 bg-black">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="font-flame text-3xl md:text-4xl mb-4 text-white">
+            <h2 className="font-bold text-3xl md:text-4xl mb-4 text-white">
               OUR <span className="text-[#00ffff]">RESCUE PARTNERS</span>
             </h2>
             <p className="text-lg text-white/70 max-w-2xl mx-auto">
@@ -155,7 +155,7 @@ export default function GlassHoundClient() {
               <div className="w-20 h-20 rounded-full bg-[#ff00ff]/30 flex items-center justify-center mx-auto mb-6">
                 <Heart className="h-10 w-10 text-[#ff00ff]" />
               </div>
-              <h3 className="font-flame text-2xl mb-4 text-[#ff00ff]">Oregon Dog Rescue</h3>
+              <h3 className="font-bold text-2xl mb-4 text-[#ff00ff]">Oregon Dog Rescue</h3>
               <p className="text-white/80 mb-4">
                 A dedicated rescue organization saving dogs throughout Oregon and finding them loving forever homes.
               </p>
@@ -166,7 +166,7 @@ export default function GlassHoundClient() {
               <div className="w-20 h-20 rounded-full bg-[#00ffff]/30 flex items-center justify-center mx-auto mb-6">
                 <Dog className="h-10 w-10 text-[#00ffff]" />
               </div>
-              <h3 className="font-flame text-2xl mb-4 text-[#00ffff]">Puplandia</h3>
+              <h3 className="font-bold text-2xl mb-4 text-[#00ffff]">Puplandia</h3>
               <p className="text-white/80 mb-4">
                 A Portland-based rescue helping dogs in need with shelter, care, and adoption services.
               </p>
@@ -211,7 +211,7 @@ export default function GlassHoundClient() {
       <section className="py-16 bg-black">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="font-flame text-3xl md:text-4xl mb-4 text-white">
+            <h2 className="font-bold text-3xl md:text-4xl mb-4 text-white">
               THE <span className="text-[#00ffff]">GLASS HOUND TOTE</span>
             </h2>
             <p className="text-lg text-white/70 max-w-2xl mx-auto">
@@ -245,7 +245,7 @@ export default function GlassHoundClient() {
       <section className="py-16 bg-gradient-to-b from-black to-[#ff00ff]/10">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="font-flame text-3xl md:text-4xl mb-4 text-white">
+            <h2 className="font-bold text-3xl md:text-4xl mb-4 text-white">
               MEET THE <span className="text-[#ff00ff]">RESCUE PUPS</span>
             </h2>
             <p className="text-lg text-white/70 max-w-2xl mx-auto">
@@ -289,7 +289,7 @@ export default function GlassHoundClient() {
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="font-flame text-3xl md:text-4xl mb-4 text-white">
+              <h2 className="font-bold text-3xl md:text-4xl mb-4 text-white">
                 JOIN <span className="text-[#00ffff]">GLASS HOUND</span>
               </h2>
               <p className="text-lg text-white/70">
@@ -302,7 +302,7 @@ export default function GlassHoundClient() {
               <div className="w-20 h-20 rounded-full bg-[#00ffff]/30 flex items-center justify-center mx-auto mb-6">
                 <Building2 className="h-10 w-10 text-[#00ffff]" />
               </div>
-              <h3 className="font-flame text-2xl mb-4 text-[#00ffff]">BAR SIGN UP FORM</h3>
+              <h3 className="font-bold text-2xl mb-4 text-[#00ffff]">BAR SIGN UP FORM</h3>
               <p className="text-white/80 mb-8">
                 Click the button below to fill out our quick sign-up form. We'll be in touch to schedule your first tote
                 delivery!
@@ -339,7 +339,7 @@ export default function GlassHoundClient() {
       {/* CTA Section */}
       <section className="py-16 bg-gradient-to-r from-[#ff00ff]/20 to-[#00ffff]/20">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="font-flame text-3xl md:text-4xl mb-4 text-white">
+          <h2 className="font-bold text-3xl md:text-4xl mb-4 text-white">
             READY TO <span className="text-[#ff00ff]">SMASH</span> FOR A CAUSE?
           </h2>
           <p className="text-lg text-white/80 mb-8 max-w-2xl mx-auto">
