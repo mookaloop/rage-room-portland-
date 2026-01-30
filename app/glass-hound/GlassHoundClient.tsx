@@ -77,7 +77,7 @@ export default function GlassHoundClient() {
                     className="w-48 h-auto"
                   />
                 </div>
-                <h3 className="font-flame text-xl mb-4 text-[#ff00ff]">BARS SIGN UP</h3>
+                <h3 className="font-bold text-xl mb-4 text-[#ff00ff]">BARS SIGN UP</h3>
                 <p className="text-white/80">
                   Portland bars and restaurants register for the Glass Hound program. It's free to join and helps the
                   community!
@@ -98,7 +98,7 @@ export default function GlassHoundClient() {
                     className="w-48 h-auto"
                   />
                 </div>
-                <h3 className="font-flame text-xl mb-4 text-[#00ffff]">WE DROP OFF TOTE</h3>
+                <h3 className="font-bold text-xl mb-4 text-[#00ffff]">WE DROP OFF TOTE</h3>
                 <p className="text-white/80">
                   We deliver a Glass Hound collection tote to your location. Fill it with recyclable glass bottles and
                   materials.
@@ -119,7 +119,7 @@ export default function GlassHoundClient() {
                     className="w-48 h-auto"
                   />
                 </div>
-                <h3 className="font-flame text-xl mb-4 text-white">WEEKLY PICKUP</h3>
+                <h3 className="font-bold text-xl mb-4 text-white">WEEKLY PICKUP</h3>
                 <p className="text-white/80">
                   We pick up your full tote weekly and replace it with a fresh one. The glass gets smashed at Rage Room
                   Portland!
