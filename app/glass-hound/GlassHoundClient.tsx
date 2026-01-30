@@ -38,7 +38,7 @@ export default function GlassHoundClient() {
             rel="noopener noreferrer"
             className="inline-block mb-6"
           >
-            <Button className="bg-[#ff00ff] hover:bg-[#ff00ff]/80 text-white font-black text-2xl md:text-4xl px-10 py-8 rounded-xl shadow-lg shadow-[#ff00ff]/50 hover:shadow-[#ff00ff]/70 transition-all hover:scale-105">
+            <Button className="bg-[#00ffff] hover:bg-[#00ffff]/80 text-black font-black text-2xl md:text-4xl px-10 py-8 rounded-xl shadow-lg shadow-[#00ffff]/50 hover:shadow-[#00ffff]/70 transition-all hover:scale-105">
               SIGN UP YOUR BAR
             </Button>
           </a>
