@@ -23,19 +23,26 @@ export default function GlassHoundClient() {
       </div>
 
       {/* Hero Section with Prominent Logo */}
-      <section className="py-8 md:py-12 bg-gradient-to-b from-black to-[#ff00ff]/10">
+      <section className="py-4 md:py-6 bg-gradient-to-b from-black to-[#ff00ff]/10">
         <div className="container mx-auto px-4 text-center">
-          <div className="flex justify-center mb-6">
+          <div className="flex justify-center mb-4">
             <img 
               src="/images/glass-hound-logo.png" 
               alt="Glass Hound - Recycle Glass. Rescue Dogs." 
               className="w-full max-w-2xl md:max-w-3xl lg:max-w-4xl h-auto"
             />
           </div>
-          <h1 className="font-flame text-2xl md:text-4xl mb-8 text-white">
-            <span className="text-[#ff00ff]">SMASH FOR A CAUSE</span>
-          </h1>
-          <p className="text-xl max-w-3xl mx-auto text-white/80 mb-8">
+          <a
+            href="https://docs.google.com/forms"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block mb-6"
+          >
+            <Button className="bg-[#ff00ff] hover:bg-[#ff00ff]/80 text-white font-black text-2xl md:text-4xl px-10 py-8 rounded-xl shadow-lg shadow-[#ff00ff]/50 hover:shadow-[#ff00ff]/70 transition-all hover:scale-105">
+              SIGN UP YOUR BAR
+            </Button>
+          </a>
+          <p className="text-lg md:text-xl max-w-3xl mx-auto text-white/90 leading-relaxed">
             When you smash at Rage Room Portland, you're helping rescue dogs find their forever homes. Our Glass Hound
             program recycles glass from local Portland and Vancouver bars and donates a portion of proceeds to our rescue partners.
           </p>
