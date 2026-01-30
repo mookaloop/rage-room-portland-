@@ -169,24 +169,28 @@ export default function ContactClient() {
                   </div>
                   <div className="text-white/90 text-lg leading-relaxed space-y-2">
                     <div className="flex justify-between">
-                      <span>Monday - Wednesday:</span>
+                      <span>Monday, Tuesday:</span>
                       <span className="font-bold">Closed</span>
                     </div>
                     <div className="flex justify-between">
+                      <span>Wednesday:</span>
+                      <span className="font-bold">4pm - 9pm</span>
+                    </div>
+                    <div className="flex justify-between">
                       <span>Thursday:</span>
-                      <span className="font-bold">4pm - 10pm</span>
+                      <span className="font-bold">3pm - 9pm</span>
                     </div>
                     <div className="flex justify-between">
                       <span>Friday:</span>
-                      <span className="font-bold">4pm - 10pm</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Saturday:</span>
                       <span className="font-bold">12pm - 10pm</span>
                     </div>
                     <div className="flex justify-between">
+                      <span>Saturday:</span>
+                      <span className="font-bold">11am - 10pm</span>
+                    </div>
+                    <div className="flex justify-between">
                       <span>Sunday:</span>
-                      <span className="font-bold">12pm - 9pm</span>
+                      <span className="font-bold">11am - 9pm</span>
                     </div>
                   </div>
                 </div>

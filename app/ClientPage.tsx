@@ -202,6 +202,12 @@ export default function ClientPage() {
               >
                 Gift Cards
               </Link>
+              <Link
+                href="/glass-hound"
+                className="text-white hover:text-[#ff00ff] font-bold transition-colors text-sm lg:text-base"
+              >
+                Glass Hound
+              </Link>
               <Link href="/book">
                 <Button className="bg-[#ff00ff] hover:bg-[#ff00ff]/80 text-black font-bold text-sm lg:text-base px-3 lg:px-4 py-2">
                   BOOK NOW
@@ -299,6 +305,14 @@ export default function ClientPage() {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 🎁 Gift Cards
+              </Link>
+
+              <Link
+                href="/glass-hound"
+                className="text-center text-white hover:text-[#ff00ff] font-bold text-lg py-3 border-b border-white/20 transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                🐕 Glass Hound
               </Link>
 
               {/* Contact Info */}

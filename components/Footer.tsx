@@ -56,15 +56,17 @@ export default function Footer() {
           <div className="text-center lg:text-left">
             <h3 className="font-flame text-lg sm:text-xl mb-3 sm:mb-4 text-[#00ffff]">HOURS</h3>
             <p className="text-white/70 text-sm sm:text-base leading-relaxed">
-              Monday - Wednesday: Closed
+              Monday, Tuesday: Closed
               <br />
-              Thursday: 4pm - 10pm
+              Wednesday: 4pm - 9pm
               <br />
-              Friday: 4pm - 10pm
+              Thursday: 3pm - 9pm
               <br />
-              Saturday: 12pm - 10pm
+              Friday: 12pm - 10pm
               <br />
-              Sunday: 12pm - 9pm
+              Saturday: 11am - 10pm
+              <br />
+              Sunday: 11am - 9pm
             </p>
           </div>
 
@@ -83,6 +85,9 @@ export default function Footer() {
               </Link>
               <Link href="/#faq" className="block text-white/70 hover:text-[#ff00ff] transition-colors">
                 FAQ
+              </Link>
+              <Link href="/glass-hound" className="block text-white/70 hover:text-[#ff00ff] transition-colors">
+                Glass Hound
               </Link>
             </div>
           </div>
