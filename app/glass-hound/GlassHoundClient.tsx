@@ -177,8 +177,12 @@ export default function GlassHoundClient() {
               rel="noopener noreferrer"
               className="bg-gradient-to-b from-[#00ffff]/20 to-black border-2 border-[#00ffff] p-8 rounded-lg text-center block hover:border-[#00ffff] hover:shadow-lg hover:shadow-[#00ffff]/30 transition-all group"
             >
-              <div className="w-32 h-32 rounded-full bg-[#00ffff]/30 flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform">
-                <Dog className="h-16 w-16 text-[#00ffff]" />
+              <div className="w-32 h-32 rounded-full bg-white flex items-center justify-center mx-auto mb-6 overflow-hidden group-hover:scale-105 transition-transform">
+                <img 
+                  src="/images/puplandia-logo.avif" 
+                  alt="Puplandia Dog Rescue Logo" 
+                  className="w-28 h-28 object-contain"
+                />
               </div>
               <h3 className="font-bold text-2xl mb-4 text-[#00ffff]">Puplandia</h3>
               <p className="text-white/80 mb-4">
