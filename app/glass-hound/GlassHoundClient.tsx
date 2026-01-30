@@ -220,32 +220,47 @@ export default function GlassHoundClient() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {/* Dog Image Placeholder 1 */}
-            <div className="aspect-square bg-gradient-to-br from-[#ff00ff]/30 to-black rounded-lg border-2 border-[#ff00ff]/50 flex items-center justify-center overflow-hidden">
-              <div className="text-center p-8">
-                <Dog className="h-16 w-16 text-[#ff00ff]/50 mx-auto mb-4" />
-                <p className="text-white/50 text-lg">Rescue Dog</p>
-                <p className="text-white/30 text-sm mt-2">Photo Coming Soon</p>
-              </div>
-            </div>
+            {/* Dog Image 1 */}
+            <a 
+              href="https://www.oregondogrescue.org/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="aspect-square bg-gradient-to-br from-[#ff00ff]/30 to-black rounded-lg border-2 border-[#ff00ff]/50 overflow-hidden group cursor-pointer"
+            >
+              <img 
+                src="/images/rescue-dog-1.jpg" 
+                alt="Adoptable rescue dog from Oregon Dog Rescue" 
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+            </a>
 
-            {/* Dog Image Placeholder 2 */}
-            <div className="aspect-square bg-gradient-to-br from-[#00ffff]/30 to-black rounded-lg border-2 border-[#00ffff]/50 flex items-center justify-center overflow-hidden">
-              <div className="text-center p-8">
-                <Dog className="h-16 w-16 text-[#00ffff]/50 mx-auto mb-4" />
-                <p className="text-white/50 text-lg">Rescue Dog</p>
-                <p className="text-white/30 text-sm mt-2">Photo Coming Soon</p>
-              </div>
-            </div>
+            {/* Dog Image 2 */}
+            <a 
+              href="https://www.oregondogrescue.org/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="aspect-square bg-gradient-to-br from-[#00ffff]/30 to-black rounded-lg border-2 border-[#00ffff]/50 overflow-hidden group cursor-pointer"
+            >
+              <img 
+                src="/images/rescue-dog-2.jpg" 
+                alt="Adoptable rescue dog from Oregon Dog Rescue" 
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+            </a>
 
-            {/* Dog Image Placeholder 3 */}
-            <div className="aspect-square bg-gradient-to-br from-white/30 to-black rounded-lg border-2 border-white/50 flex items-center justify-center overflow-hidden">
-              <div className="text-center p-8">
-                <Dog className="h-16 w-16 text-white/50 mx-auto mb-4" />
-                <p className="text-white/50 text-lg">Rescue Dog</p>
-                <p className="text-white/30 text-sm mt-2">Photo Coming Soon</p>
-              </div>
-            </div>
+            {/* Dog Image 3 */}
+            <a 
+              href="https://www.oregondogrescue.org/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="aspect-square bg-gradient-to-br from-white/30 to-black rounded-lg border-2 border-white/50 overflow-hidden group cursor-pointer"
+            >
+              <img 
+                src="/images/rescue-dog-3.jpg" 
+                alt="Adoptable rescue dog from Oregon Dog Rescue" 
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+            </a>
           </div>
         </div>
       </section>
