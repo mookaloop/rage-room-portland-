@@ -324,13 +324,9 @@ export default function GlassHoundClient() {
 
             <div className="text-center mt-8">
               <p className="text-white/70">
-                Questions? Contact us at{" "}
-                <a href="tel:5032129031" className="text-[#ff00ff] hover:underline">
-                  (503) 212-9031
-                </a>{" "}
-                or email{" "}
-                <a href="mailto:info@rageroomportland.co" className="text-[#00ffff] hover:underline">
-                  info@rageroomportland.co
+                Questions? Contact Mark, our recycling manager, via text or phone at{" "}
+                <a href="tel:5038805608" className="text-[#ff00ff] hover:underline">
+                  (503) 880-5608
                 </a>
               </p>
             </div>
