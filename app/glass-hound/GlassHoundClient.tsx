@@ -58,8 +58,7 @@ export default function GlassHoundClient() {
               HOW <span className="text-[#ff00ff]">GLASS HOUND</span> WORKS
             </h2>
             <p className="text-lg text-white/70 max-w-2xl mx-auto">
-              Portland bars can join our Glass Hound program in three easy steps. Together, we can help rescue dogs while
-              keeping glass out of landfills.
+              Portland bars can join our Glass Hound program in three easy steps. Together, we can help rescue dogs while keeping glass out of landfills.
             </p>
           </div>
 
