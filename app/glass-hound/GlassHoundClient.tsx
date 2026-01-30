@@ -23,7 +23,7 @@ export default function GlassHoundClient() {
       </div>
 
       {/* Hero Section with Prominent Logo */}
-      <section className="py-4 md:py-6 bg-gradient-to-b from-black to-[#ff00ff]/10">
+      <section className="py-4 md:py-6 bg-gradient-to-b from-black to-[#00ffff]/10">
         <div className="container mx-auto px-4 text-center">
           <div className="flex justify-center mb-4">
             <img 
