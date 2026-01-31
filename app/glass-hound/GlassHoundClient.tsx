@@ -69,11 +69,11 @@ export default function GlassHoundClient() {
                 1
               </div>
               <div className="bg-gradient-to-b from-[#ff00ff]/20 to-black border-2 border-[#ff00ff]/50 p-8 rounded-lg text-center h-full pt-12">
-                <div className="flex justify-center mb-6">
+                <div className="flex justify-center items-center mb-6 h-36">
                   <img 
                     src="/images/portland-bars-sign.png" 
                     alt="Portland Oregon Bars" 
-                    className="w-48 h-auto"
+                    className="w-48 h-auto max-h-36 object-contain"
                   />
                 </div>
                 <h3 className="font-bold text-xl mb-4 text-[#ff00ff]">BARS SIGN UP</h3>
@@ -90,11 +90,11 @@ export default function GlassHoundClient() {
                 2
               </div>
               <div className="bg-gradient-to-b from-[#00ffff]/20 to-black border-2 border-[#00ffff]/50 p-8 rounded-lg text-center h-full pt-12">
-                <div className="flex justify-center mb-6">
+                <div className="flex justify-center items-center mb-6 h-36">
                   <img 
                     src="/images/glass-hound-tote.png" 
                     alt="Glass Hound Collection Tote" 
-                    className="w-48 h-auto"
+                    className="w-48 h-auto max-h-36 object-contain"
                   />
                 </div>
                 <h3 className="font-bold text-xl mb-4 text-[#00ffff]">WE DROP OFF TOTE</h3>
@@ -111,11 +111,11 @@ export default function GlassHoundClient() {
                 3
               </div>
               <div className="bg-gradient-to-b from-white/20 to-black border-2 border-white/50 p-8 rounded-lg text-center h-full pt-12">
-                <div className="flex justify-center mb-6">
+                <div className="flex justify-center items-center mb-6 h-36">
                   <img 
                     src="/images/glass-hound-truck.png" 
                     alt="Glass Hound Pickup Truck" 
-                    className="w-48 h-auto"
+                    className="w-48 h-auto max-h-36 object-contain"
                   />
                 </div>
                 <h3 className="font-bold text-xl mb-4 text-white">WEEKLY PICKUP</h3>
@@ -328,6 +328,46 @@ export default function GlassHoundClient() {
                 <a href="tel:5038805608" className="text-[#ff00ff] hover:underline">
                   (503) 880-5608
                 </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 bg-gradient-to-b from-black to-[#00ffff]/10">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="font-bold text-3xl md:text-4xl mb-4 text-white">
+              FREQUENTLY ASKED <span className="text-[#00ffff]">QUESTIONS</span>
+            </h2>
+            <p className="text-lg text-white/70 max-w-2xl mx-auto">
+              Common questions from our bar partners
+            </p>
+          </div>
+
+          <div className="max-w-3xl mx-auto space-y-6">
+            {/* FAQ 1 */}
+            <div className="bg-gradient-to-b from-[#00ffff]/10 to-black border border-[#00ffff]/30 p-6 rounded-lg">
+              <h3 className="font-bold text-xl text-[#00ffff] mb-3">Do I still use my glass recycler?</h3>
+              <p className="text-white/80">
+                Sure! You can use us both, or we can handle all your glass. Whatever works best for your bar is fine with us.
+              </p>
+            </div>
+
+            {/* FAQ 2 */}
+            <div className="bg-gradient-to-b from-[#ff00ff]/10 to-black border border-[#ff00ff]/30 p-6 rounded-lg">
+              <h3 className="font-bold text-xl text-[#ff00ff] mb-3">Does the glass need to be clean?</h3>
+              <p className="text-white/80">
+                Ideally, clean glass helps our volunteers' workflow, but dirty is fine too. Don't stress about it!
+              </p>
+            </div>
+
+            {/* FAQ 3 */}
+            <div className="bg-gradient-to-b from-white/10 to-black border border-white/30 p-6 rounded-lg">
+              <h3 className="font-bold text-xl text-white mb-3">What if a few bottles break while putting them in the bin?</h3>
+              <p className="text-white/80">
+                Not a big deal! We're trained pros and can handle that. We don't want to put any extra burden on your bar staff.
               </p>
             </div>
           </div>
