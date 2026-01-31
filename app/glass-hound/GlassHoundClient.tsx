@@ -69,11 +69,11 @@ export default function GlassHoundClient() {
                 1
               </div>
               <div className="bg-gradient-to-b from-[#ff00ff]/20 to-black border-2 border-[#ff00ff]/50 p-8 rounded-lg text-center h-full pt-12">
-                <div className="flex justify-center mb-6">
+                <div className="flex justify-center items-center mb-6 h-36">
                   <img 
                     src="/images/portland-bars-sign.png" 
                     alt="Portland Oregon Bars" 
-                    className="w-48 h-auto"
+                    className="w-48 h-auto max-h-36 object-contain"
                   />
                 </div>
                 <h3 className="font-bold text-xl mb-4 text-[#ff00ff]">BARS SIGN UP</h3>
@@ -90,11 +90,11 @@ export default function GlassHoundClient() {
                 2
               </div>
               <div className="bg-gradient-to-b from-[#00ffff]/20 to-black border-2 border-[#00ffff]/50 p-8 rounded-lg text-center h-full pt-12">
-                <div className="flex justify-center mb-6">
+                <div className="flex justify-center items-center mb-6 h-36">
                   <img 
                     src="/images/glass-hound-tote.png" 
                     alt="Glass Hound Collection Tote" 
-                    className="w-48 h-auto"
+                    className="w-48 h-auto max-h-36 object-contain"
                   />
                 </div>
                 <h3 className="font-bold text-xl mb-4 text-[#00ffff]">WE DROP OFF TOTE</h3>
@@ -111,11 +111,11 @@ export default function GlassHoundClient() {
                 3
               </div>
               <div className="bg-gradient-to-b from-white/20 to-black border-2 border-white/50 p-8 rounded-lg text-center h-full pt-12">
-                <div className="flex justify-center mb-6">
+                <div className="flex justify-center items-center mb-6 h-36">
                   <img 
                     src="/images/glass-hound-truck.png" 
                     alt="Glass Hound Pickup Truck" 
-                    className="w-48 h-auto"
+                    className="w-48 h-auto max-h-36 object-contain"
                   />
                 </div>
                 <h3 className="font-bold text-xl mb-4 text-white">WEEKLY PICKUP</h3>
