@@ -5,8 +5,16 @@ import { Button } from "@/components/ui/button"
 
 export default function Footer() {
   return (
-    <footer className="bg-black border-t border-[#ff00ff]/30 py-8 sm:py-12">
-      <div className="container mx-auto px-4 sm:px-6">
+    <footer className="bg-black border-t border-[#ff00ff]/30">
+      {/* Electronics Donation Banner */}
+      <div className="bg-gradient-to-r from-[#ff00ff]/20 via-[#00ffff]/20 to-[#ff00ff]/20 border-b border-white/20 py-4">
+        <div className="container mx-auto px-4 sm:px-6 text-center">
+          <p className="text-white font-bold text-sm sm:text-base md:text-lg">
+            We gladly accept donated ♻️ electronics (TVs, printers & etc) anytime during open hours & get a $20 Rage Room credit! 💥
+          </p>
+        </div>
+      </div>
+      <div className="container mx-auto px-4 sm:px-6 py-8 sm:py-12">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 mb-8">
           {/* Business Info */}
           <div className="text-center lg:text-left">
