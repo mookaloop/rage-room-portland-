@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Axe, Hammer, ChevronDown } from "lucide-react"
@@ -10,6 +10,7 @@ export default function ClientPage() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [openFaq, setOpenFaq] = useState<number | null>(0) // Start with first item open
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const videoRef = useRef<HTMLVideoElement>(null)
 
   const toggleFaq = (index: number) => {
     setOpenFaq(openFaq === index ? null : index)
@@ -98,6 +99,27 @@ export default function ClientPage() {
     window.addEventListener("resize", handleResize)
     return () => window.removeEventListener("resize", handleResize)
   }, [isMobileMenuOpen])
+
+  // Force video autoplay on mobile devices
+  useEffect(() => {
+    const video = videoRef.current
+    if (video) {
+      // Attempt to play immediately
+      const playPromise = video.play()
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {
+          // Autoplay was prevented, try again on user interaction
+          const handleInteraction = () => {
+            video.play()
+            document.removeEventListener('touchstart', handleInteraction)
+            document.removeEventListener('click', handleInteraction)
+          }
+          document.addEventListener('touchstart', handleInteraction, { once: true })
+          document.addEventListener('click', handleInteraction, { once: true })
+        })
+      }
+    }
+  }, [])
 
   return (
     <main className="min-h-screen bg-black text-white overflow-hidden m-0 p-0">
@@ -322,11 +344,12 @@ export default function ClientPage() {
 
           {/* Video element optimized for performance and accessibility */}
           <video
+            ref={videoRef}
             autoPlay
             muted
             loop
             playsInline
-            preload="metadata"
+            preload="auto"
             className="absolute inset-0 w-full h-full object-cover pointer-events-none"
             style={{
               width: "100vw",
