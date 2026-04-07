@@ -58,7 +58,9 @@ export default function Footer() {
             <p className="text-white/70 text-sm sm:text-base leading-relaxed">
               Monday - Wednesday: Closed
               <br />
-              Thursday: 4pm - 10pm
+              Tuesday: 4pm - 9pm
+              <br />
+              Thursday: 4pm - 9pm
               <br />
               Friday: 4pm - 10pm
               <br />
