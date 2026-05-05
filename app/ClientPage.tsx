@@ -498,7 +498,7 @@ export default function ClientPage() {
                   {/* Pricing */}
                   <div className="mb-6">
                     <div className="text-3xl md:text-4xl font-black text-white mb-2">
-                      FROM <span className="text-[#00ffff]">$19.99</span>
+                      FROM <span className="text-[#00ffff]">$25</span>
                     </div>
                     <div className="text-white/60 text-sm uppercase tracking-wide">1 hour sessions</div>
                   </div>
