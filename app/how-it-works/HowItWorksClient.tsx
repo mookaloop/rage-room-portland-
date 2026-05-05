@@ -101,7 +101,7 @@ export default function HowItWorksClient() {
                   <p className="text-white/80 mb-6">
                     Test your aim and channel your inner lumberjack with professional Portland axe throwing lanes.
                   </p>
-                  <div className="text-2xl font-bold text-white">Starting at $19.99</div>
+                  <div className="text-2xl font-bold text-white">Starting at $25</div>
                 </div>
 
                 {/* Combo */}
