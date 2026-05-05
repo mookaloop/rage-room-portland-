@@ -64,11 +64,11 @@ export default function Footer() {
               <br />
               Thursday: 4pm - 9pm
               <br />
-              Friday: 4pm - 10pm
+              Friday: 12pm - 10pm
               <br />
-              Saturday: 12pm - 10pm
+              Saturday: 11am - 10pm
               <br />
-              Sunday: 12pm - 9pm
+              Sunday: 11am - 9pm
             </p>
           </div>
 

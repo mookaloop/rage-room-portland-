@@ -186,15 +186,15 @@ export default function ContactClient() {
                     </div>
                     <div className="flex justify-between">
                       <span>Friday:</span>
-                      <span className="font-bold">4pm - 10pm</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Saturday:</span>
                       <span className="font-bold">12pm - 10pm</span>
                     </div>
                     <div className="flex justify-between">
+                      <span>Saturday:</span>
+                      <span className="font-bold">11am - 10pm</span>
+                    </div>
+                    <div className="flex justify-between">
                       <span>Sunday:</span>
-                      <span className="font-bold">12pm - 9pm</span>
+                      <span className="font-bold">11am - 9pm</span>
                     </div>
                   </div>
                 </div>
