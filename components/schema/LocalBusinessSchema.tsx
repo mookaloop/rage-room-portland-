@@ -26,7 +26,7 @@ export default function LocalBusinessSchema() {
       latitude: "45.5848",
       longitude: "-122.7574",
     },
-    openingHours: ["Mo-Th 16:00-23:00", "Fr 14:00-01:00", "Sa 12:00-01:00", "Su 12:00-22:00"],
+    openingHours: ["Tu-Th 16:00-21:00", "Fr 16:00-22:00", "Sa 12:00-22:00", "Su 12:00-21:00"],
     image: [
       "https://rageroomportland.co/images/rage-room-logo.png",
       "https://rageroomportland.co/images/rage-room-interior.jpg",
