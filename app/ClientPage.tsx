@@ -19,7 +19,7 @@ export default function ClientPage() {
     {
       question: "What can I smash in the rage room?",
       answer:
-        "You can smash a variety of items including bottles, plates, electronics, small furniture, and other breakable objects. We provide a safe selection of items specifically chosen for maximum satisfaction and safety.",
+        "You can smash a variety of items including bottles, electronics, and other breakable objects. We provide a safe selection of items specifically chosen for maximum satisfaction and safety.",
     },
     {
       question: "How much does a rage room session cost?",
