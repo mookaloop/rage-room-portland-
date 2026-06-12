@@ -16,7 +16,7 @@ export default function FAQSchema() {
         name: "How much does a rage room session cost?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Our rage room sessions start at $35 for a 15-minute session. We offer packages for groups, extended sessions, and combo deals with axe throwing.",
+          text: "Our rage room sessions start at $35 for a 45-minute session. We offer packages for groups, extended sessions, and combo deals with axe throwing.",
         },
       },
       {

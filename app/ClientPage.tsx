@@ -24,7 +24,7 @@ export default function ClientPage() {
     {
       question: "How much does a rage room session cost?",
       answer:
-        "Our rage room Portland sessions start at $35 for a 1 hour session. We offer packages for groups, extended sessions, and combo deals with axe throwing. You can also add on fun things like large electronics or flat screen TVs for an extra charge!",
+        "Our rage room Portland sessions start at $35 for a 45-minute session. We offer packages for groups, extended sessions, and combo deals with axe throwing. You can also add on fun things like large electronics or flat screen TVs for an extra charge!",
     },
     {
       question: "What safety equipment is provided?",
