@@ -19,12 +19,12 @@ export default function ClientPage() {
     {
       question: "What can I smash in the rage room?",
       answer:
-        "You can smash a variety of items including bottles, plates, electronics, small furniture, and other breakable objects. We provide a safe selection of items specifically chosen for maximum satisfaction and safety.",
+        "You can smash a variety of items including bottles, electronics, and other breakable objects. We provide a safe selection of items specifically chosen for maximum satisfaction and safety.",
     },
     {
       question: "How much does a rage room session cost?",
       answer:
-        "Our rage room Portland sessions start at $35 for a 1 hour session. We offer packages for groups, extended sessions, and combo deals with axe throwing. You can also add on fun things like large electronics or flat screen TVs for an extra charge!",
+        "Our rage room Portland sessions start at $35 for a 45-minute session. We offer packages for groups, extended sessions, and combo deals with axe throwing. You can also add on fun things like large electronics or flat screen TVs for an extra charge!",
     },
     {
       question: "What safety equipment is provided?",
@@ -178,6 +178,14 @@ export default function ClientPage() {
                 <span className="hidden lg:inline">Large Party / Team Building</span>
                 <span className="lg:hidden">Team Building</span>
               </Link>
+              <a
+                href="https://waiver.smartwaiver.com/w/tkfmatvzjuc5pg5n471dgf/web/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-[#ff00ff] font-bold transition-colors text-sm lg:text-base"
+              >
+                Sign Waiver
+              </a>
               <Link
                 href="/how-it-works"
                 className="text-white hover:text-[#ff00ff] font-bold transition-colors text-sm lg:text-base"
@@ -274,6 +282,16 @@ export default function ClientPage() {
               >
                 🎉 Team Building & Parties
               </Link>
+
+              <a
+                href="https://waiver.smartwaiver.com/w/tkfmatvzjuc5pg5n471dgf/web/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-center text-white hover:text-[#ff00ff] font-bold text-lg py-3 border-b border-white/20 transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                ✍️ Sign Waiver
+              </a>
 
               <Link
                 href="/how-it-works"
