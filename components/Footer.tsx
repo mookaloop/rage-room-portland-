@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="bg-gradient-to-r from-[#ff00ff]/20 via-[#00ffff]/20 to-[#ff00ff]/20 border-b border-white/20 py-4">
         <div className="container mx-auto px-4 sm:px-6 text-center">
           <p className="text-white font-bold text-sm sm:text-base md:text-lg">
-            We gladly accept donated ♻️ electronics (TVs, printers & etc) anytime during open hours & get a $20 Rage Room credit! 💥
+            We gladly accept donated ♻️ electronics (TVs, printers & etc) anytime during open hours get a $20 Rage Room credit! 💥
           </p>
         </div>
       </div>
