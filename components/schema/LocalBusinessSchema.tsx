@@ -66,7 +66,7 @@ export default function LocalBusinessSchema() {
           itemOffered: {
             "@type": "Service",
             name: "Rage Room Session",
-            description: "Smash bottles, electronics, and furniture in soundproof destruction chambers",
+            description: "Smash bottles, electronics, TVs, printers, and fax machines in our soundproof destruction chamber while playing your own music. We recycle 100% of the destruction you make.",
           },
           price: "35",
           priceCurrency: "USD",

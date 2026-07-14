@@ -19,7 +19,7 @@ export default function ClientPage() {
     {
       question: "What can I smash in the rage room?",
       answer:
-        "You can smash a variety of items including bottles, plates, electronics, small furniture, and other breakable objects. We provide a safe selection of items specifically chosen for maximum satisfaction and safety.",
+        "We recycle a variety of electronics, including TVs, printers, fax machines, old video game systems, and glass. We do not smash ceramics or furniture because we recycle 100% of our destruction.",
     },
     {
       question: "How much does a rage room session cost?",
@@ -49,12 +49,17 @@ export default function ClientPage() {
     {
       question: "What is the minimum age? Any other requirements?",
       answer:
-        "Rage room age limit for participants should be at least 13 years old. Minors (13-17) must have a parent or guardian present to sign a waiver. All participants must wear closed-toe shoes and sign our liability waiver before participating.",
+        "Participants must be 10 years old or older. A parent or guardian can sign a waiver online before the appointment. At least one parent or guardian must be in attendance, but they do not have to participate.",
     },
     {
       question: "Are there food and drinks available?",
       answer:
         "Yes! Our brewpub offers a full menu of craft beers, cocktails, and food. You can enjoy drinks and food before or after your rage session. Please note that alcohol consumption is not permitted before rage room activities in Portland for safety reasons.",
+    },
+    {
+      question: "Parking?",
+      answer:
+        "Parking is limited, but there are always spots on the street. Please make sure to arrive 15 minutes early to find a spot and get to your appointment on time so you can have a full experience.",
     },
   ]
 
@@ -447,8 +452,7 @@ export default function ClientPage() {
                     RAGE ROOM PORTLAND
                   </h3>
                   <p className="text-white/80 text-base md:text-lg mb-6 leading-relaxed">
-                    Smash bottles, electronics, and furniture in our soundproof destruction chambers. Pure therapeutic chaos in #1 Portland rage room!
-
+                    Smash bottles, electronics, TVs, printers, and fax machines in our soundproof destruction chamber while playing your own music turned up to eleven. We recycle 100% of the destruction you make.
                   </p>
 
                   {/* Pricing */}
@@ -456,7 +460,7 @@ export default function ClientPage() {
                     <div className="text-3xl md:text-4xl font-black text-white mb-2">
                       FROM <span className="text-[#ff00ff]">$35</span>
                     </div>
-                    <div className="text-white/60 text-sm uppercase tracking-wide">1 hour sessions</div>
+                    <div className="text-white/60 text-sm uppercase tracking-wide">45 minute sessions</div>
                   </div>
 
                   {/* Button */}
@@ -831,6 +835,24 @@ export default function ClientPage() {
                                   >
                                     book online
                                   </span>
+                                )}
+                              </span>
+                            ))}
+                          </div>
+                        ) : actualIndex === 6 ? (
+                          <div>
+                            {faq.answer.split("sign a waiver online").map((part, i) => (
+                              <span key={i}>
+                                {part}
+                                {i === 0 && (
+                                  <a
+                                    href="https://waiver.smartwaiver.com/w/tkfmatvzjuc5pg5n471dgf/web/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-[#ff00ff] hover:text-[#ff00ff]/80 underline"
+                                  >
+                                    sign a waiver online
+                                  </a>
                                 )}
                               </span>
                             ))}

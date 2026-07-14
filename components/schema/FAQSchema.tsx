@@ -8,7 +8,7 @@ export default function FAQSchema() {
         name: "What can I smash in the rage room?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "You can smash a variety of items including bottles, plates, electronics, small furniture, and other breakable objects. We provide a safe selection of items specifically chosen for maximum satisfaction and safety.",
+          text: "We recycle a variety of electronics, including TVs, printers, fax machines, old video game systems, and glass. We do not smash ceramics or furniture because we recycle 100% of our destruction.",
         },
       },
       {
@@ -40,7 +40,15 @@ export default function FAQSchema() {
         name: "What is the minimum age? Any other requirements?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Participants must be at least 13 years old. Minors (13-17) must have a parent or guardian present to sign a waiver. All participants must wear closed-toe shoes and sign our liability waiver before participating.",
+          text: "Participants must be 10 years old or older. A parent or guardian can sign a waiver online before the appointment. At least one parent or guardian must be in attendance, but they do not have to participate.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Parking?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Parking is limited, but there are always spots on the street. Please make sure to arrive 15 minutes early to find a spot and get to your appointment on time so you can have a full experience.",
         },
       },
     ],

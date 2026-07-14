@@ -225,7 +225,7 @@ export default function PartiesEventsClient() {
                 unique birthday celebration in the city!
               </p>
               <ul className="text-white/70 space-y-2">
-                <li>• Ages 13+ welcome</li>
+                <li>• Ages 10+ welcome</li>
                 <li>• Party packages available</li>
                 <li>• Decorations included</li>
                 <li>• Group photos provided</li>
