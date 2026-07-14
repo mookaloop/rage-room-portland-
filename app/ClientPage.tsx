@@ -463,7 +463,7 @@ export default function ClientPage() {
                   <Button
                     className="w-full bg-gradient-to-r from-[#ff00ff] to-[#ff0080] hover:from-[#ff0080] hover:to-[#ff00ff] text-white font-black text-lg py-4 rounded-xl border-2 border-[#ff00ff] transform transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(255,0,255,0.6)] uppercase tracking-wider"
                     onClick={() =>
-                      window.open("https://Bookcelticaxe.as.me/?appointmentType=category:Rage%20Room%20", "_blank")
+                      window.open("https://Bookcelticaxe.as.me/?appointmentType=category:Stormbreaker%20Rage%20Room%20", "_blank")
                     }
                   >
                     🔥 BOOK RAGE ROOM 🔥
@@ -571,7 +571,7 @@ export default function ClientPage() {
                     className="w-full bg-gradient-to-r from-[#ff00ff] via-white to-[#00ffff] hover:from-[#00ffff] hover:via-white hover:to-[#ff00ff] text-black font-black text-lg py-4 rounded-xl border-2 border-white transform transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(255,255,255,0.8)] uppercase tracking-tighter"
                     onClick={() =>
                       window.open(
-                        "https://Bookcelticaxe.as.me/?appointmentType=category:Rage%20%2F%20Axe%20Combo",
+                        "https://Bookcelticaxe.as.me/?appointmentType=category:Stormbreaker%20Rage%20%2F%20Axe%20Combo",
                         "_blank",
                       )
                     }
@@ -728,7 +728,7 @@ export default function ClientPage() {
               <button
                 className="bg-[#dc2626] hover:bg-[#dc2626]/90 text-white font-black text-base sm:text-lg px-8 sm:px-10 py-4 sm:py-5 rounded-none border-2 border-[#dc2626] transform transition-all hover:scale-105 hover:shadow-[0_0_25px_rgba(220,38,38,0.6)] w-full sm:w-auto uppercase tracking-wider"
                 onClick={() =>
-                  window.open("https://Bookcelticaxe.as.me/?appointmentType=category:Rage%20Room%20", "_blank")
+                  window.open("https://Bookcelticaxe.as.me/?appointmentType=category:Stormbreaker%20Rage%20Room%20", "_blank")
                 }
               >
                 🔥 EXPERIENCE PORTLAND'S BEST 🔥

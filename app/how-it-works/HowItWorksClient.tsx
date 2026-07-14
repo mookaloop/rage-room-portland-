@@ -291,7 +291,7 @@ export default function HowItWorksClient() {
                   className="bg-gradient-to-r from-[#ff00ff] to-[#00ffff] hover:from-[#ff00ff]/80 hover:to-[#00ffff]/80 text-black font-bold text-xl px-12 py-6"
                   onClick={() =>
                     window.open(
-                      "https://Bookcelticaxe.as.me/?location=8409%20N%20Lombard%20St%2C%20Portland%2C%20OR%2097203",
+                      "https://Bookcelticaxe.as.me/?appointmentType=category:Stormbreaker%20Rage%20Room%20",
                       "_blank",
                     )
                   }
@@ -390,7 +390,7 @@ export default function HowItWorksClient() {
               className="bg-[#ff00ff] hover:bg-[#ff00ff]/80 text-black font-bold text-lg px-8 py-6"
               onClick={() =>
                 window.open(
-                  "https://Bookcelticaxe.as.me/?location=8409%20N%20Lombard%20St%2C%20Portland%2C%20OR%2097203",
+                  "https://Bookcelticaxe.as.me/?appointmentType=category:Stormbreaker%20Rage%20Room%20",
                   "_blank",
                 )
               }
