@@ -19,7 +19,7 @@ export default function ClientPage() {
     {
       question: "What can I smash in the rage room?",
       answer:
-        "You can smash a variety of items including bottles, plates, electronics, small furniture, and other breakable objects. We provide a safe selection of items specifically chosen for maximum satisfaction and safety.",
+        "We recycle a variety of electronics, including TVs, printers, fax machines, old video game systems, and glass. We do not smash ceramics or furniture because we recycle 100% of our destruction.",
     },
     {
       question: "How much does a rage room session cost?",
