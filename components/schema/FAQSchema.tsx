@@ -43,6 +43,14 @@ export default function FAQSchema() {
           text: "Participants must be 10 years old or older. A parent or guardian can sign a waiver online before the appointment. At least one parent or guardian must be in attendance, but they do not have to participate.",
         },
       },
+      {
+        "@type": "Question",
+        name: "Parking?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Parking is limited, but there are always spots on the street. Please make sure to arrive 15 minutes early to find a spot and get to your appointment on time so you can have a full experience.",
+        },
+      },
     ],
   }
 

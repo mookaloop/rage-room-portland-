@@ -56,6 +56,11 @@ export default function ClientPage() {
       answer:
         "Yes! Our brewpub offers a full menu of craft beers, cocktails, and food. You can enjoy drinks and food before or after your rage session. Please note that alcohol consumption is not permitted before rage room activities in Portland for safety reasons.",
     },
+    {
+      question: "Parking?",
+      answer:
+        "Parking is limited, but there are always spots on the street. Please make sure to arrive 15 minutes early to find a spot and get to your appointment on time so you can have a full experience.",
+    },
   ]
 
   useEffect(() => {
