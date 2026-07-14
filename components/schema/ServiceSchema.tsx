@@ -30,7 +30,7 @@ export default function ServiceSchema() {
           itemOffered: {
             "@type": "Service",
             name: "Individual Rage Room Session",
-            description: "Personal stress relief session in soundproof rage room",
+            description: "Smash bottles, electronics, TVs, printers, and fax machines in our soundproof destruction chamber while playing your own music. We recycle 100% of the destruction you make.",
           },
           price: "35",
           priceCurrency: "USD",

@@ -78,8 +78,7 @@ export default function BookPageClient() {
                     RAGE ROOM PORTLAND
                   </h2>
                   <p className="text-white/80 text-base md:text-lg mb-6 leading-relaxed">
-                    Smash bottles, electronics, and furniture in our soundproof destruction chambers. Pure therapeutic
-                    chaos in Portland's #1 rage room!
+                    Smash bottles, electronics, TVs, printers, and fax machines in our soundproof destruction chamber while playing your own music turned up to eleven. We recycle 100% of the destruction you make.
                   </p>
 
                   {/* Pricing */}
@@ -87,7 +86,7 @@ export default function BookPageClient() {
                     <div className="text-3xl md:text-4xl font-black text-white mb-2">
                       FROM <span className="text-[#ff00ff]">$35</span>
                     </div>
-                    <div className="text-white/60 text-sm uppercase tracking-wide">1 Hour Sessions</div>
+                    <div className="text-white/60 text-sm uppercase tracking-wide">45 Minute Sessions</div>
                   </div>
 
                   {/* Button */}

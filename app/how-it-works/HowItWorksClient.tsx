@@ -86,8 +86,7 @@ export default function HowItWorksClient() {
                   </div>
                   <h3 className="font-flame text-2xl mb-4 text-[#ff00ff]">RAGE ROOM PORTLAND</h3>
                   <p className="text-white/80 mb-6">
-                    Smash bottles, electronics, and furniture in our soundproof rooms. Perfect for Portland stress
-                    relief!
+                    Smash bottles, electronics, TVs, printers, and fax machines in our soundproof destruction chamber while playing your own music turned up to eleven. We recycle 100% of the destruction you make.
                   </p>
                   <div className="text-2xl font-bold text-white">Starting at $35</div>
                 </div>
