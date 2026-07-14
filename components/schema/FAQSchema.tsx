@@ -40,7 +40,7 @@ export default function FAQSchema() {
         name: "What is the minimum age? Any other requirements?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Participants must be at least 13 years old. Minors (13-17) must have a parent or guardian present to sign a waiver. All participants must wear closed-toe shoes and sign our liability waiver before participating.",
+          text: "Participants must be 10 years old or older. A parent or guardian can sign a waiver online before the appointment. At least one parent or guardian must be in attendance, but they do not have to participate.",
         },
       },
     ],

@@ -49,7 +49,7 @@ export default function ClientPage() {
     {
       question: "What is the minimum age? Any other requirements?",
       answer:
-        "Rage room age limit for participants should be at least 13 years old. Minors (13-17) must have a parent or guardian present to sign a waiver. All participants must wear closed-toe shoes and sign our liability waiver before participating.",
+        "Participants must be 10 years old or older. A parent or guardian can sign a waiver online before the appointment. At least one parent or guardian must be in attendance, but they do not have to participate.",
     },
     {
       question: "Are there food and drinks available?",
@@ -831,6 +831,24 @@ export default function ClientPage() {
                                   >
                                     book online
                                   </span>
+                                )}
+                              </span>
+                            ))}
+                          </div>
+                        ) : actualIndex === 6 ? (
+                          <div>
+                            {faq.answer.split("sign a waiver online").map((part, i) => (
+                              <span key={i}>
+                                {part}
+                                {i === 0 && (
+                                  <a
+                                    href="https://waiver.smartwaiver.com/w/tkfmatvzjuc5pg5n471dgf/web/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-[#ff00ff] hover:text-[#ff00ff]/80 underline"
+                                  >
+                                    sign a waiver online
+                                  </a>
                                 )}
                               </span>
                             ))}
