@@ -94,7 +94,7 @@ export default function BookPageClient() {
                   <Button
                     className="w-full bg-gradient-to-r from-[#ff00ff] to-[#ff0080] hover:from-[#ff0080] hover:to-[#ff00ff] text-white font-black text-lg py-4 rounded-xl border-2 border-[#ff00ff] transform transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(255,0,255,0.6)] uppercase tracking-wider"
                     onClick={() =>
-                      window.open("https://Bookcelticaxe.as.me/?appointmentType=category:Rage%20Room%20", "_blank")
+                      window.open("https://Bookcelticaxe.as.me/?appointmentType=category:Stormbreaker%20Rage%20Room%20", "_blank")
                     }
                   >
                     🔥 BOOK RAGE ROOM 🔥
