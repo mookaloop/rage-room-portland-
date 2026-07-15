@@ -63,9 +63,9 @@ export const locations: Record<LocationSlug, LocationData> = {
       { day: "Sunday", opens: "15:00", closes: "20:00", label: "3–8 PM" },
     ],
     bookingLinks: [
-      { name: "Stickmen Rage Room", description: "The main event: break bottles, electronics, and more in a private rage suite.", price: "From $35", duration: "45 minutes", url: "https://app.acuityscheduling.com/schedule.php?owner=21103841&appointmentType=category:Stickmen%20Rage%20Room" },
-      { name: "Stickmen Rage / Axe Combo", description: "Start with the rage room and add axe throwing to your visit.", price: "From $45", duration: "About 90 minutes", url: "https://app.acuityscheduling.com/schedule.php?owner=21103841&appointmentType=category:Stickmen%20Rage%20%2F%20Axe%20Combo" },
-      { name: "Stickmen Axe Throwing", description: "An optional guided axe throwing session with equipment included.", price: "From $25", duration: "1 hour", url: "https://app.acuityscheduling.com/schedule.php?owner=21103841&appointmentType=category:Stickmen%20Axe%20Throwing" },
+      { name: "Stickmen Rage Room", description: "The main event: break bottles, electronics, and more in a private rage suite.", price: "From $35", duration: "45 minutes", url: "https://app.acuityscheduling.com/schedule.php?owner=21103841&appointmentType=category:Stickmen+Rage+Room" },
+      { name: "Stickmen Rage / Axe Combo", description: "Start with the rage room and add axe throwing to your visit.", price: "From $45", duration: "About 90 minutes", url: "https://app.acuityscheduling.com/schedule.php?owner=21103841&appointmentType=category:Stickmen+Rage+%2F+Axe+Combo" },
+      { name: "Stickmen Axe Throwing", description: "An optional guided axe throwing session with equipment included.", price: "From $25", duration: "1 hour", url: "https://app.acuityscheduling.com/schedule.php?owner=21103841&appointmentType=category:Stickmen+Axe+Throwing" },
     ],
     waiverUrl: "https://waiver.smartwaiver.com/w/5dd30c54c7d71/web/",
     directionsUrl: "https://maps.google.com/?q=19475+SW+118th+Ave,+Tualatin,+OR+97062",
