@@ -4,7 +4,6 @@ import { useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowLeft, Users, Calendar, Trophy, Hammer, Axe, Star, Clock, MapPin, Phone } from "lucide-react"
-import Footer from "@/components/Footer"
 
 export default function PartiesEventsClient() {
   const [openFaq, setOpenFaq] = useState<number | null>(0)
@@ -336,7 +335,7 @@ export default function PartiesEventsClient() {
       </section>
 
       {/* CTA Section */}
-      <Footer />
+  
     </main>
   )
 }

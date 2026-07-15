@@ -1,38 +1,17 @@
 import type { MetadataRoute } from "next"
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://rageroomportland.co"
-
-  return [
-    {
-      url: baseUrl,
-      lastModified: new Date("2025-01-06"),
-      changeFrequency: "weekly",
-      priority: 1.0,
-    },
-    {
-      url: `${baseUrl}/book`,
-      lastModified: new Date("2025-01-06"),
-      changeFrequency: "weekly",
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/how-it-works`,
-      lastModified: new Date("2025-01-06"),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/parties-events`,
-      lastModified: new Date("2025-01-06"),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/gift-cards`,
-      lastModified: new Date("2025-01-06"),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
+  const base = "https://rageroomportland.co"
+  const updated = new Date("2026-07-15")
+  const routes = [
+    { path: "", frequency: "weekly" as const, priority: 1 },
+    { path: "/locations/st-johns", frequency: "weekly" as const, priority: 0.95 },
+    { path: "/locations/tualatin", frequency: "weekly" as const, priority: 0.95 },
+    { path: "/book", frequency: "weekly" as const, priority: 0.9 },
+    { path: "/how-it-works", frequency: "monthly" as const, priority: 0.8 },
+    { path: "/parties-events", frequency: "monthly" as const, priority: 0.8 },
+    { path: "/gift-cards", frequency: "monthly" as const, priority: 0.7 },
+    { path: "/contact", frequency: "monthly" as const, priority: 0.7 },
   ]
+  return routes.map((route) => ({ url: `${base}${route.path}`, lastModified: updated, changeFrequency: route.frequency, priority: route.priority }))
 }

@@ -1,12 +1,15 @@
 import type { Metadata } from "next"
 import BookPageClient from "./BookPageClient"
+import type { LocationSlug } from "@/lib/locations"
 
 export const metadata: Metadata = {
-  title: "Book Rage Room Portland | Instant Online Booking | Axe Throwing",
-  description:
-    "Book Rage Room Portland now! Choose rage room sessions, axe throwing, or combo packages. Instant online booking available. Portland's #1 stress relief experience!",
+  title: "Book a Rage Room | Portland & Tualatin",
+  description: "Choose St. Johns or Tualatin and book a private rage room session online. Add axe throwing or choose a combo experience if you want more.",
+  alternates: { canonical: "/book" },
 }
 
-export default function BookPage() {
-  return <BookPageClient />
+export default async function BookPage({ searchParams }: { searchParams: Promise<{ location?: string }> }) {
+  const query = await searchParams
+  const initialLocation: LocationSlug = query.location === "tualatin" ? "tualatin" : "st-johns"
+  return <BookPageClient initialLocation={initialLocation} />
 }

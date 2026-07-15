@@ -3,7 +3,6 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowLeft, Gift, CreditCard, Calendar, Zap } from "lucide-react"
-import Footer from "@/components/Footer"
 
 export default function GiftCardsClient() {
   const giftCardSchema = {
@@ -314,7 +313,7 @@ export default function GiftCardsClient() {
         </div>
       </section>
 
-      <Footer />
+  
     </main>
   )
 }

@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Gift Cards | Rage Room Portland",
   description:
     "Give the gift of destruction with a Rage Room Portland gift card — perfect for birthdays, holidays, or stress relief.",
+  alternates: { canonical: "/gift-cards" },
 }
 
 export default function GiftCards() {
