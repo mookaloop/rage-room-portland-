@@ -15,29 +15,44 @@ import { locations, type LocationSlug } from "@/lib/locations"
 const offerConfig = [
   {
     icon: Hammer,
-    gradient: "from-primary to-pink-400",
-    borderColor: "border-primary",
-    glowColor: "shadow-[0_0_24px_4px_hsl(322_100%_55%_/_0.45)]",
-    titleColor: "text-primary",
-    btnLabel: (name: string) => `Book ${name.replace(/stickmen /i, "").replace(/rage room/i, "Rage Room")}`,
+    iconBg: "bg-[radial-gradient(circle_at_40%_40%,hsl(322_100%_62%),hsl(322_100%_35%))]",
+    borderStyle: "border-[hsl(322_100%_55%)]",
+    glowColor: "shadow-[0_0_28px_6px_hsl(322_100%_55%_/_0.55),inset_0_0_30px_0px_hsl(322_100%_55%_/_0.04)]",
+    titleColor: "text-[hsl(322_100%_62%)]",
+    description:
+      "Smash bottles, electronics, TVs, printers, and fax machines in our soundproof destruction chamber while playing your own music turned up to eleven. We recycle 100% of the destruction you make. Safety gear provided — hard hat, coveralls, face shield, and gloves. No experience necessary!",
+    btnEmoji: "🔥",
+    btnLabel: "BOOK RAGE ROOM",
+    btnClass:
+      "bg-[hsl(322_100%_55%)] hover:bg-[hsl(322_100%_48%)] text-white border-0 shadow-[0_0_16px_4px_hsl(322_100%_55%_/_0.5)]",
     badge: null,
   },
   {
     icon: Zap,
-    gradient: "from-primary via-secondary to-teal-300",
-    borderColor: "border-secondary",
-    glowColor: "shadow-[0_0_24px_4px_hsl(184_100%_48%_/_0.35),0_0_48px_8px_hsl(322_100%_55%_/_0.2)]",
-    titleColor: "text-foreground",
-    btnLabel: () => "Book Ultimate Combo",
-    badge: "BEST VALUE",
+    iconBg: "bg-[radial-gradient(circle_at_40%_40%,hsl(184_100%_55%),hsl(280_100%_55%))]",
+    borderStyle: "border-[hsl(184_100%_48%)]",
+    glowColor: "shadow-[0_0_28px_6px_hsl(184_100%_48%_/_0.5),inset_0_0_30px_0px_hsl(184_100%_48%_/_0.04)]",
+    titleColor: "text-[hsl(184_100%_52%)]",
+    description:
+      "Why choose? Get the full experience! Rage room destruction plus a full axe throwing session back to back in Portland. All gear included — destruction suit, face shield, throwing axes, and lane equipment. The ultimate Portland adventure.",
+    btnEmoji: "💀",
+    btnLabel: "BOOK ULTIMATE COMBO",
+    btnClass:
+      "bg-gradient-to-r from-[hsl(322_100%_55%)] to-[hsl(184_100%_48%)] hover:opacity-90 text-white border-0 shadow-[0_0_20px_4px_hsl(322_100%_55%_/_0.4),0_0_20px_4px_hsl(184_100%_48%_/_0.4)]",
+    badge: "🔥 BEST VALUE 🔥",
   },
   {
     icon: Axe,
-    gradient: "from-secondary to-teal-200",
-    borderColor: "border-secondary",
-    glowColor: "shadow-[0_0_24px_4px_hsl(184_100%_48%_/_0.45)]",
-    titleColor: "text-secondary",
-    btnLabel: () => "Book Axe Throwing",
+    iconBg: "bg-[radial-gradient(circle_at_40%_40%,hsl(184_100%_55%),hsl(184_100%_28%))]",
+    borderStyle: "border-[hsl(184_100%_48%)]",
+    glowColor: "shadow-[0_0_28px_6px_hsl(184_100%_48%_/_0.55),inset_0_0_30px_0px_hsl(184_100%_48%_/_0.04)]",
+    titleColor: "text-[hsl(184_100%_52%)]",
+    description:
+      "Channel your inner Viking! Professional lanes with expert instruction from our certified coaches. Throwing axes, safety barriers, and scoring all included. Join the best axe throwing Portland experience — open to all skill levels, groups welcome.",
+    btnEmoji: "⚡",
+    btnLabel: "BOOK AXE THROWING",
+    btnClass:
+      "bg-[hsl(184_100%_40%)] hover:bg-[hsl(184_100%_34%)] text-black border-0 shadow-[0_0_16px_4px_hsl(184_100%_48%_/_0.5)]",
     badge: null,
   },
 ]
@@ -55,75 +70,82 @@ function OfferCard({
 }) {
   const cfg = offerConfig[index] ?? offerConfig[0]
   const Icon = cfg.icon
-  // Split "From $35" into prefix + price
   const priceMatch = offer.price.match(/^(From\s+)(\$.+)$/)
-  const pricePrefix = priceMatch ? priceMatch[1] : ""
+  const pricePrefix = priceMatch ? priceMatch[1].trim() : ""
   const priceAmount = priceMatch ? priceMatch[2] : offer.price
 
   return (
     <div
       className={cn(
-        "neon-border-hover relative flex flex-col rounded-xl border-2 bg-card p-6 text-center transition-all duration-300",
-        cfg.borderColor,
+        "neon-border-hover relative flex flex-col rounded-2xl border-2 bg-[#0a0a0f] p-7 text-center transition-all duration-300",
+        cfg.borderStyle,
         cfg.glowColor,
       )}
     >
-      {/* Badge */}
+      {/* Best value badge */}
       {cfg.badge && (
-        <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-          <span className="rounded-full bg-gradient-to-r from-primary to-secondary px-4 py-1.5 text-xs font-black uppercase tracking-widest text-white shadow-lg">
+        <div className="absolute -top-5 left-1/2 -translate-x-1/2 whitespace-nowrap">
+          <span className="rounded-full bg-gradient-to-r from-[hsl(322_100%_55%)] via-purple-500 to-[hsl(184_100%_48%)] px-5 py-2 text-xs font-black uppercase tracking-widest text-white shadow-[0_0_16px_4px_hsl(322_100%_55%_/_0.6)]">
             {cfg.badge}
           </span>
         </div>
       )}
 
       {/* Icon circle */}
-      <div className={cn("mx-auto mb-5 flex size-24 items-center justify-center rounded-full bg-gradient-to-br", cfg.gradient)}>
-        <Icon className="size-10 text-white" aria-hidden="true" />
+      <div className={cn("mx-auto mb-6 mt-2 flex size-28 items-center justify-center rounded-full", cfg.iconBg)}>
+        <Icon className="size-12 text-white drop-shadow-lg" strokeWidth={1.8} aria-hidden="true" />
       </div>
 
       {/* Title */}
-      <h3 className={cn("mb-4 font-serif text-3xl font-black uppercase leading-tight", cfg.titleColor)}>
+      <h3 className={cn("mb-5 font-serif text-2xl font-black uppercase leading-tight tracking-wide md:text-3xl", cfg.titleColor)}>
         {offer.name.replace(/stickmen /i, "")}
       </h3>
 
-      {/* Description */}
-      <p className="mb-6 flex-1 text-base leading-relaxed text-muted-foreground">
-        {offer.description}
+      {/* Description — use config copy for richer gear detail */}
+      <p className="mb-6 flex-1 text-[0.95rem] leading-relaxed text-muted-foreground">
+        {cfg.description}
       </p>
 
       {/* Pricing */}
-      <div className="mb-1">
+      <div className="mb-2">
         <p className="font-black leading-none">
-          <span className="text-3xl uppercase text-foreground">{pricePrefix}</span>
-          <span className={cn("text-5xl", cfg.titleColor)}>{priceAmount}</span>
+          <span className="text-2xl uppercase text-foreground">FROM </span>
+          <span className={cn("text-5xl font-black", cfg.titleColor)}>{priceAmount}</span>
         </p>
-        <p className="mt-2 font-mono text-xs font-bold uppercase tracking-widest text-muted-foreground">
+        <p className="mt-2 font-mono text-[0.7rem] font-bold uppercase tracking-widest text-muted-foreground">
           {offer.duration}
         </p>
         {cfg.badge && (
-          <p className="mt-1 font-mono text-xs font-bold uppercase tracking-widest text-secondary">
+          <p className="mt-1 font-mono text-xs font-bold uppercase tracking-widest text-[hsl(184_100%_52%)]">
             Save $10!
           </p>
         )}
       </div>
 
-      {/* CTA */}
+      {/* CTA button */}
       <div className="mt-5">
         {isTualatin ? (
-          <Button
-            size="lg"
-            className="w-full text-base font-black uppercase tracking-wider"
+          <button
             onClick={onSelect}
+            className={cn(
+              "w-full rounded-lg py-4 text-base font-black uppercase tracking-widest transition-opacity",
+              cfg.btnClass,
+            )}
           >
-            {cfg.btnLabel(offer.name)}
-          </Button>
+            {cfg.btnEmoji} {cfg.btnLabel} {cfg.btnEmoji}
+          </button>
         ) : (
-          <Button asChild size="lg" className="w-full text-base font-black uppercase tracking-wider">
-            <a href={offer.url} target="_blank" rel="noreferrer">
-              {cfg.btnLabel(offer.name)}
-            </a>
-          </Button>
+          <a
+            href={offer.url}
+            target="_blank"
+            rel="noreferrer"
+            className={cn(
+              "block w-full rounded-lg py-4 text-base font-black uppercase tracking-widest transition-opacity",
+              cfg.btnClass,
+            )}
+          >
+            {cfg.btnEmoji} {cfg.btnLabel} {cfg.btnEmoji}
+          </a>
         )}
       </div>
     </div>
