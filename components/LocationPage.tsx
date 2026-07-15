@@ -1,9 +1,9 @@
 import Link from "next/link"
-import { ArrowRight, Axe, Clock, Hammer, MapPin, Phone } from "lucide-react"
+import { ArrowRight, Clock, MapPin, Phone } from "lucide-react"
 import type { LocationData } from "@/lib/locations"
 import { businessContact, locations } from "@/lib/locations"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { BookingOfferCards } from "@/components/BookingOfferCards"
 import SiteHeader from "@/components/SiteHeader"
 import Footer from "@/components/Footer"
 import { LocationSchema } from "@/components/schema/JsonLd"
@@ -26,7 +26,7 @@ export default function LocationPage({ location }: { location: LocationData }) {
     </section>
     <section className="py-14 md:py-20"><div className="container mx-auto max-w-6xl px-4 sm:px-6">
       <div className="mb-8 flex items-end justify-between gap-4"><div><p className="font-mono text-sm uppercase tracking-widest text-secondary">Start with a rage room</p><h2 className="mt-2 text-balance font-serif text-3xl font-black uppercase md:text-5xl">Book the smash—or add more</h2></div></div>
-      <div className="grid gap-5 md:grid-cols-3">{location.bookingLinks.map((offer, index) => <Card key={offer.name} className="neon-border-hover flex flex-col bg-card"><CardHeader>{index === 1 ? <Axe className="mb-3 text-secondary" aria-hidden="true" /> : <Hammer className="mb-3 text-primary" aria-hidden="true" />}<CardTitle className="font-serif text-2xl uppercase">{offer.name}</CardTitle><CardDescription className="leading-relaxed">{offer.description}</CardDescription></CardHeader><CardContent className="flex-1"><p className="text-2xl font-black">{offer.price}</p><p className="text-sm text-muted-foreground">{offer.duration}</p></CardContent><CardFooter><Button asChild size="lg" className="w-full text-base font-bold tracking-wide"><Link href={`/book?location=${location.slug}`}>Choose experience</Link></Button></CardFooter></Card>)}</div>
+      <BookingOfferCards offers={location.bookingLinks} bookingHref={`/book?location=${location.slug}`} />
     </div></section>
     <section className="border-y border-border bg-card py-14"><div className="container mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 md:grid-cols-2">
       <div><MapPin className="mb-4 text-primary" aria-hidden="true" /><h2 className="font-serif text-3xl font-black uppercase">Find {location.shortName}</h2><address className="mt-4 not-italic leading-relaxed text-muted-foreground">{location.address}</address><div className="mt-6 flex flex-col gap-3"><Button asChild variant="outline"><a href={location.directionsUrl} target="_blank" rel="noreferrer">Open in maps</a></Button><a className="flex items-center gap-2 font-bold text-secondary" href={businessContact.phoneHref}><Phone aria-hidden="true" />{businessContact.phone}</a></div></div>
