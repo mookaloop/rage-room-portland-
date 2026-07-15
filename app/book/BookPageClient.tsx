@@ -19,8 +19,12 @@ export default function BookPageClient({ initialLocation }: { initialLocation: L
       <SiteHeader />
 
       {/* Hero */}
-      <section className="border-b border-border bg-card py-14 md:py-20">
-        <div className="container mx-auto max-w-6xl px-4 sm:px-6">
+      <section className="relative overflow-hidden border-b border-border bg-card py-14 md:py-20">
+        <video autoPlay muted loop playsInline preload="metadata" aria-hidden="true" tabIndex={-1} className="pointer-events-none absolute inset-0 size-full object-cover motion-reduce:hidden">
+          <source src="/videos/rage-room-hero.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-background/80" aria-hidden="true" />
+        <div className="container relative mx-auto max-w-6xl px-4 sm:px-6">
           <p className="font-mono text-sm font-bold uppercase tracking-widest text-secondary">Book your rage room</p>
           <h1 className="mt-3 text-balance font-serif text-5xl font-black uppercase md:text-7xl">
             Choose your location.{" "}
@@ -30,7 +34,7 @@ export default function BookPageClient({ initialLocation }: { initialLocation: L
             Reserve a private rage room in St. Johns or Tualatin. Axe throwing is available as an optional add-on or combo experience.
           </p>
         </div>
-      </section>
+        </section>
 
       {/* Booking tabs */}
       <section className="py-12">
