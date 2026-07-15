@@ -19,6 +19,7 @@ const offerConfig = [
     borderStyle: "border-[hsl(322_100%_55%)]",
     glowColor: "shadow-[0_0_28px_6px_hsl(322_100%_55%_/_0.55),inset_0_0_30px_0px_hsl(322_100%_55%_/_0.04)]",
     titleColor: "text-[hsl(322_100%_62%)]",
+    displayTitle: "Rage Room",
     description:
       "Smash bottles, electronics, TVs, printers, and fax machines in our soundproof destruction chamber while playing your own music turned up to eleven. We recycle 100% of the destruction you make. Safety gear provided — hard hat, coveralls, face shield, and gloves. No experience necessary!",
     btnEmoji: "🔥",
@@ -32,7 +33,8 @@ const offerConfig = [
     iconBg: "bg-[radial-gradient(circle_at_40%_40%,hsl(184_100%_55%),hsl(280_100%_55%))]",
     borderStyle: "border-[hsl(184_100%_48%)]",
     glowColor: "shadow-[0_0_28px_6px_hsl(184_100%_48%_/_0.5),inset_0_0_30px_0px_hsl(184_100%_48%_/_0.04)]",
-    titleColor: "text-[hsl(184_100%_52%)]",
+    titleColor: "text-foreground",
+    displayTitle: "Rage Room + Axe Throwing Combo",
     description:
       "Why choose? Get the full experience! Rage room destruction plus a full axe throwing session back to back in Portland. All gear included — destruction suit, face shield, throwing axes, and lane equipment. The ultimate Portland adventure.",
     btnEmoji: "💀",
@@ -47,6 +49,7 @@ const offerConfig = [
     borderStyle: "border-[hsl(184_100%_48%)]",
     glowColor: "shadow-[0_0_28px_6px_hsl(184_100%_48%_/_0.55),inset_0_0_30px_0px_hsl(184_100%_48%_/_0.04)]",
     titleColor: "text-[hsl(184_100%_52%)]",
+    displayTitle: "Axe Throwing",
     description:
       "Channel your inner Viking! Professional lanes with expert instruction from our certified coaches. Throwing axes, safety barriers, and scoring all included. Join the best axe throwing Portland experience — open to all skill levels, groups welcome.",
     btnEmoji: "⚡",
@@ -77,7 +80,7 @@ function OfferCard({
   return (
     <div
       className={cn(
-        "neon-border-hover relative flex flex-col rounded-2xl border-2 bg-[#0a0a0f] p-7 text-center transition-all duration-300",
+        "neon-border-hover relative flex min-h-full flex-col rounded-[2rem] border-2 bg-card p-6 text-center transition-all duration-300 hover:-translate-y-2 md:p-8",
         cfg.borderStyle,
         cfg.glowColor,
       )}
@@ -98,13 +101,15 @@ function OfferCard({
 
       {/* Title */}
       <h3 className={cn("mb-5 font-serif text-2xl font-black uppercase leading-tight tracking-wide md:text-3xl", cfg.titleColor)}>
-        {offer.name.replace(/stickmen /i, "")}
+        {cfg.displayTitle}
       </h3>
 
       {/* Description — use config copy for richer gear detail */}
-      <p className="mb-6 flex-1 text-[0.95rem] leading-relaxed text-muted-foreground">
-        {cfg.description}
-      </p>
+      <div className="mb-7 flex flex-1 items-center rounded-3xl border border-border bg-background/70 p-5 shadow-inner">
+        <p className="text-pretty text-base leading-relaxed text-muted-foreground">
+          {cfg.description}
+        </p>
+      </div>
 
       {/* Pricing */}
       <div className="mb-2">
@@ -201,16 +206,24 @@ export default function BookPageClient({ initialLocation }: { initialLocation: L
                 </div>
 
                 {/* Offer cards */}
-                <div className="grid gap-8 pt-4 md:grid-cols-3">
-                  {locations[slug].bookingLinks.map((offer, index) => (
-                    <OfferCard
-                      key={offer.name}
-                      offer={offer}
-                      index={index}
-                      isTualatin={slug === "tualatin"}
-                      onSelect={() => setSelectedTualatin(index)}
-                    />
-                  ))}
+                <div className="mb-10 text-center">
+                  <p className="font-mono text-sm font-bold uppercase tracking-[0.25em] text-secondary">Pick your favorite way to play</p>
+                  <h2 className="mt-3 text-balance font-serif text-4xl font-black uppercase text-primary md:text-6xl">Choose your destruction</h2>
+                  <p className="mx-auto mt-4 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground">Ready to unleash the beast? Choose the rage room, throw some axes, or save $10 with the ultimate combo.</p>
+                </div>
+                <div className="grid items-stretch gap-8 pt-4 md:grid-cols-3">
+                  {[0, 2, 1].map((index) => {
+                    const offer = locations[slug].bookingLinks[index]
+                    return (
+                      <OfferCard
+                        key={offer.name}
+                        offer={offer}
+                        index={index}
+                        isTualatin={slug === "tualatin"}
+                        onSelect={() => setSelectedTualatin(index)}
+                      />
+                    )
+                  })}
                 </div>
 
                 {/* Tualatin Acuity embed */}
