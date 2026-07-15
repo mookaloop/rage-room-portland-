@@ -12,15 +12,18 @@ export default function LocationPage({ location }: { location: LocationData }) {
   return <main className="min-h-screen bg-background text-foreground">
     <LocationSchema location={location} />
     <SiteHeader />
-    <section className="border-b border-border bg-card py-16 md:py-24">
-      <div className="container mx-auto flex max-w-6xl flex-col gap-8 px-4 sm:px-6">
+    <section className="relative overflow-hidden border-b border-border bg-card py-16 md:py-24">
+      <video autoPlay muted loop playsInline preload="metadata" aria-hidden="true" tabIndex={-1} className="pointer-events-none absolute inset-0 size-full object-cover motion-reduce:hidden">
+        <source src="/videos/rage-room-hero.mp4" type="video/mp4" />
+      </video>
+      <div className="absolute inset-0 bg-background/80" aria-hidden="true" />
+      <div className="container relative mx-auto flex max-w-6xl flex-col gap-8 px-4 sm:px-6">
         <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-sm text-muted-foreground"><Link href="/">Home</Link><span>/</span><span>Locations</span><span>/</span><span className="text-foreground">{location.shortName}</span></nav>
         <div className="max-w-4xl">
           <p className="mb-4 font-mono text-sm font-bold uppercase tracking-widest text-secondary">Now open · Book online</p>
           <h1 className="text-balance font-serif text-5xl font-black uppercase leading-none md:text-7xl">Rage Room in <span className="text-primary">{location.shortName}</span></h1>
           <p className="mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground">{location.intro} {location.context}</p>
         </div>
-
       </div>
     </section>
     <section className="py-14 md:py-20"><div className="container mx-auto max-w-6xl px-4 sm:px-6">
