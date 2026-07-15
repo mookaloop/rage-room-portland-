@@ -11,10 +11,10 @@ const nextConfig = {
   },
   webpack: (config, { dev }) => {
     if (dev) {
-      // The v0 sandbox cannot atomically rename the webpack pack cache file,
-      // causing all compiled static assets to 404. Disable the filesystem
-      // cache in dev so webpack serves chunks from memory instead.
-      config.cache = false
+      // The v0 sandbox filesystem does not support atomic renames of the
+      // webpack pack cache file, causing all static assets to 404.
+      // Force memory-only caching so no disk writes are attempted at all.
+      config.cache = { type: 'memory' }
     }
     return config
   },
