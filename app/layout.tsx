@@ -1,79 +1,25 @@
 import type React from "react"
-import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import type { Metadata, Viewport } from "next"
+import { Inter, Oswald } from "next/font/google"
+import Script from "next/script"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
-import LocalBusinessSchema from "@/components/schema/LocalBusinessSchema"
-import Script from "next/script"
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
+const oswald = Oswald({ subsets: ["latin"], variable: "--font-oswald" })
 
 export const metadata: Metadata = {
-  title: "Rage Room Portland | Axe Throwing & Brewpub",
-  description:
-    "Book Portland's top Rage Room & Axe Throwing combo—smash, throw, and chill with craft beer at StormBreaker Brewing.",
-  keywords:
-    "rage room Portland, Portland rage room, axe throwing Portland, things to do Portland, team building Portland, smash room Portland",
-  icons: {
-    icon: [
-      { url: "/favicon.png", sizes: "32x32", type: "image/png" },
-      { url: "/favicon.png", sizes: "16x16", type: "image/png" },
-    ],
-    apple: [{ url: "/favicon.png", sizes: "180x180", type: "image/png" }],
-    shortcut: "/favicon.png",
-  },
+  metadataBase: new URL("https://rageroomportland.co"),
+  title: { default: "Rage Room Portland", template: "%s | Rage Room Portland" },
+  description: "Rage rooms and axe throwing at two Portland-area locations: St. Johns and Tualatin.",
+  icons: { icon: "/favicon.png", apple: "/favicon.png" },
   manifest: "/site.webmanifest",
-  openGraph: {
-    title: "Rage Room Portland | Axe Throwing & Brewpub",
-    description:
-      "Book Portland's top Rage Room & Axe Throwing combo—smash, throw, and chill with craft beer at StormBreaker Brewing.",
-    url: "https://rageroomportland.co",
-    siteName: "Rage Room Portland",
-    images: [
-      {
-        url: "/favicon.png",
-        width: 250,
-        height: 250,
-        alt: "Rage Room Portland Logo",
-      },
-    ],
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Rage Room Portland | Axe Throwing & Brewpub",
-    description:
-      "Book Portland's top Rage Room & Axe Throwing combo—smash, throw, and chill with craft beer at StormBreaker Brewing.",
-    images: ["/favicon.png"],
-  },
-    generator: 'v0.dev'
+  openGraph: { siteName: "Rage Room Portland", type: "website", images: [{ url: "/favicon.png", width: 250, height: 250, alt: "Rage Room Portland" }] },
+  twitter: { card: "summary_large_image", images: ["/favicon.png"] },
 }
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
-  return (
-    <html lang="en">
-      <head>
-        {/* Google Analytics */}
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-EDZXB6G79N" strategy="afterInteractive" />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-EDZXB6G79N');
-          `}
-        </Script>
-      </head>
-      <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
-          <LocalBusinessSchema />
-          {children}
-        </ThemeProvider>
-      </body>
-    </html>
-  )
+export const viewport: Viewport = { themeColor: "#080808", width: "device-width", initialScale: 1 }
+
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  return <html lang="en" className="bg-background"><head><Script src="https://www.googletagmanager.com/gtag/js?id=G-EDZXB6G79N" strategy="afterInteractive" /><Script id="google-analytics" strategy="afterInteractive">{`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-EDZXB6G79N');`}</Script></head><body className={`${inter.variable} ${oswald.variable} font-sans`}><ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange>{children}</ThemeProvider></body></html>
 }
