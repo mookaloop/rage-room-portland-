@@ -5,7 +5,6 @@ import Link from "next/link"
 import Script from "next/script"
 import { ArrowUpRight, MapPin } from "lucide-react"
 import SiteHeader from "@/components/SiteHeader"
-import Footer from "@/components/Footer"
 import { BookingOfferCards } from "@/components/BookingOfferCards"
 import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
@@ -121,7 +120,7 @@ export default function BookPageClient({ initialLocation }: { initialLocation: L
         </div>
       </section>
 
-      <Footer />
+  
     </main>
   )
 }

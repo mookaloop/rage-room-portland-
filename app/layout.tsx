@@ -4,6 +4,8 @@ import { Inter, Oswald } from "next/font/google"
 import Script from "next/script"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
+import FaqSection from "@/components/FaqSection"
+import Footer from "@/components/Footer"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 const oswald = Oswald({ subsets: ["latin"], variable: "--font-oswald" })
@@ -37,6 +39,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         </noscript>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
           {children}
+          <FaqSection />
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

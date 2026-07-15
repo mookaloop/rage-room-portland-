@@ -5,7 +5,6 @@ import { businessContact, locations } from "@/lib/locations"
 import { Button } from "@/components/ui/button"
 import { BookingOfferCards } from "@/components/BookingOfferCards"
 import SiteHeader from "@/components/SiteHeader"
-import Footer from "@/components/Footer"
 import { LocationSchema } from "@/components/schema/JsonLd"
 
 export default function LocationPage({ location }: { location: LocationData }) {
@@ -33,6 +32,5 @@ export default function LocationPage({ location }: { location: LocationData }) {
       <div><Clock className="mb-4 text-secondary" aria-hidden="true" /><h2 className="font-serif text-3xl font-black uppercase">Weekly hours</h2><dl className="mt-4 flex max-w-md flex-col gap-2">{location.hours.map((item) => <div key={item.day} className="flex justify-between gap-4 border-b border-border pb-2"><dt>{item.day}</dt><dd className="font-bold">{item.label}</dd></div>)}</dl></div>
     </div></section>
     <section className="py-14"><div className="container mx-auto flex max-w-4xl flex-col items-center gap-5 px-4 text-center sm:px-6"><p className="font-mono text-sm uppercase tracking-widest text-secondary">Two locations, one seriously good time</p><h2 className="text-balance font-serif text-3xl font-black uppercase">Also explore {other.shortName}</h2><p className="text-muted-foreground">Compare the setting, hours, and booking options at our {other.name} location.</p><Button asChild variant="outline"><Link href={`/locations/${other.slug}`}>View {other.shortName}<ArrowRight data-icon="inline-end" /></Link></Button></div></section>
-    <Footer />
   </main>
 }

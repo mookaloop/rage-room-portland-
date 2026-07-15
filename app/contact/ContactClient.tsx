@@ -3,7 +3,6 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowLeft, Phone, Mail, Users, MapPin, Clock } from "lucide-react"
-import Footer from "@/components/Footer"
 
 export default function ContactClient() {
   return (
@@ -303,7 +302,7 @@ export default function ContactClient() {
         </div>
       </section>
 
-      <Footer />
+  
     </main>
   )
 }
