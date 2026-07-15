@@ -64,6 +64,21 @@ const offerStyles: OfferStyle[] = [
   },
 ]
 
+function renderCta({ href, onSelect, className, label }: { href?: string; onSelect?: () => void; className: string; label: string }) {
+  // Tualatin flow: select a tab instead of navigating.
+  if (onSelect) {
+    return <button type="button" onClick={onSelect} className={className}>{label}</button>
+  }
+  // External booking destinations (Acuity) must open in a new tab so they
+  // are not swallowed by client-side routing or the preview iframe.
+  const isExternal = Boolean(href && /^https?:\/\//i.test(href))
+  if (isExternal) {
+    return <a href={href} target="_blank" rel="noreferrer noopener" className={className}>{label}</a>
+  }
+  // Internal navigation (e.g. /book?location=) stays same-tab.
+  return <Link href={href ?? "/book"} className={className}>{label}</Link>
+}
+
 function BookingOfferCard({ offer, index, href, onSelect }: { offer: Offer; index: number; href?: string; onSelect?: () => void }) {
   const style = offerStyles[index] ?? offerStyles[0]
   const Icon = style.icon
@@ -77,7 +92,7 @@ function BookingOfferCard({ offer, index, href, onSelect }: { offer: Offer; inde
       <h3 className={cn("mb-5 text-balance font-serif text-2xl font-black uppercase leading-tight tracking-wide md:text-3xl", style.titleColor)}>{style.displayTitle}</h3>
       <div className="mb-7 flex flex-1 items-center rounded-3xl border border-border bg-background/70 p-5 shadow-inner"><p className="text-pretty text-lg font-semibold leading-relaxed text-white">{style.description}</p></div>
       <div className="mb-2"><p className="font-black leading-none"><span className="text-2xl uppercase text-white">FROM </span><span className={cn("text-5xl", style.titleColor)}>{price}</span></p><p className="mt-2 font-mono text-xs font-bold uppercase tracking-widest text-muted-foreground">{offer.duration}</p>{style.badge && <p className="mt-2 font-mono text-sm font-black uppercase tracking-widest text-secondary">Save $10!</p>}</div>
-      <div className="mt-5">{onSelect ? <button type="button" onClick={onSelect} className={buttonClasses}>{style.buttonEmoji} {style.buttonLabel} {style.buttonEmoji}</button> : <Link href={href ?? offer.url} className={buttonClasses}>{style.buttonEmoji} {style.buttonLabel} {style.buttonEmoji}</Link>}</div>
+      <div className="mt-5">{renderCta({ href: href ?? offer.url, onSelect, className: buttonClasses, label: `${style.buttonEmoji} ${style.buttonLabel} ${style.buttonEmoji}` })}</div>
     </article>
   )
 }
