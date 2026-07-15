@@ -20,7 +20,7 @@ export default function LocationPage({ location }: { location: LocationData }) {
           <h1 className="text-balance font-serif text-5xl font-black uppercase leading-none md:text-7xl">Rage Room in <span className="text-primary">{location.shortName}</span></h1>
           <p className="mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground">{location.intro} {location.context}</p>
         </div>
-        <div className="flex flex-col gap-3 sm:flex-row"><Button asChild size="lg"><Link href={`/book?location=${location.slug}`}>View times & book<ArrowRight data-icon="inline-end" /></Link></Button><Button asChild size="lg" variant="outline"><a href={location.directionsUrl} target="_blank" rel="noreferrer"><MapPin data-icon="inline-start" />Get directions</a></Button></div>
+        <div className="flex flex-col gap-3 sm:flex-row"><Button asChild size="lg" variant="outline"><a href={location.directionsUrl} target="_blank" rel="noreferrer"><MapPin data-icon="inline-start" />Get directions</a></Button></div>
       </div>
     </section>
     <section className="py-14 md:py-20"><div className="container mx-auto max-w-6xl px-4 sm:px-6">
