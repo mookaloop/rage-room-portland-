@@ -3,7 +3,7 @@ import { ArrowRight, Clock, MapPin, Phone } from "lucide-react"
 import type { LocationData } from "@/lib/locations"
 import { businessContact, locations } from "@/lib/locations"
 import { Button } from "@/components/ui/button"
-import LocationBooking from "@/components/LocationBooking"
+import { BookingOfferCards } from "@/components/BookingOfferCards"
 import SiteHeader from "@/components/SiteHeader"
 import { LocationSchema } from "@/components/schema/JsonLd"
 
@@ -28,7 +28,7 @@ export default function LocationPage({ location }: { location: LocationData }) {
     </section>
     <section className="py-14 md:py-20"><div className="container mx-auto max-w-6xl px-4 sm:px-6">
       <div className="mb-8 flex items-end justify-between gap-4"><div><p className="font-mono text-sm uppercase tracking-widest text-secondary">Start with a rage room</p><h2 className="mt-2 text-balance font-serif text-3xl font-black uppercase md:text-5xl">Book the smash—or add more</h2></div></div>
-      <LocationBooking location={location} />
+      <BookingOfferCards offers={location.bookingLinks} />
     </div></section>
     <section className="border-y border-border bg-card py-14"><div className="container mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 md:grid-cols-2">
       <div>
