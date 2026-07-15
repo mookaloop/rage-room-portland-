@@ -96,5 +96,26 @@ export default function ClientPage() {
       </div>
     </section>
     <section className="border-y border-border bg-card py-16"><div className="container mx-auto grid max-w-6xl gap-8 px-4 sm:px-6 md:grid-cols-2"><div><h2 className="font-serif text-3xl font-black uppercase">Built for groups</h2><p className="mt-4 leading-relaxed text-muted-foreground">Birthday parties, team outings, date nights, bachelor and bachelorette groups—bring your people and we&apos;ll help you build the right session.</p><Button asChild variant="outline" className="mt-6"><Link href="/parties-events">Plan a group visit</Link></Button></div><div><h2 className="font-serif text-3xl font-black uppercase">First time?</h2><p className="mt-4 leading-relaxed text-muted-foreground">Learn what to wear, when to arrive, what you can smash, and how our safety briefing works before you book.</p><Button asChild variant="outline" className="mt-6"><Link href="/how-it-works">See how it works</Link></Button></div></div></section>
+
+    {/* Bottom Book Now CTA */}
+    <section className="relative overflow-hidden py-20 md:py-28">
+      <video autoPlay muted loop playsInline preload="metadata" aria-hidden="true" tabIndex={-1} className="pointer-events-none absolute inset-0 size-full object-cover motion-reduce:hidden">
+        <source src="/videos/rage-room-hero.mp4" type="video/mp4" />
+      </video>
+      <div className="absolute inset-0 bg-background/85" aria-hidden="true" />
+      <div className="relative container mx-auto max-w-4xl px-4 text-center sm:px-6">
+        <p className="mb-4 font-mono text-base font-bold uppercase tracking-widest text-secondary">Two locations. Zero excuses.</p>
+        <h2 className="text-balance font-serif text-5xl font-black uppercase leading-none md:text-7xl">
+          Ready to <span className="text-primary">smash?</span>
+        </h2>
+        <p className="mx-auto mt-6 max-w-xl text-pretty text-lg leading-relaxed text-muted-foreground">
+          Pick your location, choose your experience, and pay a deposit to hold your spot. St. Johns or Tualatin — both inside brewpubs.
+        </p>
+        <Button asChild size="lg" className="mt-10 px-14 py-6 text-xl font-black uppercase tracking-wider shadow-[0_0_32px_6px_hsl(322_100%_55%_/_0.5)]">
+          <Link href="/book">Book Now <ArrowRight data-icon="inline-end" /></Link>
+        </Button>
+        <p className="mt-5 text-sm text-muted-foreground">Deposit required to reserve. Pay balance day-of.</p>
+      </div>
+    </section>
   </main>
 }
