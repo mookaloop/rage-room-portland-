@@ -42,9 +42,23 @@ export default function BookPageClient({ initialLocation }: { initialLocation: L
               setSelectedTualatin(null)
             }}
           >
-            <TabsList className="grid h-auto w-full grid-cols-2">
-              <TabsTrigger value="st-johns" className="py-4 text-base">St. Johns</TabsTrigger>
-              <TabsTrigger value="tualatin" className="py-4 text-base">Tualatin</TabsTrigger>
+            <TabsList className="grid h-auto w-full grid-cols-2 gap-3 rounded-2xl bg-transparent p-0">
+              <TabsTrigger
+                value="st-johns"
+                className="group flex flex-col items-center gap-1 rounded-2xl border-2 border-primary/40 bg-card px-6 py-5 text-base font-black uppercase tracking-wide shadow-none transition-all duration-200 data-[state=active]:border-primary data-[state=active]:bg-card data-[state=active]:shadow-[0_0_24px_4px_hsl(322_100%_55%_/_0.45)] data-[state=inactive]:opacity-60 data-[state=inactive]:hover:opacity-90"
+              >
+                <MapPin className="size-6 text-primary" aria-hidden="true" />
+                <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground">North Portland</span>
+                <span className="font-serif text-2xl font-black text-primary">Book St. Johns</span>
+              </TabsTrigger>
+              <TabsTrigger
+                value="tualatin"
+                className="group flex flex-col items-center gap-1 rounded-2xl border-2 border-secondary/40 bg-card px-6 py-5 text-base font-black uppercase tracking-wide shadow-none transition-all duration-200 data-[state=active]:border-secondary data-[state=active]:bg-card data-[state=active]:shadow-[0_0_24px_4px_hsl(184_100%_48%_/_0.45)] data-[state=inactive]:opacity-60 data-[state=inactive]:hover:opacity-90"
+              >
+                <MapPin className="size-6 text-secondary" aria-hidden="true" />
+                <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground">SE Portland Metro</span>
+                <span className="font-serif text-2xl font-black text-secondary">Book Tualatin</span>
+              </TabsTrigger>
             </TabsList>
 
             {(["st-johns", "tualatin"] as const).map((slug) => (
