@@ -21,7 +21,7 @@ export default function LocationPage({ location }: { location: LocationData }) {
         <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-sm text-muted-foreground"><Link href="/">Home</Link><span>/</span><span>Locations</span><span>/</span><span className="text-foreground">{location.shortName}</span></nav>
         <div className="max-w-4xl">
           <p className="mb-4 font-mono text-sm font-bold uppercase tracking-widest text-secondary">Now open · Book online</p>
-          <h1 className="text-balance font-serif text-5xl font-black uppercase leading-none md:text-7xl">Rage Room in <span className="text-primary">{location.shortName}</span></h1>
+          <h1 className="text-balance font-serif text-5xl font-black uppercase leading-none md:text-7xl">{location.heroTitle}</h1>
           <p className="mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground">{location.intro} {location.context}</p>
         </div>
       </div>

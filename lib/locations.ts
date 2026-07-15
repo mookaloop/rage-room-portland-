@@ -3,6 +3,7 @@ export type LocationSlug = "st-johns" | "tualatin"
 export type LocationData = {
   slug: LocationSlug
   name: string
+  heroTitle: string
   shortName: string
   city: string
   address: string
@@ -22,6 +23,7 @@ export const locations: Record<LocationSlug, LocationData> = {
   "st-johns": {
     slug: "st-johns",
     name: "St. Johns, Portland",
+    heroTitle: "Rage Room Inside Stormbreaker Brewery, St. Johns",
     shortName: "St. Johns",
     city: "Portland",
     address: "8409 N Lombard St, Portland, OR 97203",
@@ -46,6 +48,7 @@ export const locations: Record<LocationSlug, LocationData> = {
   tualatin: {
     slug: "tualatin",
     name: "Tualatin, Oregon",
+    heroTitle: "Rage Room in Tualatin, Oregon",
     shortName: "Tualatin",
     city: "Tualatin",
     address: "19475 SW 118th Ave, Rage Suite, Tualatin, OR 97062",
