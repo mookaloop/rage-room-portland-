@@ -18,14 +18,14 @@ export default function LocationPage({ location }: { location: LocationData }) {
         <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-sm text-muted-foreground"><Link href="/">Home</Link><span>/</span><span>Locations</span><span>/</span><span className="text-foreground">{location.shortName}</span></nav>
         <div className="max-w-4xl">
           <p className="mb-4 font-mono text-sm font-bold uppercase tracking-widest text-secondary">Now open · Book online</p>
-          <h1 className="text-balance font-serif text-5xl font-black uppercase leading-none md:text-7xl">Rage Room & Axe Throwing in <span className="text-primary">{location.shortName}</span></h1>
+          <h1 className="text-balance font-serif text-5xl font-black uppercase leading-none md:text-7xl">Rage Room in <span className="text-primary">{location.shortName}</span></h1>
           <p className="mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground">{location.intro} {location.context}</p>
         </div>
         <div className="flex flex-col gap-3 sm:flex-row"><Button asChild size="lg"><Link href={`/book?location=${location.slug}`}>View times & book<ArrowRight data-icon="inline-end" /></Link></Button><Button asChild size="lg" variant="outline"><a href={location.directionsUrl} target="_blank" rel="noreferrer"><MapPin data-icon="inline-start" />Get directions</a></Button></div>
       </div>
     </section>
     <section className="py-14 md:py-20"><div className="container mx-auto max-w-6xl px-4 sm:px-6">
-      <div className="mb-8 flex items-end justify-between gap-4"><div><p className="font-mono text-sm uppercase tracking-widest text-secondary">Pick your release</p><h2 className="mt-2 text-balance font-serif text-3xl font-black uppercase md:text-5xl">Three ways to break routine</h2></div></div>
+      <div className="mb-8 flex items-end justify-between gap-4"><div><p className="font-mono text-sm uppercase tracking-widest text-secondary">Start with a rage room</p><h2 className="mt-2 text-balance font-serif text-3xl font-black uppercase md:text-5xl">Book the smash—or add more</h2></div></div>
       <div className="grid gap-5 md:grid-cols-3">{location.bookingLinks.map((offer, index) => <Card key={offer.name} className="flex flex-col bg-card"><CardHeader>{index === 1 ? <Axe className="mb-3 text-secondary" aria-hidden="true" /> : <Hammer className="mb-3 text-primary" aria-hidden="true" />}<CardTitle className="font-serif text-2xl uppercase">{offer.name}</CardTitle><CardDescription className="leading-relaxed">{offer.description}</CardDescription></CardHeader><CardContent className="flex-1"><p className="text-2xl font-black">{offer.price}</p><p className="text-sm text-muted-foreground">{offer.duration}</p></CardContent><CardFooter><Button asChild className="w-full"><Link href={`/book?location=${location.slug}`}>Choose experience</Link></Button></CardFooter></Card>)}</div>
     </div></section>
     <section className="border-y border-border bg-card py-14"><div className="container mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 md:grid-cols-2">

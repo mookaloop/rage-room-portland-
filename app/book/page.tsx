@@ -3,8 +3,8 @@ import BookPageClient from "./BookPageClient"
 import type { LocationSlug } from "@/lib/locations"
 
 export const metadata: Metadata = {
-  title: "Book Rage Room & Axe Throwing | Portland & Tualatin",
-  description: "Choose St. Johns or Tualatin and book a rage room, axe throwing, or combo session online with Rage Room Portland.",
+  title: "Book a Rage Room | Portland & Tualatin",
+  description: "Choose St. Johns or Tualatin and book a private rage room session online. Add axe throwing or choose a combo experience if you want more.",
   alternates: { canonical: "/book" },
 }
 
