@@ -19,10 +19,17 @@ export default function LocationPage({ location }: { location: LocationData }) {
       <div className="absolute inset-0 bg-background/80" aria-hidden="true" />
       <div className="container relative mx-auto flex max-w-6xl flex-col gap-8 px-4 sm:px-6">
         <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-sm text-muted-foreground"><Link href="/">Home</Link><span>/</span><Link href="/book" className="transition-colors hover:text-foreground">Locations</Link><span>/</span><span className="text-foreground">{location.shortName}</span></nav>
-        <div className="max-w-4xl">
-          <p className="mb-4 font-mono text-sm font-bold uppercase tracking-widest text-secondary">Now open · Book online</p>
-          <h1 className="text-balance font-serif text-5xl font-black uppercase leading-none md:text-7xl">{location.heroTitle}</h1>
-          <p className="mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground">{location.intro} {location.context}</p>
+        <div className="flex flex-col justify-between gap-8 md:flex-row md:items-end">
+          <div className="max-w-4xl">
+            <p className="mb-4 font-mono text-sm font-bold uppercase tracking-widest text-secondary">Now open · Book online</p>
+            <h1 className="text-balance font-serif text-5xl font-black uppercase leading-none md:text-7xl">{location.heroTitle}</h1>
+            <p className="mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground">{location.intro} {location.context}</p>
+          </div>
+          <Button asChild className="h-auto px-6 py-4 text-lg font-bold whitespace-nowrap">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSey2owIHFQMOlXLbaYRHyT6Jp87x_BCTtZLzrqJCuEIxcAWVA/viewform" target="_blank" rel="noreferrer">
+              Large Party Booking
+            </a>
+          </Button>
         </div>
       </div>
     </section>
