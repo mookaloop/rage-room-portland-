@@ -34,7 +34,7 @@ export default function LocationPage({ location }: { location: LocationData }) {
       </div>
     </section>
     <section className="py-14 md:py-20"><div className="container mx-auto max-w-6xl px-4 sm:px-6">
-      <div className="mb-8 flex items-end justify-between gap-4"><div><p className="font-mono text-sm uppercase tracking-widest text-secondary">Book at Stickmen now</p><h2 className="mt-2 text-balance font-serif text-3xl font-black uppercase md:text-5xl">Rage Room / Axe Throwing OR Combo</h2></div></div>
+      <div className="mb-8 flex items-end justify-between gap-4"><div><p className="font-mono text-sm uppercase tracking-widest text-secondary">Book at {location.slug === "st-johns" ? "StormBreaker" : "Stickmen"} now</p><h2 className="mt-2 text-balance font-serif text-3xl font-black uppercase md:text-5xl">Rage Room / Axe Throwing OR Combo</h2></div></div>
       <BookingOfferCards offers={location.bookingLinks} />
     </div></section>
     <section className="border-y border-border bg-card py-14"><div className="container mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 md:grid-cols-2">
