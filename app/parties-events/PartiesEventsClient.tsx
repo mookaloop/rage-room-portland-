@@ -20,7 +20,7 @@ export default function PartiesEventsClient() {
           <div className="grid gap-12 md:grid-cols-2 md:items-center">
             <div>
               <p className="mb-4 font-mono text-sm font-bold uppercase tracking-widest text-secondary">
-                Groups · Corporate · Celebrations
+                Large Groups · Corporate · Celebrations
               </p>
               <h1 className="text-balance font-serif text-5xl font-black uppercase leading-none md:text-7xl">
                 Team Building That Actually Works
