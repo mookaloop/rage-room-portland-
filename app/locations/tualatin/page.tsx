@@ -13,7 +13,7 @@ export default function TualatinPage() {
   return (
     <LocationPage
       location={locations.tualatin}
-      heroVideo="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Untitled%20design%20%2816%29-8AdiVIZllJ69yVJgMZsQTImkMQbMvH.mp4"
+      heroVideo="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/download%20%283%29-aam5QBbQy96uoYvbeewI2zRKBLVLU0.mp4"
     />
   )
 }
