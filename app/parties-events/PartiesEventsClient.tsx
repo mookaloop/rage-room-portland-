@@ -100,13 +100,20 @@ export default function PartiesEventsClient() {
               { icon: Calendar, title: "Holiday Parties", desc: "Office parties people will actually want to come to. Group discounts available." },
               { icon: Star, title: "Fundraising Events", desc: "Draw crowds, raise funds, and give people something to talk about." },
             ].map(({ icon: Icon, title, desc }) => (
-              <div key={title} className="rounded-xl border border-border bg-card p-6">
-                <div className="mb-4 flex size-10 items-center justify-center rounded-full bg-secondary/10">
+              <a
+                key={title}
+                href={BOOKING_URL}
+                target="_blank"
+                rel="noreferrer"
+                className="group rounded-xl border border-border bg-card p-6 transition-colors hover:border-secondary/50 hover:bg-card/80 block"
+              >
+                <div className="mb-4 flex size-10 items-center justify-center rounded-full bg-secondary/10 transition-colors group-hover:bg-secondary/20">
                   <Icon className="size-5 text-secondary" aria-hidden="true" />
                 </div>
-                <h3 className="mb-2 font-serif text-xl font-black uppercase">{title}</h3>
+                <h3 className="mb-2 font-serif text-xl font-black uppercase group-hover:text-secondary transition-colors">{title}</h3>
                 <p className="text-sm leading-relaxed text-muted-foreground">{desc}</p>
-              </div>
+                <p className="mt-3 font-mono text-xs font-bold uppercase tracking-widest text-secondary opacity-0 transition-opacity group-hover:opacity-100">Book this event &rarr;</p>
+              </a>
             ))}
           </div>
         </div>
