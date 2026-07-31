@@ -30,7 +30,7 @@ export default function GlassRecyclingClient() {
         </div>
       </section>
 
-      {/* Glass Hound Infographic */}
+      {/* Glass Hound Infographic + Bar Owner CTA */}
       <section className="border-y border-border bg-card py-16 md:py-24">
         <div className="container mx-auto max-w-5xl px-4 sm:px-6">
           <Image
@@ -41,6 +41,29 @@ export default function GlassRecyclingClient() {
             className="w-full rounded-2xl"
             priority
           />
+
+          {/* Bar owner sign-up */}
+          <div className="mt-12 rounded-2xl border-2 border-blue-500/30 bg-background p-10 text-center">
+            <p className="font-mono text-sm font-bold uppercase tracking-widest text-blue-500">For Bar &amp; Restaurant Owners</p>
+            <h2 className="mt-3 text-balance font-serif text-3xl font-black uppercase md:text-4xl">
+              Own a bar? Join the program.
+            </h2>
+            <p className="mx-auto mt-4 max-w-lg text-pretty text-lg leading-relaxed text-muted-foreground">
+              Sign up to get Glass Hound totes dropped off at your location — your recycled glass helps rescue dogs get food, blankets, and supplies. Know a bar or restaurant that should be doing this? Share the link with them.
+            </p>
+            <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+              <Button asChild size="lg" className="text-base font-black uppercase tracking-wider px-10">
+                <a href="#" onClick={(e) => e.preventDefault()}>
+                  Sign Up Here <ArrowRight data-icon="inline-end" />
+                </a>
+              </Button>
+              <Button asChild variant="outline" size="lg" className="text-base font-black uppercase tracking-wider px-10">
+                <Link href="/book">
+                  Book a Session <ArrowRight data-icon="inline-end" />
+                </Link>
+              </Button>
+            </div>
+          </div>
         </div>
       </section>
 
