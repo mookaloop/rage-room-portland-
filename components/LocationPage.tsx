@@ -19,15 +19,22 @@ export default function LocationPage({ location }: { location: LocationData }) {
       <div className="absolute inset-0 bg-background/80" aria-hidden="true" />
       <div className="container relative mx-auto flex max-w-6xl flex-col gap-8 px-4 sm:px-6">
         <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-sm text-muted-foreground"><Link href="/">Home</Link><span>/</span><Link href="/book" className="transition-colors hover:text-foreground">Locations</Link><span>/</span><span className="text-foreground">{location.shortName}</span></nav>
-        <div className="max-w-4xl">
-          <p className="mb-4 font-mono text-sm font-bold uppercase tracking-widest text-secondary">Now open · Book online</p>
-          <h1 className="text-balance font-serif text-5xl font-black uppercase leading-none md:text-7xl">{location.heroTitle}</h1>
-          <p className="mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground">{location.intro} {location.context}</p>
+        <div className="flex flex-col justify-between gap-8 md:flex-row md:items-end">
+          <div className="max-w-4xl">
+            <p className="mb-4 font-mono text-sm font-bold uppercase tracking-widest text-secondary">Now open · Book online</p>
+            <h1 className="text-balance font-serif text-5xl font-black uppercase leading-none md:text-7xl">{location.heroTitle}</h1>
+            <p className="mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground">{location.intro} {location.context}</p>
+          </div>
+          <Button asChild className="h-auto px-6 py-4 text-lg font-bold whitespace-nowrap">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSey2owIHFQMOlXLbaYRHyT6Jp87x_BCTtZLzrqJCuEIxcAWVA/viewform" target="_blank" rel="noreferrer">
+              Large Party Booking
+            </a>
+          </Button>
         </div>
       </div>
     </section>
     <section className="py-14 md:py-20"><div className="container mx-auto max-w-6xl px-4 sm:px-6">
-      <div className="mb-8 flex items-end justify-between gap-4"><div><p className="font-mono text-sm uppercase tracking-widest text-secondary">Start with a rage room</p><h2 className="mt-2 text-balance font-serif text-3xl font-black uppercase md:text-5xl">Book the smash—or add more</h2></div></div>
+      <div className="mb-8 flex items-end justify-between gap-4"><div><p className="font-mono text-sm uppercase tracking-widest text-secondary">Book at {location.slug === "st-johns" ? "StormBreaker" : "Stickmen"} now</p><h2 className="mt-2 text-balance font-serif text-3xl font-black uppercase md:text-5xl">Rage Room / Axe Throwing OR Combo</h2></div></div>
       <BookingOfferCards offers={location.bookingLinks} />
     </div></section>
     <section className="border-y border-border bg-card py-14"><div className="container mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 md:grid-cols-2">
