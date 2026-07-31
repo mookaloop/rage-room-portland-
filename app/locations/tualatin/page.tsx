@@ -9,4 +9,11 @@ export const metadata: Metadata = {
   openGraph: { title: "Tualatin Rage Room", description: "Private rage room sessions in Tualatin, Oregon, with optional axe throwing and combo experiences.", url: "/locations/tualatin" },
 }
 
-export default function TualatinPage() { return <LocationPage location={locations.tualatin} /> }
+export default function TualatinPage() {
+  return (
+    <LocationPage
+      location={locations.tualatin}
+      heroVideo="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Untitled%20design%20%2816%29-8AdiVIZllJ69yVJgMZsQTImkMQbMvH.mp4"
+    />
+  )
+}

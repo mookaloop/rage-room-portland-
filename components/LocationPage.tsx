@@ -7,14 +7,14 @@ import { BookingOfferCards } from "@/components/BookingOfferCards"
 import SiteHeader from "@/components/SiteHeader"
 import { LocationSchema } from "@/components/schema/JsonLd"
 
-export default function LocationPage({ location }: { location: LocationData }) {
+export default function LocationPage({ location, heroVideo }: { location: LocationData; heroVideo?: string }) {
   const other = location.slug === "st-johns" ? locations.tualatin : locations["st-johns"]
   return <main className="min-h-screen bg-background text-foreground">
     <LocationSchema location={location} />
     <SiteHeader />
     <section className="relative overflow-hidden border-b border-border bg-card py-16 md:py-24">
       <video autoPlay muted loop playsInline preload="metadata" aria-hidden="true" tabIndex={-1} className="pointer-events-none absolute inset-0 size-full object-cover motion-reduce:hidden">
-        <source src="/videos/rage-room-hero.mp4" type="video/mp4" />
+        <source src={heroVideo ?? "/videos/rage-room-hero.mp4"} type="video/mp4" />
       </video>
       <div className="absolute inset-0 bg-background/80" aria-hidden="true" />
       <div className="container relative mx-auto flex max-w-6xl flex-col gap-8 px-4 sm:px-6">
