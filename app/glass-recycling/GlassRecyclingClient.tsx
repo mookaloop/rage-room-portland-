@@ -53,7 +53,7 @@ export default function GlassRecyclingClient() {
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Button asChild size="lg" className="text-base font-black uppercase tracking-wider px-10">
-                <a href="#" onClick={(e) => e.preventDefault()}>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScf_AUgo1urUwTtbUGQmhlmx1w17OcqDNqLGHCFPEgy04-AZw/viewform?usp=header" target="_blank" rel="noreferrer">
                   Sign Up Here <ArrowRight data-icon="inline-end" />
                 </a>
               </Button>
@@ -88,7 +88,7 @@ export default function GlassRecyclingClient() {
               <Link href="/book">Book Now <ArrowRight data-icon="inline-end" /></Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="text-base font-black uppercase tracking-wider px-10">
-              <a href="#" onClick={(e) => e.preventDefault()}>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLScf_AUgo1urUwTtbUGQmhlmx1w17OcqDNqLGHCFPEgy04-AZw/viewform?usp=header" target="_blank" rel="noreferrer">
                 Sign Up <ArrowRight data-icon="inline-end" />
               </a>
             </Button>
