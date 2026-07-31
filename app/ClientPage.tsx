@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { ArrowRight, ArrowUpRight, Axe, Clock, CreditCard, MapPin, Users } from "lucide-react"
+import { ArrowRight, ArrowUpRight, Axe, Clock, CreditCard, MapPin, Users, Recycle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import SiteHeader from "@/components/SiteHeader"
@@ -95,7 +95,7 @@ export default function ClientPage() {
         </div>
       </div>
     </section>
-    <section className="border-y border-border bg-card py-16"><div className="container mx-auto grid max-w-6xl gap-8 px-4 sm:px-6 md:grid-cols-2"><div><h2 className="font-serif text-3xl font-black uppercase">Built for groups</h2><p className="mt-4 leading-relaxed text-muted-foreground">Birthday parties, team outings, date nights, bachelor and bachelorette groups—bring your people and we&apos;ll help you build the right session.</p><Button asChild variant="outline" className="mt-6"><Link href="/parties-events">Plan a group visit</Link></Button></div><div><h2 className="font-serif text-3xl font-black uppercase">First time?</h2><p className="mt-4 leading-relaxed text-muted-foreground">Learn what to wear, when to arrive, what you can smash, and how our safety briefing works before you book.</p><Button asChild variant="outline" className="mt-6"><Link href="/how-it-works">See how it works</Link></Button></div></div></section>
+    <section className="border-y border-border bg-card py-16"><div className="container mx-auto grid max-w-6xl gap-8 px-4 sm:px-6 md:grid-cols-2"><div><h2 className="font-serif text-3xl font-black uppercase">Built for groups</h2><p className="mt-4 leading-relaxed text-muted-foreground">Birthday parties, team outings, date nights, bachelor and bachelorette groups—bring your people and we&apos;ll help you build the right session.</p><Button asChild variant="outline" className="mt-6"><Link href="/parties-events">Plan a group visit</Link></Button></div><div><h2 className="flex items-center gap-3 font-serif text-3xl font-black uppercase"><Recycle className="text-secondary" />Glass & Recycling</h2><p className="mt-4 leading-relaxed text-muted-foreground">We recycle 100% of the smashable items. A percentage of sales goes towards the Oregon Dog Rescue.</p><Button asChild variant="outline" className="mt-6"><Link href="/glass-recycling">See how it works</Link></Button></div></div></section>
 
     {/* Bottom Book Now CTA */}
     <section className="relative overflow-hidden py-20 md:py-28">

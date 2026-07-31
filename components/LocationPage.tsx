@@ -7,14 +7,14 @@ import { BookingOfferCards } from "@/components/BookingOfferCards"
 import SiteHeader from "@/components/SiteHeader"
 import { LocationSchema } from "@/components/schema/JsonLd"
 
-export default function LocationPage({ location }: { location: LocationData }) {
+export default function LocationPage({ location, heroVideo }: { location: LocationData; heroVideo?: string }) {
   const other = location.slug === "st-johns" ? locations.tualatin : locations["st-johns"]
   return <main className="min-h-screen bg-background text-foreground">
     <LocationSchema location={location} />
     <SiteHeader />
     <section className="relative overflow-hidden border-b border-border bg-card py-16 md:py-24">
       <video autoPlay muted loop playsInline preload="metadata" aria-hidden="true" tabIndex={-1} className="pointer-events-none absolute inset-0 size-full object-cover motion-reduce:hidden">
-        <source src="/videos/rage-room-hero.mp4" type="video/mp4" />
+        <source src={heroVideo ?? "/videos/rage-room-hero.mp4"} type="video/mp4" />
       </video>
       <div className="absolute inset-0 bg-background/80" aria-hidden="true" />
       <div className="container relative mx-auto flex max-w-6xl flex-col gap-8 px-4 sm:px-6">
@@ -34,7 +34,7 @@ export default function LocationPage({ location }: { location: LocationData }) {
       </div>
     </section>
     <section className="py-14 md:py-20"><div className="container mx-auto max-w-6xl px-4 sm:px-6">
-      <div className="mb-8 flex items-end justify-between gap-4"><div><p className="font-mono text-sm uppercase tracking-widest text-secondary">Book at {location.slug === "st-johns" ? "StormBreaker" : "Stickmen"} now</p><h2 className="mt-2 text-balance font-serif text-3xl font-black uppercase md:text-5xl">Rage Room / Axe Throwing OR Combo</h2></div></div>
+      <div className="mb-8 flex items-end justify-between gap-4"><div><p className="font-mono text-sm uppercase tracking-widest text-secondary">{location.slug === "st-johns" ? "Small Parties · Deposits are refundable with at least 24 hours' notice." : "Small Parties · Deposits are refundable with at least 24 hours' notice."}</p><h2 className="mt-2 text-balance font-serif text-3xl font-black uppercase md:text-5xl">Rage Room / Axe Throwing OR Combo</h2></div></div>
       <BookingOfferCards offers={location.bookingLinks} />
     </div></section>
     <section className="border-y border-border bg-card py-14"><div className="container mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 md:grid-cols-2">
