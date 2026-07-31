@@ -33,14 +33,22 @@ export default function GlassRecyclingClient() {
       {/* Glass Hound Infographic + Bar Owner CTA */}
       <section className="border-y border-border bg-card py-16 md:py-24">
         <div className="container mx-auto max-w-5xl px-4 sm:px-6">
-          <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/glass.hound-W47p2pdkbFCPHAKwM1PMiPv5eRsCUM.png"
-            alt="Glass Hound — Recycle Glass. Rescue Dogs. Three-step process: Bars sign up, we drop off totes, weekly pickup. $1,000 sign-up bonus towards your team building event at Rage Room Portland or Celtic Axe."
-            width={1040}
-            height={520}
-            className="w-full rounded-2xl"
-            priority
-          />
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLScf_AUgo1urUwTtbUGQmhlmx1w17OcqDNqLGHCFPEgy04-AZw/viewform?usp=header"
+            target="_blank"
+            rel="noreferrer"
+            className="group block"
+            aria-label="Sign up for Glass Hound — opens the sign-up form"
+          >
+            <Image
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/glass.hound-W47p2pdkbFCPHAKwM1PMiPv5eRsCUM.png"
+              alt="Glass Hound — Recycle Glass. Rescue Dogs. Three-step process: Bars sign up, we drop off totes, weekly pickup. $1,000 sign-up bonus towards your team building event at Rage Room Portland or Celtic Axe."
+              width={1040}
+              height={520}
+              className="w-full rounded-2xl transition-opacity group-hover:opacity-90"
+              priority
+            />
+          </a>
 
           {/* Bar owner sign-up */}
           <div className="mt-12 rounded-2xl border-2 border-blue-500/30 bg-background p-10 text-center">
