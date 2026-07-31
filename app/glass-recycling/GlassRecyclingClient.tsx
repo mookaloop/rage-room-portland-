@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { ArrowRight } from "lucide-react"
+import { ArrowRight, Recycle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import SiteHeader from "@/components/SiteHeader"
 import Image from "next/image"
@@ -14,14 +14,18 @@ export default function GlassRecyclingClient() {
       {/* Hero */}
       <section className="py-20 md:py-28">
         <div className="container mx-auto max-w-5xl px-4 sm:px-6">
-          <p className="mb-4 text-center font-mono text-sm font-bold uppercase tracking-widest text-secondary">
-            Glass &amp; Recycling
-          </p>
-          <h1 className="text-balance text-center font-serif text-5xl font-black uppercase leading-none md:text-7xl">
-            Every smash <span className="text-blue-500">saves a pup</span>
+          <h1 className="flex flex-wrap items-center justify-center gap-4 text-center font-serif text-5xl font-black uppercase leading-none md:text-7xl">
+            <span>Recycle Glass</span>
+            <Recycle
+              className="inline-block shrink-0 text-blue-500"
+              style={{ width: "1em", height: "1em", animation: "spin 3s linear infinite" }}
+              aria-hidden="true"
+            />
+            <span className="text-blue-500">Rescue Dogs</span>
           </h1>
+          <style>{`@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }`}</style>
           <p className="mx-auto mt-6 max-w-xl text-center text-lg leading-relaxed text-muted-foreground">
-            We recycle 100% of the smashable items. A percentage of sales goes towards the Oregon Dog Rescue.
+            We recycle 100% of the smashable items. A percentage of sales goes towards the Oregon Dog Rescue and Puplandia for food, blankets, and supplies.
           </p>
         </div>
       </section>
