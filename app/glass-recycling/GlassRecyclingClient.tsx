@@ -1,10 +1,18 @@
 "use client"
 
 import Link from "next/link"
-import { ArrowRight, Heart, Recycle, Truck } from "lucide-react"
+import { ArrowRight, Heart, Recycle, Truck, PawPrint } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import SiteHeader from "@/components/SiteHeader"
 import Image from "next/image"
+
+const PawPrints = ({ className = "" }) => (
+  <div className={`absolute pointer-events-none ${className}`}>
+    <PawPrint className="size-6 text-secondary/30 absolute" style={{ transform: "rotate(-25deg)" }} aria-hidden="true" />
+    <PawPrint className="size-4 text-secondary/20 absolute ml-8" style={{ transform: "rotate(15deg)" }} aria-hidden="true" />
+    <PawPrint className="size-5 text-secondary/25 absolute ml-16" style={{ transform: "rotate(-10deg)" }} aria-hidden="true" />
+  </div>
+)
 
 export default function GlassRecyclingClient() {
   return (
@@ -13,16 +21,24 @@ export default function GlassRecyclingClient() {
 
       {/* Hero Section */}
       <section className="relative overflow-hidden border-b border-border py-16 md:py-24">
-        <div className="absolute inset-0 bg-gradient-to-br from-secondary/10 via-transparent to-primary/5" aria-hidden="true" />
+        <div className="absolute inset-0 bg-gradient-to-br from-secondary/10 via-transparent to-blue-500/5" aria-hidden="true" />
+        <PawPrints className="top-10 right-10" />
+        <PawPrints className="bottom-20 left-10" />
         <div className="relative container mx-auto max-w-6xl px-4 sm:px-6">
-          <div className="mb-12 flex items-center justify-center gap-4">
-            <Recycle className="size-12 text-secondary animate-spin" style={{ animationDuration: "3s" }} aria-hidden="true" />
-            <h1 className="text-balance font-serif text-5xl font-black uppercase md:text-7xl">
-              Every smash <span className="text-secondary">matters</span>
-            </h1>
+          <div className="mb-8 flex items-center justify-center gap-4">
+            <Image
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ore.dog.logo-2wcT0sQWw2v7EnhOjxa7r5dXKvcTS7.png"
+              alt="Oregon Dog Rescue"
+              width={100}
+              height={100}
+              className="size-20"
+            />
           </div>
+          <h1 className="text-balance text-center font-serif text-5xl font-black uppercase md:text-7xl mb-6">
+            Every smash <span className="text-blue-500">saves</span> a pup
+          </h1>
           <p className="mx-auto max-w-2xl text-center text-lg leading-relaxed text-muted-foreground">
-            We recycle 100% of the smashable items from your rage room session. A percentage of every booking goes directly to the Oregon Dog Rescue to support food, shelter, toys, and medical care for dogs in need.
+            We recycle 100% of the smashable items from your rage room session. A percentage of every booking goes directly to the Oregon Dog Rescue to support food, shelter, toys, and medical care for rescue dogs in need.
           </p>
         </div>
       </section>
@@ -49,16 +65,18 @@ export default function GlassRecyclingClient() {
         </div>
       </section>
 
-      {/* Logos Section */}
-      <section className="border-y border-border bg-card py-16 md:py-24">
-        <div className="container mx-auto max-w-6xl px-4 sm:px-6">
+      {/* Partners Section */}
+      <section className="relative border-y border-border bg-card py-16 md:py-24 overflow-hidden">
+        <PawPrints className="top-12 left-12" />
+        <PawPrints className="bottom-12 right-12" />
+        <div className="container mx-auto max-w-6xl px-4 sm:px-6 relative z-10">
           <h2 className="mb-12 text-center font-serif text-3xl font-black uppercase md:text-4xl">
-            Partners in <span className="text-secondary">Purpose</span>
+            Partners in <span className="text-blue-500">Purpose</span>
           </h2>
           <div className="grid gap-12 md:grid-cols-2 md:items-center">
             {/* Rage Room Portland Logo */}
             <div className="flex flex-col items-center gap-4">
-              <div className="rounded-lg border-2 border-primary/20 bg-background p-8">
+              <div className="rounded-lg border-2 border-secondary/30 bg-background p-12">
                 <div className="text-center">
                   <p className="font-serif text-3xl font-black uppercase text-foreground">Rage Room Portland</p>
                   <p className="mt-2 text-sm text-muted-foreground">St. Johns & Tualatin</p>
@@ -67,70 +85,76 @@ export default function GlassRecyclingClient() {
               <p className="text-center text-muted-foreground">Your stress relief destination, now with purpose.</p>
             </div>
 
-            {/* Oregon Dog Rescue Logo */}
-            <div className="flex flex-col items-center gap-4">
-              <div className="flex items-center justify-center rounded-lg border-2 border-blue-500/20 bg-background p-8">
+            {/* Oregon Dog Rescue Logo - FEATURED */}
+            <div className="flex flex-col items-center gap-6">
+              <div className="relative flex items-center justify-center rounded-2xl border-4 border-blue-500/40 bg-background p-12 shadow-lg">
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-transparent rounded-2xl" aria-hidden="true" />
                 <Image
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ore.dog.logo-2wcT0sQWw2v7EnhOjxa7r5dXKvcTS7.png"
                   alt="Oregon Dog Rescue logo"
-                  width={200}
-                  height={200}
-                  className="max-w-xs"
+                  width={250}
+                  height={250}
+                  className="max-w-sm relative z-10"
                 />
               </div>
-              <p className="text-center text-muted-foreground">Supporting rescue dogs with food, shelter, toys, and medical care.</p>
+              <div className="text-center">
+                <h3 className="font-serif text-2xl font-black uppercase text-blue-500">Oregon Dog Rescue</h3>
+                <p className="mt-2 text-muted-foreground">Supporting rescue dogs with food, shelter, toys, medical care, and love.</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* How Glass Gets Recycled */}
-      <section className="py-16 md:py-24">
-        <div className="container mx-auto max-w-6xl px-4 sm:px-6">
+      {/* How Glass Gets Recycled & Dogs Benefit */}
+      <section className="relative py-16 md:py-24 overflow-hidden">
+        <PawPrints className="top-20 right-12" />
+        <PawPrints className="bottom-12 left-12" />
+        <div className="container mx-auto max-w-6xl px-4 sm:px-6 relative z-10">
           <h2 className="mb-4 text-center font-serif text-4xl font-black uppercase md:text-5xl">
-            Where Your Glass <span className="text-secondary">Goes</span>
+            From Smash <span className="text-blue-500">to Rescue</span>
           </h2>
           <p className="mx-auto mb-12 max-w-2xl text-center text-lg text-muted-foreground">
-            Here&apos;s the journey from smash to sustainability.
+            Every session you book helps rescue dogs get food, shelter, toys, and medical care. Here&apos;s how your smashing saves pups.
           </p>
 
           <div className="grid gap-8 md:grid-cols-3">
             {/* Step 1 */}
-            <div className="rounded-2xl border-2 border-secondary/30 bg-card p-8 text-center">
+            <div className="rounded-2xl border-2 border-blue-500/30 bg-card p-8 text-center hover:border-blue-500/50 transition">
               <div className="mb-4 flex items-center justify-center">
-                <div className="flex size-16 items-center justify-center rounded-full bg-secondary/10">
-                  <Recycle className="size-8 text-secondary" aria-hidden="true" />
+                <div className="flex size-16 items-center justify-center rounded-full bg-blue-500/10">
+                  <Recycle className="size-8 text-blue-500" aria-hidden="true" />
                 </div>
               </div>
               <h3 className="mb-3 font-serif text-xl font-black uppercase">You Smash</h3>
               <p className="text-muted-foreground">
-                Every bottle and item is carefully collected after your rage room session.
+                Every bottle, can, and piece of glass is collected after your rage room session.
               </p>
             </div>
 
             {/* Step 2 */}
-            <div className="rounded-2xl border-2 border-secondary/30 bg-card p-8 text-center">
+            <div className="rounded-2xl border-2 border-blue-500/30 bg-card p-8 text-center hover:border-blue-500/50 transition">
               <div className="mb-4 flex items-center justify-center">
-                <div className="flex size-16 items-center justify-center rounded-full bg-secondary/10">
-                  <Truck className="size-8 text-secondary" aria-hidden="true" />
+                <div className="flex size-16 items-center justify-center rounded-full bg-blue-500/10">
+                  <Truck className="size-8 text-blue-500" aria-hidden="true" />
                 </div>
               </div>
-              <h3 className="mb-3 font-serif text-xl font-black uppercase">We Collect</h3>
+              <h3 className="mb-3 font-serif text-xl font-black uppercase">We Recycle</h3>
               <p className="text-muted-foreground">
-                Glass Hound partners pick up our recycling totes weekly and transport them responsibly.
+                Glass Hound partners pick up our recycling totes weekly and ensure 100% responsible recycling.
               </p>
             </div>
 
             {/* Step 3 */}
-            <div className="rounded-2xl border-2 border-secondary/30 bg-card p-8 text-center">
+            <div className="rounded-2xl border-2 border-blue-500/40 bg-gradient-to-br from-blue-500/10 to-transparent p-8 text-center shadow-md">
               <div className="mb-4 flex items-center justify-center">
-                <div className="flex size-16 items-center justify-center rounded-full bg-secondary/10">
-                  <Heart className="size-8 text-secondary" aria-hidden="true" />
+                <div className="flex size-16 items-center justify-center rounded-full bg-blue-500/20">
+                  <Heart className="size-8 text-blue-500" aria-hidden="true" />
                 </div>
               </div>
-              <h3 className="mb-3 font-serif text-xl font-black uppercase">Rescue Dogs Benefit</h3>
+              <h3 className="mb-3 font-serif text-xl font-black uppercase text-blue-500">Rescue Dogs Thrive</h3>
               <p className="text-muted-foreground">
-                A percentage of your booking supports Oregon Dog Rescue&apos;s mission.
+                A percentage of your booking goes directly to Oregon Dog Rescue for food, shelter, toys, and medical care.
               </p>
             </div>
           </div>
@@ -138,21 +162,23 @@ export default function GlassRecyclingClient() {
       </section>
 
       {/* Impact Stats */}
-      <section className="border-y border-border bg-card py-16 md:py-24">
-        <div className="container mx-auto max-w-6xl px-4 sm:px-6">
+      <section className="relative border-y border-border bg-card py-16 md:py-24 overflow-hidden">
+        <PawPrints className="top-12 right-12 opacity-50" />
+        <PawPrints className="bottom-12 left-12 opacity-50" />
+        <div className="container mx-auto max-w-6xl px-4 sm:px-6 relative z-10">
           <div className="grid gap-8 md:grid-cols-2">
-            <div className="rounded-2xl border-2 border-primary/20 bg-background/50 p-8">
-              <p className="mb-3 font-mono text-sm font-bold uppercase tracking-widest text-primary">Recycling Impact</p>
+            <div className="rounded-2xl border-2 border-secondary/30 bg-background/50 p-8">
+              <p className="mb-3 font-mono text-sm font-bold uppercase tracking-widest text-secondary">Recycling Impact</p>
               <h3 className="text-balance font-serif text-3xl font-black uppercase">100% Zero Waste</h3>
               <p className="mt-4 leading-relaxed text-muted-foreground">
-                Every item you smash gets a second life. Glass, metal, and electronics are all responsibly recycled through our Glass Hound partnership.
+                Every item you smash gets a second life. Glass, metal, and electronics are all responsibly recycled through our Glass Hound partnership—nothing goes to waste.
               </p>
             </div>
-            <div className="rounded-2xl border-2 border-secondary/20 bg-background/50 p-8">
-              <p className="mb-3 font-mono text-sm font-bold uppercase tracking-widest text-secondary">Community Support</p>
-              <h3 className="text-balance font-serif text-3xl font-black uppercase">Every Booking Helps</h3>
+            <div className="rounded-2xl border-2 border-blue-500/30 bg-gradient-to-br from-blue-500/5 to-transparent p-8">
+              <p className="mb-3 font-mono text-sm font-bold uppercase tracking-widest text-blue-500">Community Support</p>
+              <h3 className="text-balance font-serif text-3xl font-black uppercase text-blue-500">Rescue Dogs Win</h3>
               <p className="mt-4 leading-relaxed text-muted-foreground">
-                A percentage of sales goes directly to Oregon Dog Rescue to support food, shelter, toys, medicine, and more for rescue dogs.
+                Every booking helps rescue dogs get food, shelter, toys, medical care, and the second chance they deserve through Oregon Dog Rescue.
               </p>
             </div>
           </div>
@@ -161,13 +187,15 @@ export default function GlassRecyclingClient() {
 
       {/* CTA Section */}
       <section className="relative overflow-hidden py-16 md:py-24">
-        <div className="absolute inset-0 bg-gradient-to-r from-secondary/5 via-transparent to-primary/5" aria-hidden="true" />
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 via-transparent to-secondary/5" aria-hidden="true" />
+        <PawPrints className="top-10 left-12" />
+        <PawPrints className="bottom-10 right-12" />
         <div className="relative container mx-auto max-w-4xl px-4 text-center sm:px-6">
           <h2 className="text-balance font-serif text-4xl font-black uppercase md:text-5xl">
-            Ready to make an <span className="text-secondary">impact?</span>
+            Ready to save <span className="text-blue-500">rescue pups?</span>
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-pretty text-lg leading-relaxed text-muted-foreground">
-            Book your rage room session, smash with purpose, and know that your stress relief is helping rescue dogs in Oregon.
+            Book your rage room session, smash with purpose, and know that your stress relief is helping rescue dogs get the care and love they deserve.
           </p>
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-center">
             <Button asChild size="lg" className="text-base font-black uppercase tracking-wider px-10">
