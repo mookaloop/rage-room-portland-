@@ -1,341 +1,153 @@
 "use client"
 
-import { useState } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { ArrowLeft, Users, Calendar, Trophy, Hammer, Axe, Star, Clock, MapPin, Phone } from "lucide-react"
+import { Users, Star, Calendar, MapPin, Phone } from "lucide-react"
+import SiteHeader from "@/components/SiteHeader"
+
+const BOOKING_URL =
+  "https://docs.google.com/forms/d/e/1FAIpQLSey2owIHFQMOlXLbaYRHyT6Jp87x_BCTtZLzrqJCuEIxcAWVA/viewform"
 
 export default function PartiesEventsClient() {
-  const [openFaq, setOpenFaq] = useState<number | null>(0)
-
-  const toggleFaq = (index: number) => {
-    setOpenFaq(openFaq === index ? null : index)
-  }
-
-  const faqData = [
-    {
-      question: "How many people can participate in Portland team building events?",
-      answer:
-        "Our Portland rage room and axe throwing facility can accommodate groups from 6 to 50+ people. We have multiple rage rooms and axe throwing lanes to ensure everyone gets maximum participation time during your team building event.",
-    },
-    {
-      question: "What makes rage room Portland perfect for corporate events?",
-      answer:
-        "Rage room Portland offers a unique stress-relief experience that builds team camaraderie. Breaking items together creates shared experiences and laughter, while axe throwing Portland activities promote friendly competition and team bonding.",
-    },
-    {
-      question: "How far in advance should we book Portland team building activities?",
-      answer:
-        "For Portland team building events, we recommend booking 2-3 weeks in advance, especially for weekends. Our axe throwing Portland and rage room experiences are popular for corporate groups, so early booking ensures your preferred date and time.",
-    },
-    {
-      question: "What safety measures are in place for large groups?",
-      answer:
-        "Safety is our top priority for all Portland rage room and axe throwing activities. We provide comprehensive safety briefings, all protective equipment, and have trained staff supervising every session to ensure a safe and fun experience.",
-    },
-    {
-      question: "Can we customize our Portland team building experience?",
-      answer:
-        "We offer customizable packages combining rage room Portland sessions with axe throwing Portland activities. Add premium items to smash, extended time slots, and catering options to create the perfect team building event.",
-    },
-    {
-      question: "What's included in Portland corporate event packages?",
-      answer:
-        "Our Portland team building packages include private facility access, safety equipment, professional instruction, a variety of items to smash, axe throwing sessions, and dedicated event coordination to ensure your corporate event runs smoothly.",
-    },
-  ]
-
   return (
-    <main className="min-h-screen bg-black text-white">
-      {/* Header */}
-      <div className="w-full bg-black py-6 px-6 border-b border-[#ff00ff]/30">
-        <div className="container mx-auto flex items-center justify-between">
-          <Link href="/" className="flex items-center space-x-2 text-white hover:text-[#ff00ff] transition-colors">
-            <ArrowLeft className="h-6 w-6" />
-            <span className="font-bold">Back to Home</span>
-          </Link>
-          <div className="text-3xl md:text-5xl font-black italic transform -skew-x-12 drop-shadow-[0_0_20px_rgba(255,0,255,0.6)]">
-            <span className="text-[#00ffff]">PARTIES &</span>
-            <span className="text-[#ff00ff]"> EVENTS</span>
-          </div>
-        </div>
-      </div>
+    <main className="min-h-screen bg-background text-foreground">
+      <SiteHeader />
 
-      {/* Hero Section */}
-      <section className="py-16 bg-gradient-to-b from-black to-[#ff00ff]/10">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="font-flame text-4xl md:text-6xl mb-6 text-white leading-tight">
-              RAGE ROOM PORTLAND: <span className="text-[#ff00ff]">TEAM BUILDING & CORPORATE EVENTS</span>
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto">
-              Looking for unique things to do in Portland? Our rage room Portland and axe throwing Portland experiences
-              offer the ultimate team building activities that your group will never forget!
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <Button
-                className="bg-[#ff00ff] hover:bg-[#ff00ff]/80 text-black font-bold text-lg px-8 py-6"
-                onClick={() =>
-                  window.open(
-                    "https://docs.google.com/forms/d/e/1FAIpQLSey2owIHFQMOlXLbaYRHyT6Jp87x_BCTtZLzrqJCuEIxcAWVA/viewform",
-                    "_blank",
-                  )
-                }
-              >
-                BOOK TEAM BUILDING EVENT
-              </Button>
-              <Button
-                variant="outline"
-                className="border-[#00ffff] text-[#00ffff] hover:bg-[#00ffff]/10 font-bold text-lg px-8 py-6 bg-transparent"
-                onClick={() =>
-                  window.open(
-                    "https://docs.google.com/forms/d/e/1FAIpQLSey2owIHFQMOlXLbaYRHyT6Jp87x_BCTtZLzrqJCuEIxcAWVA/viewform",
-                    "_blank",
-                  )
-                }
-              >
-                GET CUSTOM QUOTE
-              </Button>
-            </div>
-            <div className="flex items-center justify-center space-x-6 text-white/80">
-              <div className="flex items-center space-x-2">
-                <MapPin className="h-5 w-5 text-[#ff00ff]" />
-                <span>Portland, Oregon</span>
+      {/* Hero */}
+      <section className="relative overflow-hidden border-b border-border py-16 md:py-24">
+        <div className="container mx-auto max-w-6xl px-4 sm:px-6">
+          <div className="grid gap-12 md:grid-cols-2 md:items-center">
+            <div>
+              <p className="mb-4 font-mono text-sm font-bold uppercase tracking-widest text-secondary">
+                Groups · Corporate · Celebrations
+              </p>
+              <h1 className="text-balance font-serif text-5xl font-black uppercase leading-none md:text-7xl">
+                Team Building That Actually Works
+              </h1>
+              <p className="mt-6 max-w-lg text-pretty text-lg leading-relaxed text-muted-foreground">
+                Forget the ropes course. Smash stuff together, throw axes, and walk away closer than when you showed up.
+                Portland&apos;s most memorable team event — guaranteed.
+              </p>
+              <div className="mt-8 flex flex-wrap gap-4">
+                <Button asChild size="lg" className="font-black uppercase tracking-wider">
+                  <a href={BOOKING_URL} target="_blank" rel="noreferrer">
+                    Book Your Event
+                  </a>
+                </Button>
+                <Button asChild variant="outline" size="lg" className="font-black uppercase tracking-wider">
+                  <a href="sms:5032129031">
+                    Text Us
+                  </a>
+                </Button>
               </div>
-              <a
-                href="sms:5032129031"
-                className="flex items-center space-x-2 hover:text-[#ff00ff] transition-colors cursor-pointer"
-              >
-                <Phone className="h-5 w-5 text-[#00ffff]" />
-                <span className="hidden sm:inline">(503) 212-9031</span>
-                <span className="sm:hidden">Text Us</span>
-              </a>
+              <div className="mt-6 flex flex-wrap items-center gap-6 text-sm text-muted-foreground">
+                <span className="flex items-center gap-2"><MapPin className="size-4 text-secondary" />Portland, Oregon</span>
+                <a href="tel:5032129031" className="flex items-center gap-2 hover:text-foreground transition-colors">
+                  <Phone className="size-4 text-secondary" />(503) 212-9031
+                </a>
+              </div>
+            </div>
+
+            {/* Real photo */}
+            <div className="relative">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_1663-9IwXNjvFgSff6LblyijfLEr6E2HoAd.jpeg"
+                alt="Group of people in blue jumpsuits having a blast in the Celtic Axe / Rage Room Portland smash room"
+                width={800}
+                height={640}
+                className="w-full rounded-2xl object-cover"
+                priority
+              />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Why Choose Us Section */}
-      <section className="py-16 bg-black">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="font-flame text-4xl md:text-5xl mb-6 text-white">
-              WHY CHOOSE <span className="text-[#ff00ff]">RAGE ROOM PORTLAND</span> FOR TEAM BUILDING?
+      {/* Real photo — full-width banner */}
+      <section className="border-b border-border">
+        <div className="relative h-72 w-full overflow-hidden md:h-96">
+          <Image
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/20251013_151250-QaZt58KW7U8sjjIOzyewIz0XkXqVMG.jpg"
+            alt="Large corporate team smiling in front of the Rage Room Portland mural"
+            fill
+            className="object-cover object-top"
+          />
+          <div className="absolute inset-0 bg-background/50" aria-hidden="true" />
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+            <p className="font-mono text-sm font-bold uppercase tracking-widest text-secondary mb-3">Real Teams. Real Fun.</p>
+            <h2 className="text-balance font-serif text-4xl font-black uppercase leading-none text-foreground md:text-6xl">
+              Your crew next?
             </h2>
-            <p className="text-xl text-white/80 max-w-3xl mx-auto">
-              When searching for things to do Portland for corporate events, nothing beats the unique combination of
-              stress relief and team bonding we offer.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 rounded-full bg-gradient-to-r from-[#ff00ff] to-[#ff00ff]/70 flex items-center justify-center mx-auto mb-6">
-                <Users className="h-8 w-8 text-black" />
-              </div>
-              <h3 className="font-flame text-xl mb-4 text-[#ff00ff]">TEAM BONDING</h3>
-              <p className="text-white/80">
-                Portland team building activities that create lasting memories and stronger workplace relationships
-                through shared experiences.
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-16 h-16 rounded-full bg-gradient-to-r from-[#00ffff] to-[#00ffff]/70 flex items-center justify-center mx-auto mb-6">
-                <Trophy className="h-8 w-8 text-black" />
-              </div>
-              <h3 className="font-flame text-xl mb-4 text-[#00ffff]">STRESS RELIEF</h3>
-              <p className="text-white/80">
-                Our rage room Portland sessions provide the perfect outlet for workplace stress while promoting mental
-                wellness and team morale.
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-16 h-16 rounded-full bg-gradient-to-r from-white to-white/70 flex items-center justify-center mx-auto mb-6">
-                <Star className="h-8 w-8 text-black" />
-              </div>
-              <h3 className="font-flame text-xl mb-4 text-white">UNIQUE EXPERIENCE</h3>
-              <p className="text-white/80">
-                Stand out from typical Portland corporate events with axe throwing Portland and rage room activities
-                your team has never tried.
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-16 h-16 rounded-full bg-gradient-to-r from-[#ff00ff] to-[#00ffff] flex items-center justify-center mx-auto mb-6">
-                <Clock className="h-8 w-8 text-black" />
-              </div>
-              <h3 className="font-flame text-xl mb-4 text-[#ff00ff]">FLEXIBLE TIMING</h3>
-              <p className="text-white/80">
-                Convenient scheduling for Portland team building events with options for lunch breaks, after-work
-                sessions, or weekend retreats.
-              </p>
-            </div>
           </div>
         </div>
       </section>
 
-      {/* Divider */}
-      <div className="relative h-16 bg-black">
-        <div className="absolute inset-0 skew-y-1 bg-gradient-to-r from-[#ff00ff] to-[#00ffff]"></div>
-      </div>
-
-      {/* Event Types Section */}
-      <section className="py-16 bg-gradient-to-b from-[#ff00ff]/10 to-black">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="font-flame text-4xl md:text-5xl mb-6 text-white">
-              PERFECT FOR ALL <span className="text-[#ff00ff]">PORTLAND EVENTS</span>
-            </h2>
-            <p className="text-xl text-white/80 max-w-3xl mx-auto">
-              From corporate team building to birthday celebrations, our Portland rage room and axe throwing experiences
-              are ideal for any group event.
-            </p>
+      {/* What works for */}
+      <section className="py-16 md:py-20">
+        <div className="container mx-auto max-w-6xl px-4 sm:px-6">
+          <div className="mb-12 text-center">
+            <p className="mb-3 font-mono text-sm font-bold uppercase tracking-widest text-secondary">Every occasion</p>
+            <h2 className="text-balance font-serif text-4xl font-black uppercase md:text-5xl">Works for any group</h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Corporate Team Building */}
-            <div className="bg-black border border-[#ff00ff]/30 p-8 rounded-lg hover:border-[#ff00ff] transition-colors">
-              <div className="w-12 h-12 rounded-full bg-[#ff00ff]/20 flex items-center justify-center mb-6">
-                <Users className="h-6 w-6 text-[#ff00ff]" />
-              </div>
-              <h3 className="font-flame text-2xl mb-4 text-[#ff00ff]">CORPORATE TEAM BUILDING</h3>
-              <p className="text-white/80 mb-4">
-                Boost morale and strengthen team dynamics with our Portland team building activities. Perfect for
-                quarterly meetings, company retreats, and department bonding.
-              </p>
-              <ul className="text-white/70 space-y-2">
-                <li>• 10-50+ employees</li>
-                <li>• Private facility access</li>
-                <li>• Professional facilitation</li>
-                <li>• Catering options available</li>
-              </ul>
-            </div>
-
-            {/* Birthday Parties */}
-            <div className="bg-black border border-[#00ffff]/30 p-8 rounded-lg hover:border-[#00ffff] transition-colors">
-              <div className="w-12 h-12 rounded-full bg-[#00ffff]/20 flex items-center justify-center mb-6">
-                <Star className="h-6 w-6 text-[#00ffff]" />
-              </div>
-              <h3 className="font-flame text-2xl mb-4 text-[#00ffff]">BIRTHDAY PARTIES</h3>
-              <p className="text-white/80 mb-4">
-                Make birthdays unforgettable with rage room Portland and axe throwing Portland experiences. The most
-                unique birthday celebration in the city!
-              </p>
-              <ul className="text-white/70 space-y-2">
-                <li>• Ages 10+ welcome</li>
-                <li>• Party packages available</li>
-                <li>• Decorations included</li>
-                <li>• Group photos provided</li>
-              </ul>
-            </div>
-
-            {/* Bachelor/Bachelorette */}
-            <div className="bg-black border border-white/30 p-8 rounded-lg hover:border-white transition-colors">
-              <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center mb-6">
-                <Trophy className="h-6 w-6 text-white" />
-              </div>
-              <h3 className="font-flame text-2xl mb-4 text-white">BACHELOR/BACHELORETTE</h3>
-              <p className="text-white/80 mb-4">
-                Celebrate your last night of freedom with the wildest things to do Portland! Our rage room and axe
-                throwing combo is perfect for pre-wedding fun.
-              </p>
-              <ul className="text-white/70 space-y-2">
-                <li>• Private group sessions</li>
-                <li>• Custom celebration packages</li>
-                <li>• Photo opportunities</li>
-                <li>• Memorable keepsakes</li>
-              </ul>
-            </div>
-
-            {/* Date Nights */}
-            <div className="bg-black border border-[#ff00ff]/30 p-8 rounded-lg hover:border-[#ff00ff] transition-colors">
-              <div className="w-12 h-12 rounded-full bg-[#ff00ff]/20 flex items-center justify-center mb-6">
-                <Hammer className="h-6 w-6 text-[#ff00ff]" />
-              </div>
-              <h3 className="font-flame text-2xl mb-4 text-[#ff00ff]">DATE NIGHTS</h3>
-              <p className="text-white/80 mb-4">
-                Skip the typical dinner and movie! Our Portland rage room and axe throwing experiences offer the most
-                exciting date night activities in the city.
-              </p>
-              <ul className="text-white/70 space-y-2">
-                <li>• Couples packages</li>
-                <li>• Romantic competition</li>
-                <li>• Shared experiences</li>
-                <li>• Unforgettable memories</li>
-              </ul>
-            </div>
-
-            {/* Holiday Parties */}
-            <div className="bg-black border border-[#00ffff]/30 p-8 rounded-lg hover:border-[#00ffff] transition-colors">
-              <div className="w-12 h-12 rounded-full bg-[#00ffff]/20 flex items-center justify-center mb-6">
-                <Calendar className="h-6 w-6 text-[#00ffff]" />
-              </div>
-              <h3 className="font-flame text-2xl mb-4 text-[#00ffff]">HOLIDAY PARTIES</h3>
-              <p className="text-white/80 mb-4">
-                Make your holiday celebrations legendary with Portland's most unique party venue. Perfect for office
-                parties, friend groups, and family gatherings.
-              </p>
-              <ul className="text-white/70 space-y-2">
-                <li>• Seasonal decorations</li>
-                <li>• Holiday-themed items</li>
-                <li>• Group discounts</li>
-                <li>• Festive atmosphere</li>
-              </ul>
-            </div>
-
-            {/* Fundraising Events */}
-            <div className="bg-black border border-white/30 p-8 rounded-lg hover:border-white transition-colors">
-              <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center mb-6">
-                <Axe className="h-6 w-6 text-white" />
-              </div>
-              <h3 className="font-flame text-2xl mb-4 text-white">FUNDRAISING EVENTS</h3>
-              <p className="text-white/80 mb-4">
-                Host memorable fundraising events that people actually want to attend! Our axe throwing Portland and
-                rage room activities draw crowds and raise funds.
-              </p>
-              <ul className="text-white/70 space-y-2">
-                <li>• Revenue sharing options</li>
-                <li>• Large group capacity</li>
-                <li>• Promotional support</li>
-                <li>• Community engagement</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="py-16 bg-gradient-to-b from-[#ff00ff]/10 to-black">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="font-flame text-4xl md:text-5xl mb-6 text-white">
-              RAGE ROOM PORTLAND TEAM BUILDING <span className="text-[#ff00ff]">FAQ</span>
-            </h2>
-            <p className="text-xl text-white/80 max-w-3xl mx-auto">
-              Common questions about our Portland rage room and axe throwing team building experiences.
-            </p>
-          </div>
-
-          <div className="max-w-4xl mx-auto space-y-4">
-            {faqData.map((faq, index) => (
-              <div key={index} className="border-2 border-[#ff00ff] bg-black p-6 rounded-lg">
-                <button className="w-full flex justify-between items-center text-left" onClick={() => toggleFaq(index)}>
-                  <span className="font-bold text-white text-lg pr-4">{faq.question}</span>
-                  <div className="w-8 h-8 rounded-full bg-[#ff00ff] flex items-center justify-center flex-shrink-0">
-                    <span className="text-black font-bold text-xl">{openFaq === index ? "−" : "+"}</span>
-                  </div>
-                </button>
-                {openFaq === index && <div className="mt-4 text-white/80 leading-relaxed">{faq.answer}</div>}
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              { icon: Users, title: "Corporate & Team Building", desc: "Quarterly retreats, department bonding, company outings. 10–50+ people." },
+              { icon: Star, title: "Birthday Parties", desc: "Ages 10+ welcome. The most memorable birthday in Portland — full stop." },
+              { icon: Calendar, title: "Bachelor & Bachelorette", desc: "Celebrate the last night of freedom the right way. Private sessions available." },
+              { icon: Users, title: "Date Nights", desc: "Skip dinner and a movie. Nothing bonds you like smashing stuff side by side." },
+              { icon: Calendar, title: "Holiday Parties", desc: "Office parties people will actually want to come to. Group discounts available." },
+              { icon: Star, title: "Fundraising Events", desc: "Draw crowds, raise funds, and give people something to talk about." },
+            ].map(({ icon: Icon, title, desc }) => (
+              <div key={title} className="rounded-xl border border-border bg-card p-6">
+                <div className="mb-4 flex size-10 items-center justify-center rounded-full bg-secondary/10">
+                  <Icon className="size-5 text-secondary" aria-hidden="true" />
+                </div>
+                <h3 className="mb-2 font-serif text-xl font-black uppercase">{title}</h3>
+                <p className="text-sm leading-relaxed text-muted-foreground">{desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-  
+      {/* FAQ */}
+      <section className="border-t border-border py-16 md:py-20">
+        <div className="container mx-auto max-w-3xl px-4 sm:px-6">
+          <div className="mb-12 text-center">
+            <h2 className="text-balance font-serif text-4xl font-black uppercase md:text-5xl">Quick answers</h2>
+          </div>
+          <div className="space-y-6">
+            {[
+              { q: "How many people can participate?", a: "Groups from 6 to 50+ people. We have multiple rage rooms and axe throwing lanes so everyone is active the whole time." },
+              { q: "How far in advance should we book?", a: "2–3 weeks ahead is ideal, especially for weekends. Corporate and large groups should book as early as possible." },
+              { q: "What's included in a group package?", a: "Private facility access, all safety gear, professional instruction, a variety of smashable items, axe throwing, and dedicated event coordination." },
+              { q: "Can we customize the experience?", a: "Yes — combine rage room and axe throwing, add premium smash items, extend your time, or add catering. Just ask." },
+            ].map(({ q, a }) => (
+              <div key={q} className="rounded-xl border border-border bg-card p-6">
+                <h3 className="mb-2 font-serif text-lg font-black uppercase">{q}</h3>
+                <p className="text-sm leading-relaxed text-muted-foreground">{a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="border-t border-border py-16 md:py-20">
+        <div className="container mx-auto max-w-3xl px-4 text-center sm:px-6">
+          <h2 className="text-balance font-serif text-4xl font-black uppercase md:text-5xl">Ready to book?</h2>
+          <p className="mx-auto mt-4 max-w-md text-pretty text-lg leading-relaxed text-muted-foreground">
+            Fill out the form and we&apos;ll get back to you fast to build the right package for your group.
+          </p>
+          <Button asChild size="lg" className="mt-8 font-black uppercase tracking-wider px-12">
+            <a href={BOOKING_URL} target="_blank" rel="noreferrer">
+              Request a Quote
+            </a>
+          </Button>
+        </div>
+      </section>
     </main>
   )
 }
