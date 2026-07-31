@@ -68,10 +68,10 @@ export default function PartiesEventsClient() {
       <section className="border-b border-border">
         <div className="relative h-72 w-full overflow-hidden md:h-96">
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/20251013_151250-QaZt58KW7U8sjjIOzyewIz0XkXqVMG.jpg"
-            alt="Large corporate team smiling in front of the Rage Room Portland mural"
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image0%20%286%29-rG1iCMtvxhJOGGfXTmTTUEZl1PY1nT.jpeg"
+            alt="Group of seven people posing with axes and a Celtic Axe clan banner in front of the Stickmen Brewing Company Celtic Axe mural"
             fill
-            className="object-cover object-top"
+            className="object-cover object-center"
           />
           <div className="absolute inset-0 bg-background/50" aria-hidden="true" />
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
