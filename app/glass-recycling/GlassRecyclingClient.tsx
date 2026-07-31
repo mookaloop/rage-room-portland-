@@ -25,21 +25,61 @@ export default function GlassRecyclingClient() {
         <PawPrints className="top-10 right-10" />
         <PawPrints className="bottom-20 left-10" />
         <div className="relative container mx-auto max-w-6xl px-4 sm:px-6">
-          <div className="mb-8 flex items-center justify-center gap-4">
-            <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ore.dog.logo-2wcT0sQWw2v7EnhOjxa7r5dXKvcTS7.png"
-              alt="Oregon Dog Rescue"
-              width={100}
-              height={100}
-              className="size-20"
-            />
-          </div>
-          <h1 className="text-balance text-center font-serif text-5xl font-black uppercase md:text-7xl mb-6">
+          <h1 className="text-balance text-center font-serif text-5xl font-black uppercase md:text-7xl mb-12">
             Every smash <span className="text-blue-500">saves</span> a pup
           </h1>
-          <p className="mx-auto max-w-2xl text-center text-lg leading-relaxed text-muted-foreground">
-            We recycle 100% of the smashable items from your rage room session. A percentage of every booking goes directly to the Oregon Dog Rescue to support food, shelter, toys, and medical care for rescue dogs in need.
-          </p>
+          
+          <div className="grid gap-12 md:grid-cols-2 md:items-center mb-12">
+            <div className="flex flex-col justify-center">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ore.dog.logo-2wcT0sQWw2v7EnhOjxa7r5dXKvcTS7.png"
+                alt="Oregon Dog Rescue"
+                width={200}
+                height={200}
+                className="mb-6 mx-auto md:mx-0 size-32"
+              />
+              <p className="text-lg leading-relaxed text-muted-foreground">
+                We recycle 100% of the smashable items from your rage room session. A percentage of every booking goes directly to the Oregon Dog Rescue to support food, shelter, toys, and medical care for rescue dogs in need.
+              </p>
+            </div>
+            
+            <div className="rounded-2xl border-2 border-blue-500/30 bg-card/80 p-8">
+              <svg viewBox="0 0 400 400" className="w-full h-auto" aria-hidden="true">
+                <defs>
+                  <style>{`
+                    .glass-hound-text { font-family: Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #0284c7; }
+                    .glass-hound-number { font-family: Arial, sans-serif; font-size: 32px; font-weight: bold; fill: #0284c7; }
+                    .glass-hound-small { font-family: Arial, sans-serif; font-size: 14px; fill: #0284c7; text-anchor: middle; }
+                  `}</style>
+                </defs>
+                
+                <circle cx="200" cy="200" r="180" fill="none" stroke="#0284c7" strokeWidth="3" opacity="0.3"/>
+                
+                <text x="200" y="60" className="glass-hound-text" textAnchor="middle">GLASS HOUND</text>
+                
+                <g>
+                  <circle cx="80" cy="150" r="40" fill="none" stroke="#0284c7" strokeWidth="2" opacity="0.5"/>
+                  <text x="80" y="155" className="glass-hound-number" textAnchor="middle">1</text>
+                  <text x="80" y="210" className="glass-hound-small">WE DROP OFF</text>
+                  <text x="80" y="230" className="glass-hound-small">TOTES</text>
+                </g>
+                
+                <g>
+                  <circle cx="200" cy="280" r="40" fill="none" stroke="#0284c7" strokeWidth="2" opacity="0.5"/>
+                  <text x="200" y="285" className="glass-hound-number" textAnchor="middle">2</text>
+                  <text x="200" y="340" className="glass-hound-small">WEEKLY PICKUP</text>
+                </g>
+                
+                <g>
+                  <circle cx="320" cy="150" r="40" fill="none" stroke="#0284c7" strokeWidth="2" opacity="0.5"/>
+                  <text x="320" y="155" className="glass-hound-number" textAnchor="middle">3</text>
+                  <text x="320" y="210" className="glass-hound-small">RESCUE DOGS</text>
+                  <text x="320" y="230" className="glass-hound-small">BENEFIT</text>
+                </g>
+              </svg>
+              <p className="text-center text-sm text-muted-foreground mt-6">Recycled glass helps support our dog rescue partners with food, shelter, toys, meds & more</p>
+            </div>
+          </div>
         </div>
       </section>
 
