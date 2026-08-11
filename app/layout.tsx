@@ -6,6 +6,7 @@ import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import FaqSection from "@/components/FaqSection"
 import Footer from "@/components/Footer"
+import RecyclingBanner from "@/components/RecyclingBanner"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 const oswald = Oswald({ subsets: ["latin"], variable: "--font-oswald" })
@@ -41,6 +42,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           {children}
           <FaqSection />
           <Footer />
+          <RecyclingBanner />
         </ThemeProvider>
       </body>
     </html>
