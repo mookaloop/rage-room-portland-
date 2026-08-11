@@ -17,6 +17,7 @@ const links = [
   { href: "/locations/tualatin", label: "Tualatin" },
   { href: "/how-it-works", label: "How It Works" },
   { href: "/parties-events", label: "Parties" },
+  { href: "/glass-recycling", label: "Recycling" },
   { href: "/contact", label: "Contact" },
 ]
 
