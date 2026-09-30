@@ -16,7 +16,7 @@ const links = [
   { href: "/locations/st-johns", label: "Hopworks Brewery" },
   { href: "/locations/tualatin", label: "Stickmen Brewery" },
   { href: "/how-it-works", label: "How It Works" },
-  { href: "/parties-events", label: "Parties" },
+  { href: "/parties-events", label: "Team-Building Parties" },
   { href: "/glass-recycling", label: "Recycling" },
   { href: "/contact", label: "Contact" },
 ]
