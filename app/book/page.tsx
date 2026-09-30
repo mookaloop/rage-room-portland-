@@ -4,7 +4,7 @@ import type { LocationSlug } from "@/lib/locations"
 
 export const metadata: Metadata = {
   title: "Book a Rage Room | Portland & Tualatin",
-  description: "Choose St. Johns or Tualatin and book a private rage room session online. Add axe throwing or choose a combo experience if you want more.",
+  description: "Choose Southeast Portland or Tualatin and book a private rage room session online. Add axe throwing or choose a combo experience if you want more.",
   alternates: { canonical: "/book" },
 }
 

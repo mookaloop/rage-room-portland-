@@ -6,7 +6,6 @@ import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import FaqSection from "@/components/FaqSection"
 import Footer from "@/components/Footer"
-import RecyclingBanner from "@/components/RecyclingBanner"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 const oswald = Oswald({ subsets: ["latin"], variable: "--font-oswald" })
@@ -14,7 +13,7 @@ const oswald = Oswald({ subsets: ["latin"], variable: "--font-oswald" })
 export const metadata: Metadata = {
   metadataBase: new URL("https://rageroomportland.co"),
   title: { default: "Rage Room Portland", template: "%s | Rage Room Portland" },
-  description: "Rage rooms and axe throwing at two Portland-area locations: St. Johns and Tualatin.",
+  description: "Rage rooms and axe throwing at two Portland-area locations: Southeast Portland and Tualatin.",
   icons: { icon: "/favicon.png", apple: "/favicon.png" },
   manifest: "/site.webmanifest",
   openGraph: { siteName: "Rage Room Portland", type: "website", images: [{ url: "/favicon.png", width: 250, height: 250, alt: "Rage Room Portland" }] },
@@ -42,7 +41,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           {children}
           <FaqSection />
           <Footer />
-          <RecyclingBanner />
         </ThemeProvider>
       </body>
     </html>

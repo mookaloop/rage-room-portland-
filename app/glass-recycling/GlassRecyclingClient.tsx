@@ -16,8 +16,8 @@ const steps = [
     title: "Bars Sign Up",
     accentColor: "text-primary",
     borderColor: "border-primary",
-    glowColor: "shadow-[0_0_24px_4px_hsl(322_100%_55%_/_0.35)]",
-    iconBg: "bg-[radial-gradient(circle_at_40%_40%,hsl(322_100%_62%),hsl(322_100%_35%))]",
+    glowColor: "shadow-[0_0_24px_4px_hsl(142_71%_45%_/_0.35)]",
+    iconBg: "bg-[radial-gradient(circle_at_40%_40%,hsl(142_71%_52%),hsl(142_71%_25%))]",
     description:
       "Bars, restaurants, and businesses join the Glass Hound program in minutes — no equipment to buy, no process to manage. We handle the logistics from day one.",
   },
@@ -27,8 +27,8 @@ const steps = [
     title: "We Drop Off Totes",
     accentColor: "text-secondary",
     borderColor: "border-secondary",
-    glowColor: "shadow-[0_0_24px_4px_hsl(184_100%_48%_/_0.35)]",
-    iconBg: "bg-[radial-gradient(circle_at_40%_40%,hsl(184_100%_55%),hsl(184_100%_28%))]",
+    glowColor: "shadow-[0_0_24px_4px_hsl(24_95%_53%_/_0.35)]",
+    iconBg: "bg-[radial-gradient(circle_at_40%_40%,hsl(24_95%_60%),hsl(24_95%_33%))]",
     description:
       "We deliver Glass Hound collection totes to your location. Fill them with your recycled glass — bottles, jars, anything smashable — as part of your normal routine.",
   },
@@ -38,8 +38,8 @@ const steps = [
     title: "Weekly Pickup",
     accentColor: "text-foreground",
     borderColor: "border-foreground/30",
-    glowColor: "shadow-[0_0_24px_4px_hsl(322_100%_55%_/_0.2),0_0_24px_4px_hsl(184_100%_48%_/_0.2)]",
-    iconBg: "bg-[radial-gradient(circle_at_40%_40%,hsl(184_100%_55%),hsl(280_100%_55%))]",
+    glowColor: "shadow-[0_0_24px_4px_hsl(142_71%_45%_/_0.2),0_0_24px_4px_hsl(24_95%_53%_/_0.2)]",
+    iconBg: "bg-[radial-gradient(circle_at_40%_40%,hsl(24_95%_60%),hsl(142_71%_50%))]",
     description:
       "We pick up your totes every week and swap them for fresh ones on the spot. Your glass gets recycled, and a share of the proceeds goes straight to local dog rescue.",
   },

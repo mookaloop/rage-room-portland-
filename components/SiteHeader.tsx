@@ -13,24 +13,24 @@ import { Sheet, SheetClose, SheetContent, SheetTitle, SheetTrigger } from "@/com
 import { locations } from "@/lib/locations"
 
 const links = [
-  { href: "/locations/st-johns", label: "St. Johns" },
-  { href: "/locations/tualatin", label: "Tualatin" },
+  { href: "/locations/st-johns", label: "Hopworks Brewery" },
+  { href: "/locations/tualatin", label: "Stickmen Brewery" },
   { href: "/how-it-works", label: "How It Works" },
-  { href: "/parties-events", label: "Parties" },
+  { href: "/parties-events", label: "Team-Building Parties" },
   { href: "/glass-recycling", label: "Recycling" },
   { href: "/contact", label: "Contact" },
 ]
 
 const waivers = [
-  { label: "St. Johns Waiver", url: locations["st-johns"].waiverUrl },
-  { label: "Tualatin Waiver", url: locations["tualatin"].waiverUrl },
+  { label: "Hopworks Brewery Waiver", url: locations["st-johns"].waiverUrl },
+  { label: "Stickmen Brewery Waiver", url: locations["tualatin"].waiverUrl },
 ]
 
 export default function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur">
       <div className="container mx-auto flex h-16 items-center justify-between gap-4 px-4 sm:px-6">
-        <Link href="/" className="font-serif text-xl font-black uppercase tracking-wider text-foreground transition-all duration-300 hover:[text-shadow:0_0_12px_hsl(322_100%_55%_/_0.8)] sm:text-2xl">
+        <Link href="/" className="font-serif text-xl font-black uppercase tracking-wider text-foreground transition-all duration-300 hover:[text-shadow:0_0_12px_hsl(142_71%_45%_/_0.8)] sm:text-2xl">
           Rage Room <span className="text-primary">Portland</span>
         </Link>
 

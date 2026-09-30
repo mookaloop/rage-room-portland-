@@ -15,16 +15,16 @@ export default function LocalBusinessSchema() {
     paymentAccepted: "Cash, Credit Card, Debit Card",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "8409 N Lombard St",
+      streetAddress: "2944 SE Powell Blvd",
       addressLocality: "Portland",
       addressRegion: "OR",
-      postalCode: "97203",
+      postalCode: "97202",
       addressCountry: "US",
     },
     geo: {
       "@type": "GeoCoordinates",
-      latitude: "45.5848",
-      longitude: "-122.7574",
+      latitude: "45.4973",
+      longitude: "-122.6425",
     },
     openingHours: ["Tu-Th 16:00-21:00", "Fr 12:00-22:00", "Sa 11:00-22:00", "Su 11:00-21:00"],
     image: [

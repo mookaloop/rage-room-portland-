@@ -8,28 +8,28 @@ export default function ContactClient() {
   return (
     <main className="min-h-screen bg-black text-white">
       {/* Header */}
-      <div className="w-full bg-black py-6 px-6 border-b border-[#ff00ff]/30">
+      <div className="w-full bg-black py-6 px-6 border-b border-[#22C55E]/30">
         <div className="container mx-auto flex items-center justify-between">
-          <Link href="/" className="flex items-center space-x-2 text-white hover:text-[#ff00ff] transition-colors">
+          <Link href="/" className="flex items-center space-x-2 text-white hover:text-[#22C55E] transition-colors">
             <ArrowLeft className="h-6 w-6" />
             <span className="font-bold">Back to Home</span>
           </Link>
-          <div className="text-3xl md:text-5xl font-black italic transform -skew-x-12 drop-shadow-[0_0_20px_rgba(255,0,255,0.6)]">
-            <span className="text-[#ff00ff]">CONTACT</span>
-            <span className="text-[#00ffff]"> US</span>
+          <div className="text-3xl md:text-5xl font-black italic transform -skew-x-12 drop-shadow-[0_0_20px_rgba(34,197,94,0.6)]">
+            <span className="text-[#22C55E]">CONTACT</span>
+            <span className="text-[#F97316]"> US</span>
           </div>
         </div>
       </div>
 
       {/* Hero Section */}
-      <section className="py-16 bg-gradient-to-b from-black to-[#ff00ff]/10">
+      <section className="py-16 bg-gradient-to-b from-black to-[#22C55E]/10">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="font-flame text-4xl md:text-6xl mb-6 text-white leading-tight">
-              CONTACT <span className="text-[#ff00ff]">RAGE ROOM PORTLAND</span>
+              CONTACT <span className="text-[#22C55E]">RAGE ROOM PORTLAND</span>
             </h1>
-            <div className="w-32 h-1 bg-gradient-to-r from-[#ff00ff] to-[#00ffff] mx-auto mb-8"></div>
-            <h2 className="font-flame text-2xl md:text-3xl mb-8 text-[#00ffff]">WE'D LOVE TO HEAR FROM YOU</h2>
+            <div className="w-32 h-1 bg-gradient-to-r from-[#22C55E] to-[#F97316] mx-auto mb-8"></div>
+            <h2 className="font-flame text-2xl md:text-3xl mb-8 text-[#F97316]">WE'D LOVE TO HEAR FROM YOU</h2>
             <p className="text-xl md:text-2xl mb-12 text-white/90 max-w-3xl mx-auto leading-relaxed">
               Got questions about booking, smashing stuff, or planning a party? We're here to help. Text us for the
               fastest response — or shoot us an email if you prefer!
@@ -47,25 +47,25 @@ export default function ContactClient() {
               <div className="space-y-8">
                 <div className="text-center lg:text-left">
                   <h3 className="font-flame text-3xl md:text-4xl mb-8 text-white">
-                    GET IN <span className="text-[#ff00ff]">TOUCH</span>
+                    GET IN <span className="text-[#22C55E]">TOUCH</span>
                   </h3>
                 </div>
 
                 {/* Text Us */}
-                <div className="bg-gradient-to-r from-[#ff00ff]/20 to-black border-2 border-[#ff00ff] p-6 md:p-8 rounded-lg hover:border-[#ff00ff]/80 transition-colors">
+                <div className="bg-gradient-to-r from-[#22C55E]/20 to-black border-2 border-[#22C55E] p-6 md:p-8 rounded-lg hover:border-[#22C55E]/80 transition-colors">
                   <div className="flex items-center space-x-4 mb-4">
-                    <div className="w-12 h-12 rounded-full bg-[#ff00ff] flex items-center justify-center">
+                    <div className="w-12 h-12 rounded-full bg-[#22C55E] flex items-center justify-center">
                       <Phone className="h-6 w-6 text-black" />
                     </div>
                     <div>
-                      <h4 className="font-bold text-xl text-[#ff00ff]">📱 Text Us (Fastest Response)</h4>
+                      <h4 className="font-bold text-xl text-[#22C55E]">📱 Text Us (Fastest Response)</h4>
                       <p className="text-white/80">Get answers in minutes</p>
                     </div>
                   </div>
                   <div className="text-center lg:text-left">
                     <a
                       href="sms:5032129031"
-                      className="inline-block bg-[#ff00ff] hover:bg-[#ff00ff]/80 text-black font-black text-lg px-8 py-4 rounded-lg transition-all duration-300 hover:scale-105"
+                      className="inline-block bg-[#22C55E] hover:bg-[#22C55E]/80 text-black font-black text-lg px-8 py-4 rounded-lg transition-all duration-300 hover:scale-105"
                     >
                       <span className="font-black text-2xl">503-212-9031</span>
                     </a>
@@ -73,20 +73,20 @@ export default function ContactClient() {
                 </div>
 
                 {/* Email */}
-                <div className="bg-gradient-to-r from-[#00ffff]/20 to-black border-2 border-[#00ffff] p-6 md:p-8 rounded-lg hover:border-[#00ffff]/80 transition-colors">
+                <div className="bg-gradient-to-r from-[#F97316]/20 to-black border-2 border-[#F97316] p-6 md:p-8 rounded-lg hover:border-[#F97316]/80 transition-colors">
                   <div className="flex items-center space-x-4 mb-4">
-                    <div className="w-12 h-12 rounded-full bg-[#00ffff] flex items-center justify-center">
+                    <div className="w-12 h-12 rounded-full bg-[#F97316] flex items-center justify-center">
                       <Mail className="h-6 w-6 text-black" />
                     </div>
                     <div>
-                      <h4 className="font-bold text-xl text-[#00ffff]">📧 Email Us</h4>
+                      <h4 className="font-bold text-xl text-[#F97316]">📧 Email Us</h4>
                       <p className="text-white/80">For detailed inquiries</p>
                     </div>
                   </div>
                   <div className="text-center lg:text-left">
                     <a
                       href="mailto:dave@celticaxethrowers.com"
-                      className="inline-block bg-[#00ffff] hover:bg-[#00ffff]/80 text-black font-black text-lg px-8 py-4 rounded-lg transition-all duration-300 hover:scale-105"
+                      className="inline-block bg-[#F97316] hover:bg-[#F97316]/80 text-black font-black text-lg px-8 py-4 rounded-lg transition-all duration-300 hover:scale-105"
                     >
                       <span className="font-black">dave@celticaxethrowers.com</span>
                     </a>
@@ -118,14 +118,14 @@ export default function ContactClient() {
                 </div>
 
                 {/* Other Locations */}
-                <div className="bg-gradient-to-r from-[#ff00ff]/10 to-[#00ffff]/10 border-2 border-white/30 p-6 md:p-8 rounded-lg hover:border-white/50 transition-colors">
+                <div className="bg-gradient-to-r from-[#22C55E]/10 to-[#F97316]/10 border-2 border-white/30 p-6 md:p-8 rounded-lg hover:border-white/50 transition-colors">
                   <div className="text-center">
                     <h4 className="font-bold text-xl text-white mb-4">🏹 MORE AXE THROWING LOCATIONS</h4>
                     <p className="text-white/80 mb-6">
                       Love axe throwing? Check out our other locations across the region for more Viking-style fun!
                     </p>
                     <Button
-                      className="w-full bg-gradient-to-r from-[#ff00ff] to-[#00ffff] hover:from-[#ff00ff]/80 hover:to-[#00ffff]/80 text-black font-black text-lg py-4 rounded-lg transition-all duration-300 hover:scale-105 uppercase tracking-wider"
+                      className="w-full bg-gradient-to-r from-[#22C55E] to-[#F97316] hover:from-[#22C55E]/80 hover:to-[#F97316]/80 text-black font-black text-lg py-4 rounded-lg transition-all duration-300 hover:scale-105 uppercase tracking-wider"
                       onClick={() => window.open("https://celticaxethrowers.com/", "_blank")}
                     >
                       🎯 VISIT CELTIC AXE THROWERS
@@ -138,33 +138,33 @@ export default function ContactClient() {
               <div className="space-y-8">
                 <div className="text-center lg:text-left">
                   <h3 className="font-flame text-3xl md:text-4xl mb-8 text-white">
-                    VISIT <span className="text-[#00ffff]">US</span>
+                    VISIT <span className="text-[#F97316]">US</span>
                   </h3>
                 </div>
 
                 {/* Location */}
-                <div className="bg-black/60 border border-[#ff00ff]/30 p-6 md:p-8 rounded-lg">
+                <div className="bg-black/60 border border-[#22C55E]/30 p-6 md:p-8 rounded-lg">
                   <div className="flex items-center space-x-4 mb-4">
-                    <div className="w-12 h-12 rounded-full bg-[#ff00ff]/20 flex items-center justify-center">
-                      <MapPin className="h-6 w-6 text-[#ff00ff]" />
+                    <div className="w-12 h-12 rounded-full bg-[#22C55E]/20 flex items-center justify-center">
+                      <MapPin className="h-6 w-6 text-[#22C55E]" />
                     </div>
-                    <h4 className="font-bold text-xl text-[#ff00ff]">Location</h4>
+                    <h4 className="font-bold text-xl text-[#22C55E]">Location</h4>
                   </div>
                   <div className="text-white/90 text-lg leading-relaxed">
-                    <p className="font-bold mb-2">Inside Stormbreaker Brewing</p>
-                    <p>8409 N Lombard St</p>
-                    <p>Portland, OR 97203</p>
-                    <p className="mt-4 text-white/70">St. Johns neighborhood</p>
+                    <p className="font-bold mb-2">Inside Hopworks Brewery</p>
+                    <p>2944 SE Powell Blvd</p>
+                    <p>Portland, OR 97202</p>
+                    <p className="mt-4 text-white/70">Southeast Portland neighborhood</p>
                   </div>
                 </div>
 
                 {/* Hours */}
-                <div className="bg-black/60 border border-[#00ffff]/30 p-6 md:p-8 rounded-lg">
+                <div className="bg-black/60 border border-[#F97316]/30 p-6 md:p-8 rounded-lg">
                   <div className="flex items-center space-x-4 mb-4">
-                    <div className="w-12 h-12 rounded-full bg-[#00ffff]/20 flex items-center justify-center">
-                      <Clock className="h-6 w-6 text-[#00ffff]" />
+                    <div className="w-12 h-12 rounded-full bg-[#F97316]/20 flex items-center justify-center">
+                      <Clock className="h-6 w-6 text-[#F97316]" />
                     </div>
-                    <h4 className="font-bold text-xl text-[#00ffff]">Hours</h4>
+                    <h4 className="font-bold text-xl text-[#F97316]">Hours</h4>
                   </div>
                   <div className="text-white/90 text-lg leading-relaxed space-y-2">
                     <div className="flex justify-between">
@@ -203,14 +203,14 @@ export default function ContactClient() {
                   <h4 className="font-bold text-xl text-white mb-4">Quick Actions</h4>
                   <div className="space-y-3">
                     <Link href="/book">
-                      <Button className="w-full bg-[#ff00ff] hover:bg-[#ff00ff]/80 text-black font-bold py-3">
+                      <Button className="w-full bg-[#22C55E] hover:bg-[#22C55E]/80 text-black font-bold py-3">
                         📅 Book Now
                       </Button>
                     </Link>
                     <Link href="/how-it-works">
                       <Button
                         variant="outline"
-                        className="w-full border-[#00ffff] text-[#00ffff] hover:bg-[#00ffff]/10 font-bold py-3 bg-transparent"
+                        className="w-full border-[#F97316] text-[#F97316] hover:bg-[#F97316]/10 font-bold py-3 bg-transparent"
                       >
                         ❓ How It Works
                       </Button>
@@ -233,26 +233,26 @@ export default function ContactClient() {
 
       {/* Divider */}
       <div className="relative h-16 bg-black">
-        <div className="absolute inset-0 skew-y-1 bg-gradient-to-r from-[#ff00ff] to-[#00ffff]"></div>
+        <div className="absolute inset-0 skew-y-1 bg-gradient-to-r from-[#22C55E] to-[#F97316]"></div>
       </div>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-gradient-to-b from-[#ff00ff]/10 to-black">
+      <section className="py-16 bg-gradient-to-b from-[#22C55E]/10 to-black">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h3 className="font-flame text-3xl md:text-4xl mb-8 text-white">
-              COMMON <span className="text-[#ff00ff]">QUESTIONS</span>
+              COMMON <span className="text-[#22C55E]">QUESTIONS</span>
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-black/60 border border-[#ff00ff]/30 p-6 rounded-lg text-left">
-                <h4 className="font-bold text-[#ff00ff] mb-3">How do I book?</h4>
+              <div className="bg-black/60 border border-[#22C55E]/30 p-6 rounded-lg text-left">
+                <h4 className="font-bold text-[#22C55E] mb-3">How do I book?</h4>
                 <p className="text-white/80">
                   Book online anytime or text us for same-day availability. Walk-ins welcome but reservations
                   recommended!
                 </p>
               </div>
-              <div className="bg-black/60 border border-[#00ffff]/30 p-6 rounded-lg text-left">
-                <h4 className="font-bold text-[#00ffff] mb-3">What should I wear?</h4>
+              <div className="bg-black/60 border border-[#F97316]/30 p-6 rounded-lg text-left">
+                <h4 className="font-bold text-[#F97316] mb-3">What should I wear?</h4>
                 <p className="text-white/80">
                   Closed-toe shoes required. We provide all safety equipment including coveralls, gloves, and eye
                   protection.
@@ -264,10 +264,10 @@ export default function ContactClient() {
                   For safety reasons, we only allow our pre-approved items. We have plenty of satisfying stuff to smash!
                 </p>
               </div>
-              <div className="bg-black/60 border border-[#ff00ff]/30 p-6 rounded-lg text-left">
-                <h4 className="font-bold text-[#ff00ff] mb-3">Do you serve food/drinks?</h4>
+              <div className="bg-black/60 border border-[#22C55E]/30 p-6 rounded-lg text-left">
+                <h4 className="font-bold text-[#22C55E] mb-3">Do you serve food/drinks?</h4>
                 <p className="text-white/80">
-                  Yes! We're inside Stormbreaker Brewing. Enjoy craft beer and food before or after your session.
+                  Yes! We're inside Hopworks Brewery. Enjoy craft beer and food before or after your session.
                 </p>
               </div>
             </div>
@@ -276,24 +276,24 @@ export default function ContactClient() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-black border-t border-[#ff00ff]/30">
+      <section className="py-16 bg-black border-t border-[#22C55E]/30">
         <div className="container mx-auto px-4 text-center">
           <h3 className="font-flame text-3xl md:text-4xl mb-6 text-white">
-            READY TO <span className="text-[#ff00ff]">UNLEASH YOUR RAGE</span>?
+            READY TO <span className="text-[#22C55E]">UNLEASH YOUR RAGE</span>?
           </h3>
           <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
             Don't wait - book your Portland stress-busting experience today! Text us now for the fastest response.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="sms:5032129031">
-              <Button className="bg-[#ff00ff] hover:bg-[#ff00ff]/80 text-black font-black text-lg px-8 py-6 rounded-xl transform transition-all duration-300 hover:scale-105">
+              <Button className="bg-[#22C55E] hover:bg-[#22C55E]/80 text-black font-black text-lg px-8 py-6 rounded-xl transform transition-all duration-300 hover:scale-105">
                 📱 TEXT US NOW
               </Button>
             </a>
             <Link href="/book">
               <Button
                 variant="outline"
-                className="border-[#00ffff] text-[#00ffff] hover:bg-[#00ffff]/10 font-bold text-lg px-8 py-6 rounded-xl bg-transparent"
+                className="border-[#F97316] text-[#F97316] hover:bg-[#F97316]/10 font-bold text-lg px-8 py-6 rounded-xl bg-transparent"
               >
                 📅 BOOK ONLINE
               </Button>
