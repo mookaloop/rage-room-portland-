@@ -32,7 +32,7 @@ export const locations: Record<LocationSlug, LocationData> = {
     intro: "Smash bottles, electronics, and stress in a private Southeast Portland rage room.",
     context: "Our original location is inside Hopworks Brewery in Southeast Portland. Come for the rage room; add axe throwing or a combo session if your group wants more.",
     hours: [
-      { day: "Monday", label: "Closed" }, { day: "Tuesday", opens: "16:00", closes: "21:00", label: "4–9 PM" },
+      { day: "Monday", opens: "16:00", closes: "21:00", label: "4–9 PM" }, { day: "Tuesday", opens: "16:00", closes: "21:00", label: "4–9 PM" },
       { day: "Wednesday", opens: "16:00", closes: "21:00", label: "4–9 PM" }, { day: "Thursday", opens: "16:00", closes: "21:00", label: "4–9 PM" },
       { day: "Friday", opens: "12:00", closes: "22:00", label: "12–10 PM" }, { day: "Saturday", opens: "11:00", closes: "22:00", label: "11 AM–10 PM" },
       { day: "Sunday", opens: "11:00", closes: "21:00", label: "11 AM–9 PM" },
@@ -57,7 +57,7 @@ export const locations: Record<LocationSlug, LocationData> = {
     intro: "A private rage room for Tualatin and Portland's south metro.",
     context: "Our Tualatin Rage Suite brings the full smash experience closer to Tigard, Lake Oswego, Sherwood, and the south metro, with axe throwing available as an added bonus.",
     hours: [
-      { day: "Monday", label: "Closed" }, { day: "Tuesday", label: "Closed" },
+      { day: "Monday", label: "Closed" }, { day: "Tuesday", opens: "16:00", closes: "21:00", label: "4–9 PM" },
       { day: "Wednesday", opens: "16:00", closes: "21:00", label: "4–9 PM" }, { day: "Thursday", opens: "16:00", closes: "17:00", label: "4–5 PM" },
       { day: "Friday", opens: "15:00", closes: "17:00", label: "3–5 PM" }, { day: "Saturday", opens: "12:00", closes: "16:00", label: "12–4 PM" },
       { day: "Sunday", opens: "15:00", closes: "20:00", label: "3–8 PM" },
