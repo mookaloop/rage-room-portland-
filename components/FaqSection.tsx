@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     q: "Are there food and drinks available?",
-        a: "Yes! Both locations are inside brewpubs — Hopworks Brewery in Southeast Portland and Tualatin Brewing in Tualatin. Enjoy craft beer, food, and cocktails before or after your experience.",
+        a: "Yes! Both locations are inside brewpubs — Hopworks Brewery in Southeast Portland and Stickmen Brewery in Tualatin. Enjoy craft beer, food, and cocktails before or after your experience.",
   },
 ]
 

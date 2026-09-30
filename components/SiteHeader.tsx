@@ -13,8 +13,8 @@ import { Sheet, SheetClose, SheetContent, SheetTitle, SheetTrigger } from "@/com
 import { locations } from "@/lib/locations"
 
 const links = [
-  { href: "/locations/st-johns", label: "Southeast Portland" },
-  { href: "/locations/tualatin", label: "Tualatin" },
+  { href: "/locations/st-johns", label: "Hopworks Brewery" },
+  { href: "/locations/tualatin", label: "Stickmen Brewery" },
   { href: "/how-it-works", label: "How It Works" },
   { href: "/parties-events", label: "Parties" },
   { href: "/glass-recycling", label: "Recycling" },
@@ -22,8 +22,8 @@ const links = [
 ]
 
 const waivers = [
-  { label: "Southeast Portland Waiver", url: locations["st-johns"].waiverUrl },
-  { label: "Tualatin Waiver", url: locations["tualatin"].waiverUrl },
+  { label: "Hopworks Brewery Waiver", url: locations["st-johns"].waiverUrl },
+  { label: "Stickmen Brewery Waiver", url: locations["tualatin"].waiverUrl },
 ]
 
 export default function SiteHeader() {
