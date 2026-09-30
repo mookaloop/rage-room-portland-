@@ -43,7 +43,7 @@ export default function LocationPage({ location, heroVideo }: { location: Locati
         <h2 className="font-serif text-3xl font-black uppercase">Find Us in {location.shortName}</h2>
         <address className="mt-4 not-italic leading-relaxed text-muted-foreground">{location.address}</address>
         {/* Google Maps embed */}
-        <div className="mt-6 overflow-hidden rounded-2xl border-2 border-primary/30 shadow-[0_0_20px_2px_hsl(322_100%_55%_/_0.15)]">
+        <div className="mt-6 overflow-hidden rounded-2xl border-2 border-primary/30 shadow-[0_0_20px_2px_hsl(142_71%_45%_/_0.15)]">
           <iframe
             title={`Map of ${location.name}`}
             src={`https://maps.google.com/maps?q=${encodeURIComponent(location.address)}&output=embed`}

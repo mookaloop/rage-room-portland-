@@ -14,10 +14,10 @@ export default function EventSchema() {
       name: "Rage Room Portland",
       address: {
         "@type": "PostalAddress",
-        streetAddress: "8409 N Lombard St",
+        streetAddress: "2944 SE Powell Blvd",
         addressLocality: "Portland",
         addressRegion: "OR",
-        postalCode: "97203",
+        postalCode: "97202",
         addressCountry: "US",
       },
     },

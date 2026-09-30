@@ -14,10 +14,10 @@ const howItWorksSteps = [
     title: "Choose Your Location",
     accentColor: "text-primary",
     borderColor: "border-primary",
-    glowColor: "shadow-[0_0_24px_4px_hsl(322_100%_55%_/_0.35)]",
-    iconBg: "bg-[radial-gradient(circle_at_40%_40%,hsl(322_100%_62%),hsl(322_100%_35%))]",
-    description: "Pick between our North Portland location in St. Johns or our SE Portland Metro spot in Tualatin. Both are inside brewpubs — so grab a beer before or after you smash.",
-    details: ["St. Johns — North Portland", "Tualatin — SE Portland Metro"],
+    glowColor: "shadow-[0_0_24px_4px_hsl(142_71%_45%_/_0.35)]",
+    iconBg: "bg-[radial-gradient(circle_at_40%_40%,hsl(142_71%_52%),hsl(142_71%_25%))]",
+    description: "Pick between our Southeast Portland location inside Hopworks Brewery or our Tualatin spot in the south metro. Both are inside brewpubs — so grab a beer before or after you smash.",
+    details: ["Southeast Portland — Inside Hopworks Brewery", "Tualatin — South Metro"],
   },
   {
     number: "02",
@@ -25,8 +25,8 @@ const howItWorksSteps = [
     title: "Choose Your Destruction",
     accentColor: "text-secondary",
     borderColor: "border-secondary",
-    glowColor: "shadow-[0_0_24px_4px_hsl(184_100%_48%_/_0.35)]",
-    iconBg: "bg-[radial-gradient(circle_at_40%_40%,hsl(184_100%_55%),hsl(184_100%_28%))]",
+    glowColor: "shadow-[0_0_24px_4px_hsl(24_95%_53%_/_0.35)]",
+    iconBg: "bg-[radial-gradient(circle_at_40%_40%,hsl(24_95%_60%),hsl(24_95%_33%))]",
     description: "Go full rage room, hurl some axes, or do both with the combo deal. All safety gear is included — hard hat, coveralls, face shield, and gloves. No experience needed.",
     details: ["Rage Room — from $35, 45 min", "Axe Throwing — from $25, 1 hr", "Combo — from $45, save $10"],
   },
@@ -36,8 +36,8 @@ const howItWorksSteps = [
     title: "Pay Deposit & Show Up",
     accentColor: "text-foreground",
     borderColor: "border-foreground/30",
-    glowColor: "shadow-[0_0_24px_4px_hsl(322_100%_55%_/_0.2),0_0_24px_4px_hsl(184_100%_48%_/_0.2)]",
-    iconBg: "bg-[radial-gradient(circle_at_40%_40%,hsl(184_100%_55%),hsl(280_100%_55%))]",
+    glowColor: "shadow-[0_0_24px_4px_hsl(142_71%_45%_/_0.2),0_0_24px_4px_hsl(24_95%_53%_/_0.2)]",
+    iconBg: "bg-[radial-gradient(circle_at_40%_40%,hsl(24_95%_60%),hsl(142_71%_50%))]",
     description: "A small deposit holds your spot. Pay the balance when you arrive. Wear closed-toed shoes and show up 15 minutes early so you have maximum time to rage and throw.",
     details: ["Deposit holds your time slot", "Pay balance day-of at the venue", "Arrive 15 min early, closed-toed shoes"],
   },
@@ -53,7 +53,7 @@ export default function ClientPage() {
       <div className="absolute inset-0 bg-background/80" aria-hidden="true" />
       <div className="relative container mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-[1.1fr_.9fr] lg:items-center">
         <div><p className="mb-4 font-mono text-lg font-bold uppercase tracking-widest text-secondary md:text-xl">Portland&apos;s Rage Rooms Inside Brewpubs</p><h1 className="text-balance font-serif text-5xl font-black uppercase leading-none md:text-7xl lg:text-8xl"><span className="text-primary">Choose your rage room.</span></h1><p className="mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-foreground">Book a private rage room and let it all out in a safe, controlled space. Want more? Add axe throwing or make it a combo.</p><a href="https://docs.google.com/forms/d/e/1FAIpQLSey2owIHFQMOlXLbaYRHyT6Jp87x_BCTtZLzrqJCuEIxcAWVA/viewform" target="_blank" rel="noreferrer noopener" className="mt-8 inline-flex items-center justify-center gap-2 rounded-xl bg-[hsl(184_100%_48%)] px-8 py-4 text-base font-black uppercase tracking-wider text-black shadow-[0_0_20px_4px_hsl(184_100%_48%_/_0.45)] transition-all hover:scale-[1.02] hover:bg-[hsl(184_100%_40%)]"><Users className="size-5" aria-hidden="true" />Large Party / Outside Hours<ArrowUpRight className="size-5" aria-hidden="true" /></a></div>
-        <div id="locations" className="grid gap-4" aria-label="Choose a location">{locationList.map((location, index) => <Card key={location.slug} className="neon-border-hover group bg-background/90 shadow-xl backdrop-blur-sm"><CardHeader className="flex-row items-start justify-between gap-4"><div><p className="font-mono text-xs font-bold uppercase tracking-widest text-secondary">{index === 0 ? "North Portland Location" : "SE Portland Metro Location"}</p><CardTitle className="mt-2 font-serif text-3xl uppercase">{location.slug === "st-johns" ? "St. Johns: Stormbreaker Brewery" : location.slug === "tualatin" ? "Tualatin: Stickmen Brewery" : location.shortName}</CardTitle><CardDescription className="mt-2">{location.intro}</CardDescription></div><MapPin className="text-primary" aria-hidden="true" /></CardHeader><CardContent><p className="text-sm text-muted-foreground">{location.address}</p><p className="mt-2 flex items-center gap-2 text-sm"><Clock aria-hidden="true" />{location.slug === "st-johns" ? "Open Tue–Sun" : "Open Wed–Sun"}</p></CardContent><CardFooter><Button asChild className="w-full"><Link href={`/locations/${location.slug}`}>View {location.shortName} & book<ArrowRight data-icon="inline-end" /></Link></Button></CardFooter></Card>)}</div>
+        <div id="locations" className="grid gap-4" aria-label="Choose a location">{locationList.map((location, index) => <Card key={location.slug} className="neon-border-hover group bg-background/90 shadow-xl backdrop-blur-sm"><CardHeader className="flex-row items-start justify-between gap-4"><div><p className="font-mono text-xs font-bold uppercase tracking-widest text-secondary">{index === 0 ? "Southeast Portland Location" : "South Metro Location"}</p><CardTitle className="mt-2 font-serif text-3xl uppercase">{location.slug === "st-johns" ? "SE Portland: Hopworks Brewery" : location.slug === "tualatin" ? "Tualatin: Stickmen Brewery" : location.shortName}</CardTitle><CardDescription className="mt-2">{location.intro}</CardDescription></div><MapPin className="text-primary" aria-hidden="true" /></CardHeader><CardContent><p className="text-sm text-muted-foreground">{location.address}</p><p className="mt-2 flex items-center gap-2 text-sm"><Clock aria-hidden="true" />{location.slug === "st-johns" ? "Open Tue–Sun" : "Open Wed–Sun"}</p></CardContent><CardFooter><Button asChild className="w-full"><Link href={`/locations/${location.slug}`}>View {location.shortName} & book<ArrowRight data-icon="inline-end" /></Link></Button></CardFooter></Card>)}</div>
       </div>
     </section>
     <section className="py-16 md:py-24">
@@ -109,9 +109,9 @@ export default function ClientPage() {
           Ready to <span className="text-primary">smash?</span>
         </h2>
         <p className="mx-auto mt-6 max-w-xl text-pretty text-lg leading-relaxed text-muted-foreground">
-          Pick your location, choose your experience, and pay a deposit to hold your spot. St. Johns or Tualatin — both inside brewpubs.
+          Pick your location, choose your experience, and pay a deposit to hold your spot. Southeast Portland or Tualatin — both inside brewpubs.
         </p>
-        <Button asChild size="lg" className="mt-10 px-14 py-6 text-xl font-black uppercase tracking-wider shadow-[0_0_32px_6px_hsl(322_100%_55%_/_0.5)]">
+        <Button asChild size="lg" className="mt-10 px-14 py-6 text-xl font-black uppercase tracking-wider shadow-[0_0_32px_6px_hsl(142_71%_45%_/_0.5)]">
           <Link href="/book">Book Now <ArrowRight data-icon="inline-end" /></Link>
         </Button>
         <p className="mt-5 text-sm text-muted-foreground">Deposit required to reserve. Pay balance day-of.</p>

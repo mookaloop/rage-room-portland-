@@ -12,8 +12,8 @@ const steps = [
     title: "Choose Your Experience",
     accentColor: "text-primary",
     borderColor: "border-primary",
-    glowColor: "shadow-[0_0_24px_4px_hsl(322_100%_55%_/_0.35)]",
-    iconBg: "bg-[radial-gradient(circle_at_40%_40%,hsl(322_100%_62%),hsl(322_100%_35%))]",
+    glowColor: "shadow-[0_0_24px_4px_hsl(142_71%_45%_/_0.35)]",
+    iconBg: "bg-[radial-gradient(circle_at_40%_40%,hsl(142_71%_52%),hsl(142_71%_25%))]",
     description:
       "Pick the experience that fits your vibe — rage room, axe throwing, or the ultimate combo. Rage room sessions are 45 minutes of pure destruction: smash bottles, TVs, printers, and electronics in a soundproof chamber with your own music cranked up. Axe throwing lanes are 1 hour with expert coaching. Combo is 1.5 hours of both.",
     details: [
@@ -28,10 +28,10 @@ const steps = [
     title: "Pick Your Date & Time",
     accentColor: "text-secondary",
     borderColor: "border-secondary",
-    glowColor: "shadow-[0_0_24px_4px_hsl(184_100%_48%_/_0.35)]",
-    iconBg: "bg-[radial-gradient(circle_at_40%_40%,hsl(184_100%_55%),hsl(184_100%_28%))]",
+    glowColor: "shadow-[0_0_24px_4px_hsl(24_95%_53%_/_0.35)]",
+    iconBg: "bg-[radial-gradient(circle_at_40%_40%,hsl(24_95%_60%),hsl(24_95%_33%))]",
     description:
-      "Select a time that works for your crew from our live availability calendar. We have morning, afternoon, and evening slots available seven days a week at both our North Portland (St. Johns) and SE Portland Metro (Tualatin) locations.",
+      "Select a time that works for your crew from our live availability calendar. We have morning, afternoon, and evening slots available seven days a week at both our Southeast Portland (Hopworks Brewery) and Tualatin (South Metro) locations.",
     details: [
       "Open 7 days a week",
       "Morning, afternoon & evening slots",
@@ -44,8 +44,8 @@ const steps = [
     title: "Book & Pay",
     accentColor: "text-foreground",
     borderColor: "border-foreground/30",
-    glowColor: "shadow-[0_0_24px_4px_hsl(322_100%_55%_/_0.2),0_0_24px_4px_hsl(184_100%_48%_/_0.2)]",
-    iconBg: "bg-[radial-gradient(circle_at_40%_40%,hsl(184_100%_55%),hsl(280_100%_55%))]",
+    glowColor: "shadow-[0_0_24px_4px_hsl(142_71%_45%_/_0.2),0_0_24px_4px_hsl(24_95%_53%_/_0.2)]",
+    iconBg: "bg-[radial-gradient(circle_at_40%_40%,hsl(24_95%_60%),hsl(142_71%_50%))]",
     description:
       "Secure your spot with a small $20 deposit — no need to know your exact group size upfront. Pay the remaining balance when you arrive on the day. All safety gear is provided: hard hat, coveralls, face shield, and gloves. Just show up ready to destroy.",
     details: [

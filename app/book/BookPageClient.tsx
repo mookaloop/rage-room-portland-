@@ -49,7 +49,7 @@ function SneakPeekVideo() {
         />
         {/* Play overlay */}
         <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-background/40 transition-colors group-hover:bg-background/20">
-          <div className="flex size-16 items-center justify-center rounded-full bg-primary shadow-[0_0_24px_4px_hsl(322_100%_55%_/_0.6)] transition-transform group-hover:scale-110">
+          <div className="flex size-16 items-center justify-center rounded-full bg-primary shadow-[0_0_24px_4px_hsl(142_71%_45%_/_0.6)] transition-transform group-hover:scale-110">
             <Play className="size-7 fill-white text-white translate-x-0.5" aria-hidden="true" />
           </div>
           <p className="font-mono text-xs font-bold uppercase tracking-widest text-white drop-shadow">Watch the experience</p>
@@ -112,7 +112,7 @@ export default function BookPageClient({ initialLocation }: { initialLocation: L
             <span className="text-primary">Start with the smash.</span>
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-            Reserve a private rage room in St. Johns or Tualatin. Axe throwing is available as an optional add-on or combo experience.
+            Reserve a private rage room in Southeast Portland or Tualatin. Axe throwing is available as an optional add-on or combo experience.
           </p>
         </div>
         </section>
@@ -127,15 +127,15 @@ export default function BookPageClient({ initialLocation }: { initialLocation: L
             <TabsList className="grid h-auto w-full grid-cols-2 gap-3 rounded-2xl bg-transparent p-0">
               <TabsTrigger
                 value="st-johns"
-                className="group flex flex-col items-center gap-1 rounded-2xl border-2 border-primary/40 bg-card px-6 py-5 text-base font-black uppercase tracking-wide shadow-none transition-all duration-200 data-[state=active]:border-primary data-[state=active]:bg-card data-[state=active]:shadow-[0_0_24px_4px_hsl(322_100%_55%_/_0.45)] data-[state=inactive]:opacity-60 data-[state=inactive]:hover:opacity-90"
+                className="group flex flex-col items-center gap-1 rounded-2xl border-2 border-primary/40 bg-card px-6 py-5 text-base font-black uppercase tracking-wide shadow-none transition-all duration-200 data-[state=active]:border-primary data-[state=active]:bg-card data-[state=active]:shadow-[0_0_24px_4px_hsl(142_71%_45%_/_0.45)] data-[state=inactive]:opacity-60 data-[state=inactive]:hover:opacity-90"
               >
                 <MapPin className="size-6 text-primary" aria-hidden="true" />
-                <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground">North Portland</span>
-                <span className="font-serif text-2xl font-black text-primary">Book St. Johns</span>
+              <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Southeast Portland</span>
+              <span className="font-serif text-2xl font-black text-primary">Book Southeast Portland</span>
               </TabsTrigger>
               <TabsTrigger
                 value="tualatin"
-                className="group flex flex-col items-center gap-1 rounded-2xl border-2 border-secondary/40 bg-card px-6 py-5 text-base font-black uppercase tracking-wide shadow-none transition-all duration-200 data-[state=active]:border-secondary data-[state=active]:bg-card data-[state=active]:shadow-[0_0_24px_4px_hsl(184_100%_48%_/_0.45)] data-[state=inactive]:opacity-60 data-[state=inactive]:hover:opacity-90"
+                className="group flex flex-col items-center gap-1 rounded-2xl border-2 border-secondary/40 bg-card px-6 py-5 text-base font-black uppercase tracking-wide shadow-none transition-all duration-200 data-[state=active]:border-secondary data-[state=active]:bg-card data-[state=active]:shadow-[0_0_24px_4px_hsl(24_95%_53%_/_0.45)] data-[state=inactive]:opacity-60 data-[state=inactive]:hover:opacity-90"
               >
                 <MapPin className="size-6 text-secondary" aria-hidden="true" />
                 <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground">SE Portland Metro</span>

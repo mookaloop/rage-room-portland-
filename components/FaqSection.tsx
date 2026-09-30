@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     q: "Are there food and drinks available?",
-    a: "Yes! Both locations are inside brewpubs — StormBreaker Brewing in St. Johns and Tualatin Brewing in Tualatin. Enjoy craft beer, food, and cocktails before or after your experience.",
+        a: "Yes! Both locations are inside brewpubs — Hopworks Brewery in Southeast Portland and Tualatin Brewing in Tualatin. Enjoy craft beer, food, and cocktails before or after your experience.",
   },
 ]
 
@@ -54,7 +54,7 @@ export default function FaqSection() {
         {/* Header */}
         <div className="mb-12 text-center">
           <div className="mb-4 flex justify-center">
-            <div className="flex size-14 items-center justify-center rounded-full bg-[hsl(322_100%_55%_/_0.15)] ring-2 ring-[hsl(322_100%_55%_/_0.4)]">
+            <div className="flex size-14 items-center justify-center rounded-full bg-[hsl(142_71%_45%_/_0.15)] ring-2 ring-[hsl(142_71%_45%_/_0.4)]">
               <Hammer className="size-7 text-primary" aria-hidden="true" />
             </div>
           </div>
@@ -76,7 +76,7 @@ export default function FaqSection() {
             <AccordionItem
               key={i}
               value={`item-${i}`}
-              className="rounded-2xl border-2 border-border bg-card px-6 transition-colors duration-200 data-[state=open]:border-primary/60 data-[state=open]:shadow-[0_0_18px_2px_hsl(322_100%_55%_/_0.18)]"
+              className="rounded-2xl border-2 border-border bg-card px-6 transition-colors duration-200 data-[state=open]:border-primary/60 data-[state=open]:shadow-[0_0_18px_2px_hsl(142_71%_45%_/_0.18)]"
             >
               <AccordionTrigger className="py-5 text-left text-base font-bold uppercase tracking-wide text-foreground hover:no-underline md:text-lg [&[data-state=open]]:text-primary">
                 {faq.q}
