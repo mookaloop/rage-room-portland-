@@ -5,6 +5,7 @@ import { ArrowRight, ArrowUpRight, Axe, Clock, CreditCard, MapPin, Users, Recycl
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import SiteHeader from "@/components/SiteHeader"
+import GoogleReviewsCarousel from "@/components/GoogleReviewsCarousel"
 import { locationList } from "@/lib/locations"
 
 const howItWorksSteps = [
@@ -56,6 +57,7 @@ export default function ClientPage() {
         <div id="locations" className="grid gap-4" aria-label="Choose a location">{locationList.map((location, index) => <Card key={location.slug} className="neon-border-hover group bg-background/90 shadow-xl backdrop-blur-sm"><CardHeader className="flex-row items-start justify-between gap-4"><div><p className="font-mono text-xs font-bold uppercase tracking-widest text-secondary">{index === 0 ? "Southeast Portland Location" : "South Metro Location"}</p><CardTitle className="mt-2 font-serif text-3xl uppercase">{location.slug === "st-johns" ? "SE Portland: Hopworks Brewery" : location.slug === "tualatin" ? "Tualatin: Stickmen Brewery" : location.shortName}</CardTitle><CardDescription className="mt-2">{location.intro}</CardDescription></div><MapPin className="text-primary" aria-hidden="true" /></CardHeader><CardContent><p className="text-sm text-muted-foreground">{location.address}</p><p className="mt-2 flex items-center gap-2 text-sm"><Clock aria-hidden="true" />{location.slug === "st-johns" ? "Open Mon–Sun" : "Open Tue–Sun"}</p></CardContent><CardFooter><Button asChild className="w-full"><Link href={`/locations/${location.slug}`}>View {location.shortName} & book<ArrowRight data-icon="inline-end" /></Link></Button></CardFooter></Card>)}</div>
       </div>
     </section>
+    <GoogleReviewsCarousel />
     <section className="py-16 md:py-24">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6">
         <div className="mb-12 text-center">
