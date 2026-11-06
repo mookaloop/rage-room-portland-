@@ -34,8 +34,8 @@ export const locations: Record<LocationSlug, LocationData> = {
     hours: [
       { day: "Monday", opens: "16:00", closes: "21:00", label: "4–9 PM" }, { day: "Tuesday", opens: "16:00", closes: "21:00", label: "4–9 PM" },
       { day: "Wednesday", opens: "16:00", closes: "21:00", label: "4–9 PM" }, { day: "Thursday", opens: "16:00", closes: "21:00", label: "4–9 PM" },
-      { day: "Friday", opens: "12:00", closes: "22:00", label: "12–10 PM" }, { day: "Saturday", opens: "11:00", closes: "22:00", label: "11 AM–10 PM" },
-      { day: "Sunday", opens: "11:00", closes: "21:00", label: "11 AM–9 PM" },
+      { day: "Friday", opens: "12:00", closes: "22:00", label: "12–10 PM" }, { day: "Saturday", opens: "11:30", closes: "22:00", label: "11:30 AM–10 PM" },
+      { day: "Sunday", opens: "11:30", closes: "21:00", label: "11:30 AM–9 PM" },
     ],
     bookingLinks: [
       { name: "Rage Room", description: "The main event: a private destruction session with safety gear included.", price: "From $35", duration: "45 minutes", url: "https://bookcelticaxe.as.me/schedule/b12708f9/?categories[]=Hopworks%20Rage%20Room%20" },

@@ -63,17 +63,15 @@ export default function LocationPage({ location, heroVideo }: { location: Locati
         </div>
       </div>
       <div><Clock className="mb-4 text-secondary" aria-hidden="true" /><h2 className="font-serif text-3xl font-black uppercase">Weekly hours</h2><dl className="mt-4 flex max-w-md flex-col gap-2">{location.hours.map((item) => <div key={item.day} className="flex justify-between gap-4 border-b border-border pb-2"><dt>{item.day}</dt><dd className="font-bold">{item.label}</dd></div>)}</dl>
-        {location.slug === "tualatin" && (
-          <div className="mt-8 flex max-w-md flex-col gap-3 rounded-2xl border-2 border-primary/30 bg-background p-6">
-            <h3 className="text-balance font-serif text-2xl font-black uppercase">Want to book outside normal hours?</h3>
-            <p className="text-pretty leading-relaxed text-muted-foreground">Fill out our large party booking form and we&apos;ll work with you to find a time that fits your group.</p>
-            <Button asChild className="self-start font-bold">
-              <a href={LARGE_PARTY_FORM_URL} target="_blank" rel="noreferrer">
-                Fill out the form<ArrowRight data-icon="inline-end" />
-              </a>
-            </Button>
-          </div>
-        )}
+        <div className="mt-8 flex max-w-md flex-col gap-3 rounded-2xl border-2 border-primary/30 bg-background p-6">
+          <h3 className="text-balance font-serif text-2xl font-black uppercase">Want to book outside normal hours?</h3>
+          <p className="text-pretty leading-relaxed text-muted-foreground">Fill out our large party booking form and we&apos;ll work with you to find a time that fits your group.</p>
+          <Button asChild className="self-start font-bold">
+            <a href={LARGE_PARTY_FORM_URL} target="_blank" rel="noreferrer">
+              Fill out the form<ArrowRight data-icon="inline-end" />
+            </a>
+          </Button>
+        </div>
       </div>
     </div></section>
     <section className="py-14"><div className="container mx-auto flex max-w-4xl flex-col items-center gap-5 px-4 text-center sm:px-6"><p className="font-mono text-sm uppercase tracking-widest text-secondary">Two locations, one seriously good time</p><h2 className="text-balance font-serif text-3xl font-black uppercase">Also explore {other.shortName}</h2><p className="text-muted-foreground">Compare the setting, hours, and booking options at our {other.name} location.</p><Button asChild variant="outline"><Link href={`/locations/${other.slug}`}>View {other.shortName}<ArrowRight data-icon="inline-end" /></Link></Button></div></section>
