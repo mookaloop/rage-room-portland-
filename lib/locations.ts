@@ -63,9 +63,9 @@ export const locations: Record<LocationSlug, LocationData> = {
       { day: "Sunday", opens: "12:00", closes: "20:00", label: "12–8 PM" },
     ],
     bookingLinks: [
-      { name: "StormBreaker Rage Room", description: "The main event: a private destruction session with safety gear included.", price: "From $35", duration: "45 minutes", url: "" },
-      { name: "StormBreaker Rage + Axe Combo", description: "Start with the smash, then add axe throwing for the full experience.", price: "From $45", duration: "About 90 minutes", url: "" },
-      { name: "StormBreaker Axe Throwing", description: "An optional bonus activity with professional lanes and instruction.", price: "From $25", duration: "1 hour", url: "" },
+      { name: "StormBreaker Rage Room", description: "The main event: a private destruction session with safety gear included.", price: "From $35", duration: "45 minutes", url: "https://bookcelticaxe.as.me/?appointmentType=category:Stormbreaker%20Rage%20Room%20" },
+      { name: "StormBreaker Rage + Axe Combo", description: "Start with the smash, then add axe throwing for the full experience.", price: "From $45", duration: "About 90 minutes", url: "https://bookcelticaxe.as.me/?appointmentType=category:Stormbreaker%20Rage%20%2F%20Axe%20Combo" },
+      { name: "StormBreaker Axe Throwing", description: "An optional bonus activity with professional lanes and instruction.", price: "From $25", duration: "1 hour", url: "https://bookcelticaxe.as.me/stormbreaker" },
     ],
     waiverUrl: "https://waiver.smartwaiver.com/w/tkfmatvzjuc5pg5n471dgf/web/",
     directionsUrl: "https://maps.google.com/?q=Rage+Room+Portland,+8409+N+Lombard+St,+Portland,+OR+97203",
