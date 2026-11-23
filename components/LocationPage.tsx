@@ -7,7 +7,7 @@ import { BookingOfferCards } from "@/components/BookingOfferCards"
 import SiteHeader from "@/components/SiteHeader"
 import { LocationSchema } from "@/components/schema/JsonLd"
 
-const LARGE_PARTY_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSey2owIHFQMOlXLbaYRHyT6Jp87x_BCTtZLzrqJCuEIxcAWVA/viewform"
+const LARGE_PARTY_FORM_URL = "https://forms.gle/SL7avwtBFHuBFESY6"
 
 export default function LocationPage({ location, heroVideo, heroYouTubeId }: { location: LocationData; heroVideo?: string; heroYouTubeId?: string }) {
   const others = locationList.filter((item) => item.slug !== location.slug)

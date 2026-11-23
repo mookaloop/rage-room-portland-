@@ -7,7 +7,7 @@ import { Users, Star, Calendar, MapPin, Phone } from "lucide-react"
 import SiteHeader from "@/components/SiteHeader"
 
 const BOOKING_URL =
-  "https://docs.google.com/forms/d/e/1FAIpQLSey2owIHFQMOlXLbaYRHyT6Jp87x_BCTtZLzrqJCuEIxcAWVA/viewform"
+  "https://forms.gle/SL7avwtBFHuBFESY6"
 
 export default function PartiesEventsClient() {
   return (

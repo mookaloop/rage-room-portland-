@@ -108,7 +108,7 @@ export default function ContactClient() {
                     className="w-full bg-white hover:bg-white/90 text-black font-black text-lg py-4 rounded-lg transition-all duration-300 hover:scale-105 uppercase tracking-wider"
                     onClick={() =>
                       window.open(
-                        "https://docs.google.com/forms/d/e/1FAIpQLSey2owIHFQMOlXLbaYRHyT6Jp87x_BCTtZLzrqJCuEIxcAWVA/viewform?pli=1",
+                        "https://forms.gle/SL7avwtBFHuBFESY6",
                         "_blank",
                       )
                     }
