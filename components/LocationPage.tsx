@@ -42,7 +42,7 @@ export default function LocationPage({ location, heroVideo, heroYouTubeId }: { l
           </div>
           <Button asChild className="h-auto px-6 py-4 text-lg font-bold whitespace-nowrap">
             <a href={LARGE_PARTY_FORM_URL} target="_blank" rel="noreferrer">
-              Large Party Booking
+              Large parties 15+ / outside normal hours
             </a>
           </Button>
         </div>
