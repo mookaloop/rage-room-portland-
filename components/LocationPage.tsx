@@ -1,23 +1,36 @@
 import Link from "next/link"
 import { ArrowRight, Clock, MapPin, Phone } from "lucide-react"
 import type { LocationData } from "@/lib/locations"
-import { businessContact, locations } from "@/lib/locations"
+import { businessContact, locationList } from "@/lib/locations"
 import { Button } from "@/components/ui/button"
 import { BookingOfferCards } from "@/components/BookingOfferCards"
 import SiteHeader from "@/components/SiteHeader"
 import { LocationSchema } from "@/components/schema/JsonLd"
 
-const LARGE_PARTY_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSey2owIHFQMOlXLbaYRHyT6Jp87x_BCTtZLzrqJCuEIxcAWVA/viewform"
+const LARGE_PARTY_FORM_URL = "https://forms.gle/SL7avwtBFHuBFESY6"
 
-export default function LocationPage({ location, heroVideo }: { location: LocationData; heroVideo?: string }) {
-  const other = location.slug === "st-johns" ? locations.tualatin : locations["st-johns"]
+export default function LocationPage({ location, heroVideo, heroYouTubeId }: { location: LocationData; heroVideo?: string; heroYouTubeId?: string }) {
+  const others = locationList.filter((item) => item.slug !== location.slug)
   return <main className="min-h-screen bg-background text-foreground">
     <LocationSchema location={location} />
     <SiteHeader />
     <section className="relative overflow-hidden border-b border-border bg-card py-16 md:py-24">
-      <video autoPlay muted loop playsInline preload="metadata" aria-hidden="true" tabIndex={-1} className="pointer-events-none absolute inset-0 size-full object-cover motion-reduce:hidden">
-        <source src={heroVideo ?? "/videos/rage-room-hero.mp4"} type="video/mp4" />
-      </video>
+      {heroYouTubeId ? (
+        <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden motion-reduce:hidden">
+          <iframe
+            src={`https://www.youtube-nocookie.com/embed/${heroYouTubeId}?autoplay=1&mute=1&loop=1&playlist=${heroYouTubeId}&controls=0&modestbranding=1&playsinline=1&rel=0&disablekb=1&iv_load_policy=3`}
+            title={`${location.shortName} rage room background video`}
+            tabIndex={-1}
+            allow="autoplay; encrypted-media; picture-in-picture"
+            className="absolute left-1/2 top-1/2 aspect-video min-h-full min-w-full -translate-x-1/2 -translate-y-1/2 border-0"
+            style={{ width: "max(100%, 177.78vh)", height: "max(100%, 56.25vw)" }}
+          />
+        </div>
+      ) : (
+        <video autoPlay muted loop playsInline preload="metadata" aria-hidden="true" tabIndex={-1} className="pointer-events-none absolute inset-0 size-full object-cover motion-reduce:hidden">
+          <source src={heroVideo ?? "/videos/rage-room-hero.mp4"} type="video/mp4" />
+        </video>
+      )}
       <div className="absolute inset-0 bg-background/80" aria-hidden="true" />
       <div className="container relative mx-auto flex max-w-6xl flex-col gap-8 px-4 sm:px-6">
         <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-sm text-muted-foreground"><Link href="/">Home</Link><span>/</span><Link href="/book" className="transition-colors hover:text-foreground">Locations</Link><span>/</span><span className="text-foreground">{location.shortName}</span></nav>
@@ -29,7 +42,7 @@ export default function LocationPage({ location, heroVideo }: { location: Locati
           </div>
           <Button asChild className="h-auto px-6 py-4 text-lg font-bold whitespace-nowrap">
             <a href={LARGE_PARTY_FORM_URL} target="_blank" rel="noreferrer">
-              Large Party Booking
+              Large parties 15+ / outside normal hours
             </a>
           </Button>
         </div>
@@ -74,6 +87,6 @@ export default function LocationPage({ location, heroVideo }: { location: Locati
         </div>
       </div>
     </div></section>
-    <section className="py-14"><div className="container mx-auto flex max-w-4xl flex-col items-center gap-5 px-4 text-center sm:px-6"><p className="font-mono text-sm uppercase tracking-widest text-secondary">Two locations, one seriously good time</p><h2 className="text-balance font-serif text-3xl font-black uppercase">Also explore {other.shortName}</h2><p className="text-muted-foreground">Compare the setting, hours, and booking options at our {other.name} location.</p><Button asChild variant="outline"><Link href={`/locations/${other.slug}`}>View {other.shortName}<ArrowRight data-icon="inline-end" /></Link></Button></div></section>
+    <section className="py-14"><div className="container mx-auto flex max-w-4xl flex-col items-center gap-5 px-4 text-center sm:px-6"><p className="font-mono text-sm uppercase tracking-widest text-secondary">More locations, one seriously good time</p><h2 className="text-balance font-serif text-3xl font-black uppercase">Also explore {others.map((item) => item.shortName).join(" & ")}</h2><p className="text-muted-foreground">Compare the setting, hours, and booking options at our other locations.</p><div className="flex flex-col gap-3 sm:flex-row">{others.map((item) => <Button key={item.slug} asChild variant="outline"><Link href={`/locations/${item.slug}`}>View {item.shortName}<ArrowRight data-icon="inline-end" /></Link></Button>)}</div></div></section>
   </main>
 }

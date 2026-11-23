@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ArrowLeft, Phone, Mail, Users, MapPin, Clock } from "lucide-react"
+import { ArrowLeft, Phone, Mail, Users } from "lucide-react"
 
 export default function ContactClient() {
   return (
@@ -108,7 +108,7 @@ export default function ContactClient() {
                     className="w-full bg-white hover:bg-white/90 text-black font-black text-lg py-4 rounded-lg transition-all duration-300 hover:scale-105 uppercase tracking-wider"
                     onClick={() =>
                       window.open(
-                        "https://docs.google.com/forms/d/e/1FAIpQLSey2owIHFQMOlXLbaYRHyT6Jp87x_BCTtZLzrqJCuEIxcAWVA/viewform?pli=1",
+                        "https://forms.gle/SL7avwtBFHuBFESY6",
                         "_blank",
                       )
                     }
@@ -134,68 +134,11 @@ export default function ContactClient() {
                 </div>
               </div>
 
-              {/* Location & Hours */}
               <div className="space-y-8">
                 <div className="text-center lg:text-left">
                   <h3 className="font-flame text-3xl md:text-4xl mb-8 text-white">
-                    VISIT <span className="text-[#F97316]">US</span>
+                    PLAN YOUR <span className="text-[#F97316]">VISIT</span>
                   </h3>
-                </div>
-
-                {/* Location */}
-                <div className="bg-black/60 border border-[#22C55E]/30 p-6 md:p-8 rounded-lg">
-                  <div className="flex items-center space-x-4 mb-4">
-                    <div className="w-12 h-12 rounded-full bg-[#22C55E]/20 flex items-center justify-center">
-                      <MapPin className="h-6 w-6 text-[#22C55E]" />
-                    </div>
-                    <h4 className="font-bold text-xl text-[#22C55E]">Location</h4>
-                  </div>
-                  <div className="text-white/90 text-lg leading-relaxed">
-                    <p className="font-bold mb-2">Inside Hopworks Brewery</p>
-                    <p>2944 SE Powell Blvd</p>
-                    <p>Portland, OR 97202</p>
-                    <p className="mt-4 text-white/70">Southeast Portland neighborhood</p>
-                  </div>
-                </div>
-
-                {/* Hours */}
-                <div className="bg-black/60 border border-[#F97316]/30 p-6 md:p-8 rounded-lg">
-                  <div className="flex items-center space-x-4 mb-4">
-                    <div className="w-12 h-12 rounded-full bg-[#F97316]/20 flex items-center justify-center">
-                      <Clock className="h-6 w-6 text-[#F97316]" />
-                    </div>
-                    <h4 className="font-bold text-xl text-[#F97316]">Hours</h4>
-                  </div>
-                  <div className="text-white/90 text-lg leading-relaxed space-y-2">
-                    <div className="flex justify-between">
-                      <span>Monday:</span>
-                      <span className="font-bold">Closed</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Tuesday:</span>
-                      <span className="font-bold">4pm - 9pm</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Wednesday:</span>
-                      <span className="font-bold">4pm - 9pm</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Thursday:</span>
-                      <span className="font-bold">4pm - 9pm</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Friday:</span>
-                      <span className="font-bold">12pm - 10pm</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Saturday:</span>
-                      <span className="font-bold">11am - 10pm</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Sunday:</span>
-                      <span className="font-bold">11am - 9pm</span>
-                    </div>
-                  </div>
                 </div>
 
                 {/* Quick Links */}

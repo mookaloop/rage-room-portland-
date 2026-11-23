@@ -35,7 +35,7 @@ const steps = [
     details: [
       "Open 7 days a week",
       "Morning, afternoon & evening slots",
-      "Two Portland-area locations",
+      "Three Portland-area locations",
     ],
   },
   {

@@ -13,7 +13,7 @@ const oswald = Oswald({ subsets: ["latin"], variable: "--font-oswald" })
 export const metadata: Metadata = {
   metadataBase: new URL("https://rageroomportland.co"),
   title: { default: "Rage Room Portland", template: "%s | Rage Room Portland" },
-  description: "Rage rooms and axe throwing at two Portland-area locations: Southeast Portland and Tualatin.",
+  description: "Rage rooms and axe throwing at three Portland-area locations: Southeast Portland, St. Johns, and Tualatin.",
   icons: { icon: "/favicon.png", apple: "/favicon.png" },
   manifest: "/site.webmanifest",
   openGraph: { siteName: "Rage Room Portland", type: "website", images: [{ url: "/favicon.png", width: 250, height: 250, alt: "Rage Room Portland" }] },

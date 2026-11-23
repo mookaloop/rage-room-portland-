@@ -112,7 +112,7 @@ export default function BookPageClient({ initialLocation }: { initialLocation: L
             <span className="text-primary">Start with the smash.</span>
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-            Reserve a private rage room in Southeast Portland or Tualatin. Axe throwing is available as an optional add-on or combo experience.
+            Reserve a private rage room in Southeast Portland, St. Johns, or Tualatin. Axe throwing is available as an optional add-on or combo experience.
           </p>
         </div>
         </section>
@@ -124,7 +124,7 @@ export default function BookPageClient({ initialLocation }: { initialLocation: L
             value={location}
             onValueChange={(value) => setLocation(value as LocationSlug)}
           >
-            <TabsList className="grid h-auto w-full grid-cols-2 gap-3 rounded-2xl bg-transparent p-0">
+            <TabsList className="grid h-auto w-full grid-cols-1 gap-3 rounded-2xl bg-transparent p-0 md:grid-cols-3">
               <TabsTrigger
                 value="st-johns"
                 className="group flex flex-col items-center gap-1 rounded-2xl border-2 border-primary/40 bg-card px-6 py-5 text-base font-black uppercase tracking-wide shadow-none transition-all duration-200 data-[state=active]:border-primary data-[state=active]:bg-card data-[state=active]:shadow-[0_0_24px_4px_hsl(142_71%_45%_/_0.45)] data-[state=inactive]:opacity-60 data-[state=inactive]:hover:opacity-90"
@@ -132,6 +132,14 @@ export default function BookPageClient({ initialLocation }: { initialLocation: L
                 <MapPin className="size-6 text-primary" aria-hidden="true" />
               <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Southeast Portland</span>
               <span className="font-serif text-2xl font-black text-primary">Book Southeast Portland</span>
+              </TabsTrigger>
+              <TabsTrigger
+                value="stormbreaker"
+                className="group flex flex-col items-center gap-1 rounded-2xl border-2 border-primary/40 bg-card px-6 py-5 text-base font-black uppercase tracking-wide shadow-none transition-all duration-200 data-[state=active]:border-primary data-[state=active]:bg-card data-[state=active]:shadow-[0_0_24px_4px_hsl(142_71%_45%_/_0.45)] data-[state=inactive]:opacity-60 data-[state=inactive]:hover:opacity-90"
+              >
+                <MapPin className="size-6 text-primary" aria-hidden="true" />
+                <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground">StormBreaker Brewing</span>
+                <span className="font-serif text-2xl font-black text-primary">Book St. Johns</span>
               </TabsTrigger>
               <TabsTrigger
                 value="tualatin"
@@ -143,7 +151,7 @@ export default function BookPageClient({ initialLocation }: { initialLocation: L
               </TabsTrigger>
             </TabsList>
 
-            {(["st-johns", "tualatin"] as const).map((slug) => (
+            {(["st-johns", "stormbreaker", "tualatin"] as const).map((slug) => (
               <TabsContent key={slug} value={slug} className="mt-10">
                 {/* Location label */}
                 <div className="mb-8">
