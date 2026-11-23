@@ -69,6 +69,9 @@ function renderCta({ href, onSelect, className, label }: { href?: string; onSele
   if (onSelect) {
     return <button type="button" onClick={onSelect} className={className}>{label}</button>
   }
+  if (!href) {
+    return <span aria-disabled="true" className={cn(className, "cursor-not-allowed opacity-60 hover:scale-100")}>Booking coming soon</span>
+  }
   // External booking destinations (Acuity) must open in a new tab so they
   // are not swallowed by client-side routing or the preview iframe.
   const isExternal = Boolean(href && /^https?:\/\//i.test(href))

@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { ArrowRight, Clock, MapPin, Phone } from "lucide-react"
 import type { LocationData } from "@/lib/locations"
-import { businessContact, locations } from "@/lib/locations"
+import { businessContact, locationList } from "@/lib/locations"
 import { Button } from "@/components/ui/button"
 import { BookingOfferCards } from "@/components/BookingOfferCards"
 import SiteHeader from "@/components/SiteHeader"
@@ -10,7 +10,7 @@ import { LocationSchema } from "@/components/schema/JsonLd"
 const LARGE_PARTY_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSey2owIHFQMOlXLbaYRHyT6Jp87x_BCTtZLzrqJCuEIxcAWVA/viewform"
 
 export default function LocationPage({ location, heroVideo }: { location: LocationData; heroVideo?: string }) {
-  const other = location.slug === "st-johns" ? locations.tualatin : locations["st-johns"]
+  const others = locationList.filter((item) => item.slug !== location.slug)
   return <main className="min-h-screen bg-background text-foreground">
     <LocationSchema location={location} />
     <SiteHeader />
@@ -74,6 +74,6 @@ export default function LocationPage({ location, heroVideo }: { location: Locati
         </div>
       </div>
     </div></section>
-    <section className="py-14"><div className="container mx-auto flex max-w-4xl flex-col items-center gap-5 px-4 text-center sm:px-6"><p className="font-mono text-sm uppercase tracking-widest text-secondary">Two locations, one seriously good time</p><h2 className="text-balance font-serif text-3xl font-black uppercase">Also explore {other.shortName}</h2><p className="text-muted-foreground">Compare the setting, hours, and booking options at our {other.name} location.</p><Button asChild variant="outline"><Link href={`/locations/${other.slug}`}>View {other.shortName}<ArrowRight data-icon="inline-end" /></Link></Button></div></section>
+    <section className="py-14"><div className="container mx-auto flex max-w-4xl flex-col items-center gap-5 px-4 text-center sm:px-6"><p className="font-mono text-sm uppercase tracking-widest text-secondary">More locations, one seriously good time</p><h2 className="text-balance font-serif text-3xl font-black uppercase">Also explore {others.map((item) => item.shortName).join(" & ")}</h2><p className="text-muted-foreground">Compare the setting, hours, and booking options at our other locations.</p><div className="flex flex-col gap-3 sm:flex-row">{others.map((item) => <Button key={item.slug} asChild variant="outline"><Link href={`/locations/${item.slug}`}>View {item.shortName}<ArrowRight data-icon="inline-end" /></Link></Button>)}</div></div></section>
   </main>
 }

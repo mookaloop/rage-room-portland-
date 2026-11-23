@@ -1,4 +1,4 @@
-export type LocationSlug = "st-johns" | "tualatin"
+export type LocationSlug = "st-johns" | "stormbreaker" | "tualatin"
 
 export type LocationData = {
   slug: LocationSlug
@@ -44,6 +44,31 @@ export const locations: Record<LocationSlug, LocationData> = {
     ],
     waiverUrl: "https://waiver.smartwaiver.com/w/tkfmatvzjuc5pg5n471dgf/web/",
     directionsUrl: "https://maps.google.com/?q=Rage+Room+Portland,+2944+SE+Powell+Blvd,+Portland,+OR+97202",
+  },
+  stormbreaker: {
+    slug: "stormbreaker",
+    name: "St. Johns, Portland",
+    heroTitle: "Rage Room Inside StormBreaker Brewing, St. Johns",
+    shortName: "St. Johns",
+    city: "Portland",
+    address: "8409 N Lombard St, Portland, OR 97203",
+    streetAddress: "8409 N Lombard St",
+    postalCode: "97203",
+    intro: "Smash bottles, electronics, and stress in a private North Portland rage room.",
+    context: "Our St. Johns location is back inside StormBreaker Brewing. Come for the rage room; add axe throwing or a combo session if your group wants more.",
+    hours: [
+      { day: "Monday", label: "Closed" }, { day: "Tuesday", label: "Closed" },
+      { day: "Wednesday", label: "Closed" }, { day: "Thursday", label: "Closed" },
+      { day: "Friday", opens: "12:00", closes: "22:00", label: "12–10 PM" }, { day: "Saturday", opens: "12:00", closes: "22:00", label: "12–10 PM" },
+      { day: "Sunday", opens: "12:00", closes: "20:00", label: "12–8 PM" },
+    ],
+    bookingLinks: [
+      { name: "StormBreaker Rage Room", description: "The main event: a private destruction session with safety gear included.", price: "From $35", duration: "45 minutes", url: "" },
+      { name: "StormBreaker Rage + Axe Combo", description: "Start with the smash, then add axe throwing for the full experience.", price: "From $45", duration: "About 90 minutes", url: "" },
+      { name: "StormBreaker Axe Throwing", description: "An optional bonus activity with professional lanes and instruction.", price: "From $25", duration: "1 hour", url: "" },
+    ],
+    waiverUrl: "https://waiver.smartwaiver.com/w/tkfmatvzjuc5pg5n471dgf/web/",
+    directionsUrl: "https://maps.google.com/?q=Rage+Room+Portland,+8409+N+Lombard+St,+Portland,+OR+97203",
   },
   tualatin: {
     slug: "tualatin",

@@ -10,6 +10,6 @@ export const metadata: Metadata = {
 
 export default async function BookPage({ searchParams }: { searchParams: Promise<{ location?: string }> }) {
   const query = await searchParams
-  const initialLocation: LocationSlug = query.location === "tualatin" ? "tualatin" : "st-johns"
+  const initialLocation: LocationSlug = query.location === "tualatin" || query.location === "stormbreaker" ? query.location : "st-johns"
   return <BookPageClient initialLocation={initialLocation} />
 }

@@ -14,6 +14,7 @@ import { locations } from "@/lib/locations"
 
 const links = [
   { href: "/locations/st-johns", label: "Hopworks Brewery" },
+  { href: "/locations/stormbreaker", label: "StormBreaker Brewing" },
   { href: "/locations/tualatin", label: "Stickmen Brewery" },
   { href: "/how-it-works", label: "How It Works" },
   { href: "/parties-events", label: "Team-Building Parties" },
@@ -23,6 +24,7 @@ const links = [
 
 const waivers = [
   { label: "Hopworks Brewery Waiver", url: locations["st-johns"].waiverUrl },
+  { label: "StormBreaker Brewing Waiver", url: locations["stormbreaker"].waiverUrl },
   { label: "Stickmen Brewery Waiver", url: locations["tualatin"].waiverUrl },
 ]
 
@@ -53,7 +55,7 @@ export default function SiteHeader() {
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end" className="w-52 border-secondary/30 bg-card">
               {waivers.map((w) => (
-                <DropdownMenuItem key={w.url} asChild>
+                <DropdownMenuItem key={w.label} asChild>
                   <a href={w.url} target="_blank" rel="noreferrer" className="cursor-pointer font-semibold">
                     {w.label}
                   </a>
@@ -87,7 +89,7 @@ export default function SiteHeader() {
               <p className="pt-4 text-xs font-black uppercase tracking-widest text-secondary">Sign Waiver</p>
               {waivers.map((w) => (
                 <a
-                  key={w.url}
+                  key={w.label}
                   href={w.url}
                   target="_blank"
                   rel="noreferrer"
