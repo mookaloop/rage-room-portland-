@@ -9,4 +9,4 @@ export const metadata: Metadata = {
   openGraph: { title: "St. Johns Rage Room | StormBreaker Brewing", description: "Smash bottles, electronics, and stress at our St. Johns rage room inside StormBreaker Brewing.", url: "/locations/stormbreaker" },
 }
 
-export default function StormBreakerPage() { return <LocationPage location={locations.stormbreaker} /> }
+export default function StormBreakerPage() { return <LocationPage location={locations.stormbreaker} heroYouTubeId="pXlY8s5zHSc" /> }

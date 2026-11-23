@@ -9,15 +9,28 @@ import { LocationSchema } from "@/components/schema/JsonLd"
 
 const LARGE_PARTY_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSey2owIHFQMOlXLbaYRHyT6Jp87x_BCTtZLzrqJCuEIxcAWVA/viewform"
 
-export default function LocationPage({ location, heroVideo }: { location: LocationData; heroVideo?: string }) {
+export default function LocationPage({ location, heroVideo, heroYouTubeId }: { location: LocationData; heroVideo?: string; heroYouTubeId?: string }) {
   const others = locationList.filter((item) => item.slug !== location.slug)
   return <main className="min-h-screen bg-background text-foreground">
     <LocationSchema location={location} />
     <SiteHeader />
     <section className="relative overflow-hidden border-b border-border bg-card py-16 md:py-24">
-      <video autoPlay muted loop playsInline preload="metadata" aria-hidden="true" tabIndex={-1} className="pointer-events-none absolute inset-0 size-full object-cover motion-reduce:hidden">
-        <source src={heroVideo ?? "/videos/rage-room-hero.mp4"} type="video/mp4" />
-      </video>
+      {heroYouTubeId ? (
+        <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden motion-reduce:hidden">
+          <iframe
+            src={`https://www.youtube-nocookie.com/embed/${heroYouTubeId}?autoplay=1&mute=1&loop=1&playlist=${heroYouTubeId}&controls=0&modestbranding=1&playsinline=1&rel=0&disablekb=1&iv_load_policy=3`}
+            title={`${location.shortName} rage room background video`}
+            tabIndex={-1}
+            allow="autoplay; encrypted-media; picture-in-picture"
+            className="absolute left-1/2 top-1/2 aspect-video min-h-full min-w-full -translate-x-1/2 -translate-y-1/2 border-0"
+            style={{ width: "max(100%, 177.78vh)", height: "max(100%, 56.25vw)" }}
+          />
+        </div>
+      ) : (
+        <video autoPlay muted loop playsInline preload="metadata" aria-hidden="true" tabIndex={-1} className="pointer-events-none absolute inset-0 size-full object-cover motion-reduce:hidden">
+          <source src={heroVideo ?? "/videos/rage-room-hero.mp4"} type="video/mp4" />
+        </video>
+      )}
       <div className="absolute inset-0 bg-background/80" aria-hidden="true" />
       <div className="container relative mx-auto flex max-w-6xl flex-col gap-8 px-4 sm:px-6">
         <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-sm text-muted-foreground"><Link href="/">Home</Link><span>/</span><Link href="/book" className="transition-colors hover:text-foreground">Locations</Link><span>/</span><span className="text-foreground">{location.shortName}</span></nav>
