@@ -42,7 +42,7 @@ export const locations: Record<LocationSlug, LocationData> = {
       { name: "Rage + Axe Combo", description: "Start with the smash, then add axe throwing for the full experience.", price: "From $45", duration: "About 90 minutes", url: "https://bookcelticaxe.as.me/schedule/b12708f9/?categories[]=Hopworks%20Rage%20%2F%20Axe%20Combo" },
       { name: "Axe Throwing", description: "An optional bonus activity with professional lanes and instruction.", price: "From $25", duration: "1 hour", url: "https://bookcelticaxe.as.me/schedule/b12708f9/?categories[]=Hopworks%20Axe%20Throwing" },
     ],
-    waiverUrl: "https://waiver.smartwaiver.com/w/tkfmatvzjuc5pg5n471dgf/web/",
+    waiverUrl: "https://waiver.smartwaiver.com/w/5qai88rckdylp6adzysb73/web/",
     directionsUrl: "https://maps.google.com/?q=Rage+Room+Portland,+2944+SE+Powell+Blvd,+Portland,+OR+97202",
   },
   stormbreaker: {
